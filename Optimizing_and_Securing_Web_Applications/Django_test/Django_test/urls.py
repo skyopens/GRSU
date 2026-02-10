@@ -22,3 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('sportsmen/', include('sportsmen.urls'))
 ]
+
+handler404 = 'sportsmen.views.error_404'
+handler500 = 'sportsmen.views.error_500'
