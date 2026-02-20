@@ -1,16 +1,25 @@
 from django.shortcuts import render
-from django.shortcuts import redirect
 from django.http import HttpResponseServerError, HttpResponse, HttpResponseNotFound
+from .models import *
 
 # Create your views here.
 def index(request):
-    return HttpResponse("Hello, world. You're at the sportsmen index.")
+    context = {
+        'title': 'Sportsmen Home',
+        'menu': ['home', 'about', 'contacts'],
+        'posts': Sportsman.objects.all()
+    }
+    return render(request, 'sportsmen/home.html', context)
 
 def contacts(request):
     return HttpResponse("Contacts Page")
 
 def about(request):
-    return HttpResponse("About Page")
+    context = {
+        'title': 'About Us',
+        'menu': ['home', 'about', 'contacts']
+    }
+    return render(request, 'sportsmen/about.html', context)
 
 def get_query(request):
     name = request.GET.get('name', 'default')

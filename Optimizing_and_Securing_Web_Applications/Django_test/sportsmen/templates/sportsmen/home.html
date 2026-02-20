@@ -1,0 +1,13 @@
+{% extends "sportsmen/base.html" %}
+
+{% block content %}
+    <h1>{{ title }}</h1>
+    <ul>
+    {% for item in posts %}
+        <li>
+            <h2>{{ item.title }}</h2>
+            <p>{{ item.content }}</p>
+        </li>
+    {% endfor %}
+    </ul>
+{% endblock content %}
