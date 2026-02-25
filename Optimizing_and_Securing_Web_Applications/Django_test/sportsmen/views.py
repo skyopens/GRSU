@@ -7,7 +7,7 @@ def index(request):
     context = {
         'title': 'Sportsmen Home',
         'menu': ['home', 'about', 'contacts'],
-        'posts': Sportsman.objects.all()
+        'sportsmen': Sportsman.objects.all()
     }
     return render(request, 'sportsmen/home.html', context)
 
@@ -32,7 +32,17 @@ def sport_detail(request, sp_id):
     return HttpResponse(f"<h1>Articles by sports</h1><p>{sp_id}</p>")
 
 def sports_by_year(request, year):
-    return HttpResponse(f"<h1>Articles by years</h1><p>{year}</p>")
+    return HttpResponse(f"<h1>Articles by years</h1><p>{year}</h1>")
+
+def post_detail(request, post_id):
+    return HttpResponse(f"<h3>Show the post with ID: {post_id}</h3>")
+
+def show_sports(request, sport_id):
+    if sport_id == 0:
+        sportsman_list = Sportsman.objects.all()
+    else:
+        sportsman_list = Sportsman.objects.filter(sport_id=sport_id)
+    return render(request, 'sportsmen/home.html', {'sportsmen': sportsman_list})
 
 def error_404(request, exception):
     return HttpResponseNotFound("<h1 style='font-size:20em;'>404</h1>")

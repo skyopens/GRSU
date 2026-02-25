@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 
 # Create your models here.
 class Sportsman(models.Model):
@@ -8,6 +9,16 @@ class Sportsman(models.Model):
     time_create = models.DateTimeField(auto_now_add=True)
     time_update = models.DateTimeField(auto_now=True)
     is_published = models.BooleanField(default=True)
+    sport = models.ForeignKey('Sports', on_delete=models.CASCADE, null=True)
 
     def __str__(self):
         return f"{self.title} | {self.content} | {self.is_published} | {self.time_update}"
+    
+    def get_absolute_url(self):
+        return reverse('post', kwargs={'post_id': self.id})
+    
+class Sports(models.Model):
+    name = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.name

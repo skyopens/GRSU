@@ -24,6 +24,7 @@ urlpatterns = [
     path('contacts/', views.contacts, name='contacts'),
     path('about/', views.about, name='about'),
     path('sport/<int:sp_id>/', views.sport_detail),
-    re_path(r'^sports/(?P<year>[0-9]{4})/$', views.sports_by_year)
-    # path('home/', views.home, name='home')
+    re_path(r'^sports/(?P<year>[0-9]{4})/$', views.sports_by_year),
+    path('post/<int:post_id>/', views.post_detail, name='post'),
+    path('sports/<int:sport_id>/', views.show_sports, name='sports')
 ]

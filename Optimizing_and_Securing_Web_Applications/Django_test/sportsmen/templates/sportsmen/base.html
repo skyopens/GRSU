@@ -1,20 +1,30 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'sportsmen/css/styles.css' %}">
     <title>{{ title }}</title>
 </head>
 <body>
     {% block mainmenu %}
-    <ul>
+    <ul id="menu">
     {% for item in menu %}
         <li>
             <a href="{% url item %}">{{ item }}</a>
         </li>
     {% endfor %}
     </ul>
+    <div class="content_box">
+        <ul class="menu">
+            <li><a href="{% url 'sports' sport_id=0 %}">All</a></li>
+            <li><a href="{% url 'sports' sport_id=1 %}">Football</a></li>
+            <li><a href="{% url 'sports' sport_id=2 %}">Basketball</a></li>
+            <li><a href="{% url 'sports' sport_id=3 %}">Hockey</a></li>
+        </ul>
+        <div class="content">{% block content %}{% endblock %}</div>
+    </div>
     {% endblock mainmenu %}
-    <div>{% block content %}{% endblock %}</div>
 </body>
 </html>

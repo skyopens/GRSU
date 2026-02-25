@@ -1,13 +1,24 @@
 {% extends "sportsmen/base.html" %}
 
 {% block content %}
-    <h1>{{ title }}</h1>
+    <h1>{{ title | upper }}</h1>
     <ul>
-    {% for item in posts %}
+    {% for item in sportsmen %}
         <li>
             <h2>{{ item.title }}</h2>
             <p>{{ item.content }}</p>
+            <p>{{ item.time_update | date:"D d M Y" }}</p>
+            <a href="{{ item.get_absolute_url }}">Read post</a>
         </li>
     {% endfor %}
     </ul>
+
+    {% if sportsmen %}
+        {% for sportsman in sportsmen %}
+            <h2>{{ sportsman.name }}</h2>
+            <p>{{ sportsman.description }}</p>
+        {% endfor %}
+    {% else %}
+        <p>No sportsmen found for this category.</p>
+    {% endif %}
 {% endblock content %}
