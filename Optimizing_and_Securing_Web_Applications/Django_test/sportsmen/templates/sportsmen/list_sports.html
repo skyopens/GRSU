@@ -1,0 +1,7 @@
+{% load sportsmen_tags %}
+{% getsports as sports %}
+{% for sport in sports %}
+    <li><a href="{{ sport.get_absolute_url }}" {% if sport.id == sport_selected %}class="active"{% endif %}>
+        {{ sport.name }}</a>
+    </li>
+{% endfor %}

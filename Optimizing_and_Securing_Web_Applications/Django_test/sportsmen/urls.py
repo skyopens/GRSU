@@ -23,8 +23,8 @@ urlpatterns = [
     path('', views.index, name='home'),
     path('contacts/', views.contacts, name='contacts'),
     path('about/', views.about, name='about'),
-    path('sport/<int:sp_id>/', views.sport_detail),
+    path('sport/<slug:sp_id>/', views.sport_detail, name='post'),
     re_path(r'^sports/(?P<year>[0-9]{4})/$', views.sports_by_year),
-    path('post/<int:post_id>/', views.post_detail, name='post'),
-    path('sports/<int:sport_id>/', views.show_sports, name='sports')
+    path('post/<slug:post_slug>/', views.post_detail, name='post'),
+    path('sports/<slug:sport_slug>/', views.show_sports, name='sports')
 ]

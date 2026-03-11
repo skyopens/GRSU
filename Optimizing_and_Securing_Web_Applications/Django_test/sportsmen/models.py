@@ -10,6 +10,7 @@ class Sportsman(models.Model):
     time_update = models.DateTimeField(auto_now=True)
     is_published = models.BooleanField(default=True)
     sport = models.ForeignKey('Sports', on_delete=models.CASCADE, null=True)
+    slug = models.SlugField(max_length=255, unique=True, db_index=True, verbose_name='url')
 
     class Meta:
         verbose_name = "Sport news"
@@ -20,16 +21,14 @@ class Sportsman(models.Model):
     #     return f"{self.title} | {self.content} | {self.is_published} | {self.time_update}"
     
     def get_absolute_url(self):
-        return reverse('post', kwargs={'post_id': self.id})
-
-    # def get_absolute_url(self):
-    #     return reverse('home')
+        return reverse('post', kwargs={'post_slug': self.slug})
     
     def __str__(self):
         return self.title
     
 class Sports(models.Model):
     name = models.CharField(max_length=100, db_index=True, verbose_name="The name of sport")
+    slug = models.SlugField(max_length=255, unique=True, db_index=True, verbose_name='url')
 
     class Meta:
         verbose_name = "Sport"
@@ -37,3 +36,6 @@ class Sports(models.Model):
 
     def __str__(self):
         return self.name
+    
+    def get_absolute_url(self):
+        return reverse('sports', kwargs={'sport_slug': self.slug})

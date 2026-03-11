@@ -1,3 +1,4 @@
+{% comment %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -26,5 +27,29 @@
         <div class="content">{% block content %}{% endblock %}</div>
     </div>
     {% endblock mainmenu %}
+</body>
+</html>
+
+{% load sportsmen_tags %}
+{% show_sports 'name' sport_selected %}
+{% endcomment %}
+
+{% load sportsmen_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'sportsmen/css/styles.css' %}">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <div class="content_box">
+        <ul class="menu">
+            {% show_sports 'name' sport_selected %}
+        </ul>
+        <div class="content">{% block content %}{% endblock %}</div>
+    </div>
 </body>
 </html>
