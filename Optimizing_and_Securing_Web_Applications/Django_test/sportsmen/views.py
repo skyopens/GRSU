@@ -1,6 +1,7 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponseServerError, HttpResponse, HttpResponseNotFound, Http404
 from .models import *
+from .forms import AddArticleForm
 
 # Create your views here.
 menu = ['home', 'about', 'contacts']
@@ -59,6 +60,16 @@ def show_sports(request, sport_slug):
         'sport_selected': sport[0].id,
     }
     return render(request, 'sportsmen/home.html', context=context)
+
+def addarticle(request):
+    if request.method == 'POST':
+        form = AddArticleForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect('home')
+    else:
+        form = AddArticleForm()
+    return render(request, 'addarticle.html', {'form': form})
 
 def error_404(request, exception):
     return HttpResponseNotFound("<h1 style='font-size:20em;'>404</h1>")

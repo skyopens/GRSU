@@ -26,5 +26,6 @@ urlpatterns = [
     path('sport/<slug:sp_id>/', views.sport_detail, name='post'),
     re_path(r'^sports/(?P<year>[0-9]{4})/$', views.sports_by_year),
     path('post/<slug:post_slug>/', views.post_detail, name='post'),
-    path('sports/<slug:sport_slug>/', views.show_sports, name='sports')
+    path('sports/<slug:sport_slug>/', views.show_sports, name='sports'),
+    path('addarticle/', views.addarticle, name='addarticle')
 ]

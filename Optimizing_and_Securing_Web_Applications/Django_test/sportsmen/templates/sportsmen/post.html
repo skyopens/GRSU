@@ -1,6 +1,8 @@
 {% extends 'sportsmen/base.html' %}
 {% block content %}
     <h1>{{ post.title }}</h1>
+    <h3>{{ post.content }}</h3>
+    <h4>{{ post.time_update }}</h4>
 {% if post.photo %}
     <p><img class='img-article-left' src='{{ post.photo.url }}'></p>
 {% endif %}
