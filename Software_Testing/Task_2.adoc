@@ -1,0 +1,255 @@
+= NCAA Statistics Console Application - Test Plan
+
+== REVISION HISTORY
+
+[cols="1,2,1,1,1,1", options="header"]
+|===
+| Ver. | Description of Change | Author | Date | Approved Name | Effective Date
+| 1.0 | Initial draft | ZHOU HANTIAN | 2026-02-24 | A. Karkanitsa | 2026-02-25
+|===
+
+== RELATED ARTIFACTS
+
+[cols="1,5", options="header"]
+|===
+| Ref. | Name
+| 1 | NCAA Statistics Console Application Documentation
+| 2 | course_work.cs Source Code
+|===
+
+== ABBREVIATIONS AND ACRONYMS
+
+[cols="1,2", options="header"]
+|===
+| QA | Quality Assurance
+| UAT | User Acceptance Test
+| FR | Functional Requirement
+| NFR | Non-Functional Requirement
+|===
+
+== INTRODUCTION
+
+This document describes the approach and methodologies used by the testing team to plan, organize and perform the testing activities for the NCAA Statistics Console Application. The application processes historical NCAA basketball finals data and responds to search queries from script files. It is a C# console application developed as a coursework project for the Software Engineering program at Yanka Kupala State University of Grodno.
+
+== SCOPE OF WORK
+
+=== Components and Functions to be Tested
+
+1. File selection module (SelectFiles method)
+2. Data import and normalization (LoadDataContent method)
+3. Sorting algorithm (NCAAGameSort method)
+4. Command processing module:
+   * Year command processing
+   * Titles command processing
+   * Margin command processing
+5. Logging and output handling (WriteOutput method)
+6. Program startup (Boot method)
+
+=== Reference
+
+[cols="1,5", options="header"]
+|===
+| Function name | Reference
+| File Selection | Section 2.3, CourseWork_documentation.docx
+| Data Import and Normalization | Section 2.4, CourseWork_documentation.docx
+| Sorting Algorithm | Section 2.5, CourseWork_documentation.docx
+| Command Processing | Section 2.7, CourseWork_documentation.docx
+| Logging and Output | Section 2.6, CourseWork_documentation.docx
+|===
+
+== QUALITY AND ACCEPTANCE CRITERIA
+
+The product should work according to the requirements and functional specification listed in sections Scope of work and References.
+
+To be released for production:
+
+1. The product should not have bugs (issues) with severity Blocker and Critical.
+2. Every not fixed Major bug (issue) should be discussed with Key Development Team and Product Owner.
+
+== CRITICAL SUCCESS FACTORS
+
+1. Meet the schedule and complete development and testing of all functionality on time.
+2. Application shouldn't have known bugs (issues) with severity Blocker and Critical at the time of Final Release.
+3. Functional requirements do not have last minute changes on the Final Release.
+
+== REFERENCES
+
+1. IEEE 829 Standard for Software Test Documentation
+2. ISTQB Foundation Level Syllabus
+
+== RISKS
+
+[cols="1,2", options="header"]
+|===
+| Risk | Mitigation
+| Team members lack the required skills for console application testing | Plan a training session to skill up team members on C# console applications
+| The project schedule is too tight; it's hard to complete testing on time | Set test priority for each test activity and focus on critical paths first
+| Incomplete or ambiguous requirements | Clarify requirements with the development team and document assumptions
+| Test environment setup issues | Prepare test environment early and verify all dependencies
+|===
+
+== RESOURCES
+
+=== Project Resources
+
+Project team is published in the university course management system.
+
+=== Test Team
+
+[cols="1,1,1,1,3", options="header"]
+|===
+| # | Project Role | Name | Location | Responsibilities
+| 1 | QA Lead | ZHOU HANTIAN | Grodno | Develops and generalizes Test Cases. Functional, Regression testing. Develops test plan, test results reports. Prepares the opinion about software product's readiness.
+| 2 | QA Tester | Team Member | Grodno | Executes test cases, logs results, and reports defects.
+|===
+
+=== Test Environment
+
+* Operating System: Windows 10/11 or Linux with .NET 6.0+
+* IDE: Visual Studio 2022 or VS Code with C# extension
+* Test Data: NCAAdata.txt, NCAAdata1.txt, NCAAdata2.txt, NCAAinfo.txt, NCAAinfo1.txt, NCAAinfo2.txt
+* Expected Output: NCAAlog.txt, NCAAlog1.txt, NCAAlog2.txt
+
+=== Test Tools
+
+[cols="1,2,2", options="header"]
+|===
+| # | Tool | Comment
+| 1 | Visual Studio | For debugging and code analysis
+| 2 | diffchecker.com | For comparing expected and actual log files
+| 3 | Excel | For analyzing test results
+|===
+
+== TEST DOCUMENTATION AND DELIVERABLES
+
+[cols="1,2,2,2,2", options="header"]
+|===
+| # | Title | Responsible person(s) | Frequency (delivery time) | Method of delivery
+| 1 | Test Plan | ZHOU HANTIAN | Once before testing start | Published on university learning platform
+| 2 | Test Cases | ZHOU HANTIAN | Before UAT phase start | Published on university learning platform
+| 3 | Bug reports | ZHOU HANTIAN | Upon finding a bug | Created in GitHub Issues
+| 4 | Test Summary Report | ZHOU HANTIAN | After testing completion | Published on university learning platform
+|===
+
+== TEST STRATEGY
+
+The Test Strategy presents the recommended approach to test the NCAA Statistics Console Application. The Test Plan describes what (components and functions) will be tested – Test Strategy describes how the application will be tested.
+
+The main goal of current phase is testing the NCAA Statistics Console Application functionality according to the functional requirements.
+
+Application will be tested using a "black box" approach, which is based on the functional requirements without knowledge of the internal structure or program source code.
+
+=== Entry Criteria
+
+The Testing Team may suspend partial or full-testing activities on a given build if any of the following occurs:
+
+1. It is impossible to compile the application successfully.
+2. There is a fault with a feature that prevents its testing.
+3. New claimed functionality doesn't work or works improperly.
+4. A severe problem has occurred that does not allow testing to continue.
+
+=== Bug Severity Definitions
+
+* Blocker – Application crash or cannot be executed
+* Critical – Data corruption/loss, a problem in major functionality, no workaround is known
+* Major – Major functionality partially works, no workaround is known
+* Minor – A problem with workaround, secondary features do not work properly
+* Trivial – Cosmetic flaw
+
+=== Testing Types
+
+==== Function Testing
+
+Function testing of the NCAA Statistics Console Application focuses on verifying all requirements for the test that can be traced directly to use cases or business functions.
+
+[cols="1,4", options="header"]
+|===
+| Test Objective | Ensure proper functionality of NCAA data processing, including data import, sorting, command processing, and log generation
+| Technique | Execute each use case with valid and invalid data to verify: The expected results occur when valid data is used. The appropriate error messages are displayed when invalid data is used. Each business rule is properly applied.
+| Completion Criteria | All planned tests have been executed. All identified defects have been addressed.
+|===
+
+==== User Interface Testing
+
+User Interface testing for console application verifies proper command-line interaction.
+
+[cols="1,4", options="header"]
+|===
+| Test Objective | Verify proper console interaction: menu selection, command processing, and output formatting
+| Technique | Test all console interactions with valid and invalid inputs to verify proper responses
+| Completion Criteria | Console interactions work as expected according to specification
+|===
+
+==== Regression Testing
+
+The goal of Regression Testing is to make sure that previously fixed bugs do not appear again.
+
+[cols="1,4", options="header"]
+|===
+| Test Objective | Verify that previously fixed bugs did not affect product quality
+| Technique | Re-execute relevant Function Test cases after bug fixes
+| Completion Criteria | All relevant test cases pass without failure
+|===
+
+== TEST LEVELS
+
+=== Smoke Test
+
+Smoke Test is performed to quickly assess the readiness of the Product for further deeper and more thorough testing.
+
+[cols="1,4", options="header"]
+|===
+| Test Objective | Verify basic application functionality: file selection, data loading, and simple command execution
+| Test Cases | 
+* Select file group A and verify successful execution
+* Process a simple year command and verify output
+* Verify log file is generated correctly
+| Completion Criteria | Basic functionality works without critical errors
+|===
+
+=== Critical Path Test
+
+Critical Path Tests are performed after the Smoke Test is passed.
+
+[cols="1,4", options="header"]
+|===
+| Test Objective | Find bugs that could affect the major functionality of the application
+| Test Cases |
+* Year command with valid year (type 1 and 2)
+* Year command with invalid year
+* Titles command with school that exists
+* Titles command with school that doesn't exist
+* Margin command with valid range
+* Margin command with invalid start year
+| Completion Criteria | Major functionality works as expected for all critical paths
+|===
+
+=== Extended Test
+
+Extended Test's goal is to find bugs related to non-typical usage scenarios.
+
+[cols="1,4", options="header"]
+|===
+| Test Objective | Find issues with edge cases and boundary conditions
+| Test Cases |
+* Margin command with numYears exceeding available data
+* Very large NCAA data files
+* Special characters in school names
+* Boundary year values (min/max)
+* Empty command files
+| Completion Criteria | Application handles edge cases gracefully with appropriate error messages
+|===
+
+== TESTING SCHEDULE
+
+[cols="1,2,1,1,1,1,2", options="header"]
+|===
+| # | Activity | Begin Date | End Date | Assignment | Location | Work content
+| 1 | Test plan creation | 2026-02-24 | 2026-02-25 | ZHOU HANTIAN | University | Completed before testing start
+| 2 | Test cases creation | 2026-02-26 | 2026-02-28 | ZHOU HANTIAN | University | Completed before test execution
+| 3 | Smoke Test execution | 2026-03-01 | 2026-03-01 | ZHOU HANTIAN | University | After application build
+| 4 | Critical path Test execution | 2026-03-02 | 2026-03-04 | ZHOU HANTIAN | University | After Smoke Test
+| 5 | Extended Test execution | 2026-03-05 | 2026-03-07 | ZHOU HANTIAN | University | After Critical Path Test
+| 6 | Regression Test | 2026-03-08 | 2026-03-08 | ZHOU HANTIAN | University | After bug fixes
+| 7 | Test Summary Report | 2026-03-09 | 2026-03-09 | ZHOU HANTIAN | University | After testing completion
+|===

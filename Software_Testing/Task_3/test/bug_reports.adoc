@@ -1,0 +1,325 @@
+= Bug Reports: NCAA Finals Statistics
+:revdate: 2026-03-16
+:revnumber: 1.0
+:toc:
+:toc-title: Table of Contents
+:toclevels: 2
+:sectnums:
+:table-caption: Table
+
+== Overview
+
+This document contains bug reports for defects found during manual testing
+of the NCAA Finals Statistics console application (C#).
+
+[cols="1,1,1,1,3", options="header"]
+|===
+| ID | Requirement | Priority | Severity | Summary
+
+| BUG_001
+| FR_007
+| Medium
+| Major
+| `year` command with invalid flag produces no output and no error
+
+| BUG_002
+| FR_001
+| Low
+| Minor
+| Unused variable `result` declared in `LoadCommandContent`
+
+| BUG_003
+| FR_009
+| High
+| Critical
+| `margin` command with numYears=0 causes division by zero crash
+
+| BUG_004
+| FR_001
+| High
+| Major
+| Missing file exception handling causes unhandled crash if file not found
+
+| BUG_005
+| FR_010
+| Medium
+| Major
+| Log header parsing fails if data file header has no space after colon
+
+| BUG_006
+| FR_006
+| Medium
+| Major
+| Commands file is read entirely into memory instead of line-by-line processing
+|===
+
+== Bug Reports
+
+=== BUG_001 — year Command With Invalid Flag Produces No Output
+
+[cols="1,3", options="header"]
+|===
+| Field | Content
+
+| *ID*
+| BUG_001
+
+| *Requirement*
+| FR_007
+
+| *Priority*
+| Medium
+
+| *Severity*
+| Major
+
+| *Summary*
+| `year` command with flag value other than 1 or 2 silently produces no result output
+
+| *Description*
+| When the `year` command is issued with a flag that is neither 1 nor 2 (e.g. flag=0 or flag=3), the program finds the matching year record but does not write any output — no champion, no runner-up, and no error message. The user receives no feedback about what happened.
+
+| *Precondition*
+| Program started, file group A selected; a year that exists in NCAAdata.txt is used
+
+| *Test Steps*
+a|
+1. Run the program and select `A`
+2. Add command `year[TAB]1988[TAB]0` to NCAAinfo.txt
+3. Run the program and observe the output for this command
+
+| *Test Data*
+| Command: `year[TAB]1988[TAB]0`
+
+| *Expected Result*
+| Program outputs an error such as `Invalid flag value: 0` or at minimum `1988 not found`
+
+| *Actual Result*
+| No output is produced for this command; the separator line and command echo appear but the result line is completely missing
+|===
+
+---
+
+=== BUG_002 — Unused Variable in LoadCommandContent
+
+[cols="1,3", options="header"]
+|===
+| Field | Content
+
+| *ID*
+| BUG_002
+
+| *Requirement*
+| FR_001
+
+| *Priority*
+| Low
+
+| *Severity*
+| Minor
+
+| *Summary*
+| Dead code: `List<string> result` is declared but never used in `LoadCommandContent`
+
+| *Description*
+| Inside the method `LoadCommandContent(string fileSRC)`, the line `List<string> result = new List<string>();` declares a local variable that is never read, written, or returned. This is dead code that adds noise and may confuse future readers of the code.
+
+| *Precondition*
+| Code review / static analysis of course_work-2.cs
+
+| *Test Steps*
+a|
+1. Open course_work-2.cs in any code editor
+2. Navigate to method `LoadCommandContent`
+3. Observe the first line of the method body
+
+| *Test Data*
+| Source file: course_work-2.cs, method `LoadCommandContent`
+
+| *Expected Result*
+| No unused variable declarations exist in the method
+
+| *Actual Result*
+| `List<string> result = new List<string>();` is present but never used anywhere in the method
+|===
+
+---
+
+=== BUG_003 — Division by Zero When numYears=0 in margin Command
+
+[cols="1,3", options="header"]
+|===
+| Field | Content
+
+| *ID*
+| BUG_003
+
+| *Requirement*
+| FR_009
+
+| *Priority*
+| High
+
+| *Severity*
+| Critical
+
+| *Summary*
+| `margin` command with numYears=0 causes unhandled division by zero, crashing the program
+
+| *Description*
+| When the `margin` command is called with `numYears=0`, the loop body never executes, leaving `count=0`. The line `double average = totalMargin / count` then performs a division by zero. In C#, dividing a `double` by zero produces `Infinity` or `NaN`, which gets written to the log in an invalid format. If integer division were used instead, it would throw a `DivideByZeroException` and crash the program entirely.
+
+| *Precondition*
+| Program started, file group A selected; startYear exists in NCAAdata.txt
+
+| *Test Steps*
+a|
+1. Add command `margin[TAB]1988[TAB]0` to NCAAinfo.txt
+2. Run the program and select `A`
+3. Observe the console output and the generated NCAAlog.txt
+
+| *Test Data*
+| Command: `margin[TAB]1988[TAB]0`; startYear=1988 (exists in data), numYears=0
+
+| *Expected Result*
+| Program outputs a meaningful error such as `Invalid range: numYears must be greater than 0` and continues processing remaining commands
+
+| *Actual Result*
+| Output shows `Average Margin 1988-1987: Infinity` (or causes a runtime exception depending on type), log file contains invalid data
+|===
+
+---
+
+=== BUG_004 — No Exception Handling for Missing Files
+
+[cols="1,3", options="header"]
+|===
+| Field | Content
+
+| *ID*
+| BUG_004
+
+| *Requirement*
+| FR_001
+
+| *Priority*
+| High
+
+| *Severity*
+| Major
+
+| *Summary*
+| Program crashes with unhandled `FileNotFoundException` if a required data or command file is missing
+
+| *Description*
+| Both `File.ReadAllLines()` calls in `LoadDataContent` and `LoadCommandContent`, as well as the `new StreamWriter()` call for the log file, are not wrapped in any try-catch block. If any required file does not exist in `../static/`, the program throws an unhandled `FileNotFoundException` and terminates immediately with a stack trace, providing no user-friendly error message.
+
+| *Precondition*
+| Program is compiled; NCAAdata.txt has been deleted from ../static/
+
+| *Test Steps*
+a|
+1. Delete NCAAdata.txt from ../static/
+2. Run the program and select `A`
+3. Observe the console output
+
+| *Test Data*
+| File group A; NCAAdata.txt absent from ../static/
+
+| *Expected Result*
+| Program outputs a clear message such as `Error: Data file NCAAdata.txt not found in ../static/` and exits gracefully
+
+| *Actual Result*
+| Unhandled `System.IO.FileNotFoundException` stack trace is printed to the console; program terminates abruptly
+|===
+
+---
+
+=== BUG_005 — Log Header Parsing Fails If Colon Has No Trailing Space
+
+[cols="1,3", options="header"]
+|===
+| Field | Content
+
+| *ID*
+| BUG_005
+
+| *Requirement*
+| FR_010
+
+| *Priority*
+| Medium
+
+| *Severity*
+| Major
+
+| *Summary*
+| Log header third line is written incorrectly if the data file header uses `":"` without a trailing space
+
+| *Description*
+| The code extracts the log header label with `dataHeader.Split(": ")[0]`. This relies on the separator being exactly `": "` (colon + space). If the data file header is formatted as `"Women's NCAA Champions:8"` (no space after colon), `Split(": ")` returns the entire string in index [0], causing the log to contain the full raw header line instead of only the label portion.
+
+| *Precondition*
+| Program started; NCAAdata.txt header is modified to remove the space after the colon
+
+| *Test Steps*
+a|
+1. Change the first line of NCAAdata.txt from `Women's NCAA Champions: 8` to `Women's NCAA Champions:8`
+2. Run the program and select `A`
+3. Open NCAAlog.txt and inspect the third header line
+
+| *Test Data*
+| Modified header: `Women's NCAA Champions:8`
+
+| *Expected Result*
+| Third line of log: `Women's NCAA Champions`
+
+| *Actual Result*
+| Third line of log: `Women's NCAA Champions:8` (full header string written instead of label only)
+|===
+
+---
+
+=== BUG_006 — Commands File Read Entirely Into Memory Instead of Line-by-Line
+
+[cols="1,3", options="header"]
+|===
+| Field | Content
+
+| *ID*
+| BUG_006
+
+| *Requirement*
+| FR_006
+
+| *Priority*
+| Medium
+
+| *Severity*
+| Major
+
+| *Summary*
+| `LoadCommandContent` reads all command lines into memory at once via `File.ReadAllLines()`, contradicting the requirement to process commands line-by-line
+
+| *Description*
+| The functional requirement FR_006 states that the program must "read and process commands from a selected script file line by line." However, the implementation calls `File.ReadAllLines(fileSRC)` which loads the entire command file into a `string[]` array in memory before processing begins. For large command files this could cause excessive memory usage, and it contradicts the specified streaming behavior.
+
+| *Precondition*
+| Code review of course_work-2.cs, method `LoadCommandContent`
+
+| *Test Steps*
+a|
+1. Open course_work-2.cs in a code editor
+2. Navigate to method `LoadCommandContent`
+3. Locate the line `string[] lines = File.ReadAllLines(fileSRC)`
+4. Compare with FR_006 requirement specification
+
+| *Test Data*
+| Source file: course_work-2.cs, method `LoadCommandContent`
+
+| *Expected Result*
+| Commands are read and processed one line at a time using a streaming reader (e.g. `StreamReader` with `ReadLine()`)
+
+| *Actual Result*
+| All command lines are loaded into memory simultaneously via `File.ReadAllLines()` before any processing occurs
+|===

@@ -1,0 +1,198 @@
+= NCAA Statistics Console Application - Functional Requirements Document (with intentional errors/blobs)
+
+Version: v1.0
+
+== 1. Introduction
+
+This document outlines the functional requirements for a console application that processes historical NCAA basketball finals data and answers search queries from a script file.
+
+**Bug (B_INTRO_01):** The introduction lacks a clear statement about the *intentional* inclusion of errors and bugs in this document for educational purposes.
+
+== 2. System Requirements
+
+* **REQ_SYS_01:** Operating System: Windows 8+.
+* **REQ_SYS_02:** Language Runtime: .NET 8.0 or later.
+* **REQ_SYS_03:** Minimum RAM: 512 MB.
+** **Bug (B_SYS_01):** This is likely far too low for modern .NET applications and the dataset.
+* **REQ_SYS_04:** Free Disk Space: 10 MB for executable and temporary files.
+** **Bug (B_SYS_02):** The space requirement is arbitrary and not calculated based on actual needs.
+
+== 3. Functional Requirements
+
+=== 3.1 Data Loading and Parsing
+
+* **REQ_FUNC_01:** The application must read game data from a user-selected data file located in the `../static/` directory.
+* **REQ_FUNC_02:** The application must ignore the first header line and the second separator line of dashes in the data file.
+* **REQ_FUNC_03:** The application must parse valid game records from the data file. A valid record consists of 5 tab-separated fields: `year`, `winnerCandidate1`, `score1`, `winnerCandidate2`, `score2`.
+** **Bug (B_FUNC_01):** The requirement does not explicitly state how to handle lines with fewer or more than 5 fields.
+[source,csharp]
+----
+    // In LoadDataContent method
+    string[] parts = line.Split("\t");
+    // Check if it meets the standard, a line needs to have four data items
+    if (parts != null && parts.Length > 0 && parts.Length - 1 == 4) { 
+        // ... some logic ...
+    }
+----
+
+* **REQ_FUNC_04:** The application must correctly parse `year` as an integer and `score1`, `score2` as integers from the data lines.
+* **REQ_FUNC_05:** The application must determine the champion and runner-up for each game by comparing `score1` and `score2`. The school with the higher score is the champion, the other is the runner-up.
+** **Bug (B_FUNC_02):** The requirement does not define behavior if `score1` equals `score2` (though the doc says it's impossible, the code should handle it).
+[source,csharp]
+----
+    // In LoadDataContent method
+    if (int.Parse(parts[2]) < int.Parse(parts[4])) {
+        score_C = int.Parse(parts[4]);
+        score_R = int.Parse(parts[2]);
+        champion = parts[3];
+        runner_up = parts[1];
+    } else {
+        score_C = int.Parse(parts[2]); // This block runs if score1 >= score2
+        score_R = int.Parse(parts[4]);
+        champion = parts[1];
+        runner_up = parts[3];
+    }
+----
+
+* **REQ_FUNC_06:** The application must store parsed game records internally as `NCAAGame` structs containing `year`, `champion`, `runner_up`, `score_C` (champion score), and `score_R` (runner-up score).
+* **REQ_FUNC_07:** The application must sort the loaded list of `NCAAGame` structs by `year` in ascending order using an insertion sort algorithm.
+** **Bug (B_FUNC_03):** Insertion sort is inefficient for large datasets. Requiring it specifically is a performance-related flaw.
+[source,csharp]
+----
+
+----
+
+* **REQ_FUNC_08:** The application must read command script files from the `../static/` directory.
+** **Bug (B_FUNC_04):** Hardcoding the path is inflexible and makes the application less portable.
+[source,csharp]
+----
+----
+
+=== 3.2 Command Processing
+
+* **REQ_FUNC_09:** The application must process commands from the script file sequentially, line by line.
+* **REQ_FUNC_10:** Supported command types are: `year`, `titles`, `margin`.
+* **REQ_FUNC_11:** **(Year Lookup)** Format: `year<TAB><year><TAB><flag>`
+    *   `<year>`: Integer representing the year to look up.
+    *   `<flag>`: Integer (1 or 2).
+        *   1: Output the champion for the given year.
+        *   2: Output the runner-up for the given year.
+* **REQ_FUNC_12:** For the `year` command, if the specified `<year>` is not found in the loaded data, the application must output `<year> not found`.
+* **REQ_FUNC_13:** **(Titles Statistics)** Format: `titles<TAB><school_name>`
+    *   `<school_name>`: String representing the school's name (can contain spaces).
+* **REQ_FUNC_14:** For the `titles` command, the application must count how many times the `<school_name>` appears as `champion` and how many times as `runner_up` in the loaded data.
+** **Bug (B_FUNC_05):** The requirement doesn't specify if the comparison is case-sensitive. Should "Tennessee" match "tennessee"?
+[source,csharp]
+----
+    // In LoadCommandContent method, under "titles" case
+    bool hasChampion = name == item.champion; // String comparison
+    bool hasRunnerup = name == item.runner_up; // String comparison
+----
+
+* **REQ_FUNC_15:** The application must output the title counts in the format: `Titles: <count_champion> Runner-up: <count_runnerup>`, even if both counts are zero.
+* **REQ_FUNC_16:** **(Margin Calculation)** Format: `margin<TAB><start_year><TAB><num_years>`
+    *   `<start_year>`: Integer representing the starting year for the calculation.
+    *   `<num_years>`: Integer representing the number of consecutive years to include in the calculation.
+* **REQ_FUNC_17:** For the `margin` command, the application must find the game with `year` equal to `<start_year>`.
+* **REQ_FUNC_18:** If the `<start_year>` is not found, the application must output `<start_year> not found`.
+* **REQ_FUNC_19:** If `<start_year>` is found, the application must calculate the average victory margin for up to `<num_years>` consecutive games starting from `<start_year>`.
+** **Bug (B_FUNC_06):** What happens if there aren't `<num_years>` consecutive games available after `<start_year>`? How is the average calculated then?
+[source,csharp]
+----
+    // In LoadCommandContent method, under "margin" case
+    for (int i = 0; i < numYears; i++) {
+        int currentIndex = startIndex + i;
+        if (currentIndex < gameList.Count) { // Checks if index is within bounds
+            NCAAGame item = gameList[currentIndex];
+            // ... calculate margin ...
+            totalMargin += margin;
+            count++; // Only increment count if game exists
+        }
+        // No action taken if currentIndex >= gameList.Count (year missing or out of range)
+    }
+    double average = totalMargin / count; // Average is calculated only over found games
+----
+
+* **REQ_FUNC_20:** The victory margin for a single game is calculated as the absolute difference between `score_C` and `score_R`.
+* **REQ_FUNC_21:** The application must output the average margin in the format: `Average Margin <start_year>-<end_year>: <value formatted to 1 decimal place>`.
+** **Bug (B_FUNC_07):** The requirement doesn't clearly define how `<end_year>` is calculated if the range extends past the end of the dataset or if some years are missing.
+[source,csharp]
+----
+
+----
+
+* **REQ_FUNC_22:** The application must handle all command processing errors gracefully, assuming valid input files as per the original specification.
+** **Bug (B_FUNC_08):** This requirement contradicts itself by asking for graceful handling while stating assumptions about valid inputs.
+[source,csharp]
+----
+
+----
+
+=== 3.3 Output Generation
+
+* **REQ_FUNC_23:** The application must generate a log file corresponding to the selected data and command script files (e.g., `NCAAlog.txt`, `NCAAlog1.txt`).
+* **REQ_FUNC_24:** The log file must contain a 3-line header:
+    *   `Programmer: <Your Name>`
+    ** **Bug (B_UI_01):** This is hardcoded text, requiring manual update.
+    *   `CS 1044 Spring 2009 Project 6`
+    ** **Bug (B_UI_02):** This is hardcoded, incorrect course/year info.
+    *   The label part from the data file header (the text before the colon `:`).
+[source,csharp]
+----
+    // In LoadCommandContent method, writing log header
+    logWriter.WriteLine("Programmer: Zaki Malik"); // Hardcoded programmer name
+    logWriter.WriteLine("CS 1044 Spring 2009 Project 6"); // Hardcoded course info
+----
+
+* **REQ_FUNC_25:** For each processed command in the script file:
+    *   Output a separator line of dashes (`-` repeated 60 times).
+    *   Output the command line with a 3-digit, zero-padded sequential number (e.g., `001`, `002`) followed by the original command line text.
+    *   Output the result of the command according to its type (`year`, `titles`, `margin`).
+* **REQ_FUNC_26:** The application must print all generated output (header, commands, results, separators) to both the console and the log file simultaneously.
+* **REQ_FUNC_27:** The application must close the log file correctly after all commands are processed.
+* **REQ_FUNC_28:** The application must print the full path of the generated log file to the console upon completion.
+** **Bug (B_FUNC_09):** What if the log file cannot be closed due to permissions or I/O errors?
+[source,csharp]
+----
+    // In LoadCommandContent method, at the very end
+    if (logWriter != null) logWriter.Close(); // This line assumes Close() always succeeds
+    Console.WriteLine("\nLog file generated:" + logSRC);
+----
+
+=== 3.4 User Interaction (for file selection)
+
+* **REQ_FUNC_29:** At startup, the application must present a simple console menu to the user allowing them to select one of three predefined groups of files (A, B, C). Each group maps to specific data, info, and log file names.
+* **REQ_FUNC_30:** If the user enters an invalid option, the application must default to group 'A' and print a warning message to the console.
+** **Bug (B_FUNC_10):** The requirement doesn't specify if the application should re-prompt the user or just proceed with the default.
+[source,csharp]
+----
+    // In SelectFiles method
+    switch (choice) {
+        // ... cases A, B, C ...
+        default:
+            Console.WriteLine("Invalid choice, using default group A files!"); // Prints warning
+            dataFileSrc = "NCAAdata.txt"; // Sets default
+            infoFileSrc = "NCAAinfo.txt";
+            logFileSrc = "NCAAlog.txt";
+            break; // Exits switch, continues execution
+    }
+----
+
+== 4. Non-Functional Requirements
+
+* **REQ_NFUNC_01:** The application must be deterministic: identical input files must always produce identical output log files.
+* **REQ_NFUNC_02:** The application must be written in C# using the .NET framework.
+* **REQ_NFUNC_03:** The application must be a console application with no graphical user interface.
+** **Bug (B_NFUNC_01):** This is stated as a non-functional requirement, but it's essentially a functional constraint on the application's nature.
+* **REQ_NFUNC_04:** The application must be portable across platforms where .NET is available.
+* **REQ_NFUNC_05:** The application's code must be readable with clear identifiers and a basic modular structure.
+** **Bug (B_NFUNC_02):** "Readability" is subjective and hard to verify automatically.
+
+== 5. Identified Potential Bugs and Ambiguities Summary
+
+*   **B_INTRO_01:** Missing clarification on intentional errors in the document.
+*   **B_SYS_01, B_SYS_02:** Unrealistic system resource requirements.
+*   **B_FUNC_01, B_FUNC_02, B_FUNC_05, B_FUNC_06, B_FUNC_07, B_FUNC_08, B_FUNC_09, B_FUNC_10:** Ambiguous or contradictory logic regarding data parsing, equality, case sensitivity, range handling, error conditions, and user prompts.
+*   **B_FUNC_03, B_FUNC_04:** Performance and portability flaws in design choices (hardcoded path, insertion sort).
+*   **B_UI_01, B_UI_02:** Cosmetic flaws (hardcoded text).
+*   **B_NFUNC_01, B_NFUNC_02:** Misclassification or vagueness of non-functional requirements.

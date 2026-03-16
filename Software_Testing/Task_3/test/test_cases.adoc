@@ -1,0 +1,645 @@
+= Test Cases: NCAA Finals Statistics
+:revdate: 2026-03-16
+:revnumber: 1.0
+:toc:
+:toc-title: Table of Contents
+:toclevels: 2
+:sectnums:
+:table-caption: Table
+
+== Overview
+
+This document contains test cases for the NCAA Finals Statistics console application (C#).
+Test cases are derived from the functional requirements defined in the course work documentation.
+
+[cols="2,3", options="header", width="50%"]
+|===
+| Item | Count
+
+| Functional Requirements
+| 11
+
+| Test Cases Required (11 × 1.5)
+| ≥ 17
+
+| Test Cases Written
+| 17
+|===
+
+== Test Cases
+
+=== TC_001 — Select File Group A
+
+[cols="1,3", options="header"]
+|===
+| Field | Content
+
+| *ID*
+| TC_001
+
+| *Requirement*
+| FR_001
+
+| *Priority*
+| High
+
+| *Description*
+| Verify that the program correctly loads file group A when the user enters "A"
+
+| *Precondition*
+| Program is compiled and running; files NCAAdata.txt, NCAAinfo.txt exist in ../static/
+
+| *Test Steps*
+a|
+1. Run the program
+2. When prompted, enter `A`
+3. Observe which files are loaded
+
+| *Test Data*
+| Input: `A`
+
+| *Expected Result*
+| Program sets dataFileSrc = "NCAAdata.txt", infoFileSrc = "NCAAinfo.txt", logFileSrc = "NCAAlog.txt" and proceeds without errors
+|===
+
+---
+
+=== TC_002 — Select File Group B
+
+[cols="1,3", options="header"]
+|===
+| Field | Content
+
+| *ID*
+| TC_002
+
+| *Requirement*
+| FR_001
+
+| *Priority*
+| High
+
+| *Description*
+| Verify that the program correctly loads file group B when the user enters "B"
+
+| *Precondition*
+| Program is compiled and running; files NCAAdata1.txt, NCAAinfo1.txt exist in ../static/
+
+| *Test Steps*
+a|
+1. Run the program
+2. When prompted, enter `B`
+3. Observe which files are loaded
+
+| *Test Data*
+| Input: `B`
+
+| *Expected Result*
+| Program sets dataFileSrc = "NCAAdata1.txt", infoFileSrc = "NCAAinfo1.txt", logFileSrc = "NCAAlog1.txt" and proceeds without errors
+|===
+
+---
+
+=== TC_003 — Select File Group C
+
+[cols="1,3", options="header"]
+|===
+| Field | Content
+
+| *ID*
+| TC_003
+
+| *Requirement*
+| FR_001
+
+| *Priority*
+| High
+
+| *Description*
+| Verify that the program correctly loads file group C when the user enters "C"
+
+| *Precondition*
+| Program is compiled and running; files NCAAdata2.txt, NCAAinfo2.txt exist in ../static/
+
+| *Test Steps*
+a|
+1. Run the program
+2. When prompted, enter `C`
+3. Observe which files are loaded
+
+| *Test Data*
+| Input: `C`
+
+| *Expected Result*
+| Program sets dataFileSrc = "NCAAdata2.txt", infoFileSrc = "NCAAinfo2.txt", logFileSrc = "NCAAlog2.txt" and proceeds without errors
+|===
+
+---
+
+=== TC_004 — Invalid File Group Input Defaults to A
+
+[cols="1,3", options="header"]
+|===
+| Field | Content
+
+| *ID*
+| TC_004
+
+| *Requirement*
+| FR_001
+
+| *Priority*
+| Medium
+
+| *Description*
+| Verify that the program defaults to file group A and shows a warning when an invalid option is entered
+
+| *Precondition*
+| Program is compiled and running
+
+| *Test Steps*
+a|
+1. Run the program
+2. When prompted, enter `X`
+3. Observe console output and loaded file names
+
+| *Test Data*
+| Input: `X`
+
+| *Expected Result*
+| Program prints "Invalid choice, using default group A files!" and loads NCAAdata.txt, NCAAinfo.txt, NCAAlog.txt
+|===
+
+---
+
+=== TC_005 — Header and Separator Lines Are Skipped
+
+[cols="1,3", options="header"]
+|===
+| Field | Content
+
+| *ID*
+| TC_005
+
+| *Requirement*
+| FR_002
+
+| *Priority*
+| High
+
+| *Description*
+| Verify that the first line (header) and second line (dashes separator) of the data file are not parsed as game records
+
+| *Precondition*
+| Program started, file group A selected; NCAAdata.txt contains header and separator on lines 1–2
+
+| *Test Steps*
+a|
+1. Run the program and select `A`
+2. Observe count of loaded game records
+3. Confirm no parse errors for the header/separator lines
+
+| *Test Data*
+| NCAAdata.txt (8 valid game records after header and separator)
+
+| *Expected Result*
+| Exactly 8 NCAAGame records are loaded; no crash or parse error from header/separator lines
+|===
+
+---
+
+=== TC_006 — Invalid Line Is Ignored (Wrong Field Count)
+
+[cols="1,3", options="header"]
+|===
+| Field | Content
+
+| *ID*
+| TC_006
+
+| *Requirement*
+| FR_002
+
+| *Priority*
+| Medium
+
+| *Description*
+| Verify that a data line with fewer than 5 tab-separated fields is silently ignored
+
+| *Precondition*
+| NCAAdata.txt is temporarily modified to include a malformed line with only 3 fields
+
+| *Test Steps*
+a|
+1. Add a malformed line `1990	TeamA	50` to NCAAdata.txt
+2. Run the program and select `A`
+3. Observe number of loaded records and absence of errors
+
+| *Test Data*
+| Malformed line: `1990[TAB]TeamA[TAB]50`
+
+| *Expected Result*
+| Malformed line is skipped; no crash; total valid record count is unchanged
+|===
+
+---
+
+=== TC_007 — Champion and Runner-Up Correctly Determined
+
+[cols="1,3", options="header"]
+|===
+| Field | Content
+
+| *ID*
+| TC_007
+
+| *Requirement*
+| FR_003
+
+| *Priority*
+| High
+
+| *Description*
+| Verify that the school with the higher score is assigned as champion and the lower-score school as runner-up
+
+| *Precondition*
+| Program started, file group A selected
+
+| *Test Steps*
+a|
+1. Run the program and select `A`
+2. Execute command `year[TAB]1982[TAB]1` to query champion
+3. Execute command `year[TAB]1982[TAB]2` to query runner-up
+4. Compare output to known data
+
+| *Test Data*
+| year = 1982; expected champion is the school with the higher score in the 1982 record
+
+| *Expected Result*
+| `Champion:` output matches the school with higher score; `Runner-up:` output matches the school with lower score
+|===
+
+---
+
+=== TC_008 — Game Records Stored in Memory
+
+[cols="1,3", options="header"]
+|===
+| Field | Content
+
+| *ID*
+| TC_008
+
+| *Requirement*
+| FR_004
+
+| *Priority*
+| Medium
+
+| *Description*
+| Verify that all valid game records from the data file are stored in the in-memory list
+
+| *Precondition*
+| Program started, file group A selected; NCAAdata.txt contains 8 valid records
+
+| *Test Steps*
+a|
+1. Run the program and select `A`
+2. Execute a series of `year` commands covering all 8 years in the file
+3. Observe that each returns a valid result
+
+| *Test Data*
+| NCAAdata.txt (8 records)
+
+| *Expected Result*
+| All 8 years return a valid `Champion:` or `Runner-up:` output with no "not found" for valid years
+|===
+
+---
+
+=== TC_009 — Records Sorted in Ascending Order by Year
+
+[cols="1,3", options="header"]
+|===
+| Field | Content
+
+| *ID*
+| TC_009
+
+| *Requirement*
+| FR_005
+
+| *Priority*
+| High
+
+| *Description*
+| Verify that after loading, game records are sorted in ascending order by year regardless of their order in the file
+
+| *Precondition*
+| Program started, file group A selected
+
+| *Test Steps*
+a|
+1. Run the program and select `A`
+2. Execute `margin[TAB]<earliest_year>[TAB]3`
+3. Observe that the output year range starts from the earliest year and increases consecutively
+
+| *Test Data*
+| startYear = earliest year in NCAAdata.txt, numYears = 3
+
+| *Expected Result*
+| Output shows `Average Margin <year1>-<year3>:` where year1 < year3 and years are consecutive in ascending order
+|===
+
+---
+
+=== TC_010 — year Command Returns Champion (flag=1)
+
+[cols="1,3", options="header"]
+|===
+| Field | Content
+
+| *ID*
+| TC_010
+
+| *Requirement*
+| FR_007
+
+| *Priority*
+| High
+
+| *Description*
+| Verify that the `year` command with flag=1 outputs the champion school for a valid year
+
+| *Precondition*
+| Program started, file group A selected
+
+| *Test Steps*
+a|
+1. Run the program and select `A`
+2. Add or ensure command `year[TAB]1988[TAB]1` exists in NCAAinfo.txt
+3. Observe output
+
+| *Test Data*
+| Command: `year[TAB]1988[TAB]1`
+
+| *Expected Result*
+| Output: `Champion: <school name>` where the school name matches the 1988 champion
+|===
+
+---
+
+=== TC_011 — year Command Returns Runner-Up (flag=2)
+
+[cols="1,3", options="header"]
+|===
+| Field | Content
+
+| *ID*
+| TC_011
+
+| *Requirement*
+| FR_007
+
+| *Priority*
+| High
+
+| *Description*
+| Verify that the `year` command with flag=2 outputs the runner-up school for a valid year
+
+| *Precondition*
+| Program started, file group A selected
+
+| *Test Steps*
+a|
+1. Run the program and select `A`
+2. Ensure command `year[TAB]1988[TAB]2` exists in NCAAinfo.txt
+3. Observe output
+
+| *Test Data*
+| Command: `year[TAB]1988[TAB]2`
+
+| *Expected Result*
+| Output: `Runner-up: <school name>` where the school name matches the 1988 runner-up
+|===
+
+---
+
+=== TC_012 — year Command: Year Not Found
+
+[cols="1,3", options="header"]
+|===
+| Field | Content
+
+| *ID*
+| TC_012
+
+| *Requirement*
+| FR_007
+
+| *Priority*
+| High
+
+| *Description*
+| Verify that the `year` command outputs "<year> not found" when the requested year does not exist in the data
+
+| *Precondition*
+| Program started, file group A selected
+
+| *Test Steps*
+a|
+1. Run the program and select `A`
+2. Ensure command `year[TAB]1800[TAB]1` exists in NCAAinfo.txt
+3. Observe output
+
+| *Test Data*
+| Command: `year[TAB]1800[TAB]1`; year 1800 does not exist in NCAAdata.txt
+
+| *Expected Result*
+| Output: `1800 not found`
+|===
+
+---
+
+=== TC_013 — titles Command: Valid School With Wins
+
+[cols="1,3", options="header"]
+|===
+| Field | Content
+
+| *ID*
+| TC_013
+
+| *Requirement*
+| FR_008
+
+| *Priority*
+| High
+
+| *Description*
+| Verify that the `titles` command correctly counts championship and runner-up appearances for a school that appears in the data
+
+| *Precondition*
+| Program started, file group A selected; target school has at least one appearance
+
+| *Test Steps*
+a|
+1. Run the program and select `A`
+2. Ensure command `titles[TAB]Tennessee` exists in NCAAinfo.txt
+3. Observe output
+
+| *Test Data*
+| Command: `titles[TAB]Tennessee`
+
+| *Expected Result*
+| Output: `Titles: <n> Runner-up: <m>` where n and m match the actual counts in NCAAdata.txt
+|===
+
+---
+
+=== TC_014 — titles Command: School Never Appeared (Both Zero)
+
+[cols="1,3", options="header"]
+|===
+| Field | Content
+
+| *ID*
+| TC_014
+
+| *Requirement*
+| FR_008
+
+| *Priority*
+| Medium
+
+| *Description*
+| Verify that the `titles` command outputs "Titles: 0 Runner-up: 0" for a school that has never appeared in the data
+
+| *Precondition*
+| Program started, file group A selected
+
+| *Test Steps*
+a|
+1. Run the program and select `A`
+2. Ensure command `titles[TAB]UnknownUniversity` exists in NCAAinfo.txt
+3. Observe output
+
+| *Test Data*
+| Command: `titles[TAB]UnknownUniversity`
+
+| *Expected Result*
+| Output: `Titles: 0 Runner-up: 0`
+|===
+
+---
+
+=== TC_015 — margin Command: Valid Year and Range
+
+[cols="1,3", options="header"]
+|===
+| Field | Content
+
+| *ID*
+| TC_015
+
+| *Requirement*
+| FR_009
+
+| *Priority*
+| High
+
+| *Description*
+| Verify that the `margin` command correctly computes the average score margin over a valid range of years
+
+| *Precondition*
+| Program started, file group A selected; startYear exists in data and has at least numYears consecutive records
+
+| *Test Steps*
+a|
+1. Run the program and select `A`
+2. Ensure command `margin[TAB]1988[TAB]3` exists in NCAAinfo.txt
+3. Observe output
+
+| *Test Data*
+| Command: `margin[TAB]1988[TAB]3`
+
+| *Expected Result*
+| Output: `Average Margin 1988-1990: <value>` with value formatted to 1 decimal place
+|===
+
+---
+
+=== TC_016 — margin Command: Year Not Found
+
+[cols="1,3", options="header"]
+|===
+| Field | Content
+
+| *ID*
+| TC_016
+
+| *Requirement*
+| FR_009
+
+| *Priority*
+| High
+
+| *Description*
+| Verify that the `margin` command outputs "<year> not found" when the start year does not exist in the data
+
+| *Precondition*
+| Program started, file group A selected
+
+| *Test Steps*
+a|
+1. Run the program and select `A`
+2. Ensure command `margin[TAB]1800[TAB]3` exists in NCAAinfo.txt
+3. Observe output
+
+| *Test Data*
+| Command: `margin[TAB]1800[TAB]3`; year 1800 does not exist in NCAAdata.txt
+
+| *Expected Result*
+| Output: `1800 not found`
+|===
+
+---
+
+=== TC_017 — Log File Is Created and Closed Correctly
+
+[cols="1,3", options="header"]
+|===
+| Field | Content
+
+| *ID*
+| TC_017
+
+| *Requirement*
+| FR_010, FR_011
+
+| *Priority*
+| High
+
+| *Description*
+| Verify that the log file is created in ../static/, contains the correct 3-line header, all command results, and is properly closed after processing
+
+| *Precondition*
+| Program started, file group A selected; ../static/ directory is writable
+
+| *Test Steps*
+a|
+1. Run the program and select `A`
+2. Wait for processing to complete
+3. Open NCAAlog.txt in ../static/
+4. Inspect header lines and command entries
+
+| *Test Data*
+| File group A; NCAAinfo.txt with at least 2 commands
+
+| *Expected Result*
+a|
+- File NCAAlog.txt exists in ../static/
+- First 3 lines: `Programmer: Zaki Malik`, `CS 1044 Spring 2009 Project 6`, `<data header label>`
+- Each command is preceded by a separator line and a zero-padded 3-digit number (001, 002, ...)
+- File is not locked after program exits
+|===
