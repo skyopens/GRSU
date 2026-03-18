@@ -16,16 +16,19 @@ Including another URLconf
 """
 from django.urls import path, re_path
 from sportsmen import views
-
-# app_name = 'sportsmen'
+from .views import SportsmenHome, SportsmenSport, ShowPost, AddArticle
 
 urlpatterns = [
-    path('', views.index, name='home'),
-    path('contacts/', views.contacts, name='contacts'),
-    path('about/', views.about, name='about'),
-    path('sport/<slug:sp_id>/', views.sport_detail, name='post'),
-    re_path(r'^sports/(?P<year>[0-9]{4})/$', views.sports_by_year),
-    path('post/<slug:post_slug>/', views.post_detail, name='post'),
-    path('sports/<slug:sport_slug>/', views.show_sports, name='sports'),
-    path('addarticle/', views.addarticle, name='addarticle')
+    # path('', views.index, name='home'),
+    # path('contacts/', views.contacts, name='contacts'),
+    # path('about/', views.about, name='about'),
+    # path('sport/<slug:sp_id>/', views.sport_detail, name='post'),
+    # re_path(r'^sports/(?P<year>[0-9]{4})/$', views.sports_by_year),
+    # path('post/<slug:post_slug>/', views.post_detail, name='post'),
+    # path('sports/<slug:sport_slug>/', views.show_sports, name='sports'),
+    # path('addarticle/', views.addarticle, name='addarticle')
+    path('', SportsmenHome.as_view(), name='home'),
+    path('sports/<slug:sport_slug>/', SportsmenSport.as_view(), name='sports'),
+    path('post/<slug:post_slug>/', ShowPost.as_view(), name='post'),
+    path('addarticle/', AddArticle.as_view(), name='addarticle')
 ]
