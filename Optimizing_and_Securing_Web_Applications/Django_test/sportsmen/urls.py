@@ -21,7 +21,7 @@ from .views import SportsmenHome, SportsmenSport, ShowPost, AddArticle
 urlpatterns = [
     # path('', views.index, name='home'),
     # path('contacts/', views.contacts, name='contacts'),
-    # path('about/', views.about, name='about'),
+    path('about/', views.about, name='about'),
     # path('sport/<slug:sp_id>/', views.sport_detail, name='post'),
     # re_path(r'^sports/(?P<year>[0-9]{4})/$', views.sports_by_year),
     # path('post/<slug:post_slug>/', views.post_detail, name='post'),

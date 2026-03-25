@@ -45,11 +45,54 @@
     <title>{{ title }}</title>
 </head>
 <body>
+    <ul id="menu">
+        {% for item in menu %}
+            <li><a href="{% url item.url_name %}">{{ item.title }}</a></li>
+        {% endfor %}
+    </ul>
+
     <div class="content_box">
         <ul class="menu">
-            {% show_sports 'name' sport_selected %}
+            <li>
+                {% if sport_selected == 0 %}
+                    <a class="active" href="{% url 'home' %}">All</a>
+                {% else %}
+                    <a href="{% url 'home' %}">All</a>
+                {% endif %}
+            </li>
+            {% for cat in cats %}
+                <li>
+                    {% if cat.id == sport_selected %}
+                        <a class="active" href="{% url 'sports' sport_slug=cat.slug %}">{{ cat.name }}</a>
+                    {% else %}
+                        <a href="{% url 'sports' sport_slug=cat.slug %}">{{ cat.name }}</a>
+                    {% endif %}
+                </li>
+            {% endfor %}
         </ul>
-        <div class="content">{% block content %}{% endblock %}</div>
+        <div class="content">
+            {% block content %}{% endblock %}
+
+            {% if page_obj.paginator.num_pages > 1 %}
+            <div class="pagination" style="margin: 10pt 0;">
+                {% if page_obj.has_previous %}
+                    <a href="?page={{ page_obj.previous_page_number }}">« Prev</a>
+                {% endif %}
+                {% for p in page_obj.paginator.page_range %}
+                    {% if p >= page_obj.number|add:"-2" and p <= page_obj.number|add:"2" %}
+                        {% if p == page_obj.number %}
+                            <strong>{{ p }}</strong>
+                        {% else %}
+                            <a href="?page={{ p }}">{{ p }}</a>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+                {% if page_obj.has_next %}
+                    <a href="?page={{ page_obj.next_page_number }}">Next »</a>
+                {% endif %}
+            </div>
+            {% endif %}
+        </div>
     </div>
 </body>
 </html>

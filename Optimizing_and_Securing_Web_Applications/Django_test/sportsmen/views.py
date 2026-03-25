@@ -1,100 +1,38 @@
-# from django.shortcuts import render, redirect, get_object_or_404
-from django.http import HttpResponseServerError, HttpResponse, HttpResponseNotFound, Http404
-from .models import *
-from .forms import AddArticleForm
+from django.http import HttpResponseNotFound
+from django.shortcuts import render
+from django.core.paginator import Paginator
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import ListView, DetailView, CreateView
 from django.urls import reverse_lazy
 
-menu = ['home', 'about', 'contacts']
+from .models import *
+from .forms import AddArticleForm
+from .utils import DataMixin
 
-
-# def index(request):
-#     context = {
-#         'title': 'Sportsmen Home',
-#         'menu': menu,
-#         'sportsmen': Sportsman.objects.all()
-#     }
-#     return render(request, 'sportsmen/home.html', context)
-
-# def contacts(request):
-#     return HttpResponse("Contacts Page")
-
-# def about(request):
-#     context = {
-#         'title': 'About Us',
-#         'menu': menu
-#     }
-#     return render(request, 'sportsmen/about.html', context)
-
-# def get_query(request):
-#     name = request.GET.get('name', 'default')
-#     age = request.GET.get('age', 0)
-#     return HttpResponse(f"Name: {name}, Age: {age}")
-
-# def sport_detail(request, sp_id):
-#     if (request.GET): print(request.GET)
-#     if (sp_id > 20): raise HttpResponseServerError("Sport ID not found")
-#     return HttpResponse(f"<h1>Articles by sports</h1><p>{sp_id}</p>")
-
-# def sports_by_year(request, year):
-#     return HttpResponse(f"<h1>Articles by years</h1><p>{year}</h1>")
-
-# def post_detail(request, post_slug):
-#     # return HttpResponse(f"<h3>Show the post with ID: {post_id}</h3>")
-#     post = get_object_or_404(Sportsman, slug=post_slug)
-#     context = {
-#         'post': post,
-#         'menu': menu,
-#         'title': post.title,
-#         'sport_selected': post.sport_id,
-#     }
-#     return render(request, 'sportsmen/post.html', context=context)
-
-# def show_sports(request, sport_slug):
-#     sport = Sports.objects.filter(slug=sport_slug)
-#     sportsmen = Sportsman.objects.filter(sport_id=sport[0].id)
-#     if len(sportsmen) == 0:
-#         raise Http404()
-#     context = {
-#         'sportsmen': sportsmen,
-#         'menu': menu,
-#         'title': 'Display by sport category',
-#         'sport_selected': sport[0].id,
-#     }
-#     return render(request, 'sportsmen/home.html', context=context)
-
-# def addarticle(request):
-#     if request.method == 'POST':
-#         form = AddArticleForm(request.POST, request.FILES)
-#         if form.is_valid():
-#             form.save()
-#             return redirect('home')
-#     else:
-#         form = AddArticleForm()
-#     return render(request, 'addarticle.html', {'form': form})
 
 def error_404(request, exception):
     return HttpResponseNotFound("<h1 style='font-size:20em;'>404</h1>")
 
+
 def error_500(request):
     return HttpResponseNotFound("<h1 style='font-size:20em;'>500</h1>")
 
-class SportsmenHome(ListView):
+
+class SportsmenHome(DataMixin, ListView):
     model = Sportsman
     template_name = 'sportsmen/home.html'
     context_object_name = 'sportsmen'
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['menu'] = menu
-        context['sport_selected'] = 0
-        context['title'] = 'Main page'
-        return context
+        c_def = self.get_user_context(title='Main page', sport_selected=0)
+        return {**context, **c_def}
 
     def get_queryset(self):
         return Sportsman.objects.filter(is_published=True)
 
-class SportsmenSport(ListView):
+
+class SportsmenSport(DataMixin, ListView):
     model = Sportsman
     template_name = 'sportsmen/home.html'
     context_object_name = 'sportsmen'
@@ -108,12 +46,14 @@ class SportsmenSport(ListView):
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['menu'] = menu
-        context['sport_selected'] = context['sportsmen'][0].sport_id
-        context['title'] = 'Sport - ' + str(context['sportsmen'][0].sport)
-        return context
+        c_def = self.get_user_context(
+            title='Sport - ' + str(context['sportsmen'][0].sport),
+            sport_selected=context['sportsmen'][0].sport_id
+        )
+        return {**context, **c_def}
 
-class ShowPost(DetailView):
+
+class ShowPost(DataMixin, DetailView):
     model = Sportsman
     template_name = 'sportsmen/post.html'
     slug_url_kwarg = 'post_slug'
@@ -121,12 +61,39 @@ class ShowPost(DetailView):
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['menu'] = menu
-        context['sport_selected'] = 0
-        context['title'] = context['post']
-        return context
+        c_def = self.get_user_context(
+            title=str(context['post']),
+            sport_selected=0
+        )
+        return {**context, **c_def}
 
-class AddArticle(CreateView):
+
+class AddArticle(LoginRequiredMixin, DataMixin, CreateView):
     form_class = AddArticleForm
     template_name = 'addarticle.html'
     success_url = reverse_lazy('home')
+    login_url = '/' 
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        c_def = self.get_user_context(title='Add article')
+        return {**context, **c_def}
+
+
+def about(request):
+    sports_list = Sports.objects.all()
+    paginator = Paginator(sports_list, 3)
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+
+    from .utils import menu as site_menu
+    user_menu = site_menu.copy()
+    if not request.user.is_authenticated:
+        user_menu = [item for item in user_menu if item['url_name'] != 'add_article']
+
+    return render(request, 'sportsmen/about.html', {
+        'page_obj': page_obj,
+        'menu': user_menu,
+        'title': 'About',
+        'sport_selected': 0,
+    })
