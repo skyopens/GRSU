@@ -17,11 +17,16 @@ Including another URLconf
 from django.urls import path, re_path
 from sportsmen import views
 from .views import SportsmenHome, SportsmenSport, ShowPost, AddArticle
+from .views import SignUp, SigninUser
+from django.contrib.auth.views import LogoutView
 
 urlpatterns = [
     # path('', views.index, name='home'),
     # path('contacts/', views.contacts, name='contacts'),
     path('about/', views.about, name='about'),
+    path('sign_up/', SignUp.as_view(), name='sign_up'),
+    path('sign_in/', SigninUser.as_view(), name='sign_in'),
+    path('log_out/', LogoutView.as_view(), name='log_out'),
     # path('sport/<slug:sp_id>/', views.sport_detail, name='post'),
     # re_path(r'^sports/(?P<year>[0-9]{4})/$', views.sports_by_year),
     # path('post/<slug:post_slug>/', views.post_detail, name='post'),

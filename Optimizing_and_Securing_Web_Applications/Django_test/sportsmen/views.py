@@ -8,6 +8,12 @@ from django.urls import reverse_lazy
 from .models import *
 from .forms import AddArticleForm
 from .utils import DataMixin
+from django.contrib.auth.views import LoginView
+from django.contrib.auth import login
+from django.views.generic.edit import CreateView
+from django.urls import reverse_lazy
+from django.shortcuts import redirect
+from .forms import SignUpUserForm, SigninUserForm
 
 
 def error_404(request, exception):
@@ -17,6 +23,32 @@ def error_404(request, exception):
 def error_500(request):
     return HttpResponseNotFound("<h1 style='font-size:20em;'>500</h1>")
 
+class SignUp(DataMixin, CreateView):
+    form_class = SignUpUserForm
+    template_name = 'sportsmen/sign_up.html'
+    success_url = reverse_lazy('signin')
+
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context = super().get_context_data(**kwargs)
+        c_def = self.get_user_context(title='Sign up')
+        return dict(list(context.items()) + list(c_def.items()))
+
+    def form_valid(self, form):  # auto login
+        user = form.save()
+        login(self.request, user)
+        return redirect('home')
+
+class SigninUser(DataMixin, LoginView):
+    form_class = SigninUserForm
+    template_name = 'sportsmen/sign_in.html'
+
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context = super().get_context_data(**kwargs)
+        c_def = self.get_user_context(title='Sign in')
+        return dict(list(context.items()) + list(c_def.items()))
+
+    def get_success_url(self):
+        return reverse_lazy('home')
 
 class SportsmenHome(DataMixin, ListView):
     model = Sportsman

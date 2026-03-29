@@ -42,13 +42,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'sportsmen/css/styles.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'sportsmen/images/logo.png' %}">
     <title>{{ title }}</title>
 </head>
 <body>
     <ul id="menu">
+        <img class="logo" src="{% static 'sportsmen/images/logo.png' %}" alt="Logo">
         {% for item in menu %}
             <li><a href="{% url item.url_name %}">{{ item.title }}</a></li>
         {% endfor %}
+        {% if request.user.is_authenticated %}
+            <li class="last">
+                {{ user.username }} | 
+                <form method="post" action="{% url 'log_out' %}" style="display:inline;">
+                    {% csrf_token %}
+                    <button type="submit" style="background:none;border:none;cursor:pointer;color:blue;font-size:14pt;">Logout</button>
+                </form>
+            </li>
+        {% else %}
+            <li class="last">
+                <a href="{% url 'sign_up' %}">Sign up</a> | <a href="{% url 'sign_in' %}">Sign in</a>
+            </li>
+        {% endif %}
     </ul>
 
     <div class="content_box">
