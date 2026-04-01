@@ -10,10 +10,10 @@ from .forms import AddArticleForm
 from .utils import DataMixin
 from django.contrib.auth.views import LoginView
 from django.contrib.auth import login
-from django.views.generic.edit import CreateView
-from django.urls import reverse_lazy
 from django.shortcuts import redirect
 from .forms import SignUpUserForm, SigninUserForm
+from django.views.generic.edit import FormView
+from .forms import ContactForm
 
 
 def error_404(request, exception):
@@ -61,7 +61,7 @@ class SportsmenHome(DataMixin, ListView):
         return {**context, **c_def}
 
     def get_queryset(self):
-        return Sportsman.objects.filter(is_published=True)
+        return Sportsman.objects.filter(is_published=True).select_related('sport')
 
 
 class SportsmenSport(DataMixin, ListView):
@@ -74,7 +74,7 @@ class SportsmenSport(DataMixin, ListView):
         return Sportsman.objects.filter(
             sport__slug=self.kwargs['sport_slug'],
             is_published=True
-        )
+        ).select_related('sport')
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -129,3 +129,17 @@ def about(request):
         'title': 'About',
         'sport_selected': 0,
     })
+
+class ContactFormView(DataMixin, FormView):
+    form_class = ContactForm
+    template_name = 'sportsmen/contact.html'
+    success_url = reverse_lazy('home')
+
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context = super().get_context_data(**kwargs)
+        c_def = self.get_user_context(title='Feedback')
+        return dict(list(context.items()) + list(c_def.items()))
+
+    def form_valid(self, form):
+        print(form.cleaned_data)
+        return redirect('home')

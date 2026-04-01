@@ -2,6 +2,7 @@ from django import forms
 from .models import *
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth.models import User
+from captcha.fields import CaptchaField
 
 class SignUpUserForm(UserCreationForm):
     username = forms.CharField(label='Username', widget=forms.TextInput(attrs={'class': 'form-input'}))
@@ -29,3 +30,12 @@ class AddArticleForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.fields['sport'].empty_label = 'Choose sport'
+
+class ContactForm(forms.Form):
+    name = forms.CharField(label='Name', max_length=255)
+    email = forms.EmailField(label='Email')
+    content = forms.CharField(
+        label='Message',
+        widget=forms.Textarea(attrs={'cols': 60, 'rows': 10})
+    )
+    captcha = CaptchaField()

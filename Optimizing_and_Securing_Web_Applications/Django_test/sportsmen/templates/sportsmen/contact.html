@@ -1,0 +1,16 @@
+{% extends 'sportsmen/base.html' %}
+{% block content %}
+<h1>{{ title }}</h1>
+<form method="post">
+    {% csrf_token %}
+    <div class="form-error">{{ form.non_field_errors }}</div>
+    {% for item in form %}
+    <p>
+        <label class="form-label" for="{{ item.id_for_label }}">{{ item.label }}:</label>
+        {{ item }}
+    </p>
+    <div class="form-error">{{ item.errors }}</div>
+    {% endfor %}
+    <button type="submit">Send</button>
+</form>
+{% endblock %}

@@ -19,10 +19,13 @@ from django.urls import path, include
 from sportsmen import views
 from django.conf import settings
 from django.conf.urls.static import static
+import debug_toolbar
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('sportsmen/', include('sportsmen.urls'))
+    path('sportsmen/', include('sportsmen.urls')),
+    path('__debug__/', include(debug_toolbar.urls)),
+    path('captcha/', include('captcha.urls'))
 ]
 
 handler404 = 'sportsmen.views.error_404'
