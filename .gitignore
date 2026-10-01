@@ -1,0 +1,8 @@
+/*
+!/README.md
+!/.gitignore
+!/client/
+!/client/**
+!/server/
+!/server/**
+**/.DS_Store
