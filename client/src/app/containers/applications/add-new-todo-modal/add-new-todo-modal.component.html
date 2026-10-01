@@ -1,0 +1,48 @@
+<ng-template #template>
+    <div class="modal-header">
+        <h4 class="modal-title pull-left">
+            {{ (dataForm.id ? 'todo.alter-title' : 'todo.add-new-title') | translate}}
+        </h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div>
+            <label>{{ 'todo.title' | translate }}</label>
+            <input type="email" class="form-control" [(ngModel)]="dataForm.title" />
+        </div>
+        <div class="mt-4">
+            <label>{{ 'todo.detail' | translate }}</label>
+            <textarea class="form-control" rows="3" [(ngModel)]="dataForm.detail"></textarea>
+        </div>
+        <div class="mt-4">
+            <label>{{ 'todo.category' | translate }}</label>
+            <label class="w-100">
+                <ng-select appearance="outline" [searchable]="false" [(ngModel)]="dataForm.category">
+                    <ng-option *ngFor="let item of categories" [value]="item.value">
+                        {{ item.label | translate }}
+                    </ng-option>
+                </ng-select>
+            </label>
+        </div>
+        <div class="mt-4">
+            <label>{{ 'todo.level' | translate }}</label>
+            <label class="w-100">
+                <ng-select appearance="outline" [searchable]="false" [(ngModel)]="dataForm.status">
+                    <ng-option *ngFor="let item of levels" [value]="item.value">
+                        {{ item.label | translate }}
+                    </ng-option>
+                </ng-select>
+            </label>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline-primary" (click)="modalRef.hide()">
+            {{'todo.cancel' | translate }}
+        </button>
+        <button type="submit" class="btn btn-primary float-right" (click)="saveData()">
+            {{ 'todo.submit' | translate }}
+        </button>
+    </div>
+</ng-template>

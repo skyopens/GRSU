@@ -1,0 +1,22 @@
+<ng-template #template>
+    <div class="modal-header">
+        <h4 class="modal-title pull-left">
+            <ng-container *ngIf="modalData?.titleTpl">
+                <ng-container *ngTemplateOutlet="modalData.titleTpl"></ng-container>
+            </ng-container>
+        </h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef?.hide()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <div class="modal-body">
+        <ng-container *ngIf="modalData?.contentTpl; else htmlContent">
+            <ng-container *ngTemplateOutlet="modalData?.contentTpl"></ng-container>
+        </ng-container>
+
+        <ng-template #htmlContent>
+            <div [innerHTML]="modalData?.contentHtml"></div>
+        </ng-template>
+    </div>
+</ng-template>

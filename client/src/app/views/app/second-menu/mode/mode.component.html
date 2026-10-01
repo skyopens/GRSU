@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="col-12">
+        <app-heading></app-heading>
+        <app-breadcrumb></app-breadcrumb>
+        <div class="separator mb-5"></div>
+    </div>
+</div>
+<div class="row" *ngIf="dataList.length > 0">
+    <div class="card mb-4 w_100" *ngFor="let mode of dataList;let i = index;">
+            <div class="card-body">
+                <h5 class="mb-4">{{ loadText(i, 'title') | translate }}</h5>
+                <accordion class="mode_box" [isAnimated]="true">
+                    <accordion-group
+                        heading="{{ loadText(i, idx, 'name') | translate }}"
+                        [panelClass]="'border mb-4'"
+                        [isOpen]="true"
+                        *ngFor="let item of mode.list;let idx = index;"
+                    >
+                        <p class="mb-2">{{ loadText(i, idx, 'desc') | translate }}</p>
+                        <div class="pic_box text-center" *ngIf="item.pictures">
+                            <img class="pic radius" [src]="child" *ngFor="let child of item.pictures" (error)="hidePicture($event)" />
+                        </div>
+                    </accordion-group>
+                </accordion>
+            </div>
+        </div>
+</div>

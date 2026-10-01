@@ -1,0 +1,11 @@
+<div id="app-container" [className]="sidebar.containerClassnames">
+    <app-topnav></app-topnav>
+    <app-sidebar></app-sidebar>
+    <main>
+        <div class="container-fluid">
+            <router-outlet></router-outlet>
+        </div>
+        <app-common-modal></app-common-modal>
+    </main>
+    <app-footer></app-footer>
+</div>
