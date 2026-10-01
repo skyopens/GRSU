@@ -1,0 +1,46 @@
+<div class="row">
+    <div class="col-12">
+        <app-heading></app-heading>
+        <app-breadcrumb></app-breadcrumb>
+        <div class="separator mb-5"></div>
+    </div>
+</div>
+<div class="row">
+    <div
+        appModalLongContent
+        class="col-6"
+        [titleTpl]="titleTpl"
+        [contentTpl]="detailTpl"
+        (modalOpened)="openModal(item)" *ngFor="let item of dataObj | keyvalue"
+    >
+        <div class="card d-flex flex-row mb-4 c-pointer">
+            <div class="d-flex m-4 pic_case">
+                <div class="pic_box radius text-center" *ngIf="item.value.pic_intro">
+                    <img [src]="photo" class="border-0 align-self-center pic" *ngFor="let photo of item.value.pic_intro">
+                </div>
+            </div>
+            <div class="d-flex flex-grow-1 min-width-zero">
+                <div
+                    class="card-body pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
+                    <div class="min-width-zero">
+                        <a routerLink="./">
+                            <p class="list-item-heading mb-1 truncate">{{ loadText(item.key, 'name') | translate }}</p>
+                        </a>
+                        <p class="mb-2 text-muted desc overflow_2">{{ loadText(item.key, 'introduce') | translate }}</p>
+                        <!-- <button type="button" class="btn btn-xs btn-outline-primary ">Edit</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ng-template #titleTpl>{{ detail.title | translate }}</ng-template>
+    <ng-template #detailTpl>
+        <div class="detail_box">
+            <div class="mb-4 text-center">
+                <img class="banner" [src]="item" *ngFor="let item of detail.banner" (error)="hidePicture($event)" />
+            </div>
+            <span class="dis_ib content">{{ detail.content | translate }}</span>
+        </div>
+    </ng-template>
+    <!-- <img class="banner" *ngFor="let src of images" [src]="src" /> -->
+</div>
