@@ -4,6 +4,7 @@ import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import en from '../../lang/en-US.json';
 import zh from '../../lang/zh-CN.json';
 import ru from '../../lang/ru-RU.json';
+import be from '../../lang/be-BY.json';
 import { Router } from '@angular/router';
 import { getThemeLang, setThemeLang } from 'src/app/utils/util';
 
@@ -20,6 +21,7 @@ export class LangService {
         { code: 'en-US', direction: 'ltr', label: 'English', shorthand: 'en' },
         { code: 'zh-CN', direction: 'ltr', label: '简体中文', shorthand: 'zh' },
         { code: 'ru-RU', direction: 'ltr', label: 'Русский', shorthand: 'ru' },
+        { code: 'be-BY', direction: 'ltr', label: 'Беларуская', shorthand: 'be' },
         // {
         //     code: 'en-EN',
         //     direction: 'rtl',
@@ -40,6 +42,7 @@ export class LangService {
         this.translate.setTranslation('en-US', en);
         this.translate.setTranslation('zh-CN', zh);
         this.translate.setTranslation('ru-RU', ru);
+        this.translate.setTranslation('be-BY', be);
         this.translate.setTranslation('en-EN', en);
         this.translate.setDefaultLang(this.defaultLanguage);
         if (this.isSingleLang) {
