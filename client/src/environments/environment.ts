@@ -30,5 +30,8 @@ export const environment = {
         messagingSenderId: '16217062888',
         appId: '1:16217062888:web:6b08232ca0c9662fedb85d',
         measurementId: 'G-8ETT79WRRN'
-    }
+    },
+    hasBackend: false,
+    storeKey: 'qqtang_archive_store_key_2026',
+    storeSalt: 'qqtang_archive_store_salt_2026'
 };
