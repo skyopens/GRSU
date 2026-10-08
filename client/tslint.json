@@ -7,6 +7,7 @@
                 "statements"
             ]
         },
+        "array-layout": true,
         "array-type": false,
         "arrow-return-shorthand": true,
         "curly": true,
@@ -99,22 +100,19 @@
             "call-signature"
         ],
         "typedef-whitespace": {
-            "options": [
-                {
-                    "call-signature": "nospace",
-                    "index-signature": "nospace",
-                    "parameter": "nospace",
-                    "property-declaration": "nospace",
-                    "variable-declaration": "nospace"
-                },
-                {
-                    "call-signature": "onespace",
-                    "index-signature": "onespace",
-                    "parameter": "onespace",
-                    "property-declaration": "onespace",
-                    "variable-declaration": "onespace"
-                }
-            ]
+            "options": [{
+                "call-signature": "nospace",
+                "index-signature": "nospace",
+                "parameter": "nospace",
+                "property-declaration": "nospace",
+                "variable-declaration": "nospace"
+            }, {
+                "call-signature": "onespace",
+                "index-signature": "onespace",
+                "parameter": "onespace",
+                "property-declaration": "onespace",
+                "variable-declaration": "onespace"
+            }]
         },
         "variable-name": {
             "options": [
@@ -147,6 +145,7 @@
         "use-pipe-transform-interface": true
     },
     "rulesDirectory": [
+        "tool/tslint_rules",
         "codelyzer"
     ]
 }

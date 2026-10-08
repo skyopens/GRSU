@@ -12,13 +12,17 @@ export class QuestionBuilderComponent {
 
     mode = 'preview';
     showDetail = false;
-    answerTypes = [
-        { label: 'Text Input', value: 0, options: false },
-        { label: 'Single Select', value: 1, options: true },
-        { label: 'Multiple Select', value: 2, options: true },
-        { label: 'Checkbox', value: 3, options: true },
-        { label: 'Radiobutton', value: 4, options: true }
-    ];
+    answerTypes = [{
+        label: 'Text Input', value: 0, options: false
+    }, {
+        label: 'Single Select', value: 1, options: true
+    }, {
+        label: 'Multiple Select', value: 2, options: true
+    }, {
+        label: 'Checkbox', value: 3, options: true
+    }, {
+        label: 'Radiobutton', value: 4, options: true
+    }];
 
     constructor() { }
 

@@ -7,16 +7,13 @@ import { Component } from '@angular/core';
 export class AccordionComponent {
 
     isLastOpen = false;
-    groups = [
-        {
-            title: 'Group Header - 1',
-            content: 'Dynamic group body text - 1'
-        },
-        {
-            title: 'Group Header - 2',
-            content: 'Dynamic group body text - 2'
-        }
-    ];
+    groups = [{
+        title: 'Group Header - 1',
+        content: 'Dynamic group body text - 1'
+    }, {
+        title: 'Group Header - 2',
+        content: 'Dynamic group body text - 2'
+    }];
 
     addGroupItem(): void {
         this.groups.push({

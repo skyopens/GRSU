@@ -14,11 +14,13 @@ export class AddNewTodoModalComponent {
         ignoreBackdropClick: true,
         class: 'modal-right'
     };
-    categories = [
-        { label: 'todo.precedence.low', value: 1 },
-        { label: 'todo.precedence.medium', value: 2 },
-        { label: 'todo.precedence.high', value: 3 }
-    ];
+    categories = [{
+        label: 'todo.precedence.low', value: 1
+    }, {
+        label: 'todo.precedence.medium', value: 2
+    }, {
+        label: 'todo.precedence.high', value: 3
+    }];
     levels = LEVEL_DICT;
 
     @ViewChild('template', { static: true }) template: TemplateRef<any>;

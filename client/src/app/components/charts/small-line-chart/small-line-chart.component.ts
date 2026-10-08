@@ -69,17 +69,15 @@ export class SmallLineChartComponent implements AfterViewInit, OnDestroy, AfterV
                     }
                 }
             },
-            plugins: [
-                {
-                    // tslint:disable-next-line:typedef
-                    afterInit(chart, options) {
-                        const yLabel = chart.data.datasets[0].data[0];
-                        const xLabel = chart.data.labels[0];
-                        const label = chart.data.datasets[0].label;
-                        thisRef.changeState(yLabel, label + '-' + xLabel);
-                    }
+            plugins: [{
+                // tslint:disable-next-line:typedef
+                afterInit(chart, options) {
+                    const yLabel = chart.data.datasets[0].data[0];
+                    const xLabel = chart.data.labels[0];
+                    const label = chart.data.datasets[0].label;
+                    thisRef.changeState(yLabel, label + '-' + xLabel);
                 }
-            ]
+            }]
         });
     }
 

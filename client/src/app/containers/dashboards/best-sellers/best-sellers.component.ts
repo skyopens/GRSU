@@ -12,12 +12,15 @@ export class BestSellersComponent {
     @Input() title = 'dashboards.best-sellers';
 
     rows = productItems.slice(0, 8);
-    columns = [
-        { prop: 'title' },
-        { name: 'Sales' },
-        { name: 'Stock' },
-        { name: 'Category' }
-    ];
+    columns = [{
+        prop: 'title'
+    }, {
+        name: 'Sales'
+    }, {
+        name: 'Stock'
+    }, {
+        name: 'Category'
+    }];
 
     columnMode = ColumnMode;
     constructor() { }

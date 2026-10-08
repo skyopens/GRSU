@@ -16,12 +16,15 @@ export class ScrollableComponent implements OnInit, AfterContentInit {
 
     isLoading: boolean;
     rows: any[] = [];
-    columns = [
-        { prop: 'title', name: 'Title' },
-        { prop: 'sales', name: 'Sales' },
-        { prop: 'category', name: 'Category' },
-        { prop: 'id', name: 'Id' }
-    ];
+    columns = [{
+        prop: 'title', name: 'Title'
+    }, {
+        prop: 'sales', name: 'Sales'
+    }, {
+        prop: 'category', name: 'Category'
+    }, {
+        prop: 'id', name: 'Id'
+    }];
     screenHeight: number;
     selected = [];
     temp = [];

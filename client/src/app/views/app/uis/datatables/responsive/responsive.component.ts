@@ -14,13 +14,17 @@ export class ResponsiveComponent {
         ({ title, sales, stock, category, date }));
     itemsPerPage = 10;
     ColumnMode = ColumnMode;
-    columns = [
-        { prop: 'title', name: 'Title' },
-        { prop: 'sales', name: 'Sales' },
-        { prop: 'stock', name: 'Stock' },
-        { prop: 'category', name: 'Category' },
-        { prop: 'date', name: 'Date' }
-    ];
+    columns = [{
+        prop: 'title', name: 'Title'
+    }, {
+        prop: 'sales', name: 'Sales'
+    }, {
+        prop: 'stock', name: 'Stock'
+    }, {
+        prop: 'category', name: 'Category'
+    }, {
+        prop: 'date', name: 'Date'
+    }];
     temp = [...this.rows];
     constructor() {
 

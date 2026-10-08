@@ -22,34 +22,52 @@ import { TablesComponent } from './tables/tables.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { PaginationComponent } from './pagination/pagination.component';
 
-const routes: Routes = [
-    {
-        path: '', component: ComponentsComponent,
-        children: [
-            { path: '', redirectTo: 'accordion', pathMatch: 'full' },
-            { path: 'accordion', component: AccordionComponent },
-            { path: 'alerts', component: AlertsComponent },
-            { path: 'badges', component: BadgesComponent },
-            { path: 'buttons', component: ButtonsComponent },
-            { path: 'cards', component: CardsComponent },
-            { path: 'carousel', component: CarouselComponent },
-            { path: 'charts', component: ChartsComponent },
-            { path: 'collapse', component: CollapseComponent },
-            { path: 'dropdowns', component: DropdownsComponent },
-            { path: 'editors', component: EditorsComponent },
-            { path: 'icons', component: IconsComponent },
-            { path: 'input-groups', component: InputGroupsComponent },
-            { path: 'jumbotron', component: JumbotronComponent },
-            { path: 'maps', component: MapsComponent },
-            { path: 'modal', component: ModalComponent },
-            { path: 'navigation', component: NavigationComponent },
-            { path: 'pagination', component: PaginationComponent },
-            { path: 'popover-tooltip', component: PopoverTooltipComponent },
-            { path: 'sortable', component: SortableComponent },
-            { path: 'tables', component: TablesComponent },
-        ]
-    }
-];
+const routes: Routes = [{
+    path: '', component: ComponentsComponent,
+    children: [{
+        path: '', redirectTo: 'accordion', pathMatch: 'full'
+    }, {
+        path: 'accordion', component: AccordionComponent
+    }, {
+        path: 'alerts', component: AlertsComponent
+    }, {
+        path: 'badges', component: BadgesComponent
+    }, {
+        path: 'buttons', component: ButtonsComponent
+    }, {
+        path: 'cards', component: CardsComponent
+    }, {
+        path: 'carousel', component: CarouselComponent
+    }, {
+        path: 'charts', component: ChartsComponent
+    }, {
+        path: 'collapse', component: CollapseComponent
+    }, {
+        path: 'dropdowns', component: DropdownsComponent
+    }, {
+        path: 'editors', component: EditorsComponent
+    }, {
+        path: 'icons', component: IconsComponent
+    }, {
+        path: 'input-groups', component: InputGroupsComponent
+    }, {
+        path: 'jumbotron', component: JumbotronComponent
+    }, {
+        path: 'maps', component: MapsComponent
+    }, {
+        path: 'modal', component: ModalComponent
+    }, {
+        path: 'navigation', component: NavigationComponent
+    }, {
+        path: 'pagination', component: PaginationComponent
+    }, {
+        path: 'popover-tooltip', component: PopoverTooltipComponent
+    }, {
+        path: 'sortable', component: SortableComponent
+    }, {
+        path: 'tables', component: TablesComponent
+    }]
+}];
 
 @NgModule({
     imports: [RouterModule.forChild(routes)],

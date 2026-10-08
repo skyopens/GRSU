@@ -12,16 +12,20 @@ export class AddNewSurveyModalComponent {
         ignoreBackdropClick: true,
         class: 'modal-right'
     };
-    categories = [
-        { label: 'Cakes', value: 'chocolate' },
-        { label: 'Cupcakes', value: 'vanilla' },
-        { label: 'Desserts', value: 'strawberry' }
-    ];
-    labels = [
-        { label: 'EDUCATION', value: 'education' },
-        { label: 'NEW FRAMEWORK', value: 'new-framework' },
-        { label: 'PERSONAL', value: 'personal' }
-    ];
+    categories = [{
+        label: 'Cakes', value: 'chocolate'
+    }, {
+        label: 'Cupcakes', value: 'vanilla'
+    }, {
+        label: 'Desserts', value: 'strawberry'
+    }];
+    labels = [{
+        label: 'EDUCATION', value: 'education'
+    }, {
+        label: 'NEW FRAMEWORK', value: 'new-framework'
+    }, {
+        label: 'PERSONAL', value: 'personal'
+    }];
 
     @ViewChild('template', { static: true }) template: TemplateRef<any>;
 

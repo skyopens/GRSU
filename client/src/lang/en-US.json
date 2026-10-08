@@ -867,7 +867,7 @@
             },
             "mode": [{
                 "title": "Competitive",
-                "list": [ {
+                "list": [{
                     "name": "Normal",
                     "key": "pt",
                     "desc": "The most basic gameplay mode. Use arrow keys to move and press Space to place Sugar Bubbles. Sugar Bubbles explode into syrup after 5 seconds in a cross pattern. The syrup can trap opponents, destroy bricks, and reveal power-ups that greatly enhance your abilities. If you're trapped by syrup, you can't move and will be eliminated after 5 seconds. A teammate can rescue you by touching you, but if an opponent touches you, you're eliminated immediately. When all members of your team are eliminated, your team loses. Practice more, and you'll become a true master!"
@@ -906,7 +906,7 @@
                 }]
             }, {
                 "title": "Adventure",
-                "list": [ {
+                "list": [{
                     "name": "Adventure",
                     "key": "tx",
                     "desc": "Adventure mode differs from Competitive modes—it's players vs. monsters and bosses. Players don't attack each other; instead, cooperate to defeat monsters. Before the game, equip items to help defeat monsters. Defeating monsters or destroying bricks may yield materials to craft items. Place Sugar Bubbles to attack monsters. When a monster's HP reaches 0, it's knocked out. Players also have HP and die when it reaches 0. As adventure levels increase, your HP increases too. Keep going and defeat the monsters!"
