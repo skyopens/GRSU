@@ -16,12 +16,15 @@ export interface ApisResponse<T> {
     data: T;
 }
 
-export const LEVEL_DICT = [
-    { label: 'todo.levels.low', value: 1 },
-    { label: 'todo.levels.medium', value: 2 },
-    { label: 'todo.levels.high', value: 3 },
-    { label: 'todo.levels.critical', value: 4 }
-];
+export const LEVEL_DICT = [{
+    label: 'todo.levels.low', value: 1
+}, {
+    label: 'todo.levels.medium', value: 2
+}, {
+    label: 'todo.levels.high', value: 3
+}, {
+    label: 'todo.levels.critical', value: 4
+}];
 
 export function loadTodoApi(http: HttpClient, baseURL: string) {
     return {

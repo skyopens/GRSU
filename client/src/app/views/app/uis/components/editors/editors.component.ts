@@ -9,12 +9,15 @@ export class EditorsComponent {
     modulesBubble = {
         toolbar: [
             ['bold', 'italic', 'underline', 'strike', 'blockquote'],
-            [
-                { list: 'ordered' },
-                { list: 'bullet' },
-                { indent: '-1' },
-                { indent: '+1' }
-            ],
+            [{
+                list: 'ordered'
+            }, {
+                list: 'bullet'
+            }, {
+                indent: '-1'
+            }, {
+                indent: '+1'
+            }],
             ['link'],
             ['clean']
         ]

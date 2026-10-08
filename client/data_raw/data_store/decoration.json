@@ -1,52 +1,46 @@
-[
-    {
-        "key": "sugar_bubbles",
-        "title": {
-            "zh-CN": "糖泡",
-            "en-US": "Candy Bubbles",
-            "ru-RU": "Конфетные пузыри",
-            "be-BY": "Цукерачныя бурбалкі"
-        },
-        "data": []
+[{
+    "key": "sugar_bubbles",
+    "title": {
+        "zh-CN": "糖泡",
+        "en-US": "Candy Bubbles",
+        "ru-RU": "Конфетные пузыри",
+        "be-BY": "Цукерачныя бурбалкі"
     },
-    {
-        "key": "phantom",
-        "title": {
-            "zh-CN": "幻影",
-            "en-US": "Phantoms",
-            "ru-RU": "Фантомы",
-            "be-BY": "Фантомы"
-        },
-        "data": []
+    "data": []
+}, {
+    "key": "phantom",
+    "title": {
+        "zh-CN": "幻影",
+        "en-US": "Phantoms",
+        "ru-RU": "Фантомы",
+        "be-BY": "Фантомы"
     },
-    {
-        "key": "footprint",
-        "title": {
-            "zh-CN": "脚印",
-            "en-US": "Footprints",
-            "ru-RU": "Следы",
-            "be-BY": "Сляды"
-        },
-        "data": []
+    "data": []
+}, {
+    "key": "footprint",
+    "title": {
+        "zh-CN": "脚印",
+        "en-US": "Footprints",
+        "ru-RU": "Следы",
+        "be-BY": "Сляды"
     },
-    {
-        "key": "pattern",
-        "title": {
-            "zh-CN": "图案",
-            "en-US": "Patterns",
-            "ru-RU": "Узоры",
-            "be-BY": "Узоры"
-        },
-        "data": []
+    "data": []
+}, {
+    "key": "pattern",
+    "title": {
+        "zh-CN": "图案",
+        "en-US": "Patterns",
+        "ru-RU": "Узоры",
+        "be-BY": "Узоры"
     },
-    {
-        "key": "player_card",
-        "title": {
-            "zh-CN": "名片",
-            "en-US": "Name Cards",
-            "ru-RU": "Визитные карточки",
-            "be-BY": "Візітныя карткі"
-        },
-        "data": []
-    }
-]
+    "data": []
+}, {
+    "key": "player_card",
+    "title": {
+        "zh-CN": "名片",
+        "en-US": "Name Cards",
+        "ru-RU": "Визитные карточки",
+        "be-BY": "Візітныя карткі"
+    },
+    "data": []
+}]

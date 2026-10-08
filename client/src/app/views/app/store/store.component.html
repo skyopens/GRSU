@@ -17,7 +17,7 @@
                     <div class="card d-flex flex-row mb-4 c-pointer">
                         <div class="d-flex m-4 pic_case">
                             <div class="pic_box radius text-center" *ngIf="item.picture">
-                                <img [src]="'/resources/pictures/store/' + item.picture" class="border-0 align-self-center pic">
+                                <img [obfuscate_src]="item.picture" class="border-0 align-self-center pic">
                             </div>
                         </div>
                         <div class="d-flex flex-grow-1 min-width-zero">

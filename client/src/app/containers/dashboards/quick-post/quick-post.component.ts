@@ -5,11 +5,13 @@ import { Component } from '@angular/core';
     templateUrl: './quick-post.component.html'
 })
 export class QuickPostComponent {
-    categories = [
-        { label: 'Cakes', value: 'chocolate' },
-        { label: 'Cupcakes', value: 'vanilla' },
-        { label: 'Desserts', value: 'strawberry' }
-    ];
+    categories = [{
+        label: 'Cakes', value: 'chocolate'
+    }, {
+        label: 'Cupcakes', value: 'vanilla'
+    }, {
+        label: 'Desserts', value: 'strawberry'
+    }];
 
     constructor() { }
 

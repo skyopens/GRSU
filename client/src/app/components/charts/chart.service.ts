@@ -138,30 +138,26 @@ export class ChartService {
             }
         },
         scales: {
-            yAxes: [
-                {
-                    gridLines: {
-                        display: true,
-                        lineWidth: 1,
-                        color: 'rgba(0,0,0,0.1)',
-                        drawBorder: false
-                    },
-                    ticks: {
-                        beginAtZero: true,
-                        stepSize: 5,
-                        min: 50,
-                        max: 70,
-                        padding: 20
-                    }
+            yAxes: [{
+                gridLines: {
+                    display: true,
+                    lineWidth: 1,
+                    color: 'rgba(0,0,0,0.1)',
+                    drawBorder: false
+                },
+                ticks: {
+                    beginAtZero: true,
+                    stepSize: 5,
+                    min: 50,
+                    max: 70,
+                    padding: 20
                 }
-            ],
-            xAxes: [
-                {
-                    gridLines: {
-                        display: false
-                    }
+            }],
+            xAxes: [{
+                gridLines: {
+                    display: false
                 }
-            ]
+            }]
         }
     };
 
@@ -179,30 +175,26 @@ export class ChartService {
         maintainAspectRatio: false,
         tooltips: this.chartTooltip,
         scales: {
-            yAxes: [
-                {
-                    gridLines: {
-                        display: true,
-                        lineWidth: 1,
-                        color: 'rgba(0,0,0,0.1)',
-                        drawBorder: false
-                    },
-                    ticks: {
-                        beginAtZero: true,
-                        stepSize: 5,
-                        min: 50,
-                        max: 70,
-                        padding: 20
-                    }
+            yAxes: [{
+                gridLines: {
+                    display: true,
+                    lineWidth: 1,
+                    color: 'rgba(0,0,0,0.1)',
+                    drawBorder: false
+                },
+                ticks: {
+                    beginAtZero: true,
+                    stepSize: 5,
+                    min: 50,
+                    max: 70,
+                    padding: 20
                 }
-            ],
-            xAxes: [
-                {
-                    gridLines: {
-                        display: false
-                    }
+            }],
+            xAxes: [{
+                gridLines: {
+                    display: false
                 }
-            ]
+            }]
         }
     };
 
@@ -224,32 +216,28 @@ export class ChartService {
         responsive: true,
         maintainAspectRatio: false,
         scales: {
-            yAxes: [
-                {
-                    gridLines: {
-                        display: true,
-                        lineWidth: 1,
-                        color: 'rgba(0,0,0,0.1)',
-                        drawBorder: false
-                    },
-                    ticks: {
-                        beginAtZero: true,
-                        stepSize: 20,
-                        min: -80,
-                        max: 80,
-                        padding: 20
-                    }
+            yAxes: [{
+                gridLines: {
+                    display: true,
+                    lineWidth: 1,
+                    color: 'rgba(0,0,0,0.1)',
+                    drawBorder: false
+                },
+                ticks: {
+                    beginAtZero: true,
+                    stepSize: 20,
+                    min: -80,
+                    max: 80,
+                    padding: 20
                 }
-            ],
-            xAxes: [
-                {
-                    gridLines: {
-                        display: true,
-                        lineWidth: 1,
-                        color: 'rgba(0,0,0,0.1)'
-                    }
+            }],
+            xAxes: [{
+                gridLines: {
+                    display: true,
+                    lineWidth: 1,
+                    color: 'rgba(0,0,0,0.1)'
                 }
-            ]
+            }]
         },
         tooltips: this.chartTooltip
     };
@@ -272,30 +260,26 @@ export class ChartService {
         responsive: true,
         maintainAspectRatio: false,
         scales: {
-            yAxes: [
-                {
-                    gridLines: {
-                        display: true,
-                        lineWidth: 1,
-                        color: 'rgba(0,0,0,0.1)',
-                        drawBorder: false
-                    },
-                    ticks: {
-                        beginAtZero: true,
-                        stepSize: 100,
-                        min: 300,
-                        max: 800,
-                        padding: 20
-                    }
+            yAxes: [{
+                gridLines: {
+                    display: true,
+                    lineWidth: 1,
+                    color: 'rgba(0,0,0,0.1)',
+                    drawBorder: false
+                },
+                ticks: {
+                    beginAtZero: true,
+                    stepSize: 100,
+                    min: 300,
+                    max: 800,
+                    padding: 20
                 }
-            ],
-            xAxes: [
-                {
-                    gridLines: {
-                        display: false
-                    }
+            }],
+            xAxes: [{
+                gridLines: {
+                    display: false
                 }
-            ]
+            }]
         },
         tooltips: this.chartTooltip
     };
@@ -403,19 +387,15 @@ export class ChartService {
             display: false
         },
         scales: {
-            yAxes: [
-                {
-                    ticks: {
-                        beginAtZero: true
-                    },
-                    display: false
-                }
-            ],
-            xAxes: [
-                {
-                    display: false
-                }
-            ]
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                },
+                display: false
+            }],
+            xAxes: [{
+                display: false
+            }]
         }
     };
 

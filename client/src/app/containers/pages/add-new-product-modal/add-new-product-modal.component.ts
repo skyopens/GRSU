@@ -12,11 +12,13 @@ export class AddNewProductModalComponent {
         ignoreBackdropClick: true,
         class: 'modal-right'
     };
-    categories = [
-        { label: 'Cakes', value: 'chocolate' },
-        { label: 'Cupcakes', value: 'vanilla' },
-        { label: 'Desserts', value: 'strawberry' }
-    ];
+    categories = [{
+        label: 'Cakes', value: 'chocolate'
+    }, {
+        label: 'Cupcakes', value: 'vanilla'
+    }, {
+        label: 'Desserts', value: 'strawberry'
+    }];
 
 
     @ViewChild('template', { static: true }) template: TemplateRef<any>;

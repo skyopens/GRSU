@@ -11,6 +11,11 @@ import { IStoreSub } from 'src/app/apis/store';
     templateUrl: './store.component.html',
     styles: [`
         .content_box { max-width: 800px; margin: 0 auto; }
+        .content_box > .col-md-6 { border-bottom: 1px solid #d4d4d4; }
+        .content_box > .col-md-6:nth-child(2n-1) { border-right: 0.5px solid #d4d4d4; }
+        .content_box > .col-md-6:nth-child(2n) { border-left: 0.5px solid #d4d4d4; }
+        .content_box > .col-md-6:nth-last-child(1), .content_box > .col-md-6:nth-last-child(2) { border-bottom: none; }
+        .card { box-shadow: none; }
 		.desc { font-size: 0.8rem; }
         .pic_case { align-items: center; }
         .pic_box { width: 80px; padding: 6px; background-color:#444; box-sizing: border-box; }

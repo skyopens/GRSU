@@ -7,8 +7,9 @@ import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 import { UnauthorizedComponent } from '../views/unauthorized/unauthorized.component';
 import { CommonModalComponent } from './common_modal/modal.component';
 import { CommonModalDirective } from './common_modal/modal.directive';
+import { ObfuscateSrcDirective } from './obfuscate_src_directive';
 @NgModule({
-    declarations: [ErrorComponent, UnauthorizedComponent, CommonModalComponent, CommonModalDirective],
+    declarations: [ErrorComponent, UnauthorizedComponent, CommonModalComponent, CommonModalDirective, ObfuscateSrcDirective],
     imports: [
         RouterModule,
         CommonModule,
@@ -23,7 +24,8 @@ import { CommonModalDirective } from './common_modal/modal.directive';
         TranslateModule,
         CommonModule,
         CommonModalComponent,
-        CommonModalDirective
+        CommonModalDirective,
+        ObfuscateSrcDirective
     ],
 })
 export class SharedModule { }

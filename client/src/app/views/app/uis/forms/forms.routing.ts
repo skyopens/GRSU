@@ -6,18 +6,20 @@ import { ComponentsComponent } from './components/components.component';
 import { ValidationsComponent } from './validations/validations.component';
 import { WizardComponent } from './wizard/wizard.component';
 
-const routes: Routes = [
-    {
-        path: '', component: FormsComponent,
-        children: [
-            { path: '', redirectTo: 'layouts', pathMatch: 'full' },
-            { path: 'layouts', component: LayoutsComponent },
-            { path: 'components', component: ComponentsComponent },
-            { path: 'validations', component: ValidationsComponent },
-            { path: 'wizard', component: WizardComponent },
-        ]
-    }
-];
+const routes: Routes = [{
+    path: '', component: FormsComponent,
+    children: [{
+        path: '', redirectTo: 'layouts', pathMatch: 'full'
+    }, {
+        path: 'layouts', component: LayoutsComponent
+    }, {
+        path: 'components', component: ComponentsComponent
+    }, {
+        path: 'validations', component: ValidationsComponent
+    }, {
+        path: 'wizard', component: WizardComponent
+    }]
+}];
 
 @NgModule({
     imports: [RouterModule.forChild(routes)],

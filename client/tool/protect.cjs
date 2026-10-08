@@ -3,12 +3,22 @@
  *
  * 干两件事：
  *   1. 图片：读 data_raw/pictures/** → 写 src/resources/pictures/**
- *        store/ 下的图片改名成 sha256(storeSalt + 原相对路径) 的前 16 位十六进制，后缀不变
+ *        store/ 下的图片改名成 sha256(storeSalt + 原相对路径) 的前 16 位十六进制，后缀不变，
+ *        内容按下面的开关决定是加密还是原样拷贝
  *        mode/ role/ 原样拷贝
  *   2. 数据：读 data_raw/data_store/*.json（明文）→ AES-256-GCM 加密 → 写 src/resources/data_store/*.json（密文）
  *        加密前把每条道具的 picture 换成上一步算出来的哈希路径
  *
  * 明文 JSON 里的 picture 永远写原始文件名（如 function/function/1.png），不要手填哈希。
+ *
+ * 图片密文格式：[12 字节 IV][密文 ‖ 16 字节 GCM 认证标签]，二进制直接写文件。
+ * 浏览器端在 src/app/data/store_service.ts 的 decryptPicture 里按同样格式切分。
+ *
+ * 图片要不要加密，由 src/app/shared/obfuscate_src_directive.ts 里的
+ * `obfuscate_src_blob` 决定 —— 和浏览器端指令共用同一个开关，两边永远一致。
+ *   true  = 加密（正式模式）
+ *   false = 明文拷贝（调试模式，可以直接看原图）
+ * 注意：每个 npm run dev 都会重新加密一遍全部图片（GCM 的 IV 每次随机，密文必然不同）。
  *
  * 图片走的是「按清单同步」而不是「清空重建」：先算出这次应该有哪些产物，再逐张覆盖写入，
  * 最后只删掉「上次有、这次不该有」的残留。图片没增删时一个文件都不会被删。
@@ -30,6 +40,9 @@ const PICS_OUT = path.join(ROOT, 'src', 'resources', 'pictures');
 // 需要改名成哈希的一级分类，其余原样拷贝
 const HASH_DIRS = ['store'];
 
+// 图片加密开关所在文件 —— 和浏览器端指令共用同一个配置，避免两边不一致
+const DIRECTIVE_FILE = path.join(ROOT, 'src', 'app', 'shared', 'obfuscate_src_directive.ts');
+
 function readEnv(file_name) {
     const env_path = path.join(ROOT, 'src', 'environments', file_name);
     const src = fs.readFileSync(env_path, 'utf8');
@@ -50,6 +63,31 @@ if (dev.key !== prod.key || dev.salt !== prod.salt) {
 }
 
 const aes_key = crypto.createHash('sha256').update(dev.key).digest();
+
+// 读图片加密开关。读不到就直接停，免得悄悄按错误模式产出
+function readObfuscateFlag() {
+    if (!fs.existsSync(DIRECTIVE_FILE)) {
+        console.error('[protect] 找不到 ' + path.relative(ROOT, DIRECTIVE_FILE));
+        process.exit(1);
+    }
+    const src = fs.readFileSync(DIRECTIVE_FILE, 'utf8');
+    const found = src.match(/export\s+const\s+obfuscate_src_blob\s*=\s*(true|false)/);
+    if (!found) {
+        console.error('[protect] ' + path.relative(ROOT, DIRECTIVE_FILE) + ' 里找不到 obfuscate_src_blob');
+        process.exit(1);
+    }
+    return found[1] === 'true';
+}
+
+const obfuscate_blob = readObfuscateFlag();
+
+// 图片密文：[12 字节 IV][密文 ‖ 16 字节 GCM 认证标签]，二进制直接写文件
+function encryptPicture(buf) {
+    const iv = crypto.randomBytes(12);
+    const cipher = crypto.createCipheriv('aes-256-gcm', aes_key, iv);
+    const body = Buffer.concat([cipher.update(buf), cipher.final(), cipher.getAuthTag()]);
+    return Buffer.concat([iv, body]);
+}
 
 // 递归列出目录下所有文件，返回相对路径（用 / 分隔），跳过 .DS_Store 之类的点文件
 function walk(dir, prefix, out) {
@@ -101,7 +139,11 @@ if (!fs.existsSync(PICS_SRC)) {
                 pic_map[rel] = dest_rel;
             }
             expected[top + '/' + dest_rel] = true;
-            plan.push({ from: path.join(top_src, rel), to: path.join(PICS_OUT, top, dest_rel) });
+            plan.push({
+                from: path.join(top_src, rel),
+                to: path.join(PICS_OUT, top, dest_rel),
+                encrypt: hash_this && obfuscate_blob
+            });
         }
     }
 }
@@ -117,13 +159,21 @@ if (fs.existsSync(PICS_OUT)) {
     }
 }
 
+let encrypted = 0;
 for (const one of plan) {
     fs.mkdirSync(path.dirname(one.to), { recursive: true });
-    fs.copyFileSync(one.from, one.to);
+    if (one.encrypt) {
+        fs.writeFileSync(one.to, encryptPicture(fs.readFileSync(one.from)));
+        encrypted++;
+    } else {
+        fs.copyFileSync(one.from, one.to);
+    }
 }
 
 console.log('[protect] 图片 ' + plan.length + ' 张 -> ' + path.relative(ROOT, PICS_OUT)
-    + '（' + HASH_DIRS.join(' / ') + ' 已改哈希名，其余原样拷贝；清掉残留 ' + removed + ' 个）');
+    + '（' + HASH_DIRS.join(' / ') + ' 已改哈希名，其中 ' + encrypted + ' 张已加密'
+    + (obfuscate_blob ? '' : '，但开关是 false，本应加密的改成了明文拷贝')
+    + '；其余原样拷贝；清掉残留 ' + removed + ' 个）');
 
 /* ---------- 2. 数据 ---------- */
 

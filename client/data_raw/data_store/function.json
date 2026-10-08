@@ -1,91 +1,82 @@
-[
-    {
-        "key": "function",
-        "title": {
-            "zh-CN": "功能道具",
-            "en-US": "Functional Items",
-            "ru-RU": "Функциональные предметы",
-            "be-BY": "Функцыянальныя прадметы"
-        },
-        "data": [
-            {
-                "picture": "function/function/1.png",
-                "name": {
-                    "zh-CN": "雪山来信",
-                    "en-US": "",
-                    "ru-RU": "",
-                    "be-BY": ""
-                },
-                "desc": {
-                    "zh-CN": "从森林雪山传来消息:格里芬绑架了圣诞老人!拥有雪山来信，可以召唤B0SS大盗格里芬。",
-                    "en-US": "",
-                    "ru-RU": "",
-                    "be-BY": ""
-                },
-                "amount": 5,
-                "unit": "count",
-                "price_normal": 1,
-                "price_member": 0.9
-            },
-            {
-                "picture": "function/function/2.png",
-                "name": {
-                    "zh-CN": "平安的祭品",
-                    "en-US": "",
-                    "ru-RU": "",
-                    "be-BY": ""
-                },
-                "desc": {
-                    "zh-CN": "中国城居民供奉年兽的祭品，可以召唤B0SS小年兽。",
-                    "en-US": "",
-                    "ru-RU": "",
-                    "be-BY": ""
-                },
-                "amount": 5,
-                "unit": "count",
-                "price_normal": 1,
-                "price_member": 0.9
-            }
-        ]
+[{
+    "key": "function",
+    "title": {
+        "zh-CN": "功能道具",
+        "en-US": "Functional Items",
+        "ru-RU": "Функциональные предметы",
+        "be-BY": "Функцыянальныя прадметы"
     },
-    {
-        "key": "experience",
-        "title": {
-            "zh-CN": "经验道具",
-            "en-US": "Experience Items",
-            "ru-RU": "Предметы опыта",
-            "be-BY": "Прадметы досведу"
+    "data": [{
+        "picture": "function/function/1.png",
+        "name": {
+            "zh-CN": "雪山来信",
+            "en-US": "",
+            "ru-RU": "",
+            "be-BY": ""
         },
-        "data": []
+        "desc": {
+            "zh-CN": "从森林雪山传来消息:格里芬绑架了圣诞老人!拥有雪山来信，可以召唤B0SS大盗格里芬。",
+            "en-US": "",
+            "ru-RU": "",
+            "be-BY": ""
+        },
+        "amount": 5,
+        "unit": "count",
+        "price_normal": 1,
+        "price_member": 0.9
+    }, {
+        "picture": "function/function/2.png",
+        "name": {
+            "zh-CN": "平安的祭品",
+            "en-US": "",
+            "ru-RU": "",
+            "be-BY": ""
+        },
+        "desc": {
+            "zh-CN": "中国城居民供奉年兽的祭品，可以召唤B0SS小年兽。",
+            "en-US": "",
+            "ru-RU": "",
+            "be-BY": ""
+        },
+        "amount": 5,
+        "unit": "count",
+        "price_normal": 1,
+        "price_member": 0.9
+    }]
+}, {
+    "key": "experience",
+    "title": {
+        "zh-CN": "经验道具",
+        "en-US": "Experience Items",
+        "ru-RU": "Предметы опыта",
+        "be-BY": "Прадметы досведу"
     },
-    {
-        "key": "adventure",
-        "title": {
-            "zh-CN": "探险道具",
-            "en-US": "Adventure Items",
-            "ru-RU": "Предметы для приключений",
-            "be-BY": "Прадметы для прыгод"
-        },
-        "data": []
+    "data": []
+}, {
+    "key": "adventure",
+    "title": {
+        "zh-CN": "探险道具",
+        "en-US": "Adventure Items",
+        "ru-RU": "Предметы для приключений",
+        "be-BY": "Прадметы для прыгод"
     },
-    {
-        "key": "kubi_gem",
-        "title": {
-            "zh-CN": "酷比宝石",
-            "en-US": "Kubi Gems",
-            "ru-RU": "Камни Куби",
-            "be-BY": "Каменні Кубі"
-        },
-        "data": []
+    "data": []
+}, {
+    "key": "kubi_gem",
+    "title": {
+        "zh-CN": "酷比宝石",
+        "en-US": "Kubi Gems",
+        "ru-RU": "Камни Куби",
+        "be-BY": "Каменні Кубі"
     },
-    {
-        "key": "forge_crystal",
-        "title": {
-            "zh-CN": "锻造水晶",
-            "en-US": "Forging Crystals",
-            "ru-RU": "Кристаллы для ковки",
-            "be-BY": "Крышталі для коўкі"
-        },
-        "data": []
-    }
-]
+    "data": []
+}, {
+    "key": "forge_crystal",
+    "title": {
+        "zh-CN": "锻造水晶",
+        "en-US": "Forging Crystals",
+        "ru-RU": "Кристаллы для ковки",
+        "be-BY": "Крышталі для коўкі"
+    },
+    "data": []
+}]

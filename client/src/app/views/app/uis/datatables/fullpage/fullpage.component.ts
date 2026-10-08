@@ -10,12 +10,15 @@ export class FullpageComponent {
     @ViewChild(DatatableComponent) table: DatatableComponent;
     rows = productItems.slice(0, 20).map(({ title, sales, stock, category, id }) => ({ title, sales, stock, category, id }));
 
-    columns = [
-        { prop: 'title', name: 'Title' },
-        { prop: 'sales', name: 'Sales' },
-        { prop: 'category', name: 'Category' },
-        { prop: 'id', name: 'Id' }
-    ];
+    columns = [{
+        prop: 'title', name: 'Title'
+    }, {
+        prop: 'sales', name: 'Sales'
+    }, {
+        prop: 'category', name: 'Category'
+    }, {
+        prop: 'id', name: 'Id'
+    }];
     ColumnMode = ColumnMode;
     temp = [...this.rows];
     itemsPerPage = 10;

@@ -62,8 +62,7 @@ const data: IMenuItem[] = [{
     //     icon: 'iconsminds-bucket',
     //     label: 'menu.blank-page',
     //     to: `${adminRoot}/blank-page`,
-    // },
-    // {
+    // }, {
     //   icon: 'iconsminds-library',
     //   label: 'menu.docs',
     //   to: 'https://vien-docs.coloredstrategies.com/',
