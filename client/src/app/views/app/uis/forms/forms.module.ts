@@ -5,7 +5,7 @@ import { LayoutsComponent } from './layouts/layouts.component';
 import { ValidationsComponent } from './validations/validations.component';
 import { FormsComponent } from './forms.component';
 import { FormsRoutingModule } from './forms.routing';
-import { SharedModule } from 'src/app/shared/shared.module';
+import { SharedModule } from 'src/app/shared/shared_module';
 import { FormsContainersModule } from 'src/app/containers/forms/forms.containers.module';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';

@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { SharedModule } from 'src/app/shared/shared.module';
+import { SharedModule } from 'src/app/shared/shared_module';
 import { ModalTemplateComponent } from './modal-template/modal-template.component';
 import { ModalComponentComponent } from './modal-component/modal-component.component';
 import { ModalNestedComponent } from './modal-nested/modal-nested.component';

@@ -13,7 +13,7 @@ import { LayoutContainersModule } from './containers/layout/layout.containers.mo
 import { ModalModule } from 'ngx-bootstrap/modal';
 
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
-import { ApiInterceptor } from './data/api.interceptor';
+import { ApiInterceptor } from './data/api_interceptor';
 
 @NgModule({
     imports: [

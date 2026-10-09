@@ -7,7 +7,7 @@ import { GradientWithRadialProgressCardComponent } from './gradient-with-radial-
 import { PostCardComponent } from './post-card/post-card.component';
 import { PriceCardComponent } from './price-card/price-card.component';
 import { RadialProcessCardComponent } from './radial-process-card/radial-process-card.component';
-import { SharedModule } from 'src/app/shared/shared.module';
+import { SharedModule } from 'src/app/shared/shared_module';
 
 @NgModule({
     declarations: [

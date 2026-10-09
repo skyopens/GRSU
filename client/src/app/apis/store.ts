@@ -2,10 +2,10 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 export interface StoreI18nText {
-    'zh-CN': string;
-    'en-US': string;
-    'ru-RU': string;
-    'be-BY': string;
+    'zh_CN': string;
+    'en_US': string;
+    'ru_RU': string;
+    'be_BY': string;
 }
 
 export interface StoreItem {

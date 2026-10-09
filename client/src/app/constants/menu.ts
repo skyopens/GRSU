@@ -1,5 +1,5 @@
 import { environment } from 'src/environments/environment';
-import { UserRole } from '../shared/auth.roles';
+import { UserRole } from '../shared/auth_roles';
 const adminRoot = environment.adminRoot;
 
 export interface IMenuItem {

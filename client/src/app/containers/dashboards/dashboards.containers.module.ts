@@ -20,7 +20,7 @@ import { SortableStatisticsRowComponent } from './sortable-statistics-row/sortab
 import { TicketsComponent } from './tickets/tickets.component';
 import { TopRatedItemsComponent } from './top-rated-items/top-rated-items.component';
 import { WebsiteVisitsChartCardComponent } from './website-visits-chart-card/website-visits-chart-card.component';
-import { SharedModule } from 'src/app/shared/shared.module';
+import { SharedModule } from 'src/app/shared/shared_module';
 import { ComponentsCarouselModule } from 'src/app/components/carousel/components.carousel.module';
 import { ComponentsChartModule } from 'src/app/components/charts/components.charts.module';
 import { ComponentsCardsModule } from 'src/app/components/cards/components.cards.module';

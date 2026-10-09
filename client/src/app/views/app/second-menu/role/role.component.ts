@@ -6,7 +6,7 @@ import { TranslateService } from '@ngx-translate/core';
     selector: 'app-role',
     templateUrl: './role.component.html',
     styles: [`
-		.desc { font-size: 0.8rem; }
+		.desc { max-width: 318px; font-size: 0.8rem; text-align: left!important; }
         .pic_case { align-items: center; }
         .pic_box { width: 80px; padding: 6px; background-color:#444; box-sizing: border-box; }
         .pic { width: 100%; }

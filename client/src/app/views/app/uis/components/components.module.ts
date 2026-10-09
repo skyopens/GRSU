@@ -20,7 +20,7 @@ import { SortableComponent } from './sortable/sortable.component';
 import { TablesComponent } from './tables/tables.component';
 import { ComponentsComponent } from './components.component';
 import { ComponentsRoutingModule } from './components.routing';
-import { SharedModule } from 'src/app/shared/shared.module';
+import { SharedModule } from 'src/app/shared/shared_module';
 import { ComponentsChartModule } from 'src/app/components/charts/components.charts.module';
 import { AccordionComponent } from './accordion/accordion.component';
 import { ComponentsCarouselModule } from 'src/app/components/carousel/components.carousel.module';

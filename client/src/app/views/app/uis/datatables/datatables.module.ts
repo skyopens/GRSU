@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SharedModule } from 'src/app/shared/shared.module';
+import { SharedModule } from 'src/app/shared/shared_module';
 import { DatatablesComponent } from './datatables.component';
 import { FullpageComponent } from './fullpage/fullpage.component';
 import { ScrollableComponent } from './scrollable/scrollable.component';

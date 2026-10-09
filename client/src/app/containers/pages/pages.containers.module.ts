@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { LightboxModule } from 'ngx-lightbox';
-import { SharedModule } from 'src/app/shared/shared.module';
+import { SharedModule } from 'src/app/shared/shared_module';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { AddNewProductModalComponent } from './add-new-product-modal/add-new-product-modal.component';
 import { ListPageHeaderComponent } from './list-page-header/list-page-header.component';
