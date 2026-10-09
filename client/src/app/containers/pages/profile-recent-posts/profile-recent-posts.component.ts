@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import recentPost, { IRecentPost } from '../../../data/recent-posts';
+import recentPost, { IRecentPost } from '../../../data/recent_posts';
 
 @Component({
     selector: 'app-profile-recent-posts',

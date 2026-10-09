@@ -4,8 +4,8 @@ import { ErrorComponent } from './error/error.component';
 import { UnauthorizedComponent } from './unauthorized/unauthorized.component';
 import { environment } from 'src/environments/environment';
 import { HomeComponent } from './home/home.component';
-import { AuthGuard } from '../shared/auth.guard';
-import { UserRole } from '../shared/auth.roles';
+import { AuthGuard } from '../shared/auth_guard';
+import { UserRole } from '../shared/auth_roles';
 
 const adminRoot = environment.adminRoot.substr(1); // path cannot start with a slash
 

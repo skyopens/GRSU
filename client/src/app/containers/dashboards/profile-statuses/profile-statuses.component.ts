@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import profileStatuses, { IProfileStatus } from 'src/app/data/profile-statuses';
+import profileStatuses, { IProfileStatus } from 'src/app/data/profile_statuses';
 
 @Component({
     selector: 'app-profile-statuses',

@@ -5,16 +5,16 @@
         <div class="separator mb-5"></div>
     </div>
 </div>
-<div class="row">
+<div class="row equal-height-container">
     <div
         appModalLongContent
-        class="col-md-6"
+        class="col-md-12 col-lg-4 col-item mb-4 c-pointer"
         [titleTpl]="titleTpl"
         [contentTpl]="detailTpl"
         (modalOpened)="openModal(item)"
         *ngFor="let item of dataObj | keyvalue"
     >
-        <div class="card d-flex flex-row mb-4 c-pointer">
+        <!-- <div class="card d-flex flex-row mb-4 c-pointer">
             <div class="d-flex m-4 pic_case">
                 <div class="pic_box radius text-center" *ngIf="item.value.pic_intro">
                     <img [src]="photo" class="border-0 align-self-center pic" *ngFor="let photo of item.value.pic_intro">
@@ -28,7 +28,28 @@
                             <p class="list-item-heading mb-1 truncate">{{ loadText(item.key, 'name') | translate }}</p>
                         </a>
                         <p class="mb-2 text-muted desc overflow_2">{{ loadText(item.key, 'introduce') | translate }}</p>
-                        <!-- <button type="button" class="btn btn-xs btn-outline-primary ">Edit</button> -->
+                        <button type="button" class="btn btn-xs btn-outline-primary ">Edit</button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="card">
+            <div class="card-body pt-5 pb-5 d-flex flex-lg-column flex-md-row flex-sm-row flex-column">
+                <div class="price-top-part">
+                    <div class="pic_box dis_ib radius text-center" *ngIf="item.value.pic_intro">
+                        <img [src]="photo" class="border-0 align-self-center pic" *ngFor="let photo of item.value.pic_intro">
+                    </div>
+                    <h5 class="mb-0 font-weight-semibold color-theme-1 mb-4 mt-4">{{ loadText(item.key, 'name') | translate }}</h5>
+                </div>
+                <div class="pb-0 d-flex price-feature-list flex-column flex-grow-1">
+                    <ul class="list-unstyled">
+                        <li class="mb-0 overflow_4 desc"> {{ loadText(item.key, 'introduce') | translate }}</li>
+                    </ul>
+                    <div class="text-center">
+                        <a routerLink="./" class="btn btn-link btn-empty btn-lg">
+                            {{'pages.details' | translate }} 
+                            <i class="simple-icon-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>

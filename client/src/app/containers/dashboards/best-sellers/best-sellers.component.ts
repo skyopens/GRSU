@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { ColumnMode } from '@swimlane/ngx-datatable';
 import productItems from 'src/app/data/products';
-// import { IProduct } from 'src/app/data/api.service';
+// import { IProduct } from 'src/app/data/api_service';
 
 
 @Component({

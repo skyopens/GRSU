@@ -1,24 +1,24 @@
 [{
     "key": "function",
     "title": {
-        "zh-CN": "功能道具",
-        "en-US": "Functional Items",
-        "ru-RU": "Функциональные предметы",
-        "be-BY": "Функцыянальныя прадметы"
+        "zh_CN": "功能道具",
+        "en_US": "Functional Items",
+        "ru_RU": "Функциональные предметы",
+        "be_BY": "Функцыянальныя прадметы"
     },
     "data": [{
         "picture": "function/function/1.png",
         "name": {
-            "zh-CN": "雪山来信",
-            "en-US": "",
-            "ru-RU": "",
-            "be-BY": ""
+            "zh_CN": "雪山来信[5个]",
+            "en_US": "Snow Mountain Letter [5 pcs]",
+            "ru_RU": "Письмо со Снежной горы [5 шт.]",
+            "be_BY": "Ліст са Снежнай гары [5 шт.]"
         },
         "desc": {
-            "zh-CN": "从森林雪山传来消息:格里芬绑架了圣诞老人!拥有雪山来信，可以召唤B0SS大盗格里芬。",
-            "en-US": "",
-            "ru-RU": "",
-            "be-BY": ""
+            "zh_CN": "从森林雪山传来消息：格里芬绑架了圣诞老人！拥有雪山来信，可以召唤B0SS大盗格里芬。",
+            "en_US": "Word comes from the Forest Snow Mountain: Griffin has kidnapped Santa Claus! A Snow Mountain Letter lets you summon the boss Great Thief Griffin.",
+            "ru_RU": "С заснеженной горы в лесу пришла весть: Гриффин похитил Санта-Клауса! Письмо со Снежной горы позволит вызвать босса — Великого Вора Гриффина.",
+            "be_BY": "Са заснежанай гары ў лесе прыйшла вестка: Грыфін выкраў Санта-Клауса! Ліст са Снежнай гары дазволіць выклікаць боса — Вялікага Злодзея Грыфіна."
         },
         "amount": 5,
         "unit": "count",
@@ -27,18 +27,378 @@
     }, {
         "picture": "function/function/2.png",
         "name": {
-            "zh-CN": "平安的祭品",
-            "en-US": "",
-            "ru-RU": "",
-            "be-BY": ""
+            "zh_CN": "平安的祭品[5个]",
+            "en_US": "Peace Offering [5 pcs]",
+            "ru_RU": "Подношение во имя мира [5 шт.]",
+            "be_BY": "Ахвяраванне ў імя міру [5 шт.]"
         },
         "desc": {
-            "zh-CN": "中国城居民供奉年兽的祭品，可以召唤B0SS小年兽。",
-            "en-US": "",
-            "ru-RU": "",
-            "be-BY": ""
+            "zh_CN": "中国城居民供奉年兽的祭品，可以召唤B0SS小年兽。",
+            "en_US": "An offering that the people of Chinatown make to the Nian Beast. With it you can summon the boss Little Nian Beast.",
+            "ru_RU": "Подношение, которое жители Чайна-тауна приносят зверю Нянь. С ним можно вызвать босса — маленького зверя Нянь.",
+            "be_BY": "Ахвяраванне, якое жыхары Чайна-таўна прыносяць зверу Нянь. З ім можна выклікаць боса — малога звера Нянь."
         },
         "amount": 5,
+        "unit": "count",
+        "price_normal": 1,
+        "price_member": 0.9
+    }, {
+        "picture": "function/function/3.png",
+        "name": {
+            "zh_CN": "藏宝图[3个]",
+            "en_US": "Treasure Map [3 pcs]",
+            "ru_RU": "Карта сокровищ [3 шт.]",
+            "be_BY": "Карта скарбаў [3 шт.]"
+        },
+        "desc": {
+            "zh_CN": "虎克船长的藏宝图，标示着宝藏深埋在矿洞深处。拥有藏宝图，可以召唤BOSS大副。",
+            "en_US": "Captain Hook's treasure map, showing that the treasure is buried deep in the mine. With a Treasure Map you can summon the boss First Mate.",
+            "ru_RU": "Карта сокровищ капитана Крюка: на ней отмечено, что клад зарыт глубоко в шахте. С картой сокровищ можно вызвать босса — старшего помощника.",
+            "be_BY": "Карта скарбаў капітана Крука: на ёй адзначана, што скарб закапаны глыбока ў шахце. З картай скарбаў можна выклікаць боса — старшага памочніка."
+        },
+        "amount": 3,
+        "unit": "count",
+        "price_normal": 1,
+        "price_member": 0.9
+    }, {
+        "picture": "function/function/4.png",
+        "name": {
+            "zh_CN": "世界杯门票[4个]",
+            "en_US": "World Cup Ticket [4 pcs]",
+            "ru_RU": "Билет на чемпионат мира [4 шт.]",
+            "be_BY": "Білет на чэмпіянат свету [4 шт.]"
+        },
+        "desc": {
+            "zh_CN": "拥有世界杯门票，可以召唤B0SS小小罗。",
+            "en_US": "With a World Cup Ticket you can summon the boss Little Ronaldo.",
+            "ru_RU": "С билетом на чемпионат мира можно вызвать босса — маленького Роналду.",
+            "be_BY": "З білетам на чэмпіянат свету можна выклікаць боса — малога Раналду."
+        },
+        "amount": 4,
+        "unit": "count",
+        "price_normal": 1,
+        "price_member": 0.9
+    }, {
+        "picture": "function/function/5.png",
+        "name": {
+            "zh_CN": "防踢卡[3日]",
+            "en_US": "Anti-Kick Card [3 days]",
+            "ru_RU": "Карта защиты от исключения [3 дня]",
+            "be_BY": "Карта абароны ад выключэння [3 дні]"
+        },
+        "desc": {
+            "zh_CN": "可以享受和至尊紫钻一样的防踢特权。",
+            "en_US": "Grants the same anti-kick privilege as a Supreme Purple Diamond membership.",
+            "ru_RU": "Даёт такую же привилегию защиты от исключения, как у Высшего фиолетового алмаза.",
+            "be_BY": "Дае такую ж прывілею абароны ад выключэння, як у Вышэйшага фіялетавага алмаза."
+        },
+        "amount": 3,
+        "unit": "day",
+        "price_normal": 4,
+        "price_member": 3.6
+    }, {
+        "picture": "function/function/6.png",
+        "name": {
+            "zh_CN": "超级盟约书",
+            "en_US": "Super Covenant Book",
+            "ru_RU": "Суперкнига союза",
+            "be_BY": "Суперкніга саюза"
+        },
+        "desc": {
+            "zh_CN": "成立家族的资格证明，拥有1份超级盟约书就能创建家族，真是超级无敌啊！",
+            "en_US": "Proof of qualification to found a family. With just 1 Super Covenant Book you can create a family — truly super invincible!",
+            "ru_RU": "Подтверждение права основать семью. Всего 1 суперкнига союза — и семья создана, это поистине супернепобедимо!",
+            "be_BY": "Пацверджанне права заснаваць сям'ю. Усяго 1 суперкніга саюза — і сям'я створана, гэта сапраўды супернепераможна!"
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 45,
+        "price_member": 40.5
+    }, {
+        "picture": "function/function/7.png",
+        "name": {
+            "zh_CN": "铁锤",
+            "en_US": "Iron Hammer",
+            "ru_RU": "Железный молот",
+            "be_BY": "Жалезны молат"
+        },
+        "desc": {
+            "zh_CN": "铁锤，可以砸出一般奖励。",
+            "en_US": "Iron Hammer. Smash it open to get a common reward.",
+            "ru_RU": "Железный молот. Разбей его — и получишь обычную награду.",
+            "be_BY": "Жалезны молат. Разбі яго — і атрымаеш звычайную ўзнагароду."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 1,
+        "price_member": 0.9
+    }, {
+        "picture": "function/function/8.png",
+        "name": {
+            "zh_CN": "小喇叭[4个]",
+            "en_US": "Megaphone [4 pcs]",
+            "ru_RU": "Рупор [4 шт.]",
+            "be_BY": "Рупар [4 шт.]"
+        },
+        "desc": {
+            "zh_CN": "有了小喇叭您就可以发送广播，让所有人倾听您的声音！",
+            "en_US": "With a Megaphone you can send a broadcast and let everyone hear your voice!",
+            "ru_RU": "С рупором вы можете отправить общее объявление и заставить всех услышать ваш голос!",
+            "be_BY": "З рупарам вы можаце адправіць агульную аб'яву і прымусіць усіх пачуць ваш голас!"
+        },
+        "amount": 4,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "function/function/9.png",
+        "name": {
+            "zh_CN": "银锤",
+            "en_US": "Silver Hammer",
+            "ru_RU": "Серебряный молот",
+            "be_BY": "Срэбны молат"
+        },
+        "desc": {
+            "zh_CN": "银锤，可以砸出精品奖励。",
+            "en_US": "Silver Hammer. Smash it open to get a fine reward.",
+            "ru_RU": "Серебряный молот. Разбей его — и получишь качественную награду.",
+            "be_BY": "Срэбны молат. Разбі яго — і атрымаеш якасную ўзнагароду."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 4,
+        "price_member": 3.6
+    }, {
+        "picture": "function/function/10.png",
+        "name": {
+            "zh_CN": "小喇叭[20个]",
+            "en_US": "Megaphone [20 pcs]",
+            "ru_RU": "Рупор [20 шт.]",
+            "be_BY": "Рупар [20 шт.]"
+        },
+        "desc": {
+            "zh_CN": "有了小喇叭您就可以发送广播，让所有人倾听您的声音！",
+            "en_US": "With a Megaphone you can send a broadcast and let everyone hear your voice!",
+            "ru_RU": "С рупором вы можете отправить общее объявление и заставить всех услышать ваш голос!",
+            "be_BY": "З рупарам вы можаце адправіць агульную аб'яву і прымусіць усіх пачуць ваш голас!"
+        },
+        "amount": 20,
+        "unit": "count",
+        "price_normal": 8,
+        "price_member": 7.2
+    }, {
+        "picture": "function/function/11.png",
+        "name": {
+            "zh_CN": "金锤",
+            "en_US": "Gold Hammer",
+            "ru_RU": "Золотой молот",
+            "be_BY": "Залаты молат"
+        },
+        "desc": {
+            "zh_CN": "金锤，可以砸出极品奖励。",
+            "en_US": "Gold Hammer. Smash it open to get an elite reward.",
+            "ru_RU": "Золотой молот. Разбей его — и получишь элитную награду.",
+            "be_BY": "Залаты молат. Разбі яго — і атрымаеш элітную ўзнагароду."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 18,
+        "price_member": 16.2
+    }, {
+        "picture": "function/function/12.png",
+        "name": {
+            "zh_CN": "小喇叭[100个]",
+            "en_US": "Megaphone [100 pcs]",
+            "ru_RU": "Рупор [100 шт.]",
+            "be_BY": "Рупар [100 шт.]"
+        },
+        "desc": {
+            "zh_CN": "有了小喇叭您就可以发送广播，让所有人倾听您的声音！",
+            "en_US": "With a Megaphone you can send a broadcast and let everyone hear your voice!",
+            "ru_RU": "С рупором вы можете отправить общее объявление и заставить всех услышать ваш голос!",
+            "be_BY": "З рупарам вы можаце адправіць агульную аб'яву і прымусіць усіх пачуць ваш голас!"
+        },
+        "amount": 100,
+        "unit": "count",
+        "price_normal": 32,
+        "price_member": 28.8
+    }, {
+        "picture": "function/function/13.png",
+        "name": {
+            "zh_CN": "铁锤[5个]",
+            "en_US": "Iron Hammer [5 pcs]",
+            "ru_RU": "Железный молот [5 шт.]",
+            "be_BY": "Жалезны молат [5 шт.]"
+        },
+        "desc": {
+            "zh_CN": "铁锤，可以砸出一般奖励。",
+            "en_US": "Iron Hammer. Smash it open to get a common reward.",
+            "ru_RU": "Железный молот. Разбей его — и получишь обычную награду.",
+            "be_BY": "Жалезны молат. Разбі яго — і атрымаеш звычайную ўзнагароду."
+        },
+        "amount": 5,
+        "unit": "count",
+        "price_normal": 4,
+        "price_member": 3.6
+    }, {
+        "picture": "function/function/14.png",
+        "name": {
+            "zh_CN": "小喇叭[500个]",
+            "en_US": "Megaphone [500 pcs]",
+            "ru_RU": "Рупор [500 шт.]",
+            "be_BY": "Рупар [500 шт.]"
+        },
+        "desc": {
+            "zh_CN": "有了小喇叭您就可以发送广播，让所有人倾听您的声音！",
+            "en_US": "With a Megaphone you can send a broadcast and let everyone hear your voice!",
+            "ru_RU": "С рупором вы можете отправить общее объявление и заставить всех услышать ваш голос!",
+            "be_BY": "З рупарам вы можаце адправіць агульную аб'яву і прымусіць усіх пачуць ваш голас!"
+        },
+        "amount": 500,
+        "unit": "count",
+        "price_normal": 128,
+        "price_member": 115.2
+    }, {
+        "picture": "function/function/15.png",
+        "name": {
+            "zh_CN": "银锤[5个]",
+            "en_US": "Silver Hammer [5 pcs]",
+            "ru_RU": "Серебряный молот [5 шт.]",
+            "be_BY": "Срэбны молат [5 шт.]"
+        },
+        "desc": {
+            "zh_CN": "银锤，可以砸出精品奖励。",
+            "en_US": "Silver Hammer. Smash it open to get a fine reward.",
+            "ru_RU": "Серебряный молот. Разбей его — и получишь качественную награду.",
+            "be_BY": "Срэбны молат. Разбі яго — і атрымаеш якасную ўзнагароду."
+        },
+        "amount": 5,
+        "unit": "count",
+        "price_normal": 16,
+        "price_member": 14.4
+    }, {
+        "picture": "function/function/16.png",
+        "name": {
+            "zh_CN": "盟约书",
+            "en_US": "Covenant Book",
+            "ru_RU": "Книга союза",
+            "be_BY": "Кніга саюза"
+        },
+        "desc": {
+            "zh_CN": "成立家族的资格证明，拥有100份盟约书才能创建家族。",
+            "en_US": "Proof of qualification to found a family. You need 100 Covenant Books to create a family.",
+            "ru_RU": "Подтверждение права основать семью. Чтобы создать семью, нужно 100 книг союза.",
+            "be_BY": "Пацверджанне права заснаваць сям'ю. Каб стварыць сям'ю, трэба 100 кніг саюза."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 1,
+        "price_member": 0.9
+    }, {
+        "picture": "function/function/17.png",
+        "name": {
+            "zh_CN": "金锤[5个]",
+            "en_US": "Gold Hammer [5 pcs]",
+            "ru_RU": "Золотой молот [5 шт.]",
+            "be_BY": "Залаты молат [5 шт.]"
+        },
+        "desc": {
+            "zh_CN": "金锤，可以砸出极品奖励。",
+            "en_US": "Gold Hammer. Smash it open to get an elite reward.",
+            "ru_RU": "Золотой молот. Разбей его — и получишь элитную награду.",
+            "be_BY": "Залаты молат. Разбі яго — і атрымаеш элітную ўзнагароду."
+        },
+        "amount": 5,
+        "unit": "count",
+        "price_normal": 72,
+        "price_member": 64.8
+    }, {
+        "picture": "function/function/18.png",
+        "name": {
+            "zh_CN": "竞技场参赛点[1000个]",
+            "en_US": "Arena Entry Points [1000 pcs]",
+            "ru_RU": "Очки участия в Арене [1000 шт.]",
+            "be_BY": "Ачкі ўдзелу ў Арэне [1000 шт.]"
+        },
+        "desc": {
+            "zh_CN": "参加竞技场的参赛点。紫钻参赛更有优惠哟。",
+            "en_US": "Arena Entry Points for joining the arena. Purple Diamond members enjoy an even bigger discount!",
+            "ru_RU": "Очки участия для входа на арену. Участникам с фиолетовым алмазом скидка ещё больше!",
+            "be_BY": "Ачкі ўдзелу для ўваходу на арэну. Удзельнікам з фіялетавым алмазам зніжка яшчэ большая!"
+        },
+        "amount": 1000,
+        "unit": "count",
+        "price_normal": 9,
+        "price_member": 8.1
+    }, {
+        "picture": "function/function/19.png",
+        "name": {
+            "zh_CN": "水晶之恋",
+            "en_US": "Crystal Love",
+            "ru_RU": "Кристальная любовь",
+            "be_BY": "Крышталёвае каханне"
+        },
+        "desc": {
+            "zh_CN": "你问我爱你有多深，水晶代表我的心一一求婚必备道具。",
+            "en_US": "You ask how deep my love is — the crystal speaks for my heart. An indispensable item for a marriage proposal.",
+            "ru_RU": "Ты спрашиваешь, как сильно я тебя люблю, — за меня говорит кристалл. Обязательный предмет для предложения руки и сердца.",
+            "be_BY": "Ты пытаеш, наколькі моцна я цябе кахаю, — за мяне гаворыць крышталь. Абавязковы прадмет для прапановы рукі і сэрца."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 19,
+        "price_member": 17.1
+    }, {
+        "picture": "function/function/20.png",
+        "name": {
+            "zh_CN": "糖泡抽奖卡",
+            "en_US": "Sugar Bubble Lottery Card",
+            "ru_RU": "Лотерейная карта сахарных пузырей",
+            "be_BY": "Латарэйная карта цукровых бурбалак"
+        },
+        "desc": {
+            "zh_CN": "购买糖泡抽奖卡，就有机会获得地球糖泡、可乐QQ糖、七星龙珠、星座QQ糖……想要更炫的泡泡吗？快来试试您的手气！",
+            "en_US": "Buy a Sugar Bubble Lottery Card for a chance to win the Earth Sugar Bubble, Cola QQ Candy, Seven-Star Dragon Ball or Constellation QQ Candy... Want a flashier bubble? Come try your luck!",
+            "ru_RU": "Купите лотерейную карту сахарных пузырей — и у вас появится шанс получить сахарный пузырь Земля, конфеты QQ Кола, драконий шар Семи Звёзд и конфеты QQ Созвездие... Хотите пузырь поярче? Испытайте свою удачу!",
+            "be_BY": "Купіце латарэйную карту цукровых бурбалак — і ў вас з'явіцца шанц атрымаць цукровую бурбалку Зямля, цукеркі QQ Кола, драконі шар Сямі Зорак і цукеркі QQ Сузор'е... Хочаце бурбалку паярчэй? Паспрабуйце сваю ўдачу!"
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 1,
+        "price_member": 0.9
+    }, {
+        "picture": "function/function/21.png",
+        "name": {
+            "zh_CN": "翅膀抽奖卡",
+            "en_US": "Wing Lottery Card",
+            "ru_RU": "Лотерейная карта крыльев",
+            "be_BY": "Латарэйная карта крылаў"
+        },
+        "desc": {
+            "zh_CN": "购买翅膀抽奖卡，就有机会获得凤凰翅膀、六翼天使翅膀、朱雀翅膀、搞鬼便便帽……还有各种幻影脚印！快来试试您的手气！",
+            "en_US": "Buy a Wing Lottery Card for a chance to win Phoenix Wings, Six-Winged Angel Wings, Vermilion Bird Wings or the Mischief Poop Hat... plus all kinds of Phantom Footprints! Come try your luck!",
+            "ru_RU": "Купите лотерейную карту крыльев — и у вас появится шанс получить крылья Феникса, крылья шестикрылого ангела, крылья Чжуцюэ и шапку-какашку... а ещё самые разные призрачные следы! Испытайте свою удачу!",
+            "be_BY": "Купіце латарэйную карту крылаў — і ў вас з'явіцца шанц атрымаць крылы Фенікса, крылы шасцікрылага анёла, крылы Чжуцюэ і шапку-какашку... а яшчэ самыя розныя прывідныя сляды! Паспрабуйце сваю ўдачу!"
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "function/function/22.png",
+        "name": {
+            "zh_CN": "鱼人宝箱",
+            "en_US": "Fish-Man Treasure Chest",
+            "ru_RU": "Сундук рыболюдей",
+            "be_BY": "Куфар рыбалюдзей"
+        },
+        "desc": {
+            "zh_CN": "你是天使还是魔鬼？传说中的紫水晶、爆炸头、No.1神兽、仙女棒、爱心小翅膀、红魔糖泡、三眼邪目糖泡……只要1QB就能看出！",
+            "en_US": "Are you an angel or a devil? The legendary Amethyst, Afro, No.1 Divine Beast, Fairy Wand, Little Heart Wings, Red Devil Sugar Bubble, Three-Eyed Evil Eye Sugar Bubble... for just 1 QB you can find out!",
+            "ru_RU": "Ты ангел или дьявол? Легендарный аметист, афро, божественный зверь No.1, волшебная палочка, маленькие крылышки-сердечки, сахарный пузырь Красный демон, сахарный пузырь Три глаза зла... всего за 1 QB — и ты всё узнаешь!",
+            "be_BY": "Ты анёл ці д'ябал? Легендарны аметыст, афра, боскі звер No.1, чароўная палачка, маленькія крылцы-сэрцайкі, цукровая бурбалка Чырвоны д'ябал, цукровая бурбалка Тры вочы зла... усяго за 1 QB — і ўсё ўбачыш!"
+        },
+        "amount": 1,
         "unit": "count",
         "price_normal": 1,
         "price_member": 0.9
@@ -46,37 +406,37 @@
 }, {
     "key": "experience",
     "title": {
-        "zh-CN": "经验道具",
-        "en-US": "Experience Items",
-        "ru-RU": "Предметы опыта",
-        "be-BY": "Прадметы досведу"
+        "zh_CN": "经验道具",
+        "en_US": "Experience Items",
+        "ru_RU": "Предметы опыта",
+        "be_BY": "Прадметы досведу"
     },
     "data": []
 }, {
     "key": "adventure",
     "title": {
-        "zh-CN": "探险道具",
-        "en-US": "Adventure Items",
-        "ru-RU": "Предметы для приключений",
-        "be-BY": "Прадметы для прыгод"
+        "zh_CN": "探险道具",
+        "en_US": "Adventure Items",
+        "ru_RU": "Предметы для приключений",
+        "be_BY": "Прадметы для прыгод"
     },
     "data": []
 }, {
     "key": "kubi_gem",
     "title": {
-        "zh-CN": "酷比宝石",
-        "en-US": "Kubi Gems",
-        "ru-RU": "Камни Куби",
-        "be-BY": "Каменні Кубі"
+        "zh_CN": "酷比宝石",
+        "en_US": "Kubi Gems",
+        "ru_RU": "Камни Куби",
+        "be_BY": "Каменні Кубі"
     },
     "data": []
 }, {
     "key": "forge_crystal",
     "title": {
-        "zh-CN": "锻造水晶",
-        "en-US": "Forging Crystals",
-        "ru-RU": "Кристаллы для ковки",
-        "be-BY": "Крышталі для коўкі"
+        "zh_CN": "锻造水晶",
+        "en_US": "Forging Crystals",
+        "ru_RU": "Кристаллы для ковки",
+        "be_BY": "Крышталі для коўкі"
     },
     "data": []
 }]

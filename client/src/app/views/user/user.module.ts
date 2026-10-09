@@ -6,7 +6,7 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
 import { UserComponent } from './user.component';
 import { UserRoutingModule } from './user.routing';
 import { FormsModule } from '@angular/forms';
-import { SharedModule } from 'src/app/shared/shared.module';
+import { SharedModule } from 'src/app/shared/shared_module';
 import { SimpleNotificationsModule } from 'angular2-notifications';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
 import { ComponentsStateButtonModule } from 'src/app/components/state-button/components.state-button.module';

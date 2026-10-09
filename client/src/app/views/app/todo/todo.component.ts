@@ -1,7 +1,7 @@
 import { Component, AfterViewInit, ViewChild, OnDestroy, Renderer2 } from '@angular/core';
 import { AddNewTodoModalComponent } from 'src/app/containers/applications/add-new-todo-modal/add-new-todo-modal.component';
 import { ITodo, LEVEL_DICT } from 'src/app/apis/todo';
-import { ApiService } from 'src/app/data/api.service';
+import { ApiService } from 'src/app/data/api_service';
 import { NotificationsService, NotificationType } from 'angular2-notifications';
 import { TranslateService } from '@ngx-translate/core';
 

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { UIRoutingModule } from './ui.routing';
-import { SharedModule } from 'src/app/shared/shared.module';
+import { SharedModule } from 'src/app/shared/shared_module';
 import { UiComponent } from './ui.component';
 import { LayoutContainersModule } from 'src/app/containers/layout/layout.containers.module';
 

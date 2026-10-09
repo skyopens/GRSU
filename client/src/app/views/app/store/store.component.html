@@ -5,7 +5,7 @@
         <div class="separator mb-5"></div>
     </div>
 </div>
-<div class="card">
+<div class="card" style="background: none;box-shadow: none;">
     <tabset #storeTab>
         <tab *ngFor="let item of tabList;let idx = index;" heading="{{ item.title[lang] }}" (selectTab)="handleChangeTab(idx)">
             <div class="row content_box">
@@ -25,10 +25,23 @@
                                 class="card-body pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
                                 <div class="min-width-zero">
                                     <a routerLink="./">
-                                        <p class="list-item-heading mb-1 truncate">{{ item.name[lang] }}</p>
+                                        <p class="list-item-heading mb-2 truncate">{{ item.name[lang] }}</p>
                                     </a>
-                                    <p class="mb-2 text-muted desc overflow_2">{{ item.desc[lang] }}</p>
-                                    <!-- <button type="button" class="btn btn-xs btn-outline-primary ">Edit</button> -->
+                                    <div collapse="d-flex">
+                                        <div>
+                                            <p class="mb-1 text-muted desc">
+                                                <span>{{ 'qt.branch.store.price_normal' | translate }}</span>
+                                                <span class="dis_ib price">{{ item.price_normal | number:'1.1-1' }}</span>
+                                                <span>{{ 'qt.branch.store.currency_QB' | translate }}</span>
+                                            </p>
+                                            <p class="mb-1 text-muted desc">
+                                                <span class="color-theme-1">{{ 'qt.branch.store.price_member' | translate }}</span>
+                                                <span class="dis_ib price">{{ item.price_member | number:'1.1-1' }}</span>
+                                                <span>{{ 'qt.branch.store.currency_QB' | translate }}</span>
+                                            </p>
+                                        </div>
+                                        <!-- <button type="button" class="btn btn-xs btn-outline-primary ">Edit</button> -->
+                                    </div>
                                 </div>
                             </div>
                         </div>

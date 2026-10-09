@@ -1,6 +1,6 @@
 import { Component, OnInit, ElementRef, HostListener, ViewChild, AfterContentInit } from '@angular/core';
 import { ColumnMode, DatatableComponent, SelectionType } from '@swimlane/ngx-datatable';
-import { ApiService } from '../../../../../data/api.service';
+import { ApiService } from '../../../../../data/api_service';
 
 @Component({
     selector: 'app-scrollable',

@@ -2,8 +2,8 @@ import { Component, OnInit, OnDestroy, HostListener } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { SidebarService, ISidebar } from '../sidebar/sidebar.service';
 import { Router } from '@angular/router';
-import { LangService, Language } from 'src/app/shared/lang.service';
-import { AuthService } from 'src/app/shared/auth.service';
+import { LangService, Language } from 'src/app/shared/lang_service';
+import { AuthService } from 'src/app/shared/auth_service';
 import { environment } from 'src/environments/environment';
 import { getThemeColor, setThemeColor } from 'src/app/utils/util';
 

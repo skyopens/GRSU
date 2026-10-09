@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import topRatedItems, { ITopRatedItem } from 'src/app/data/top-rated-items';
+import topRatedItems, { ITopRatedItem } from 'src/app/data/top_rated_items';
 
 @Component({
     selector: 'app-top-rated-items',

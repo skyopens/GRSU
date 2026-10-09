@@ -8,7 +8,7 @@ import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { VienComponent } from './vien/vien.component';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routing';
-import { SharedModule } from 'src/app/shared/shared.module';
+import { SharedModule } from 'src/app/shared/shared_module';
 import { LayoutContainersModule } from 'src/app/containers/layout/layout.containers.module';
 import { SimpleNotificationsModule } from 'angular2-notifications';
 

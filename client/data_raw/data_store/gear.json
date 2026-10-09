@@ -1,46 +1,46 @@
 [{
     "key": "head",
     "title": {
-        "zh-CN": "头部",
-        "en-US": "Head",
-        "ru-RU": "Голова",
-        "be-BY": "Галава"
+        "zh_CN": "头部",
+        "en_US": "Head",
+        "ru_RU": "Голова",
+        "be_BY": "Галава"
     },
     "data": []
 }, {
     "key": "front",
     "title": {
-        "zh-CN": "正面",
-        "en-US": "Front",
-        "ru-RU": "Перед",
-        "be-BY": "Перад"
+        "zh_CN": "正面",
+        "en_US": "Front",
+        "ru_RU": "Перед",
+        "be_BY": "Перад"
     },
     "data": []
 }, {
     "key": "back",
     "title": {
-        "zh-CN": "背面",
-        "en-US": "Back",
-        "ru-RU": "Спина",
-        "be-BY": "Спіна"
+        "zh_CN": "背面",
+        "en_US": "Back",
+        "ru_RU": "Спина",
+        "be_BY": "Спіна"
     },
     "data": []
 }, {
     "key": "body",
     "title": {
-        "zh-CN": "身体",
-        "en-US": "Body",
-        "ru-RU": "Тело",
-        "be-BY": "Цела"
+        "zh_CN": "身体",
+        "en_US": "Body",
+        "ru_RU": "Тело",
+        "be_BY": "Цела"
     },
     "data": []
 }, {
     "key": "outfit",
     "title": {
-        "zh-CN": "套装",
-        "en-US": "Outfit",
-        "ru-RU": "Костюм",
-        "be-BY": "Касцюм"
+        "zh_CN": "套装",
+        "en_US": "Outfit",
+        "ru_RU": "Костюм",
+        "be_BY": "Касцюм"
     },
     "data": []
 }]

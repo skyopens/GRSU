@@ -10,13 +10,9 @@ import { IStoreSub } from 'src/app/apis/store';
     selector: 'app-store-menu',
     templateUrl: './store.component.html',
     styles: [`
-        .content_box { max-width: 800px; margin: 0 auto; }
-        .content_box > .col-md-6 { border-bottom: 1px solid #d4d4d4; }
-        .content_box > .col-md-6:nth-child(2n-1) { border-right: 0.5px solid #d4d4d4; }
-        .content_box > .col-md-6:nth-child(2n) { border-left: 0.5px solid #d4d4d4; }
-        .content_box > .col-md-6:nth-last-child(1), .content_box > .col-md-6:nth-last-child(2) { border-bottom: none; }
-        .card { box-shadow: none; }
-		.desc { font-size: 0.8rem; }
+        .content_box { margin: 0 -15px; padding-top: 15px; }
+        .desc { font-size: 0.8rem; }
+        .price { width: 40px; }
         .pic_case { align-items: center; }
         .pic_box { width: 80px; padding: 6px; background-color:#444; box-sizing: border-box; }
         .pic { width: 100%; }
@@ -30,7 +26,7 @@ export class StoreComponent implements AfterViewInit, OnDestroy {
     @ViewChild('storeTab', { static: false }) storeTab!: TabsetComponent;
     dataList: any = [];
     tabList: IStoreSub[] = [];
-    lang = 'zh-CN';
+    lang = 'zh_CN';
     private langSub: Subscription;
 
     constructor(private route: ActivatedRoute, private translate: TranslateService, private store: StoreService) {

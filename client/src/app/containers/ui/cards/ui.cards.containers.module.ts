@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { IconCardsComponent } from './icon-cards/icon-cards.component';
-import { SharedModule } from 'src/app/shared/shared.module';
+import { SharedModule } from 'src/app/shared/shared_module';
 import { ImageCardsComponent } from './image-cards/image-cards.component';
 import { ImageOverlayComponent } from './image-overlay/image-overlay.component';
 import { ImageCardListComponent } from './image-card-list/image-card-list.component';

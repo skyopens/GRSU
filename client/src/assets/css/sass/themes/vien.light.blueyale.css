@@ -1,37 +1,4 @@
 @charset "UTF-8";
-.normal_indent {
-  text-indent: 1.7rem;
-}
-
-.dis_ib {
-  display: inline-block;
-}
-
-.w_50 {
-  width: 50%;
-}
-
-.w_100 {
-  width: 100%;
-}
-
-.radius {
-  border-radius: 4px;
-}
-
-.overflow_2 {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  overflow: hidden;
-}
-
-.overflow_4 {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
-  overflow: hidden;
-}
 
 /* Vien Main Style
 

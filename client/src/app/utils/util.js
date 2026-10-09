@@ -41,12 +41,12 @@ export const setThemeRadius = (radius) => {
 }
 
 export const getThemeLang = () => {
-    let lang = 'zh-CN';
+    let lang = 'zh_CN';
     try {
-        lang = localStorage.getItem('theme_lang') || 'zh-CN';
+        lang = localStorage.getItem('theme_lang') || 'zh_CN';
     } catch (error) {
         console.log(">>>> src/app/utils/util.js : getThemeLang -> error", error)
-        lang = 'zh-CN'
+        lang = 'zh_CN'
     }
     return lang;
 }

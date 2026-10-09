@@ -67,9 +67,9 @@ export class StoreService {
 
     getSubs(menu_key: string): Promise<IStoreSub[]> {
         if (!this.cache[menu_key]) {
-            this.cache[menu_key] = fetch(`/resources/data_store/${menu_key}.json`)
-                .then((res) => res.json())
-                .then((payload) => decryptStore<IStoreSub[]>(payload));
+            this.cache[menu_key] = fetch(`/resources/data_store/${menu_key}.json`).then((res) =>
+                res.json().then((payload) => decryptStore<IStoreSub[]>(payload))
+            );
         }
         return this.cache[menu_key];
     }
@@ -80,10 +80,11 @@ export class StoreService {
     // dataList 被整体替换 → *ngFor 重建 <img> → 指令会重新绑定，届时需要一个新的 URL。
     loadPicture(rel_path: string): Promise<Blob> {
         if (!this.picture_cache[rel_path]) {
-            this.picture_cache[rel_path] = fetch(PICTURE_PREFIX + rel_path)
-                .then((res) => res.arrayBuffer())
-                .then((buffer) => decryptPicture(buffer))
-                .then((bytes) => new Blob([bytes], { type: 'image/png' }));
+            this.picture_cache[rel_path] = fetch(PICTURE_PREFIX + rel_path).then((res) =>
+                res.arrayBuffer().then((buffer) =>
+                    decryptPicture(buffer).then((bytes) => new Blob([bytes], { type: 'image/png' }))
+                )
+            );
         }
         return this.picture_cache[rel_path];
     }

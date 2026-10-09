@@ -1,10 +1,10 @@
 import { Injectable, Renderer2, RendererFactory2 } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
-import en from '../../lang/en-US.json';
-import zh from '../../lang/zh-CN.json';
-import ru from '../../lang/ru-RU.json';
-import be from '../../lang/be-BY.json';
+import en from '../../lang/en_US.json';
+import zh from '../../lang/zh_CN.json';
+import ru from '../../lang/ru_RU.json';
+import be from '../../lang/be_BY.json';
 import { Router } from '@angular/router';
 import { getThemeLang, setThemeLang } from 'src/app/utils/util';
 
@@ -18,12 +18,12 @@ export class LangService {
     renderer: Renderer2;
     defaultLanguage = getThemeLang();
     supportedLanguages: Language[] = [
-        { code: 'en-US', direction: 'ltr', label: 'English', shorthand: 'en' },
-        { code: 'zh-CN', direction: 'ltr', label: '简体中文', shorthand: 'zh' },
-        { code: 'ru-RU', direction: 'ltr', label: 'Русский', shorthand: 'ru' },
-        { code: 'be-BY', direction: 'ltr', label: 'Беларуская', shorthand: 'be' },
+        { code: 'en_US', direction: 'ltr', label: 'English', shorthand: 'en' },
+        { code: 'zh_CN', direction: 'ltr', label: '简体中文', shorthand: 'zh' },
+        { code: 'ru_RU', direction: 'ltr', label: 'Русский', shorthand: 'ru' },
+        { code: 'be_BY', direction: 'ltr', label: 'Беларуская', shorthand: 'be' },
         // {
-        //     code: 'en-EN',
+        //     code: 'en_EN',
         //     direction: 'rtl',
         //     label: 'English - RTL',
         //     shorthand: 'enrtl',
@@ -39,11 +39,11 @@ export class LangService {
     }
 
     init(): void {
-        this.translate.setTranslation('en-US', en);
-        this.translate.setTranslation('zh-CN', zh);
-        this.translate.setTranslation('ru-RU', ru);
-        this.translate.setTranslation('be-BY', be);
-        this.translate.setTranslation('en-EN', en);
+        this.translate.setTranslation('en_US', en);
+        this.translate.setTranslation('zh_CN', zh);
+        this.translate.setTranslation('ru_RU', ru);
+        this.translate.setTranslation('be_BY', be);
+        this.translate.setTranslation('en_EN', en);
         this.translate.setDefaultLang(this.defaultLanguage);
         if (this.isSingleLang) {
             this.translate.use(this.defaultLanguage);

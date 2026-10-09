@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { AuthService } from 'src/app/shared/auth.service';
+import { AuthService } from 'src/app/shared/auth_service';
 import { NotificationsService, NotificationType } from 'angular2-notifications';
 import { Router } from '@angular/router';
 import { NgForm } from '@angular/forms';

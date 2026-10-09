@@ -1,7 +1,7 @@
 import { AfterViewInit, ChangeDetectorRef, Component } from '@angular/core';
 import { Mode } from '../types';
 import { TranslateService } from '@ngx-translate/core';
-import { ApiService } from 'src/app/data/api.service';
+import { ApiService } from 'src/app/data/api_service';
 
 @Component({
     selector: 'app-mode',

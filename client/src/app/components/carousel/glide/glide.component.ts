@@ -1,6 +1,6 @@
 import { AfterContentInit, AfterViewInit, Component, ElementRef, Input, OnDestroy, ViewChild } from '@angular/core';
 import Glide from '@glidejs/glide';
-import { LangService } from 'src/app/shared/lang.service';
+import { LangService } from 'src/app/shared/lang_service';
 import { SidebarService } from 'src/app/containers/layout/sidebar/sidebar.service';
 import { Subscription } from 'rxjs';
 

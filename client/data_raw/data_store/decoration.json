@@ -1,46 +1,46 @@
 [{
     "key": "sugar_bubbles",
     "title": {
-        "zh-CN": "糖泡",
-        "en-US": "Candy Bubbles",
-        "ru-RU": "Конфетные пузыри",
-        "be-BY": "Цукерачныя бурбалкі"
+        "zh_CN": "糖泡",
+        "en_US": "Candy Bubbles",
+        "ru_RU": "Конфетные пузыри",
+        "be_BY": "Цукерачныя бурбалкі"
     },
     "data": []
 }, {
     "key": "phantom",
     "title": {
-        "zh-CN": "幻影",
-        "en-US": "Phantoms",
-        "ru-RU": "Фантомы",
-        "be-BY": "Фантомы"
+        "zh_CN": "幻影",
+        "en_US": "Phantoms",
+        "ru_RU": "Фантомы",
+        "be_BY": "Фантомы"
     },
     "data": []
 }, {
     "key": "footprint",
     "title": {
-        "zh-CN": "脚印",
-        "en-US": "Footprints",
-        "ru-RU": "Следы",
-        "be-BY": "Сляды"
+        "zh_CN": "脚印",
+        "en_US": "Footprints",
+        "ru_RU": "Следы",
+        "be_BY": "Сляды"
     },
     "data": []
 }, {
     "key": "pattern",
     "title": {
-        "zh-CN": "图案",
-        "en-US": "Patterns",
-        "ru-RU": "Узоры",
-        "be-BY": "Узоры"
+        "zh_CN": "图案",
+        "en_US": "Patterns",
+        "ru_RU": "Узоры",
+        "be_BY": "Узоры"
     },
     "data": []
 }, {
     "key": "player_card",
     "title": {
-        "zh-CN": "名片",
-        "en-US": "Name Cards",
-        "ru-RU": "Визитные карточки",
-        "be-BY": "Візітныя карткі"
+        "zh_CN": "名片",
+        "en_US": "Name Cards",
+        "ru_RU": "Визитные карточки",
+        "be_BY": "Візітныя карткі"
     },
     "data": []
 }]

@@ -20,7 +20,7 @@ const ROOT = path.resolve(__dirname, '..');
 const SRC_DIR = path.join(ROOT, 'data_raw', 'data_store');
 const PICS_DIR = path.join(ROOT, 'data_raw', 'pictures', 'store');
 const LANG_DIR = path.join(ROOT, 'src', 'lang');
-const LANGS = ['zh-CN', 'en-US', 'ru-RU', 'be-BY'];
+const LANGS = ['zh_CN', 'en_US', 'ru_RU', 'be_BY'];
 const MAX_SHOW = 30;
 
 const problems = [];
@@ -66,7 +66,7 @@ function isNum(v) {
 /* ---------- 读取单位字典 ---------- */
 
 let unit_keys = null;
-const zh_path = path.join(LANG_DIR, 'zh-CN.json');
+const zh_path = path.join(LANG_DIR, 'zh_CN.json');
 if (fs.existsSync(zh_path)) {
     const zh = JSON.parse(fs.readFileSync(zh_path, 'utf8'));
     if (zh.qt && zh.qt.branch && zh.qt.branch.unit) {

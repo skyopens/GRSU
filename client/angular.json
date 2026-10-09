@@ -147,7 +147,8 @@
                                 "input": "src/assets/css/sass/themes/vien.dark.redruby.scss",
                                 "bundleName": "dark.red.ruby",
                                 "inject": false
-                            }
+                            },
+                            "src/assets/css/sass/_me.scss"
                         ],
                         "scripts": []
                     },

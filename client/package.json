@@ -9,6 +9,7 @@
         "build:protected": "npm run protect && ng build --prod",
         "test": "ng test",
         "lint": "ng lint",
+        "lint_fast": "node tool/tslint_rules/lint_fast.cjs",
         "e2e": "ng e2e",
         "newroute": "ng g m one --route one  --m app"
     },
