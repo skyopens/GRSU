@@ -3,6 +3,7 @@ import { SharedModule } from 'src/app/shared/shared_module';
 import { LayoutContainersModule } from 'src/app/containers/layout/layout.containers.module';
 import { UiModalsContainersModule } from 'src/app/containers/ui/modals/ui.modals.containers.module';
 import { TabsModule } from 'ngx-bootstrap/tabs';
+import { AlertModule } from 'ngx-bootstrap/alert';
 import { StoreComponent } from './store.component';
 import { StoreRoutingModule } from './store.routing';
 
@@ -13,6 +14,7 @@ import { StoreRoutingModule } from './store.routing';
         LayoutContainersModule,
         UiModalsContainersModule,
         TabsModule.forRoot(),
+        AlertModule.forRoot(),
         StoreRoutingModule
     ]
 })

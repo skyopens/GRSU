@@ -913,17 +913,20 @@
                 }]
             }],
             "store": {
-                "price_normal": "Regular price:",
-                "price_member": "Member:",
+                "price_normal": "Regular price",
+                "price_member": "Member",
                 "currency_QB": "Q Coin",
                 "currency_QD": "Q Point",
-                "currency_KB": "Kubi Gems"
+                "currency_KB": "Kubi Gems",
+                "amount": "Quantity",
+                "duration": "Duration",
+                "desc": "Description"
             },
             "unit": {
-                "count": "pcs",
-                "year": "year",
-                "month": "month",
-                "day": "day"
+                "count": "pc(s)",
+                "year": "year(s)",
+                "month": "month(s)",
+                "day": "day(s)"
             }
         }
     }

@@ -909,17 +909,20 @@
                 }]
             }],
             "store": {
-                "price_normal": "Звычайная цана:",
-                "price_member": "Для ўдзельнікаў:",
+                "price_normal": "Звычайная цана",
+                "price_member": "Для ўдзельнікаў",
                 "currency_QB": "Q-манета",
                 "currency_QD": "Q-бал",
-                "currency_KB": "Каменні Кубі"
+                "currency_KB": "Каменні Кубі",
+                "amount": "Колькасць",
+                "duration": "Час выкарыстання",
+                "desc": "Апісанне"
             },
             "unit": {
                 "count": "шт.",
-                "year": "год",
-                "month": "месяц",
-                "day": "дзень"
+                "year": "год(гадоў)",
+                "month": "месяц(аў)",
+                "day": "дзень(дзён)"
             }
         }
     }

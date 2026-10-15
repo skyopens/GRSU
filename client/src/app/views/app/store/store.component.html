@@ -8,55 +8,69 @@
 <div class="card" style="background: none;box-shadow: none;">
     <tabset #storeTab>
         <tab *ngFor="let item of tabList;let idx = index;" heading="{{ item.title[lang] }}" (selectTab)="handleChangeTab(idx)">
-            <div class="row content_box">
-                <div
-                    appModalLongContent
-                    class="col-md-6"
-                    *ngFor="let item of dataList"
-                >
-                    <div class="card d-flex flex-row mb-4 c-pointer">
+            <div class="row content_box" *ngIf="idx === activeIdx">
+                <div class="col-md-6" *ngFor="let item of dataList">
+                    <div class="card d-flex flex-row mb-4">
                         <div class="d-flex m-4 pic_case">
                             <div class="pic_box radius text-center" *ngIf="item.picture">
                                 <img [obfuscate_src]="item.picture" class="border-0 align-self-center pic">
                             </div>
                         </div>
                         <div class="d-flex flex-grow-1 min-width-zero">
-                            <div
-                                class="card-body pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
-                                <div class="min-width-zero">
+                            <div class="card-body pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
+                                <div class="min-width-zero w_100">
                                     <a routerLink="./">
-                                        <p class="list-item-heading mb-2 truncate">{{ item.name[lang] }}</p>
+                                        <p class="list-item-heading mb-3 truncate">{{ item.name[lang] }}</p>
                                     </a>
-                                    <div collapse="d-flex">
+                                    <div class="price_box">
                                         <div>
                                             <p class="mb-1 text-muted desc">
-                                                <span>{{ 'qt.branch.store.price_normal' | translate }}</span>
+                                                <span>{{ 'qt.branch.store.price_normal' | translate }}: </span>
                                                 <span class="dis_ib price">{{ item.price_normal | number:'1.1-1' }}</span>
                                                 <span>{{ 'qt.branch.store.currency_QB' | translate }}</span>
                                             </p>
-                                            <p class="mb-1 text-muted desc">
-                                                <span class="color-theme-1">{{ 'qt.branch.store.price_member' | translate }}</span>
+                                            <p class="mb-0 text-muted desc">
+                                                <span class="color-theme-1">{{ 'qt.branch.store.price_member' | translate }}: </span>
                                                 <span class="dis_ib price">{{ item.price_member | number:'1.1-1' }}</span>
                                                 <span>{{ 'qt.branch.store.currency_QB' | translate }}</span>
                                             </p>
                                         </div>
-                                        <!-- <button type="button" class="btn btn-xs btn-outline-primary ">Edit</button> -->
+                                        <div class="btn_purchase mt-2">
+                                            <button
+                                                type="button"
+                                                class="btn btn-xs btn-outline-primary"
+                                                appModalLongContent
+                                                [titleTpl]="titleTpl"
+                                                [contentTpl]="detailTpl"
+                                                (modalOpened)="openModal(item)"
+                                            >
+                                                {{ 'pages.details' | translate }}
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- <ng-template #titleTpl>{{ detail.title | translate }}</ng-template>
+                <ng-template #titleTpl>{{ detail.name[lang] }}</ng-template>
                 <ng-template #detailTpl>
                     <div class="detail_box">
-                        <div class="mb-4 text-center">
-                            <img class="banner" [src]="item" *ngFor="let item of detail.banner" (error)="hidePicture($event)" />
-                        </div>
-                        <span class="dis_ib content">{{ detail.content | translate }}</span>
+                        <alert type="light">
+                            <div class="introduce">
+                                <span class="dis_ib content">{{ detail.text_unit }}: {{ detail.amount }} {{ 'qt.branch.unit.' + detail.unit | translate }}</span><br />
+                                <span class="dis_ib content">{{ 'qt.branch.store.desc' | translate }}: {{ detail.desc[lang] }}</span>
+                            </div>
+                        </alert>
+                        <alert [type]="item.type" *ngFor="let item of detail.price_list">
+                            <div class="d-flex justify-content-between price_box">
+                                <span>{{ 'pages.price' | translate }}</span>
+                                <span class="text-center">{{ item.price }}</span>
+                                <span class="text-right">{{ item.currency }}</span>
+                            </div>
+                        </alert>
                     </div>
-                </ng-template> -->
-                <!-- <img class="banner" *ngFor="let src of images" [src]="src" /> -->
+                </ng-template>
             </div>
         </tab>
     </tabset>

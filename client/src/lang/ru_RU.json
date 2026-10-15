@@ -913,17 +913,20 @@
                 }]
             }],
             "store": {
-                "price_normal": "Обычная цена:",
-                "price_member": "Для участников:",
+                "price_normal": "Обычная цена",
+                "price_member": "Для участников",
                 "currency_QB": "Q-монета",
                 "currency_QD": "Q-балл",
-                "currency_KB": "Камни Куби"
+                "currency_KB": "Камни Куби",
+                "amount": "Количество",
+                "duration": "Время использования",
+                "desc": "Описание"
             },
             "unit": {
                 "count": "шт.",
-                "year": "год",
-                "month": "месяц",
-                "day": "день"
+                "year": "год(лет)",
+                "month": "месяц(ев)",
+                "day": "день(дней)"
             }
         }
     }

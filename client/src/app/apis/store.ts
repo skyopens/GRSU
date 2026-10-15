@@ -16,6 +16,8 @@ export interface StoreItem {
     unit: string;
     price_normal: number;
     price_member: number;
+    price_list?: { currency: string; type: string; price: string; }[];
+    text_unit?: string;
 }
 
 export interface IStoreSub {

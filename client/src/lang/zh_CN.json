@@ -909,11 +909,14 @@
                 }]
             }],
             "store": {
-                "price_normal": "原价：",
-                "price_member": "会员：",
+                "price_normal": "原价",
+                "price_member": "会员",
                 "currency_QB": "Q币",
                 "currency_QD": "Q点",
-                "currency_KB": "酷比宝石"
+                "currency_KB": "酷比宝石",
+                "amount": "道具数量",
+                "duration": "使用时间",
+                "desc": "商品描述"
             },
             "unit": {
                 "count": "个",
