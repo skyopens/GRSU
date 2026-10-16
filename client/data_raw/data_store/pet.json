@@ -6,7 +6,223 @@
         "ru_RU": "Корм для питомцев",
         "be_BY": "Корм для гадаванцаў"
     },
-    "data": []
+    "data": [{
+        "picture": "pet/food/1.png",
+        "name": {
+            "zh_CN": "榛子仁巧克力[10个]",
+            "en_US": "Hazelnut Chocolate [10 pcs]",
+            "ru_RU": "Шоколад с лесным орехом [10 шт.]",
+            "be_BY": "Шакалад з лясным арэхам [10 шт.]"
+        },
+        "desc": {
+            "zh_CN": "增加宠物成长值450点。",
+            "en_US": "Increases the pet's growth value by 450 points.",
+            "ru_RU": "Увеличивает значение роста питомца на 450 очков.",
+            "be_BY": "Павялічвае значэнне росту гадаванца на 450 ачкоў."
+        },
+        "amount": 10,
+        "unit": "count",
+        "price_normal": 16,
+        "price_member": 14.4
+    }, {
+        "picture": "pet/food/2.png",
+        "name": {
+            "zh_CN": "榛子仁巧克力[2个]",
+            "en_US": "Hazelnut Chocolate [2 pcs]",
+            "ru_RU": "Шоколад с лесным орехом [2 шт.]",
+            "be_BY": "Шакалад з лясным арэхам [2 шт.]"
+        },
+        "desc": {
+            "zh_CN": "增加宠物成长值450点。",
+            "en_US": "Increases the pet's growth value by 450 points.",
+            "ru_RU": "Увеличивает значение роста питомца на 450 очков.",
+            "be_BY": "Павялічвае значэнне росту гадаванца на 450 ачкоў."
+        },
+        "amount": 2,
+        "unit": "count",
+        "price_normal": 4,
+        "price_member": 3.6
+    }, {
+        "picture": "pet/food/3.png",
+        "name": {
+            "zh_CN": "花生仁巧克力[10个]",
+            "en_US": "Peanut Chocolate [10 pcs]",
+            "ru_RU": "Шоколад с арахисом [10 шт.]",
+            "be_BY": "Шакалад з арахісам [10 шт.]"
+        },
+        "desc": {
+            "zh_CN": "增加宠物成长值90点。",
+            "en_US": "Increases the pet's growth value by 90 points.",
+            "ru_RU": "Увеличивает значение роста питомца на 90 очков.",
+            "be_BY": "Павялічвае значэнне росту гадаванца на 90 ачкоў."
+        },
+        "amount": 10,
+        "unit": "count",
+        "price_normal": 4,
+        "price_member": 3.6
+    }, {
+        "picture": "pet/food/4.png",
+        "name": {
+            "zh_CN": "花生仁巧克力[2个]",
+            "en_US": "Peanut Chocolate [2 pcs]",
+            "ru_RU": "Шоколад с арахисом [2 шт.]",
+            "be_BY": "Шакалад з арахісам [2 шт.]"
+        },
+        "desc": {
+            "zh_CN": "增加宠物成长值90点。",
+            "en_US": "Increases the pet's growth value by 90 points.",
+            "ru_RU": "Увеличивает значение роста питомца на 90 очков.",
+            "be_BY": "Павялічвае значэнне росту гадаванца на 90 ачкоў."
+        },
+        "amount": 2,
+        "unit": "count",
+        "price_normal": 1,
+        "price_member": 0.9
+    }, {
+        "picture": "pet/food/5.png",
+        "name": {
+            "zh_CN": "心情棒棒糖中[25个]",
+            "en_US": "Medium Mood Lollipop [25 pcs]",
+            "ru_RU": "Средний леденец настроения [25 шт.]",
+            "be_BY": "Сярэдні ледзянец настрою [25 шт.]"
+        },
+        "desc": {
+            "zh_CN": "增加宠物心情20点，保持宠物心情好可以使宠物成长加快哦!",
+            "en_US": "Increases the pet's mood by 20 points; keeping the pet in a good mood can make it grow faster!",
+            "ru_RU": "Увеличивает настроение питомца на 20 очков; хорошее настроение питомца ускоряет его рост!",
+            "be_BY": "Павялічвае настрой гадаванца на 20 ачкоў; добры настрой гадаванца паскарае яго рост!"
+        },
+        "amount": 25,
+        "unit": "count",
+        "price_normal": 16,
+        "price_member": 14.4
+    }, {
+        "picture": "pet/food/6.png",
+        "name": {
+            "zh_CN": "心情棒棒糖中[5个]",
+            "en_US": "Medium Mood Lollipop [5 pcs]",
+            "ru_RU": "Средний леденец настроения [5 шт.]",
+            "be_BY": "Сярэдні ледзянец настрою [5 шт.]"
+        },
+        "desc": {
+            "zh_CN": "增加宠物心情20点，保持宠物心情好可以使宠物成长加快哦!",
+            "en_US": "Increases the pet's mood by 20 points; keeping the pet in a good mood can make it grow faster!",
+            "ru_RU": "Увеличивает настроение питомца на 20 очков; хорошее настроение питомца ускоряет его рост!",
+            "be_BY": "Павялічвае настрой гадаванца на 20 ачкоў; добры настрой гадаванца паскарае яго рост!"
+        },
+        "amount": 5,
+        "unit": "count",
+        "price_normal": 4,
+        "price_member": 3.6
+    }, {
+        "picture": "pet/food/7.png",
+        "name": {
+            "zh_CN": "心情棒棒糖小[100个]",
+            "en_US": "Small Mood Lollipop [100 pcs]",
+            "ru_RU": "Малый леденец настроения [100 шт.]",
+            "be_BY": "Малы ледзянец настрою [100 шт.]"
+        },
+        "desc": {
+            "zh_CN": "增加宠物心情1点，保持宠物心情好可以使宠物成长加快哦!",
+            "en_US": "Increases the pet's mood by 1 point; keeping the pet in a good mood can make it grow faster!",
+            "ru_RU": "Увеличивает настроение питомца на 1 очко; хорошее настроение питомца ускоряет его рост!",
+            "be_BY": "Павялічвае настрой гадаванца на 1 ачко; добры настрой гадаванца паскарае яго рост!"
+        },
+        "amount": 100,
+        "unit": "count",
+        "price_normal": 4,
+        "price_member": 3.6
+    }, {
+        "picture": "pet/food/8.png",
+        "name": {
+            "zh_CN": "心情棒棒糖小[20个]",
+            "en_US": "Small Mood Lollipop [20 pcs]",
+            "ru_RU": "Малый леденец настроения [20 шт.]",
+            "be_BY": "Малы ледзянец настрою [20 шт.]"
+        },
+        "desc": {
+            "zh_CN": "增加宠物心情1点，保持宠物心情好可以使宠物成长加快哦!",
+            "en_US": "Increases the pet's mood by 1 point; keeping the pet in a good mood can make it grow faster!",
+            "ru_RU": "Увеличивает настроение питомца на 1 очко; хорошее настроение питомца ускоряет его рост!",
+            "be_BY": "Павялічвае настрой гадаванца на 1 ачко; добры настрой гадаванца паскарае яго рост!"
+        },
+        "amount": 20,
+        "unit": "count",
+        "price_normal": 1,
+        "price_member": 0.9
+    }, {
+        "picture": "pet/food/9.png",
+        "name": {
+            "zh_CN": "宠物粮食中[20个]",
+            "en_US": "Medium Pet Food [20 pcs]",
+            "ru_RU": "Средний корм для питомцев [20 шт.]",
+            "be_BY": "Сярэдні корм для гадаванцаў [20 шт.]"
+        },
+        "desc": {
+            "zh_CN": "增加宠物体力600点，增加宠物成长值30点。",
+            "en_US": "Increases the pet's stamina by 600 points and its growth value by 30 points.",
+            "ru_RU": "Увеличивает выносливость питомца на 600 очков и значение роста на 30 очков.",
+            "be_BY": "Павялічвае вынослівасць гадаванца на 600 ачкоў і значэнне росту на 30 ачкоў."
+        },
+        "amount": 20,
+        "unit": "count",
+        "price_normal": 16,
+        "price_member": 14.4
+    }, {
+        "picture": "pet/food/10.png",
+        "name": {
+            "zh_CN": "宠物粮食小[6个]",
+            "en_US": "Small Pet Food [6 pcs]",
+            "ru_RU": "Малый корм для питомцев [6 шт.]",
+            "be_BY": "Малы корм для гадаванцаў [6 шт.]"
+        },
+        "desc": {
+            "zh_CN": "增加宠物体力400点，增加宠物成长值20点。",
+            "en_US": "Increases the pet's stamina by 400 points and its growth value by 20 points.",
+            "ru_RU": "Увеличивает выносливость питомца на 400 очков и значение роста на 20 очков.",
+            "be_BY": "Павялічвае вынослівасць гадаванца на 400 ачкоў і значэнне росту на 20 ачкоў."
+        },
+        "amount": 6,
+        "unit": "count",
+        "price_normal": 4,
+        "price_member": 3.6
+    }, {
+        "picture": "pet/food/11.png",
+        "name": {
+            "zh_CN": "宠物体力药水[25个]",
+            "en_US": "Pet Stamina Potion [25 pcs]",
+            "ru_RU": "Зелье выносливости питомца [25 шт.]",
+            "be_BY": "Зелле вынослівасці гадаванца [25 шт.]"
+        },
+        "desc": {
+            "zh_CN": "增加宠物体力100点。",
+            "en_US": "Increases the pet's stamina by 100 points.",
+            "ru_RU": "Увеличивает выносливость питомца на 100 очков.",
+            "be_BY": "Павялічвае вынослівасць гадаванца на 100 ачкоў."
+        },
+        "amount": 25,
+        "unit": "count",
+        "price_normal": 4,
+        "price_member": 3.6
+    }, {
+        "picture": "pet/food/12.png",
+        "name": {
+            "zh_CN": "宠物体力药水[5个]",
+            "en_US": "Pet Stamina Potion [5 pcs]",
+            "ru_RU": "Зелье выносливости питомца [5 шт.]",
+            "be_BY": "Зелле вынослівасці гадаванца [5 шт.]"
+        },
+        "desc": {
+            "zh_CN": "增加宠物体力100点。",
+            "en_US": "Increases the pet's stamina by 100 points.",
+            "ru_RU": "Увеличивает выносливость питомца на 100 очков.",
+            "be_BY": "Павялічвае вынослівасць гадаванца на 100 ачкоў."
+        },
+        "amount": 5,
+        "unit": "count",
+        "price_normal": 1,
+        "price_member": 0.9
+    }]
 }, {
     "key": "skill",
     "title": {
@@ -15,7 +231,1447 @@
         "ru_RU": "Навыки питомцев",
         "be_BY": "Навыкі гадаванцаў"
     },
-    "data": []
+    "data": [{
+        "picture": "pet/skill/1.png",
+        "name": {
+            "zh_CN": "糖币加加1级",
+            "en_US": "Sugar Coin Boost Lv.1",
+            "ru_RU": "Усиление сахарных монет ур.1",
+            "be_BY": "Узмацненне цукровых манет ур.1"
+        },
+        "desc": {
+            "zh_CN": "宠物一级技能之一，增加所获得的糖币6%，同类型技能效果叠加，学习此技能以后不能学习其他一级技能。",
+            "en_US": "One of the pet's level-1 skills. Increases the sugar coins gained by 6%. Effects of skills of the same type stack; after learning this skill you cannot learn other level-1 skills.",
+            "ru_RU": "Один из навыков питомца 1-го уровня. Увеличивает получаемые сахарные монеты на 6%. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 1-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 1-га ўзроўню. Павялічвае атрыманыя цукровыя манеты на 6%. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 1-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/2.png",
+        "name": {
+            "zh_CN": "声望加加1级",
+            "en_US": "Reputation Boost Lv.1",
+            "ru_RU": "Усиление репутации ур.1",
+            "be_BY": "Узмацненне рэпутацыі ур.1"
+        },
+        "desc": {
+            "zh_CN": "宠物一级技能之一，增加购买道具和比赛时所获得的声望3%，同类型技能效果叠加，学习此技能以后不能学习其他一级技能。",
+            "en_US": "One of the pet's level-1 skills. Increases the reputation gained when buying items and in matches by 3%. Effects of skills of the same type stack; after learning this skill you cannot learn other level-1 skills.",
+            "ru_RU": "Один из навыков питомца 1-го уровня. Увеличивает получаемую репутацию за покупку предметов и в матчах на 3%. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 1-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 1-га ўзроўню. Павялічвае атрыманую рэпутацыю за куплю прадметаў і ў матчах на 3%. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 1-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/3.png",
+        "name": {
+            "zh_CN": "积分加加1级",
+            "en_US": "Points Boost Lv.1",
+            "ru_RU": "Усиление очков ур.1",
+            "be_BY": "Узмацненне ачкоў ур.1"
+        },
+        "desc": {
+            "zh_CN": "宠物一级技能之一，增加所获得的积分3%，同类型技能效果叠加，学习此技能以后不能学习其他一级技能。",
+            "en_US": "One of the pet's level-1 skills. Increases the points gained by 3%. Effects of skills of the same type stack; after learning this skill you cannot learn other level-1 skills.",
+            "ru_RU": "Один из навыков питомца 1-го уровня. Увеличивает получаемые очки на 3%. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 1-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 1-га ўзроўню. Павялічвае атрыманыя ачкі на 3%. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 1-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/4.png",
+        "name": {
+            "zh_CN": "勇气加加1级",
+            "en_US": "Courage Boost Lv.1",
+            "ru_RU": "Усиление мужества ур.1",
+            "be_BY": "Узмацненне мужнасці ур.1"
+        },
+        "desc": {
+            "zh_CN": "宠物一级技能之一，增加所获得的勇气3%，同类型技能效果叠加，学习此技能以后不能学习其他一级技能。",
+            "en_US": "One of the pet's level-1 skills. Increases the courage gained by 3%. Effects of skills of the same type stack; after learning this skill you cannot learn other level-1 skills.",
+            "ru_RU": "Один из навыков питомца 1-го уровня. Увеличивает получаемое мужество на 3%. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 1-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 1-га ўзроўню. Павялічвае атрыманае мужнасць на 3%. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 1-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/5.png",
+        "name": {
+            "zh_CN": "积分多多1级",
+            "en_US": "Points Doubler Lv.1",
+            "ru_RU": "Удвоение очков ур.1",
+            "be_BY": "Падваенне ачкоў ур.1"
+        },
+        "desc": {
+            "zh_CN": "宠物一级技能之一，有3%的概率使得获得的积分翻倍，同类型技能效果叠加，学习此技能以后不能学习其他一级技能。",
+            "en_US": "One of the pet's level-1 skills. There is a 3% chance to double the points gained. Effects of skills of the same type stack; after learning this skill you cannot learn other level-1 skills.",
+            "ru_RU": "Один из навыков питомца 1-го уровня. Есть 3% шанс удвоить получаемые очки. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 1-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 1-га ўзроўню. Ёсць 3% шанц падвоіць атрыманыя ачкі. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 1-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/6.png",
+        "name": {
+            "zh_CN": "勇气多多1级",
+            "en_US": "Courage Doubler Lv.1",
+            "ru_RU": "Удвоение мужества ур.1",
+            "be_BY": "Падваенне мужнасці ур.1"
+        },
+        "desc": {
+            "zh_CN": "宠物一级技能之一，有3%的概率使得获得的勇气翻倍，同类型技能效果叠加，学习此技能以后不能学习其他一级技能。",
+            "en_US": "One of the pet's level-1 skills. There is a 3% chance to double the courage gained. Effects of skills of the same type stack; after learning this skill you cannot learn other level-1 skills.",
+            "ru_RU": "Один из навыков питомца 1-го уровня. Есть 3% шанс удвоить получаемое мужество. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 1-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 1-га ўзроўню. Ёсць 3% шанц падвоіць атрыманае мужнасць. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 1-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/7.png",
+        "name": {
+            "zh_CN": "材料多多1级",
+            "en_US": "Material Doubler Lv.1",
+            "ru_RU": "Удвоение материалов ур.1",
+            "be_BY": "Падваенне матэрыялаў ур.1"
+        },
+        "desc": {
+            "zh_CN": "宠物一级技能之一，有3%的概率使获得的材料翻倍，同类型技能效果叠加，学习此技能以后不能学习其他一级技能。",
+            "en_US": "One of the pet's level-1 skills. There is a 3% chance to double the materials gained. Effects of skills of the same type stack; after learning this skill you cannot learn other level-1 skills.",
+            "ru_RU": "Один из навыков питомца 1-го уровня. Есть 3% шанс удвоить получаемые материалы. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 1-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 1-га ўзроўню. Ёсць 3% шанц падвоіць атрыманыя матэрыялы. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 1-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/8.png",
+        "name": {
+            "zh_CN": "亲密多多1级",
+            "en_US": "Intimacy Doubler Lv.1",
+            "ru_RU": "Удвоение близости ур.1",
+            "be_BY": "Падваенне блізкасці ур.1"
+        },
+        "desc": {
+            "zh_CN": "宠物一级技能之一，有3%的概率使得获得的亲密翻倍，同类型技能效果叠加，学习此技能以后不能学习其他一级技能。",
+            "en_US": "One of the pet's level-1 skills. There is a 3% chance to double the intimacy gained. Effects of skills of the same type stack; after learning this skill you cannot learn other level-1 skills.",
+            "ru_RU": "Один из навыков питомца 1-го уровня. Есть 3% шанс удвоить получаемую близость. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 1-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 1-га ўзроўню. Ёсць 3% шанц падвоіць атрыманую блізкасць. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 1-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/9.png",
+        "name": {
+            "zh_CN": "糖币加加2级",
+            "en_US": "Sugar Coin Boost Lv.2",
+            "ru_RU": "Усиление сахарных монет ур.2",
+            "be_BY": "Узмацненне цукровых манет ур.2"
+        },
+        "desc": {
+            "zh_CN": "宠物二级技能之一，增加所获得的糖币6%，同类型技能效果叠加，学习此技能以后不能学习其他二级技能。",
+            "en_US": "One of the pet's level-2 skills. Increases the sugar coins gained by 6%. Effects of skills of the same type stack; after learning this skill you cannot learn other level-2 skills.",
+            "ru_RU": "Один из навыков питомца 2-го уровня. Увеличивает получаемые сахарные монеты на 6%. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 2-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 2-га ўзроўню. Павялічвае атрыманыя цукровыя манеты на 6%. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 2-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/10.png",
+        "name": {
+            "zh_CN": "声望加加2级",
+            "en_US": "Reputation Boost Lv.2",
+            "ru_RU": "Усиление репутации ур.2",
+            "be_BY": "Узмацненне рэпутацыі ур.2"
+        },
+        "desc": {
+            "zh_CN": "宠物二级技能之一，增加购买道具和比赛时所获得的声望3%，同类型技能效果叠加，学习此技能以后不能学习其他二级技能。",
+            "en_US": "One of the pet's level-2 skills. Increases the reputation gained when buying items and in matches by 3%. Effects of skills of the same type stack; after learning this skill you cannot learn other level-2 skills.",
+            "ru_RU": "Один из навыков питомца 2-го уровня. Увеличивает получаемую репутацию за покупку предметов и в матчах на 3%. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 2-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 2-га ўзроўню. Павялічвае атрыманую рэпутацыю за куплю прадметаў і ў матчах на 3%. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 2-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/11.png",
+        "name": {
+            "zh_CN": "积分加加2级",
+            "en_US": "Points Boost Lv.2",
+            "ru_RU": "Усиление очков ур.2",
+            "be_BY": "Узмацненне ачкоў ур.2"
+        },
+        "desc": {
+            "zh_CN": "宠物二级技能之一，增加所获得的积分3%，同类型技能效果叠加，学习此技能以后不能学习其他二级技能。",
+            "en_US": "One of the pet's level-2 skills. Increases the points gained by 3%. Effects of skills of the same type stack; after learning this skill you cannot learn other level-2 skills.",
+            "ru_RU": "Один из навыков питомца 2-го уровня. Увеличивает получаемые очки на 3%. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 2-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 2-га ўзроўню. Павялічвае атрыманыя ачкі на 3%. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 2-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/12.png",
+        "name": {
+            "zh_CN": "勇气加加2级",
+            "en_US": "Courage Boost Lv.2",
+            "ru_RU": "Усиление мужества ур.2",
+            "be_BY": "Узмацненне мужнасці ур.2"
+        },
+        "desc": {
+            "zh_CN": "宠物二级技能之一，增加所获得的勇气3%，同类型技能效果叠加，学习此技能以后不能学习其他二级技能。",
+            "en_US": "One of the pet's level-2 skills. Increases the courage gained by 3%. Effects of skills of the same type stack; after learning this skill you cannot learn other level-2 skills.",
+            "ru_RU": "Один из навыков питомца 2-го уровня. Увеличивает получаемое мужество на 3%. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 2-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 2-га ўзроўню. Павялічвае атрыманае мужнасць на 3%. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 2-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/13.png",
+        "name": {
+            "zh_CN": "积分多多2级",
+            "en_US": "Points Doubler Lv.2",
+            "ru_RU": "Удвоение очков ур.2",
+            "be_BY": "Падваенне ачкоў ур.2"
+        },
+        "desc": {
+            "zh_CN": "宠物二级技能之一，有3%的概率使得获得的积分翻倍，同类型技能效果叠加，学习此技能以后不能学习其他二级技能。",
+            "en_US": "One of the pet's level-2 skills. There is a 3% chance to double the points gained. Effects of skills of the same type stack; after learning this skill you cannot learn other level-2 skills.",
+            "ru_RU": "Один из навыков питомца 2-го уровня. Есть 3% шанс удвоить получаемые очки. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 2-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 2-га ўзроўню. Ёсць 3% шанц падвоіць атрыманыя ачкі. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 2-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/14.png",
+        "name": {
+            "zh_CN": "勇气多多2级",
+            "en_US": "Courage Doubler Lv.2",
+            "ru_RU": "Удвоение мужества ур.2",
+            "be_BY": "Падваенне мужнасці ур.2"
+        },
+        "desc": {
+            "zh_CN": "宠物二级技能之一，有3%的概率使得获得的勇气翻倍，同类型技能效果叠加，学习此技能以后不能学习其他二级技能。",
+            "en_US": "One of the pet's level-2 skills. There is a 3% chance to double the courage gained. Effects of skills of the same type stack; after learning this skill you cannot learn other level-2 skills.",
+            "ru_RU": "Один из навыков питомца 2-го уровня. Есть 3% шанс удвоить получаемое мужество. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 2-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 2-га ўзроўню. Ёсць 3% шанц падвоіць атрыманае мужнасць. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 2-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/15.png",
+        "name": {
+            "zh_CN": "材料多多2级",
+            "en_US": "Material Doubler Lv.2",
+            "ru_RU": "Удвоение материалов ур.2",
+            "be_BY": "Падваенне матэрыялаў ур.2"
+        },
+        "desc": {
+            "zh_CN": "宠物二级技能之一，有3%的概率使获得的材料翻倍，同类型技能效果叠加，学习此技能以后不能学习其他二级技能。",
+            "en_US": "One of the pet's level-2 skills. There is a 3% chance to double the materials gained. Effects of skills of the same type stack; after learning this skill you cannot learn other level-2 skills.",
+            "ru_RU": "Один из навыков питомца 2-го уровня. Есть 3% шанс удвоить получаемые материалы. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 2-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 2-га ўзроўню. Ёсць 3% шанц падвоіць атрыманыя матэрыялы. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 2-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/16.png",
+        "name": {
+            "zh_CN": "亲密多多2级",
+            "en_US": "Intimacy Doubler Lv.2",
+            "ru_RU": "Удвоение близости ур.2",
+            "be_BY": "Падваенне блізкасці ур.2"
+        },
+        "desc": {
+            "zh_CN": "宠物二级技能之一，有3%的概率使得获得的亲密翻倍，同类型技能效果叠加，学习此技能以后不能学习其他二级技能。",
+            "en_US": "One of the pet's level-2 skills. There is a 3% chance to double the intimacy gained. Effects of skills of the same type stack; after learning this skill you cannot learn other level-2 skills.",
+            "ru_RU": "Один из навыков питомца 2-го уровня. Есть 3% шанс удвоить получаемую близость. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 2-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 2-га ўзроўню. Ёсць 3% шанц падвоіць атрыманую блізкасць. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 2-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/17.png",
+        "name": {
+            "zh_CN": "糖币加加3级",
+            "en_US": "Sugar Coin Boost Lv.3",
+            "ru_RU": "Усиление сахарных монет ур.3",
+            "be_BY": "Узмацненне цукровых манет ур.3"
+        },
+        "desc": {
+            "zh_CN": "宠物三级技能之一，增加所获得的糖币6%，同类型技能效果叠加，学习此技能以后不能学习其他三级技能。",
+            "en_US": "One of the pet's level-3 skills. Increases the sugar coins gained by 6%. Effects of skills of the same type stack; after learning this skill you cannot learn other level-3 skills.",
+            "ru_RU": "Один из навыков питомца 3-го уровня. Увеличивает получаемые сахарные монеты на 6%. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 3-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 3-га ўзроўню. Павялічвае атрыманыя цукровыя манеты на 6%. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 3-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/18.png",
+        "name": {
+            "zh_CN": "声望加加3级",
+            "en_US": "Reputation Boost Lv.3",
+            "ru_RU": "Усиление репутации ур.3",
+            "be_BY": "Узмацненне рэпутацыі ур.3"
+        },
+        "desc": {
+            "zh_CN": "宠物三级技能之一，增加购买道具和比赛时所获得的声望3%，同类型技能效果叠加，学习此技能以后不能学习其他三级技能。",
+            "en_US": "One of the pet's level-3 skills. Increases the reputation gained when buying items and in matches by 3%. Effects of skills of the same type stack; after learning this skill you cannot learn other level-3 skills.",
+            "ru_RU": "Один из навыков питомца 3-го уровня. Увеличивает получаемую репутацию за покупку предметов и в матчах на 3%. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 3-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 3-га ўзроўню. Павялічвае атрыманую рэпутацыю за куплю прадметаў і ў матчах на 3%. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 3-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/19.png",
+        "name": {
+            "zh_CN": "积分加加3级",
+            "en_US": "Points Boost Lv.3",
+            "ru_RU": "Усиление очков ур.3",
+            "be_BY": "Узмацненне ачкоў ур.3"
+        },
+        "desc": {
+            "zh_CN": "宠物三级技能之一，增加所获得的积分3%，同类型技能效果叠加，学习此技能以后不能学习其他三级技能。",
+            "en_US": "One of the pet's level-3 skills. Increases the points gained by 3%. Effects of skills of the same type stack; after learning this skill you cannot learn other level-3 skills.",
+            "ru_RU": "Один из навыков питомца 3-го уровня. Увеличивает получаемые очки на 3%. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 3-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 3-га ўзроўню. Павялічвае атрыманыя ачкі на 3%. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 3-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/20.png",
+        "name": {
+            "zh_CN": "勇气加加3级",
+            "en_US": "Courage Boost Lv.3",
+            "ru_RU": "Усиление мужества ур.3",
+            "be_BY": "Узмацненне мужнасці ур.3"
+        },
+        "desc": {
+            "zh_CN": "宠物三级技能之一，增加所获得的勇气3%，同类型技能效果叠加，学习此技能以后不能学习其他三级技能。",
+            "en_US": "One of the pet's level-3 skills. Increases the courage gained by 3%. Effects of skills of the same type stack; after learning this skill you cannot learn other level-3 skills.",
+            "ru_RU": "Один из навыков питомца 3-го уровня. Увеличивает получаемое мужество на 3%. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 3-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 3-га ўзроўню. Павялічвае атрыманае мужнасць на 3%. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 3-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/21.png",
+        "name": {
+            "zh_CN": "积分多多3级",
+            "en_US": "Points Doubler Lv.3",
+            "ru_RU": "Удвоение очков ур.3",
+            "be_BY": "Падваенне ачкоў ур.3"
+        },
+        "desc": {
+            "zh_CN": "宠物三级技能之一，有3%的概率使得获得的积分翻倍，同类型技能效果叠加，学习此技能以后不能学习其他三级技能。",
+            "en_US": "One of the pet's level-3 skills. There is a 3% chance to double the points gained. Effects of skills of the same type stack; after learning this skill you cannot learn other level-3 skills.",
+            "ru_RU": "Один из навыков питомца 3-го уровня. Есть 3% шанс удвоить получаемые очки. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 3-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 3-га ўзроўню. Ёсць 3% шанц падвоіць атрыманыя ачкі. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 3-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/22.png",
+        "name": {
+            "zh_CN": "勇气多多3级",
+            "en_US": "Courage Doubler Lv.3",
+            "ru_RU": "Удвоение мужества ур.3",
+            "be_BY": "Падваенне мужнасці ур.3"
+        },
+        "desc": {
+            "zh_CN": "宠物三级技能之一，有3%的概率使得获得的勇气翻倍，同类型技能效果叠加，学习此技能以后不能学习其他三级技能。",
+            "en_US": "One of the pet's level-3 skills. There is a 3% chance to double the courage gained. Effects of skills of the same type stack; after learning this skill you cannot learn other level-3 skills.",
+            "ru_RU": "Один из навыков питомца 3-го уровня. Есть 3% шанс удвоить получаемое мужество. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 3-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 3-га ўзроўню. Ёсць 3% шанц падвоіць атрыманае мужнасць. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 3-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/23.png",
+        "name": {
+            "zh_CN": "材料多多3级",
+            "en_US": "Material Doubler Lv.3",
+            "ru_RU": "Удвоение материалов ур.3",
+            "be_BY": "Падваенне матэрыялаў ур.3"
+        },
+        "desc": {
+            "zh_CN": "宠物三级技能之一，有3%的概率使获得的材料翻倍，同类型技能效果叠加，学习此技能以后不能学习其他三级技能。",
+            "en_US": "One of the pet's level-3 skills. There is a 3% chance to double the materials gained. Effects of skills of the same type stack; after learning this skill you cannot learn other level-3 skills.",
+            "ru_RU": "Один из навыков питомца 3-го уровня. Есть 3% шанс удвоить получаемые материалы. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 3-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 3-га ўзроўню. Ёсць 3% шанц падвоіць атрыманыя матэрыялы. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 3-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/24.png",
+        "name": {
+            "zh_CN": "亲密多多3级",
+            "en_US": "Intimacy Doubler Lv.3",
+            "ru_RU": "Удвоение близости ур.3",
+            "be_BY": "Падваенне блізкасці ур.3"
+        },
+        "desc": {
+            "zh_CN": "宠物三级技能之一，有3%的概率使得获得的亲密翻倍，同类型技能效果叠加，学习此技能以后不能学习其他三级技能。",
+            "en_US": "One of the pet's level-3 skills. There is a 3% chance to double the intimacy gained. Effects of skills of the same type stack; after learning this skill you cannot learn other level-3 skills.",
+            "ru_RU": "Один из навыков питомца 3-го уровня. Есть 3% шанс удвоить получаемую близость. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 3-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 3-га ўзроўню. Ёсць 3% шанц падвоіць атрыманую блізкасць. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 3-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/25.png",
+        "name": {
+            "zh_CN": "糖币加加4级",
+            "en_US": "Sugar Coin Boost Lv.4",
+            "ru_RU": "Усиление сахарных монет ур.4",
+            "be_BY": "Узмацненне цукровых манет ур.4"
+        },
+        "desc": {
+            "zh_CN": "宠物四级技能之一，增加所获得的糖币6%，同类型技能效果叠加，学习此技能以后不能学习其他四级技能。",
+            "en_US": "One of the pet's level-4 skills. Increases the sugar coins gained by 6%. Effects of skills of the same type stack; after learning this skill you cannot learn other level-4 skills.",
+            "ru_RU": "Один из навыков питомца 4-го уровня. Увеличивает получаемые сахарные монеты на 6%. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 4-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 4-га ўзроўню. Павялічвае атрыманыя цукровыя манеты на 6%. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 4-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/26.png",
+        "name": {
+            "zh_CN": "声望加加4级",
+            "en_US": "Reputation Boost Lv.4",
+            "ru_RU": "Усиление репутации ур.4",
+            "be_BY": "Узмацненне рэпутацыі ур.4"
+        },
+        "desc": {
+            "zh_CN": "宠物四级技能之一，增加购买道具和比赛时所获得的声望3%，同类型技能效果叠加，学习此技能以后不能学习其他四级技能。",
+            "en_US": "One of the pet's level-4 skills. Increases the reputation gained when buying items and in matches by 3%. Effects of skills of the same type stack; after learning this skill you cannot learn other level-4 skills.",
+            "ru_RU": "Один из навыков питомца 4-го уровня. Увеличивает получаемую репутацию за покупку предметов и в матчах на 3%. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 4-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 4-га ўзроўню. Павялічвае атрыманую рэпутацыю за куплю прадметаў і ў матчах на 3%. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 4-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/27.png",
+        "name": {
+            "zh_CN": "积分加加4级",
+            "en_US": "Points Boost Lv.4",
+            "ru_RU": "Усиление очков ур.4",
+            "be_BY": "Узмацненне ачкоў ур.4"
+        },
+        "desc": {
+            "zh_CN": "宠物四级技能之一，增加所获得的积分3%，同类型技能效果叠加，学习此技能以后不能学习其他四级技能。",
+            "en_US": "One of the pet's level-4 skills. Increases the points gained by 3%. Effects of skills of the same type stack; after learning this skill you cannot learn other level-4 skills.",
+            "ru_RU": "Один из навыков питомца 4-го уровня. Увеличивает получаемые очки на 3%. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 4-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 4-га ўзроўню. Павялічвае атрыманыя ачкі на 3%. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 4-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/28.png",
+        "name": {
+            "zh_CN": "勇气加加4级",
+            "en_US": "Courage Boost Lv.4",
+            "ru_RU": "Усиление мужества ур.4",
+            "be_BY": "Узмацненне мужнасці ур.4"
+        },
+        "desc": {
+            "zh_CN": "宠物四级技能之一，增加所获得的勇气3%，同类型技能效果叠加，学习此技能以后不能学习其他四级技能。",
+            "en_US": "One of the pet's level-4 skills. Increases the courage gained by 3%. Effects of skills of the same type stack; after learning this skill you cannot learn other level-4 skills.",
+            "ru_RU": "Один из навыков питомца 4-го уровня. Увеличивает получаемое мужество на 3%. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 4-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 4-га ўзроўню. Павялічвае атрыманае мужнасць на 3%. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 4-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/29.png",
+        "name": {
+            "zh_CN": "积分多多4级",
+            "en_US": "Points Doubler Lv.4",
+            "ru_RU": "Удвоение очков ур.4",
+            "be_BY": "Падваенне ачкоў ур.4"
+        },
+        "desc": {
+            "zh_CN": "宠物四级技能之一，有3%的概率使得获得的积分翻倍，同类型技能效果叠加，学习此技能以后不能学习其他四级技能。",
+            "en_US": "One of the pet's level-4 skills. There is a 3% chance to double the points gained. Effects of skills of the same type stack; after learning this skill you cannot learn other level-4 skills.",
+            "ru_RU": "Один из навыков питомца 4-го уровня. Есть 3% шанс удвоить получаемые очки. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 4-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 4-га ўзроўню. Ёсць 3% шанц падвоіць атрыманыя ачкі. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 4-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/30.png",
+        "name": {
+            "zh_CN": "勇气多多4级",
+            "en_US": "Courage Doubler Lv.4",
+            "ru_RU": "Удвоение мужества ур.4",
+            "be_BY": "Падваенне мужнасці ур.4"
+        },
+        "desc": {
+            "zh_CN": "宠物四级技能之一，有3%的概率使得获得的勇气翻倍，同类型技能效果叠加，学习此技能以后不能学习其他四级技能。",
+            "en_US": "One of the pet's level-4 skills. There is a 3% chance to double the courage gained. Effects of skills of the same type stack; after learning this skill you cannot learn other level-4 skills.",
+            "ru_RU": "Один из навыков питомца 4-го уровня. Есть 3% шанс удвоить получаемое мужество. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 4-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 4-га ўзроўню. Ёсць 3% шанц падвоіць атрыманае мужнасць. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 4-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/31.png",
+        "name": {
+            "zh_CN": "材料多多4级",
+            "en_US": "Material Doubler Lv.4",
+            "ru_RU": "Удвоение материалов ур.4",
+            "be_BY": "Падваенне матэрыялаў ур.4"
+        },
+        "desc": {
+            "zh_CN": "宠物四级技能之一，有3%的概率使获得的材料翻倍，同类型技能效果叠加，学习此技能以后不能学习其他四级技能。",
+            "en_US": "One of the pet's level-4 skills. There is a 3% chance to double the materials gained. Effects of skills of the same type stack; after learning this skill you cannot learn other level-4 skills.",
+            "ru_RU": "Один из навыков питомца 4-го уровня. Есть 3% шанс удвоить получаемые материалы. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 4-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 4-га ўзроўню. Ёсць 3% шанц падвоіць атрыманыя матэрыялы. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 4-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/32.png",
+        "name": {
+            "zh_CN": "亲密多多4级",
+            "en_US": "Intimacy Doubler Lv.4",
+            "ru_RU": "Удвоение близости ур.4",
+            "be_BY": "Падваенне блізкасці ур.4"
+        },
+        "desc": {
+            "zh_CN": "宠物四级技能之一，有3%的概率使得获得的亲密翻倍，同类型技能效果叠加，学习此技能以后不能学习其他四级技能。",
+            "en_US": "One of the pet's level-4 skills. There is a 3% chance to double the intimacy gained. Effects of skills of the same type stack; after learning this skill you cannot learn other level-4 skills.",
+            "ru_RU": "Один из навыков питомца 4-го уровня. Есть 3% шанс удвоить получаемую близость. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 4-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 4-га ўзроўню. Ёсць 3% шанц падвоіць атрыманую блізкасць. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 4-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/33.png",
+        "name": {
+            "zh_CN": "糖币加加5级",
+            "en_US": "Sugar Coin Boost Lv.5",
+            "ru_RU": "Усиление сахарных монет ур.5",
+            "be_BY": "Узмацненне цукровых манет ур.5"
+        },
+        "desc": {
+            "zh_CN": "宠物五级技能之一，增加所获得的糖币6%，同类型技能效果叠加，学习此技能以后不能学习其他五级技能。",
+            "en_US": "One of the pet's level-5 skills. Increases the sugar coins gained by 6%. Effects of skills of the same type stack; after learning this skill you cannot learn other level-5 skills.",
+            "ru_RU": "Один из навыков питомца 5-го уровня. Увеличивает получаемые сахарные монеты на 6%. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 5-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 5-га ўзроўню. Павялічвае атрыманыя цукровыя манеты на 6%. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 5-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/34.png",
+        "name": {
+            "zh_CN": "声望加加5级",
+            "en_US": "Reputation Boost Lv.5",
+            "ru_RU": "Усиление репутации ур.5",
+            "be_BY": "Узмацненне рэпутацыі ур.5"
+        },
+        "desc": {
+            "zh_CN": "宠物五级技能之一，增加购买道具和比赛时所获得的声望3%，同类型技能效果叠加，学习此技能以后不能学习其他五级技能。",
+            "en_US": "One of the pet's level-5 skills. Increases the reputation gained when buying items and in matches by 3%. Effects of skills of the same type stack; after learning this skill you cannot learn other level-5 skills.",
+            "ru_RU": "Один из навыков питомца 5-го уровня. Увеличивает получаемую репутацию за покупку предметов и в матчах на 3%. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 5-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 5-га ўзроўню. Павялічвае атрыманую рэпутацыю за куплю прадметаў і ў матчах на 3%. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 5-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/35.png",
+        "name": {
+            "zh_CN": "积分加加5级",
+            "en_US": "Points Boost Lv.5",
+            "ru_RU": "Усиление очков ур.5",
+            "be_BY": "Узмацненне ачкоў ур.5"
+        },
+        "desc": {
+            "zh_CN": "宠物五级技能之一，增加所获得的积分3%，同类型技能效果叠加，学习此技能以后不能学习其他五级技能。",
+            "en_US": "One of the pet's level-5 skills. Increases the points gained by 3%. Effects of skills of the same type stack; after learning this skill you cannot learn other level-5 skills.",
+            "ru_RU": "Один из навыков питомца 5-го уровня. Увеличивает получаемые очки на 3%. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 5-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 5-га ўзроўню. Павялічвае атрыманыя ачкі на 3%. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 5-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/36.png",
+        "name": {
+            "zh_CN": "勇气加加5级",
+            "en_US": "Courage Boost Lv.5",
+            "ru_RU": "Усиление мужества ур.5",
+            "be_BY": "Узмацненне мужнасці ур.5"
+        },
+        "desc": {
+            "zh_CN": "宠物五级技能之一，增加所获得的勇气3%，同类型技能效果叠加，学习此技能以后不能学习其他五级技能。",
+            "en_US": "One of the pet's level-5 skills. Increases the courage gained by 3%. Effects of skills of the same type stack; after learning this skill you cannot learn other level-5 skills.",
+            "ru_RU": "Один из навыков питомца 5-го уровня. Увеличивает получаемое мужество на 3%. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 5-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 5-га ўзроўню. Павялічвае атрыманае мужнасць на 3%. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 5-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/37.png",
+        "name": {
+            "zh_CN": "积分多多5级",
+            "en_US": "Points Doubler Lv.5",
+            "ru_RU": "Удвоение очков ур.5",
+            "be_BY": "Падваенне ачкоў ур.5"
+        },
+        "desc": {
+            "zh_CN": "宠物五级技能之一，有3%的概率使得获得的积分翻倍，同类型技能效果叠加，学习此技能以后不能学习其他五级技能。",
+            "en_US": "One of the pet's level-5 skills. There is a 3% chance to double the points gained. Effects of skills of the same type stack; after learning this skill you cannot learn other level-5 skills.",
+            "ru_RU": "Один из навыков питомца 5-го уровня. Есть 3% шанс удвоить получаемые очки. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 5-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 5-га ўзроўню. Ёсць 3% шанц падвоіць атрыманыя ачкі. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 5-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/38.png",
+        "name": {
+            "zh_CN": "勇气多多5级",
+            "en_US": "Courage Doubler Lv.5",
+            "ru_RU": "Удвоение мужества ур.5",
+            "be_BY": "Падваенне мужнасці ур.5"
+        },
+        "desc": {
+            "zh_CN": "宠物五级技能之一，有3%的概率使得获得的勇气翻倍，同类型技能效果叠加，学习此技能以后不能学习其他五级技能。",
+            "en_US": "One of the pet's level-5 skills. There is a 3% chance to double the courage gained. Effects of skills of the same type stack; after learning this skill you cannot learn other level-5 skills.",
+            "ru_RU": "Один из навыков питомца 5-го уровня. Есть 3% шанс удвоить получаемое мужество. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 5-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 5-га ўзроўню. Ёсць 3% шанц падвоіць атрыманае мужнасць. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 5-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/39.png",
+        "name": {
+            "zh_CN": "材料多多5级",
+            "en_US": "Material Doubler Lv.5",
+            "ru_RU": "Удвоение материалов ур.5",
+            "be_BY": "Падваенне матэрыялаў ур.5"
+        },
+        "desc": {
+            "zh_CN": "宠物五级技能之一，有3%的概率使获得的材料翻倍，同类型技能效果叠加，学习此技能以后不能学习其他五级技能。",
+            "en_US": "One of the pet's level-5 skills. There is a 3% chance to double the materials gained. Effects of skills of the same type stack; after learning this skill you cannot learn other level-5 skills.",
+            "ru_RU": "Один из навыков питомца 5-го уровня. Есть 3% шанс удвоить получаемые материалы. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 5-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 5-га ўзроўню. Ёсць 3% шанц падвоіць атрыманыя матэрыялы. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 5-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/40.png",
+        "name": {
+            "zh_CN": "亲密多多5级",
+            "en_US": "Intimacy Doubler Lv.5",
+            "ru_RU": "Удвоение близости ур.5",
+            "be_BY": "Падваенне блізкасці ур.5"
+        },
+        "desc": {
+            "zh_CN": "宠物五级技能之一，有3%的概率使得获得的亲密翻倍，同类型技能效果叠加，学习此技能以后不能学习其他五级技能。",
+            "en_US": "One of the pet's level-5 skills. There is a 3% chance to double the intimacy gained. Effects of skills of the same type stack; after learning this skill you cannot learn other level-5 skills.",
+            "ru_RU": "Один из навыков питомца 5-го уровня. Есть 3% шанс удвоить получаемую близость. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 5-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 5-га ўзроўню. Ёсць 3% шанц падвоіць атрыманую блізкасць. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 5-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/41.png",
+        "name": {
+            "zh_CN": "糖币加加6级",
+            "en_US": "Sugar Coin Boost Lv.6",
+            "ru_RU": "Усиление сахарных монет ур.6",
+            "be_BY": "Узмацненне цукровых манет ур.6"
+        },
+        "desc": {
+            "zh_CN": "宠物六级技能之一，增加所获得的糖币6%，同类型技能效果叠加，学习此技能以后不能学习其他六级技能。",
+            "en_US": "One of the pet's level-6 skills. Increases the sugar coins gained by 6%. Effects of skills of the same type stack; after learning this skill you cannot learn other level-6 skills.",
+            "ru_RU": "Один из навыков питомца 6-го уровня. Увеличивает получаемые сахарные монеты на 6%. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 6-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 6-га ўзроўню. Павялічвае атрыманыя цукровыя манеты на 6%. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 6-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/42.png",
+        "name": {
+            "zh_CN": "声望加加6级",
+            "en_US": "Reputation Boost Lv.6",
+            "ru_RU": "Усиление репутации ур.6",
+            "be_BY": "Узмацненне рэпутацыі ур.6"
+        },
+        "desc": {
+            "zh_CN": "宠物六级技能之一，增加购买道具和比赛时所获得的声望3%，同类型技能效果叠加，学习此技能以后不能学习其他六级技能。",
+            "en_US": "One of the pet's level-6 skills. Increases the reputation gained when buying items and in matches by 3%. Effects of skills of the same type stack; after learning this skill you cannot learn other level-6 skills.",
+            "ru_RU": "Один из навыков питомца 6-го уровня. Увеличивает получаемую репутацию за покупку предметов и в матчах на 3%. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 6-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 6-га ўзроўню. Павялічвае атрыманую рэпутацыю за куплю прадметаў і ў матчах на 3%. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 6-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/43.png",
+        "name": {
+            "zh_CN": "积分加加6级",
+            "en_US": "Points Boost Lv.6",
+            "ru_RU": "Усиление очков ур.6",
+            "be_BY": "Узмацненне ачкоў ур.6"
+        },
+        "desc": {
+            "zh_CN": "宠物六级技能之一，增加所获得的积分3%，同类型技能效果叠加，学习此技能以后不能学习其他六级技能。",
+            "en_US": "One of the pet's level-6 skills. Increases the points gained by 3%. Effects of skills of the same type stack; after learning this skill you cannot learn other level-6 skills.",
+            "ru_RU": "Один из навыков питомца 6-го уровня. Увеличивает получаемые очки на 3%. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 6-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 6-га ўзроўню. Павялічвае атрыманыя ачкі на 3%. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 6-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/44.png",
+        "name": {
+            "zh_CN": "勇气加加6级",
+            "en_US": "Courage Boost Lv.6",
+            "ru_RU": "Усиление мужества ур.6",
+            "be_BY": "Узмацненне мужнасці ур.6"
+        },
+        "desc": {
+            "zh_CN": "宠物六级技能之一，增加所获得的勇气3%，同类型技能效果叠加，学习此技能以后不能学习其他六级技能。",
+            "en_US": "One of the pet's level-6 skills. Increases the courage gained by 3%. Effects of skills of the same type stack; after learning this skill you cannot learn other level-6 skills.",
+            "ru_RU": "Один из навыков питомца 6-го уровня. Увеличивает получаемое мужество на 3%. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 6-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 6-га ўзроўню. Павялічвае атрыманае мужнасць на 3%. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 6-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/45.png",
+        "name": {
+            "zh_CN": "积分多多6级",
+            "en_US": "Points Doubler Lv.6",
+            "ru_RU": "Удвоение очков ур.6",
+            "be_BY": "Падваенне ачкоў ур.6"
+        },
+        "desc": {
+            "zh_CN": "宠物六级技能之一，有3%的概率使得获得的积分翻倍，同类型技能效果叠加，学习此技能以后不能学习其他六级技能。",
+            "en_US": "One of the pet's level-6 skills. There is a 3% chance to double the points gained. Effects of skills of the same type stack; after learning this skill you cannot learn other level-6 skills.",
+            "ru_RU": "Один из навыков питомца 6-го уровня. Есть 3% шанс удвоить получаемые очки. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 6-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 6-га ўзроўню. Ёсць 3% шанц падвоіць атрыманыя ачкі. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 6-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/46.png",
+        "name": {
+            "zh_CN": "勇气多多6级",
+            "en_US": "Courage Doubler Lv.6",
+            "ru_RU": "Удвоение мужества ур.6",
+            "be_BY": "Падваенне мужнасці ур.6"
+        },
+        "desc": {
+            "zh_CN": "宠物六级技能之一，有3%的概率使得获得的勇气翻倍，同类型技能效果叠加，学习此技能以后不能学习其他六级技能。",
+            "en_US": "One of the pet's level-6 skills. There is a 3% chance to double the courage gained. Effects of skills of the same type stack; after learning this skill you cannot learn other level-6 skills.",
+            "ru_RU": "Один из навыков питомца 6-го уровня. Есть 3% шанс удвоить получаемое мужество. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 6-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 6-га ўзроўню. Ёсць 3% шанц падвоіць атрыманае мужнасць. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 6-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/47.png",
+        "name": {
+            "zh_CN": "材料多多6级",
+            "en_US": "Material Doubler Lv.6",
+            "ru_RU": "Удвоение материалов ур.6",
+            "be_BY": "Падваенне матэрыялаў ур.6"
+        },
+        "desc": {
+            "zh_CN": "宠物六级技能之一，有3%的概率使获得的材料翻倍，同类型技能效果叠加，学习此技能以后不能学习其他六级技能。",
+            "en_US": "One of the pet's level-6 skills. There is a 3% chance to double the materials gained. Effects of skills of the same type stack; after learning this skill you cannot learn other level-6 skills.",
+            "ru_RU": "Один из навыков питомца 6-го уровня. Есть 3% шанс удвоить получаемые материалы. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 6-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 6-га ўзроўню. Ёсць 3% шанц падвоіць атрыманыя матэрыялы. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 6-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/48.png",
+        "name": {
+            "zh_CN": "亲密多多6级",
+            "en_US": "Intimacy Doubler Lv.6",
+            "ru_RU": "Удвоение близости ур.6",
+            "be_BY": "Падваенне блізкасці ур.6"
+        },
+        "desc": {
+            "zh_CN": "宠物六级技能之一，有3%的概率使得获得的亲密翻倍，同类型技能效果叠加，学习此技能以后不能学习其他六级技能。",
+            "en_US": "One of the pet's level-6 skills. There is a 3% chance to double the intimacy gained. Effects of skills of the same type stack; after learning this skill you cannot learn other level-6 skills.",
+            "ru_RU": "Один из навыков питомца 6-го уровня. Есть 3% шанс удвоить получаемую близость. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 6-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 6-га ўзроўню. Ёсць 3% шанц падвоіць атрыманую блізкасць. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 6-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/49.png",
+        "name": {
+            "zh_CN": "糖币加加7级",
+            "en_US": "Sugar Coin Boost Lv.7",
+            "ru_RU": "Усиление сахарных монет ур.7",
+            "be_BY": "Узмацненне цукровых манет ур.7"
+        },
+        "desc": {
+            "zh_CN": "宠物七级技能之一，增加所获得的糖币6%，同类型技能效果叠加，学习此技能以后不能学习其他七级技能。",
+            "en_US": "One of the pet's level-7 skills. Increases the sugar coins gained by 6%. Effects of skills of the same type stack; after learning this skill you cannot learn other level-7 skills.",
+            "ru_RU": "Один из навыков питомца 7-го уровня. Увеличивает получаемые сахарные монеты на 6%. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 7-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 7-га ўзроўню. Павялічвае атрыманыя цукровыя манеты на 6%. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 7-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/50.png",
+        "name": {
+            "zh_CN": "声望加加7级",
+            "en_US": "Reputation Boost Lv.7",
+            "ru_RU": "Усиление репутации ур.7",
+            "be_BY": "Узмацненне рэпутацыі ур.7"
+        },
+        "desc": {
+            "zh_CN": "宠物七级技能之一，增加购买道具和比赛时所获得的声望3%，同类型技能效果叠加，学习此技能以后不能学习其他七级技能。",
+            "en_US": "One of the pet's level-7 skills. Increases the reputation gained when buying items and in matches by 3%. Effects of skills of the same type stack; after learning this skill you cannot learn other level-7 skills.",
+            "ru_RU": "Один из навыков питомца 7-го уровня. Увеличивает получаемую репутацию за покупку предметов и в матчах на 3%. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 7-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 7-га ўзроўню. Павялічвае атрыманую рэпутацыю за куплю прадметаў і ў матчах на 3%. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 7-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/51.png",
+        "name": {
+            "zh_CN": "积分加加7级",
+            "en_US": "Points Boost Lv.7",
+            "ru_RU": "Усиление очков ур.7",
+            "be_BY": "Узмацненне ачкоў ур.7"
+        },
+        "desc": {
+            "zh_CN": "宠物七级技能之一，增加所获得的积分3%，同类型技能效果叠加，学习此技能以后不能学习其他七级技能。",
+            "en_US": "One of the pet's level-7 skills. Increases the points gained by 3%. Effects of skills of the same type stack; after learning this skill you cannot learn other level-7 skills.",
+            "ru_RU": "Один из навыков питомца 7-го уровня. Увеличивает получаемые очки на 3%. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 7-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 7-га ўзроўню. Павялічвае атрыманыя ачкі на 3%. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 7-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/52.png",
+        "name": {
+            "zh_CN": "勇气加加7级",
+            "en_US": "Courage Boost Lv.7",
+            "ru_RU": "Усиление мужества ур.7",
+            "be_BY": "Узмацненне мужнасці ур.7"
+        },
+        "desc": {
+            "zh_CN": "宠物七级技能之一，增加所获得的勇气3%，同类型技能效果叠加，学习此技能以后不能学习其他七级技能。",
+            "en_US": "One of the pet's level-7 skills. Increases the courage gained by 3%. Effects of skills of the same type stack; after learning this skill you cannot learn other level-7 skills.",
+            "ru_RU": "Один из навыков питомца 7-го уровня. Увеличивает получаемое мужество на 3%. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 7-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 7-га ўзроўню. Павялічвае атрыманае мужнасць на 3%. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 7-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/53.png",
+        "name": {
+            "zh_CN": "积分多多7级",
+            "en_US": "Points Doubler Lv.7",
+            "ru_RU": "Удвоение очков ур.7",
+            "be_BY": "Падваенне ачкоў ур.7"
+        },
+        "desc": {
+            "zh_CN": "宠物七级技能之一，有3%的概率使得获得的积分翻倍，同类型技能效果叠加，学习此技能以后不能学习其他七级技能。",
+            "en_US": "One of the pet's level-7 skills. There is a 3% chance to double the points gained. Effects of skills of the same type stack; after learning this skill you cannot learn other level-7 skills.",
+            "ru_RU": "Один из навыков питомца 7-го уровня. Есть 3% шанс удвоить получаемые очки. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 7-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 7-га ўзроўню. Ёсць 3% шанц падвоіць атрыманыя ачкі. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 7-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/54.png",
+        "name": {
+            "zh_CN": "勇气多多7级",
+            "en_US": "Courage Doubler Lv.7",
+            "ru_RU": "Удвоение мужества ур.7",
+            "be_BY": "Падваенне мужнасці ур.7"
+        },
+        "desc": {
+            "zh_CN": "宠物七级技能之一，有3%的概率使得获得的勇气翻倍，同类型技能效果叠加，学习此技能以后不能学习其他七级技能。",
+            "en_US": "One of the pet's level-7 skills. There is a 3% chance to double the courage gained. Effects of skills of the same type stack; after learning this skill you cannot learn other level-7 skills.",
+            "ru_RU": "Один из навыков питомца 7-го уровня. Есть 3% шанс удвоить получаемое мужество. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 7-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 7-га ўзроўню. Ёсць 3% шанц падвоіць атрыманае мужнасць. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 7-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/55.png",
+        "name": {
+            "zh_CN": "材料多多7级",
+            "en_US": "Material Doubler Lv.7",
+            "ru_RU": "Удвоение материалов ур.7",
+            "be_BY": "Падваенне матэрыялаў ур.7"
+        },
+        "desc": {
+            "zh_CN": "宠物七级技能之一，有3%的概率使获得的材料翻倍，同类型技能效果叠加，学习此技能以后不能学习其他七级技能。",
+            "en_US": "One of the pet's level-7 skills. There is a 3% chance to double the materials gained. Effects of skills of the same type stack; after learning this skill you cannot learn other level-7 skills.",
+            "ru_RU": "Один из навыков питомца 7-го уровня. Есть 3% шанс удвоить получаемые материалы. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 7-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 7-га ўзроўню. Ёсць 3% шанц падвоіць атрыманыя матэрыялы. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 7-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/56.png",
+        "name": {
+            "zh_CN": "亲密多多7级",
+            "en_US": "Intimacy Doubler Lv.7",
+            "ru_RU": "Удвоение близости ур.7",
+            "be_BY": "Падваенне блізкасці ур.7"
+        },
+        "desc": {
+            "zh_CN": "宠物七级技能之一，有3%的概率使得获得的亲密翻倍，同类型技能效果叠加，学习此技能以后不能学习其他七级技能。",
+            "en_US": "One of the pet's level-7 skills. There is a 3% chance to double the intimacy gained. Effects of skills of the same type stack; after learning this skill you cannot learn other level-7 skills.",
+            "ru_RU": "Один из навыков питомца 7-го уровня. Есть 3% шанс удвоить получаемую близость. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 7-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 7-га ўзроўню. Ёсць 3% шанц падвоіць атрыманую блізкасць. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 7-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/57.png",
+        "name": {
+            "zh_CN": "糖币加加8级",
+            "en_US": "Sugar Coin Boost Lv.8",
+            "ru_RU": "Усиление сахарных монет ур.8",
+            "be_BY": "Узмацненне цукровых манет ур.8"
+        },
+        "desc": {
+            "zh_CN": "宠物八级技能之一，增加所获得的糖币6%，同类型技能效果叠加，学习此技能以后不能学习其他八级技能。",
+            "en_US": "One of the pet's level-8 skills. Increases the sugar coins gained by 6%. Effects of skills of the same type stack; after learning this skill you cannot learn other level-8 skills.",
+            "ru_RU": "Один из навыков питомца 8-го уровня. Увеличивает получаемые сахарные монеты на 6%. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 8-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 8-га ўзроўню. Павялічвае атрыманыя цукровыя манеты на 6%. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 8-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/58.png",
+        "name": {
+            "zh_CN": "声望加加8级",
+            "en_US": "Reputation Boost Lv.8",
+            "ru_RU": "Усиление репутации ур.8",
+            "be_BY": "Узмацненне рэпутацыі ур.8"
+        },
+        "desc": {
+            "zh_CN": "宠物八级技能之一，增加购买道具和比赛时所获得的声望3%，同类型技能效果叠加，学习此技能以后不能学习其他八级技能。",
+            "en_US": "One of the pet's level-8 skills. Increases the reputation gained when buying items and in matches by 3%. Effects of skills of the same type stack; after learning this skill you cannot learn other level-8 skills.",
+            "ru_RU": "Один из навыков питомца 8-го уровня. Увеличивает получаемую репутацию за покупку предметов и в матчах на 3%. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 8-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 8-га ўзроўню. Павялічвае атрыманую рэпутацыю за куплю прадметаў і ў матчах на 3%. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 8-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/59.png",
+        "name": {
+            "zh_CN": "积分加加8级",
+            "en_US": "Points Boost Lv.8",
+            "ru_RU": "Усиление очков ур.8",
+            "be_BY": "Узмацненне ачкоў ур.8"
+        },
+        "desc": {
+            "zh_CN": "宠物八级技能之一，增加所获得的积分3%，同类型技能效果叠加，学习此技能以后不能学习其他八级技能。",
+            "en_US": "One of the pet's level-8 skills. Increases the points gained by 3%. Effects of skills of the same type stack; after learning this skill you cannot learn other level-8 skills.",
+            "ru_RU": "Один из навыков питомца 8-го уровня. Увеличивает получаемые очки на 3%. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 8-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 8-га ўзроўню. Павялічвае атрыманыя ачкі на 3%. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 8-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/60.png",
+        "name": {
+            "zh_CN": "勇气加加8级",
+            "en_US": "Courage Boost Lv.8",
+            "ru_RU": "Усиление мужества ур.8",
+            "be_BY": "Узмацненне мужнасці ур.8"
+        },
+        "desc": {
+            "zh_CN": "宠物八级技能之一，增加所获得的勇气3%，同类型技能效果叠加，学习此技能以后不能学习其他八级技能。",
+            "en_US": "One of the pet's level-8 skills. Increases the courage gained by 3%. Effects of skills of the same type stack; after learning this skill you cannot learn other level-8 skills.",
+            "ru_RU": "Один из навыков питомца 8-го уровня. Увеличивает получаемое мужество на 3%. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 8-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 8-га ўзроўню. Павялічвае атрыманае мужнасць на 3%. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 8-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/61.png",
+        "name": {
+            "zh_CN": "积分多多8级",
+            "en_US": "Points Doubler Lv.8",
+            "ru_RU": "Удвоение очков ур.8",
+            "be_BY": "Падваенне ачкоў ур.8"
+        },
+        "desc": {
+            "zh_CN": "宠物八级技能之一，有3%的概率使得获得的积分翻倍，同类型技能效果叠加，学习此技能以后不能学习其他八级技能。",
+            "en_US": "One of the pet's level-8 skills. There is a 3% chance to double the points gained. Effects of skills of the same type stack; after learning this skill you cannot learn other level-8 skills.",
+            "ru_RU": "Один из навыков питомца 8-го уровня. Есть 3% шанс удвоить получаемые очки. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 8-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 8-га ўзроўню. Ёсць 3% шанц падвоіць атрыманыя ачкі. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 8-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/62.png",
+        "name": {
+            "zh_CN": "勇气多多8级",
+            "en_US": "Courage Doubler Lv.8",
+            "ru_RU": "Удвоение мужества ур.8",
+            "be_BY": "Падваенне мужнасці ур.8"
+        },
+        "desc": {
+            "zh_CN": "宠物八级技能之一，有3%的概率使得获得的勇气翻倍，同类型技能效果叠加，学习此技能以后不能学习其他八级技能。",
+            "en_US": "One of the pet's level-8 skills. There is a 3% chance to double the courage gained. Effects of skills of the same type stack; after learning this skill you cannot learn other level-8 skills.",
+            "ru_RU": "Один из навыков питомца 8-го уровня. Есть 3% шанс удвоить получаемое мужество. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 8-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 8-га ўзроўню. Ёсць 3% шанц падвоіць атрыманае мужнасць. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 8-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/63.png",
+        "name": {
+            "zh_CN": "材料多多8级",
+            "en_US": "Material Doubler Lv.8",
+            "ru_RU": "Удвоение материалов ур.8",
+            "be_BY": "Падваенне матэрыялаў ур.8"
+        },
+        "desc": {
+            "zh_CN": "宠物八级技能之一，有3%的概率使获得的材料翻倍，同类型技能效果叠加，学习此技能以后不能学习其他八级技能。",
+            "en_US": "One of the pet's level-8 skills. There is a 3% chance to double the materials gained. Effects of skills of the same type stack; after learning this skill you cannot learn other level-8 skills.",
+            "ru_RU": "Один из навыков питомца 8-го уровня. Есть 3% шанс удвоить получаемые материалы. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 8-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 8-га ўзроўню. Ёсць 3% шанц падвоіць атрыманыя матэрыялы. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 8-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/64.png",
+        "name": {
+            "zh_CN": "亲密多多8级",
+            "en_US": "Intimacy Doubler Lv.8",
+            "ru_RU": "Удвоение близости ур.8",
+            "be_BY": "Падваенне блізкасці ур.8"
+        },
+        "desc": {
+            "zh_CN": "宠物八级技能之一，有3%的概率使得获得的亲密翻倍，同类型技能效果叠加，学习此技能以后不能学习其他八级技能。",
+            "en_US": "One of the pet's level-8 skills. There is a 3% chance to double the intimacy gained. Effects of skills of the same type stack; after learning this skill you cannot learn other level-8 skills.",
+            "ru_RU": "Один из навыков питомца 8-го уровня. Есть 3% шанс удвоить получаемую близость. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 8-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 8-га ўзроўню. Ёсць 3% шанц падвоіць атрыманую блізкасць. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 8-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/65.png",
+        "name": {
+            "zh_CN": "糖币加加9级",
+            "en_US": "Sugar Coin Boost Lv.9",
+            "ru_RU": "Усиление сахарных монет ур.9",
+            "be_BY": "Узмацненне цукровых манет ур.9"
+        },
+        "desc": {
+            "zh_CN": "宠物九级技能之一，增加所获得的糖币6%，同类型技能效果叠加，学习此技能以后不能学习其他九级技能。",
+            "en_US": "One of the pet's level-9 skills. Increases the sugar coins gained by 6%. Effects of skills of the same type stack; after learning this skill you cannot learn other level-9 skills.",
+            "ru_RU": "Один из навыков питомца 9-го уровня. Увеличивает получаемые сахарные монеты на 6%. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 9-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 9-га ўзроўню. Павялічвае атрыманыя цукровыя манеты на 6%. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 9-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/66.png",
+        "name": {
+            "zh_CN": "声望加加9级",
+            "en_US": "Reputation Boost Lv.9",
+            "ru_RU": "Усиление репутации ур.9",
+            "be_BY": "Узмацненне рэпутацыі ур.9"
+        },
+        "desc": {
+            "zh_CN": "宠物九级技能之一，增加购买道具和比赛时所获得的声望3%，同类型技能效果叠加，学习此技能以后不能学习其他九级技能。",
+            "en_US": "One of the pet's level-9 skills. Increases the reputation gained when buying items and in matches by 3%. Effects of skills of the same type stack; after learning this skill you cannot learn other level-9 skills.",
+            "ru_RU": "Один из навыков питомца 9-го уровня. Увеличивает получаемую репутацию за покупку предметов и в матчах на 3%. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 9-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 9-га ўзроўню. Павялічвае атрыманую рэпутацыю за куплю прадметаў і ў матчах на 3%. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 9-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/67.png",
+        "name": {
+            "zh_CN": "积分加加9级",
+            "en_US": "Points Boost Lv.9",
+            "ru_RU": "Усиление очков ур.9",
+            "be_BY": "Узмацненне ачкоў ур.9"
+        },
+        "desc": {
+            "zh_CN": "宠物九级技能之一，增加所获得的积分3%，同类型技能效果叠加，学习此技能以后不能学习其他九级技能。",
+            "en_US": "One of the pet's level-9 skills. Increases the points gained by 3%. Effects of skills of the same type stack; after learning this skill you cannot learn other level-9 skills.",
+            "ru_RU": "Один из навыков питомца 9-го уровня. Увеличивает получаемые очки на 3%. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 9-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 9-га ўзроўню. Павялічвае атрыманыя ачкі на 3%. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 9-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/68.png",
+        "name": {
+            "zh_CN": "勇气加加9级",
+            "en_US": "Courage Boost Lv.9",
+            "ru_RU": "Усиление мужества ур.9",
+            "be_BY": "Узмацненне мужнасці ур.9"
+        },
+        "desc": {
+            "zh_CN": "宠物九级技能之一，增加所获得的勇气3%，同类型技能效果叠加，学习此技能以后不能学习其他九级技能。",
+            "en_US": "One of the pet's level-9 skills. Increases the courage gained by 3%. Effects of skills of the same type stack; after learning this skill you cannot learn other level-9 skills.",
+            "ru_RU": "Один из навыков питомца 9-го уровня. Увеличивает получаемое мужество на 3%. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 9-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 9-га ўзроўню. Павялічвае атрыманае мужнасць на 3%. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 9-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/69.png",
+        "name": {
+            "zh_CN": "积分多多9级",
+            "en_US": "Points Doubler Lv.9",
+            "ru_RU": "Удвоение очков ур.9",
+            "be_BY": "Падваенне ачкоў ур.9"
+        },
+        "desc": {
+            "zh_CN": "宠物九级技能之一，有3%的概率使得获得的积分翻倍，同类型技能效果叠加，学习此技能以后不能学习其他九级技能。",
+            "en_US": "One of the pet's level-9 skills. There is a 3% chance to double the points gained. Effects of skills of the same type stack; after learning this skill you cannot learn other level-9 skills.",
+            "ru_RU": "Один из навыков питомца 9-го уровня. Есть 3% шанс удвоить получаемые очки. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 9-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 9-га ўзроўню. Ёсць 3% шанц падвоіць атрыманыя ачкі. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 9-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/70.png",
+        "name": {
+            "zh_CN": "勇气多多9级",
+            "en_US": "Courage Doubler Lv.9",
+            "ru_RU": "Удвоение мужества ур.9",
+            "be_BY": "Падваенне мужнасці ур.9"
+        },
+        "desc": {
+            "zh_CN": "宠物九级技能之一，有3%的概率使得获得的勇气翻倍，同类型技能效果叠加，学习此技能以后不能学习其他九级技能。",
+            "en_US": "One of the pet's level-9 skills. There is a 3% chance to double the courage gained. Effects of skills of the same type stack; after learning this skill you cannot learn other level-9 skills.",
+            "ru_RU": "Один из навыков питомца 9-го уровня. Есть 3% шанс удвоить получаемое мужество. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 9-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 9-га ўзроўню. Ёсць 3% шанц падвоіць атрыманае мужнасць. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 9-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/71.png",
+        "name": {
+            "zh_CN": "材料多多9级",
+            "en_US": "Material Doubler Lv.9",
+            "ru_RU": "Удвоение материалов ур.9",
+            "be_BY": "Падваенне матэрыялаў ур.9"
+        },
+        "desc": {
+            "zh_CN": "宠物九级技能之一，有3%的概率使获得的材料翻倍，同类型技能效果叠加，学习此技能以后不能学习其他九级技能。",
+            "en_US": "One of the pet's level-9 skills. There is a 3% chance to double the materials gained. Effects of skills of the same type stack; after learning this skill you cannot learn other level-9 skills.",
+            "ru_RU": "Один из навыков питомца 9-го уровня. Есть 3% шанс удвоить получаемые материалы. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 9-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 9-га ўзроўню. Ёсць 3% шанц падвоіць атрыманыя матэрыялы. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 9-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/72.png",
+        "name": {
+            "zh_CN": "亲密多多9级",
+            "en_US": "Intimacy Doubler Lv.9",
+            "ru_RU": "Удвоение близости ур.9",
+            "be_BY": "Падваенне блізкасці ур.9"
+        },
+        "desc": {
+            "zh_CN": "宠物九级技能之一，有3%的概率使得获得的亲密翻倍，同类型技能效果叠加，学习此技能以后不能学习其他九级技能。",
+            "en_US": "One of the pet's level-9 skills. There is a 3% chance to double the intimacy gained. Effects of skills of the same type stack; after learning this skill you cannot learn other level-9 skills.",
+            "ru_RU": "Один из навыков питомца 9-го уровня. Есть 3% шанс удвоить получаемую близость. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 9-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 9-га ўзроўню. Ёсць 3% шанц падвоіць атрыманую блізкасць. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 9-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/73.png",
+        "name": {
+            "zh_CN": "糖币加加10级",
+            "en_US": "Sugar Coin Boost Lv.10",
+            "ru_RU": "Усиление сахарных монет ур.10",
+            "be_BY": "Узмацненне цукровых манет ур.10"
+        },
+        "desc": {
+            "zh_CN": "宠物十级技能之一，增加所获得的糖币6%，同类型技能效果叠加，学习此技能以后不能学习其他十级技能。",
+            "en_US": "One of the pet's level-10 skills. Increases the sugar coins gained by 6%. Effects of skills of the same type stack; after learning this skill you cannot learn other level-10 skills.",
+            "ru_RU": "Один из навыков питомца 10-го уровня. Увеличивает получаемые сахарные монеты на 6%. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 10-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 10-га ўзроўню. Павялічвае атрыманыя цукровыя манеты на 6%. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 10-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/74.png",
+        "name": {
+            "zh_CN": "声望加加10级",
+            "en_US": "Reputation Boost Lv.10",
+            "ru_RU": "Усиление репутации ур.10",
+            "be_BY": "Узмацненне рэпутацыі ур.10"
+        },
+        "desc": {
+            "zh_CN": "宠物十级技能之一，增加购买道具和比赛时所获得的声望3%，同类型技能效果叠加，学习此技能以后不能学习其他十级技能。",
+            "en_US": "One of the pet's level-10 skills. Increases the reputation gained when buying items and in matches by 3%. Effects of skills of the same type stack; after learning this skill you cannot learn other level-10 skills.",
+            "ru_RU": "Один из навыков питомца 10-го уровня. Увеличивает получаемую репутацию за покупку предметов и в матчах на 3%. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 10-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 10-га ўзроўню. Павялічвае атрыманую рэпутацыю за куплю прадметаў і ў матчах на 3%. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 10-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/75.png",
+        "name": {
+            "zh_CN": "积分加加10级",
+            "en_US": "Points Boost Lv.10",
+            "ru_RU": "Усиление очков ур.10",
+            "be_BY": "Узмацненне ачкоў ур.10"
+        },
+        "desc": {
+            "zh_CN": "宠物十级技能之一，增加所获得的积分3%，同类型技能效果叠加，学习此技能以后不能学习其他十级技能。",
+            "en_US": "One of the pet's level-10 skills. Increases the points gained by 3%. Effects of skills of the same type stack; after learning this skill you cannot learn other level-10 skills.",
+            "ru_RU": "Один из навыков питомца 10-го уровня. Увеличивает получаемые очки на 3%. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 10-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 10-га ўзроўню. Павялічвае атрыманыя ачкі на 3%. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 10-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/76.png",
+        "name": {
+            "zh_CN": "勇气加加10级",
+            "en_US": "Courage Boost Lv.10",
+            "ru_RU": "Усиление мужества ур.10",
+            "be_BY": "Узмацненне мужнасці ур.10"
+        },
+        "desc": {
+            "zh_CN": "宠物十级技能之一，增加所获得的勇气3%，同类型技能效果叠加，学习此技能以后不能学习其他十级技能。",
+            "en_US": "One of the pet's level-10 skills. Increases the courage gained by 3%. Effects of skills of the same type stack; after learning this skill you cannot learn other level-10 skills.",
+            "ru_RU": "Один из навыков питомца 10-го уровня. Увеличивает получаемое мужество на 3%. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 10-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 10-га ўзроўню. Павялічвае атрыманае мужнасць на 3%. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 10-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/77.png",
+        "name": {
+            "zh_CN": "积分多多10级",
+            "en_US": "Points Doubler Lv.10",
+            "ru_RU": "Удвоение очков ур.10",
+            "be_BY": "Падваенне ачкоў ур.10"
+        },
+        "desc": {
+            "zh_CN": "宠物十级技能之一，有3%的概率使得获得的积分翻倍，同类型技能效果叠加，学习此技能以后不能学习其他十级技能。",
+            "en_US": "One of the pet's level-10 skills. There is a 3% chance to double the points gained. Effects of skills of the same type stack; after learning this skill you cannot learn other level-10 skills.",
+            "ru_RU": "Один из навыков питомца 10-го уровня. Есть 3% шанс удвоить получаемые очки. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 10-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 10-га ўзроўню. Ёсць 3% шанц падвоіць атрыманыя ачкі. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 10-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/78.png",
+        "name": {
+            "zh_CN": "勇气多多10级",
+            "en_US": "Courage Doubler Lv.10",
+            "ru_RU": "Удвоение мужества ур.10",
+            "be_BY": "Падваенне мужнасці ур.10"
+        },
+        "desc": {
+            "zh_CN": "宠物十级技能之一，有3%的概率使得获得的勇气翻倍，同类型技能效果叠加，学习此技能以后不能学习其他十级技能。",
+            "en_US": "One of the pet's level-10 skills. There is a 3% chance to double the courage gained. Effects of skills of the same type stack; after learning this skill you cannot learn other level-10 skills.",
+            "ru_RU": "Один из навыков питомца 10-го уровня. Есть 3% шанс удвоить получаемое мужество. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 10-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 10-га ўзроўню. Ёсць 3% шанц падвоіць атрыманае мужнасць. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 10-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/79.png",
+        "name": {
+            "zh_CN": "材料多多10级",
+            "en_US": "Material Doubler Lv.10",
+            "ru_RU": "Удвоение материалов ур.10",
+            "be_BY": "Падваенне матэрыялаў ур.10"
+        },
+        "desc": {
+            "zh_CN": "宠物十级技能之一，有3%的概率使获得的材料翻倍，同类型技能效果叠加，学习此技能以后不能学习其他十级技能。",
+            "en_US": "One of the pet's level-10 skills. There is a 3% chance to double the materials gained. Effects of skills of the same type stack; after learning this skill you cannot learn other level-10 skills.",
+            "ru_RU": "Один из навыков питомца 10-го уровня. Есть 3% шанс удвоить получаемые материалы. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 10-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 10-га ўзроўню. Ёсць 3% шанц падвоіць атрыманыя матэрыялы. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 10-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }, {
+        "picture": "pet/skill/80.png",
+        "name": {
+            "zh_CN": "亲密多多10级",
+            "en_US": "Intimacy Doubler Lv.10",
+            "ru_RU": "Удвоение близости ур.10",
+            "be_BY": "Падваенне блізкасці ур.10"
+        },
+        "desc": {
+            "zh_CN": "宠物十级技能之一，有3%的概率使得获得的亲密翻倍，同类型技能效果叠加，学习此技能以后不能学习其他十级技能。",
+            "en_US": "One of the pet's level-10 skills. There is a 3% chance to double the intimacy gained. Effects of skills of the same type stack; after learning this skill you cannot learn other level-10 skills.",
+            "ru_RU": "Один из навыков питомца 10-го уровня. Есть 3% шанс удвоить получаемую близость. Эффекты навыков одного типа складываются; изучив этот навык, нельзя изучать другие навыки 10-го уровня.",
+            "be_BY": "Адзін з навыкаў гадаванца 10-га ўзроўню. Ёсць 3% шанц падвоіць атрыманую блізкасць. Эфекты навыкаў аднаго тыпу складаюцца; вывучыўшы гэты навык, нельга вывучаць іншыя навыкі 10-га ўзроўню."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 2,
+        "price_member": 1.8
+    }]
 }, {
     "key": "card",
     "title": {
@@ -24,5 +1680,221 @@
         "ru_RU": "Карточки питомцев",
         "be_BY": "Карткі гадаванцаў"
     },
-    "data": []
+    "data": [{
+        "picture": "pet/card/1.png",
+        "name": {
+            "zh_CN": "10格宠物栏",
+            "en_US": "10-Slot Pet Pen",
+            "ru_RU": "Загон для питомцев на 10 мест",
+            "be_BY": "Загон для гадаванцаў на 10 месцаў"
+        },
+        "desc": {
+            "zh_CN": "拥有10格宠物栏，可以同时召唤10个宠物。",
+            "en_US": "Grants 10 pet slots, allowing you to summon 10 pets at the same time.",
+            "ru_RU": "Даёт 10 мест для питомцев, позволяя одновременно призывать 10 питомцев.",
+            "be_BY": "Дае 10 месцаў для гадаванцаў, дазваляючы адначасова выклікаць 10 гадаванцаў."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 5,
+        "price_member": 4.5
+    }, {
+        "picture": "pet/card/2.png",
+        "name": {
+            "zh_CN": "九尾狐",
+            "en_US": "Nine-Tailed Fox",
+            "ru_RU": "Девятихвостая лиса",
+            "be_BY": "Дзевяціхвостая ліса"
+        },
+        "desc": {
+            "zh_CN": "A级宠物，灵界妖兽九尾狐。具有糖币之光12%，勇气之光6%，积分闪耀6%。",
+            "en_US": "An A-level pet, the nine-tailed fox, a demon beast of the spirit realm. Has Sugar Coin Light 12%, Courage Light 6%, Points Shine 6%.",
+            "ru_RU": "Питомец уровня A — девятихвостая лиса, демонический зверь мира духов. Даёт свет сахарных монет 12%, свет мужества 6%, сияние очков 6%.",
+            "be_BY": "Гадаванец узроўню A — дзевяціхвостая ліса, дэманічная звяруга свету духаў. Дае святло цукровых манет 12%, святло мужнасці 6%, ззянне ачкоў 6%."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 45,
+        "price_member": 40
+    }, {
+        "picture": "pet/card/3.png",
+        "name": {
+            "zh_CN": "帝黑星",
+            "en_US": "Emperor Black Star",
+            "ru_RU": "Император Чёрная Звезда",
+            "be_BY": "Імператар Чорная Зорка"
+        },
+        "desc": {
+            "zh_CN": "A级宠物，拥有黑色力量的大海星，破坏力惊人。具有天赋：声望之光6%，积分闪耀6%，勇气闪耀6%。",
+            "en_US": "An A-level pet, a giant starfish with black power and astonishing destructive force. Has talents: Reputation Light 6%, Points Shine 6%, Courage Shine 6%.",
+            "ru_RU": "Питомец уровня A — гигантская морская звезда с чёрной силой и сокрушительной мощью. Таланты: свет репутации 6%, сияние очков 6%, сияние мужества 6%.",
+            "be_BY": "Гадаванец узроўню A — гіганцкая марская зорка з чорнай сілай і знішчальнай моцай. Таленты: святло рэпутацыі 6%, ззянне ачкоў 6%, ззянне мужнасці 6%."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 43,
+        "price_member": 38.7
+    }, {
+        "picture": "pet/card/4.png",
+        "name": {
+            "zh_CN": "幸运牛娃娃",
+            "en_US": "Lucky Cow Doll",
+            "ru_RU": "Кукла-корова на удачу",
+            "be_BY": "Лялька-карова на ўдачу"
+        },
+        "desc": {
+            "zh_CN": "A级宠物，喜欢撒娇装嫩，带给人们幸运。具有天赋：糖币之光12%，声望之光6%，勇气之光6%。",
+            "en_US": "An A-level pet that loves to act cute and brings people luck. Has talents: Sugar Coin Light 12%, Reputation Light 6%, Courage Light 6%.",
+            "ru_RU": "Питомец уровня A, любит мило капризничать и приносит людям удачу. Таланты: свет сахарных монет 12%, свет репутации 6%, свет мужества 6%.",
+            "be_BY": "Гадаванец узроўню A, любіць міла капрызіць і прыносіць людзям удачу. Таленты: святло цукровых манет 12%, святло рэпутацыі 6%, святло мужнасці 6%."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 42,
+        "price_member": 37.8
+    }, {
+        "picture": "pet/card/5.png",
+        "name": {
+            "zh_CN": "机甲蝎",
+            "en_US": "Mecha Scorpion",
+            "ru_RU": "Меха-скорпион",
+            "be_BY": "Меха-скарпіён"
+        },
+        "desc": {
+            "zh_CN": "A级宠物，威武刚猛的机甲武器。具有天赋：糖币之光12%，声望之光6%，材料闪耀6%。",
+            "en_US": "An A-level pet, a mighty and fierce mecha weapon. Has talents: Sugar Coin Light 12%, Reputation Light 6%, Material Shine 6%.",
+            "ru_RU": "Питомец уровня A — грозное и могучее меха-оружие. Таланты: свет сахарных монет 12%, свет репутации 6%, сияние материалов 6%.",
+            "be_BY": "Гадаванец узроўню A — грозная і магутная меха-зброя. Таленты: святло цукровых манет 12%, святло рэпутацыі 6%, ззянне матэрыялаў 6%."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 45,
+        "price_member": 40.5
+    }, {
+        "picture": "pet/card/6.png",
+        "name": {
+            "zh_CN": "粉便便",
+            "en_US": "Pink Poop",
+            "ru_RU": "Розовая какашка",
+            "be_BY": "Ружовая какашка"
+        },
+        "desc": {
+            "zh_CN": "A级宠物，大便都能跟着跑，还有谁能比我叼?具有天赋：声望之光6%，积分之光6%，材料闪耀6%。",
+            "en_US": "An A-level pet — even poop can run along with you; who could be cockier than me? Has talents: Reputation Light 6%, Points Light 6%, Material Shine 6%.",
+            "ru_RU": "Питомец уровня A — даже какашка бегает за тобой; кто может быть круче меня? Таланты: свет репутации 6%, свет очков 6%, сияние материалов 6%.",
+            "be_BY": "Гадаванец узроўню A — нават какашка бегае за табой; хто можа быць круцейшы за мяне? Таленты: святло рэпутацыі 6%, святло ачкоў 6%, ззянне матэрыялаў 6%."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 40,
+        "price_member": 36
+    }, {
+        "picture": "pet/card/7.png",
+        "name": {
+            "zh_CN": "流光龙",
+            "en_US": "Flowing Light Dragon",
+            "ru_RU": "Дракон льющегося света",
+            "be_BY": "Цмок плыўнога святла"
+        },
+        "desc": {
+            "zh_CN": "A级宠物，守卫稀世琥珀的神龙，流光琥珀套装之魂!具有天赋：声望之光6%，积分之光6%，勇气之光6%。",
+            "en_US": "An A-level pet, a divine dragon guarding the rare amber, the soul of the Flowing Light Amber set! Has talents: Reputation Light 6%, Points Light 6%, Courage Light 6%.",
+            "ru_RU": "Питомец уровня A — божественный дракон, хранитель редкого янтаря, душа набора «Янтарь льющегося света»! Таланты: свет репутации 6%, свет очков 6%, свет мужества 6%.",
+            "be_BY": "Гадаванец узроўню A — боскі цмок, ахоўнік рэдкага бурштыну, душа набору «Бурштын плыўнога святла»! Таленты: святло рэпутацыі 6%, святло ачкоў 6%, святло мужнасці 6%."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 42,
+        "price_member": 37.8
+    }, {
+        "picture": "pet/card/8.png",
+        "name": {
+            "zh_CN": "光明火焰精灵",
+            "en_US": "Light Flame Spirit",
+            "ru_RU": "Дух светлого пламени",
+            "be_BY": "Дух светлага полымя"
+        },
+        "desc": {
+            "zh_CN": "A级宠物，天堂的使者，拥有正义的力量。具有天赋：积分之光6%，勇气之光6%，材料闪耀6%。",
+            "en_US": "An A-level pet, a messenger of heaven who possesses the power of justice. Has talents: Points Light 6%, Courage Light 6%, Material Shine 6%.",
+            "ru_RU": "Питомец уровня A — посланник небес, обладающий силой справедливости. Таланты: свет очков 6%, свет мужества 6%, сияние материалов 6%.",
+            "be_BY": "Гадаванец узроўню A — пасланец нябёсаў, які валодае сілай справядлівасці. Таленты: святло ачкоў 6%, святло мужнасці 6%, ззянне матэрыялаў 6%."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 42,
+        "price_member": 37.6
+    }, {
+        "picture": "pet/card/9.png",
+        "name": {
+            "zh_CN": "黑暗火焰精灵",
+            "en_US": "Dark Flame Spirit",
+            "ru_RU": "Дух тёмного пламени",
+            "be_BY": "Дух цёмнага полымя"
+        },
+        "desc": {
+            "zh_CN": "A级宠物，恶魔的使者，拥有邪恶的力量。具有天赋：积分之光6%，勇气之光6%，积分闪耀6%。",
+            "en_US": "An A-level pet, a messenger of demons who possesses the power of evil. Has talents: Points Light 6%, Courage Light 6%, Points Shine 6%.",
+            "ru_RU": "Питомец уровня A — посланник демонов, обладающий силой зла. Таланты: свет очков 6%, свет мужества 6%, сияние очков 6%.",
+            "be_BY": "Гадаванец узроўню A — пасланец дэманаў, які валодае сілай зла. Таленты: святло ачкоў 6%, святло мужнасці 6%, ззянне ачкоў 6%."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 42,
+        "price_member": 37.8
+    }, {
+        "picture": "pet/card/10.png",
+        "name": {
+            "zh_CN": "飞骷髅",
+            "en_US": "Flying Skeleton",
+            "ru_RU": "Летающий скелет",
+            "be_BY": "Лятаючы шкілет"
+        },
+        "desc": {
+            "zh_CN": "B级宠物，看见我眼里闪烁的红光了吗?还不赶紧退散!声望之光5%，积分之光5%，勇气之光5%。",
+            "en_US": "A B-level pet. See the red light flickering in my eyes? You'd better disperse at once! Reputation Light 5%, Points Light 5%, Courage Light 5%.",
+            "ru_RU": "Питомец уровня B. Видишь красный свет, мерцающий в моих глазах? Лучше немедленно отступи! Свет репутации 5%, свет очков 5%, свет мужества 5%.",
+            "be_BY": "Гадаванец узроўню B. Бачыш чырвонае святло, што мігціць у маіх вачах? Лепш зараз жа адступі! Святло рэпутацыі 5%, святло ачкоў 5%, святло мужнасці 5%."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 30,
+        "price_member": 27
+    }, {
+        "picture": "pet/card/11.png",
+        "name": {
+            "zh_CN": "雪兔",
+            "en_US": "Snow Rabbit",
+            "ru_RU": "Снежный кролик",
+            "be_BY": "Снежны трус"
+        },
+        "desc": {
+            "zh_CN": "B级宠物，白色的雪兔捎来对爱的完美祝福，拥有它的人会获得最真挚的感情。糖币之光10%，积分闪耀5%，勇气闪耀5%。",
+            "en_US": "A B-level pet. The white snow rabbit brings the perfect blessing of love; whoever owns it will gain the most sincere affection. Sugar Coin Light 10%, Points Shine 5%, Courage Shine 5%.",
+            "ru_RU": "Питомец уровня B. Белый снежный кролик приносит совершенное благословение любви; тот, кто им владеет, обретёт самую искреннюю привязанность. Свет сахарных монет 10%, сияние очков 5%, сияние мужества 5%.",
+            "be_BY": "Гадаванец узроўню B. Белы снежны трус прыносіць дасканалае бласлаўленне кахання; той, хто ім валодае, здабудзе самае шчырае пачуццё. Святло цукровых манет 10%, ззянне ачкоў 5%, ззянне мужнасці 5%."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 32,
+        "price_member": 28.8
+    }, {
+        "picture": "pet/card/12.png",
+        "name": {
+            "zh_CN": "彩雀",
+            "en_US": "Colorful Sparrow",
+            "ru_RU": "Пёстрый воробей",
+            "be_BY": "Пярэсты верабей"
+        },
+        "desc": {
+            "zh_CN": "B级宠物，七彩羽毛，叫声悦耳!具有天赋：积分之光5%，勇气之光5%，亲密闪耀5%。",
+            "en_US": "A B-level pet with rainbow feathers and a pleasant cry! Has talents: Points Light 5%, Courage Light 5%, Intimacy Shine 5%.",
+            "ru_RU": "Питомец уровня B с радужными перьями и приятным пением! Таланты: свет очков 5%, свет мужества 5%, сияние близости 5%.",
+            "be_BY": "Гадаванец узроўню B з вясёлкавымі пёрамі і прыемным спевам! Таленты: святло ачкоў 5%, святло мужнасці 5%, ззянне блізкасці 5%."
+        },
+        "amount": 1,
+        "unit": "count",
+        "price_normal": 32,
+        "price_member": 28.8
+    }]
 }]

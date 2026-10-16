@@ -3671,7 +3671,7 @@ datatable-row-wrapper:last-of-type .datatable-body-row {
 }
 
 .alert-light {
-    color: mix($primary-color, $background-color, 60%);
+    // color: mix($primary-color, $background-color, 60%);
     background-color: mix($light-btn-background, $background-color, 20%);
     border-color: rgba($light-btn-background, 0.1);
 }

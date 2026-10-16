@@ -10,23 +10,30 @@ import { IStoreSub, StoreItem } from 'src/app/apis/store';
     selector: 'app-store-menu',
     templateUrl: './store.component.html',
     styles: [`
-        .content_box { margin: 0 -15px; padding-top: 15px; }
+        .content_box {
+            margin: 0 -15px;
+            padding-top: 15px;
+            .pic_case { align-items: center; }
+            .pic_box {
+                width: 80px;
+                padding: 6px;
+                background-color:#444;
+                box-sizing: border-box;
+                .pic { width: 100%; }
+            }
+        }
         .desc { font-size: 0.8rem; }
         .price_box {
             justify-content: space-between;
             .price { min-width: 40px; margin-right: 10px; }
         }
-        .pic_case { align-items: center; }
-        .pic_box {
-            width: 80px;
-            padding: 6px;
-            background-color:#444;
-            box-sizing: border-box;
-            .pic { width: 100%; }
-        }
         .detail_box {
             .banner { width: 100px; &:last-child { width: 140px; }}
-            .introduce { min-height: 160px; mb }
+            .introduce { min-height: 60px; }
+            .pic_box {
+                margin-top: 40px;
+                .pic { width: 70px; }
+            }
         }
         .btn_purchase {
             padding-bottom: 2px; align-content: end;

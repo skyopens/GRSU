@@ -23,11 +23,11 @@ const data: IMenuItem[] = [{
     to: `${adminRoot}/second-menu`,
     // roles: [UserRole.Editor],
     subs: [{
-        icon: 'simple-icon-ghost',
+        icon: 'simple-icon-people',
         label: 'menu.second.role',
         to: `${adminRoot}/second-menu/role`,
     }, {
-        icon: 'simple-icon-ghost',
+        icon: 'simple-icon-book-open',
         label: 'menu.second.mode',
         to: `${adminRoot}/second-menu/mode`,
     }],
@@ -37,15 +37,15 @@ const data: IMenuItem[] = [{
     to: `${adminRoot}/store`,
     // roles: [UserRole.Editor],
     subs: [{
-        icon: 'simple-icon-ghost',
+        icon: 'simple-icon-organization',
         label: 'menu.store.function',
         to: `${adminRoot}/store/function`,
     }, {
-        icon: 'simple-icon-ghost',
+        icon: 'simple-icon-support',
         label: 'menu.store.decoration',
         to: `${adminRoot}/store/decoration`,
     },{
-        icon: 'simple-icon-ghost',
+        icon: 'simple-icon-handbag',
         label: 'menu.store.gear',
         to: `${adminRoot}/store/gear`,
     }, {

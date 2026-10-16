@@ -106,9 +106,9 @@
         },
         "desc": {
             "zh_CN": "搞笑气息十足的蛋疼泡泡，最适合调皮而不安分的你！[携带此道具，所获声望增加4%]。",
-            "en_US": "A hilariously funny \"eggache\" bubble, perfect for the mischievous and restless you! [While carrying this item, reputation gained increases by 4%.]",
-            "ru_RU": "Уморительно смешной пузырь «яйцеболь», идеально подходит для озорного и непоседливого тебя! [С этим предметом получаемая репутация увеличивается на 4%.]",
-            "be_BY": "Занядбайна смешны пузыр «яйкаболь», ідэальна падыходзіць для гарэзлівага і непаседлівага цябе! [З гэтым прадметам атрыманая рэпутацыя павялічваецца на 4%.]"
+            "en_US": "A hilariously funny \"eggache\" bubble, perfect for the mischievous and restless you! [While carrying this item, reputation gained increases by 4%].",
+            "ru_RU": "Уморительно смешной пузырь «яйцеболь», идеально подходит для озорного и непоседливого тебя! [С этим предметом получаемая репутация увеличивается на 4%].",
+            "be_BY": "Занядбайна смешны пузыр «яйкаболь», ідэальна падыходзіць для гарэзлівага і непаседлівага цябе! [З гэтым прадметам атрыманая рэпутацыя павялічваецца на 4%]."
         },
         "amount": 121,
         "unit": "month",
@@ -699,10 +699,10 @@
             "be_BY": "Цукровы пузыр-зялёны крышталь [Мужнасць]"
         },
         "desc": {
-            "zh_CN": "晶莹剔透的质地，浑圆通透的光感，都源自这颗绿水晶细腻的雕琢。你，值得拥有！[携带此道具，所获勇气增加2%。",
-            "en_US": "Its crystal-clear texture and round, translucent luster all come from the delicate carving of this green crystal. You deserve to have it! [While carrying this item, courage gained increases by 2%.",
-            "ru_RU": "Его прозрачная текстура и круглый, светящийся блеск рождены тонкой огранкой этого зелёного кристалла. Ты достоин его! [С этим предметом получаемое мужество увеличивается на 2%.",
-            "be_BY": "Яго празрыстая тэкстура і круглы, прасвечвальны бляск народжаны тонкай агранкай гэтага зялёнага крышталю. Ты варты яго! [З гэтым прадметам атрыманае мужнасць павялічваецца на 2%."
+            "zh_CN": "晶莹剔透的质地，浑圆通透的光感，都源自这颗绿水晶细腻的雕琢。你，值得拥有！[携带此道具，所获勇气增加2%]。",
+            "en_US": "Its crystal-clear texture and round, translucent luster all come from the delicate carving of this green crystal. You deserve to have it! [While carrying this item, courage gained increases by 2%].",
+            "ru_RU": "Его прозрачная текстура и круглый, светящийся блеск рождены тонкой огранкой этого зелёного кристалла. Ты достоин его! [С этим предметом получаемое мужество увеличивается на 2%].",
+            "be_BY": "Яго празрыстая тэкстура і круглы, прасвечвальны бляск народжаны тонкай агранкай гэтага зялёнага крышталю. Ты варты яго! [З гэтым прадметам атрыманае мужнасць павялічваецца на 2%]."
         },
         "amount": 6,
         "unit": "month",
@@ -1581,10 +1581,10 @@
             "be_BY": "Цукровы пузыр-мара [Рэпутацыя]"
         },
         "desc": {
-            "zh_CN": "来自于未知星球的神秘泡泡。充满了梦幻的色彩，美的绚丽夺目，耀眼迷人。[携带此道具，所获声望增加2%。",
-            "en_US": "A mysterious bubble from an unknown planet. Full of dreamlike colors, dazzlingly beautiful, radiant and enchanting. [While carrying this item, reputation gained increases by 2%.",
-            "ru_RU": "Таинственный пузырь с неизвестной планеты. Полон сновидных красок, ослепительно красив, сияющ и пленителен. [С этим предметом получаемая репутация увеличивается на 2%.",
-            "be_BY": "Таямнічы пузыр з невядомай планеты. Поўны снападобных фарбаў, асляпляльна прыгожы, зіхатлівы і чароўны. [З гэтым прадметам атрыманая рэпутацыя павялічваецца на 2%."
+            "zh_CN": "来自于未知星球的神秘泡泡。充满了梦幻的色彩，美的绚丽夺目，耀眼迷人。[携带此道具，所获声望增加2%]。",
+            "en_US": "A mysterious bubble from an unknown planet. Full of dreamlike colors, dazzlingly beautiful, radiant and enchanting. [While carrying this item, reputation gained increases by 2%].",
+            "ru_RU": "Таинственный пузырь с неизвестной планеты. Полон сновидных красок, ослепительно красив, сияющ и пленителен. [С этим предметом получаемая репутация увеличивается на 2%].",
+            "be_BY": "Таямнічы пузыр з невядомай планеты. Поўны снападобных фарбаў, асляпляльна прыгожы, зіхатлівы і чароўны. [З гэтым прадметам атрыманая рэпутацыя павялічваецца на 2%]."
         },
         "amount": 6,
         "unit": "month",
@@ -1725,10 +1725,10 @@
             "be_BY": "Цукровы пузыр-бог «jiong» [Рэпутацыя]"
         },
         "desc": {
-            "zh_CN": "有多囧就有多雷，愚人节的时候，看谁更拽！[携带此道具，所获声望增加3%。",
-            "en_US": "The more \"jiong\", the more shocking — on April Fools' Day, let's see who's cooler! [While carrying this item, reputation gained increases by 3%.",
-            "ru_RU": "Чем больше «jiong», тем сильнее шок — на Первое апреля посмотрим, кто круче! [С этим предметом получаемая репутация увеличивается на 3%.",
-            "be_BY": "Чым больш «jiong», тым мацнейшы шок — на Першае красавіка паглядзім, хто круцейшы! [З гэтым прадметам атрыманая рэпутацыя павялічваецца на 3%."
+            "zh_CN": "有多囧就有多雷，愚人节的时候，看谁更拽！[携带此道具，所获声望增加3%]。",
+            "en_US": "The more \"jiong\", the more shocking — on April Fools' Day, let's see who's cooler! [While carrying this item, reputation gained increases by 3%].",
+            "ru_RU": "Чем больше «jiong», тем сильнее шок — на Первое апреля посмотрим, кто круче! [С этим предметом получаемая репутация увеличивается на 3%].",
+            "be_BY": "Чым больш «jiong», тым мацнейшы шок — на Першае красавіка паглядзім, хто круцейшы! [З гэтым прадметам атрыманая рэпутацыя павялічваецца на 3%]."
         },
         "amount": 6,
         "unit": "month",
@@ -1744,9 +1744,9 @@
         },
         "desc": {
             "zh_CN": "平淡的网事，如繁星点点，Q堂的糖果，难得有这般光芒耀眼，喜欢就收藏，不要错过美丽瞬间。[携带此道具，所获声望增加3%]。",
-            "en_US": "Plain online days, like scattered stars; the candy of QQ Tang rarely shines so brightly — if you like it, collect it, do not miss this beautiful moment. [While carrying this item, reputation gained increases by 3%.]",
-            "ru_RU": "Обыденные сетевые дни, как рассыпанные звёзды; конфеты QQ Тан редко сияют так ярко — понравилось, так коллекционируй, не упусти этот прекрасный миг. [С этим предметом получаемая репутация увеличивается на 3%.]",
-            "be_BY": "Звычайныя сеткавыя дні, як рассыпаныя зоркі; цукеркі QQ Тан рэдка зіхацяць так ярка — спадабалася, дык калекцыянуй, не прапусці гэты цудоўны момант. [З гэтым прадметам атрыманая рэпутацыя павялічваецца на 3%.]"
+            "en_US": "Plain online days, like scattered stars; the candy of QQ Tang rarely shines so brightly — if you like it, collect it, do not miss this beautiful moment. [While carrying this item, reputation gained increases by 3%].",
+            "ru_RU": "Обыденные сетевые дни, как рассыпанные звёзды; конфеты QQ Тан редко сияют так ярко — понравилось, так коллекционируй, не упусти этот прекрасный миг. [С этим предметом получаемая репутация увеличивается на 3%].",
+            "be_BY": "Звычайныя сеткавыя дні, як рассыпаныя зоркі; цукеркі QQ Тан рэдка зіхацяць так ярка — спадабалася, дык калекцыянуй, не прапусці гэты цудоўны момант. [З гэтым прадметам атрыманая рэпутацыя павялічваецца на 3%]."
         },
         "amount": 6,
         "unit": "month",
@@ -1780,9 +1780,9 @@
         },
         "desc": {
             "zh_CN": "它从异界来到地球，会吸附人的贪念，从而壮大自己。这就是传说中的恶魔之手。[携带此道具，所获声望增加3%]。",
-            "en_US": "It came to Earth from another realm and absorbs people's greed to grow stronger. This is the legendary Hand of the Demon. [While carrying this item, reputation gained increases by 3%.]",
-            "ru_RU": "Она пришла на Землю из иного мира и впитывает людскую жадность, чтобы усилиться. Это легендарная Рука демона. [С этим предметом получаемая репутация увеличивается на 3%.]",
-            "be_BY": "Яна прыйшла на Зямлю з іншага свету і ўбірае людскую прагнасць, каб узмацніцца. Гэта легендарная Рука дэмана. [З гэтым прадметам атрыманая рэпутацыя павялічваецца на 3%.]"
+            "en_US": "It came to Earth from another realm and absorbs people's greed to grow stronger. This is the legendary Hand of the Demon. [While carrying this item, reputation gained increases by 3%].",
+            "ru_RU": "Она пришла на Землю из иного мира и впитывает людскую жадность, чтобы усилиться. Это легендарная Рука демона. [С этим предметом получаемая репутация увеличивается на 3%].",
+            "be_BY": "Яна прыйшла на Зямлю з іншага свету і ўбірае людскую прагнасць, каб узмацніцца. Гэта легендарная Рука дэмана. [З гэтым прадметам атрыманая рэпутацыя павялічваецца на 3%]."
         },
         "amount": 6,
         "unit": "month",
@@ -1906,9 +1906,9 @@
         },
         "desc": {
             "zh_CN": "血色蝴蝶的停歇，黑色光球的召唤，成就悲泣预言，解答只待暗影，魅影有待重生。[携带此道具，所获声望增加3%]。",
-            "en_US": "The resting of a blood-colored butterfly, the summoning of a black orb — fulfilling a woeful prophecy; the answer awaits only in the shadows, and the phantom is yet to be reborn. [While carrying this item, reputation gained increases by 3%.]",
-            "ru_RU": "Отдых кроваво-красной бабочки, зов чёрной сферы — свершается скорбное пророчество; ответ ждёт лишь в тени, а фантому ещё предстоит возродиться. [С этим предметом получаемая репутация увеличивается на 3%.]",
-            "be_BY": "Адпачынак крывава-чырвонага матылька, заклік чорнай сферы — збываецца жалобнае прароцтва; адказ чакае толькі ў цені, а фантому яшчэ наканавана нарадзіцца. [З гэтым прадметам атрыманая рэпутацыя павялічваецца на 3%.]"
+            "en_US": "The resting of a blood-colored butterfly, the summoning of a black orb — fulfilling a woeful prophecy; the answer awaits only in the shadows, and the phantom is yet to be reborn. [While carrying this item, reputation gained increases by 3%].",
+            "ru_RU": "Отдых кроваво-красной бабочки, зов чёрной сферы — свершается скорбное пророчество; ответ ждёт лишь в тени, а фантому ещё предстоит возродиться. [С этим предметом получаемая репутация увеличивается на 3%].",
+            "be_BY": "Адпачынак крывава-чырвонага матылька, заклік чорнай сферы — збываецца жалобнае прароцтва; адказ чакае толькі ў цені, а фантому яшчэ наканавана нарадзіцца. [З гэтым прадметам атрыманая рэпутацыя павялічваецца на 3%]."
         },
         "amount": 6,
         "unit": "month",
@@ -1978,9 +1978,9 @@
         },
         "desc": {
             "zh_CN": "让人难以琢磨的神秘盒子，只有在打开的一霎那才知道里面装的是什么？好奇心驱使你前进，打开看看吧。[携带此道具，所获声望增加2%]。",
-            "en_US": "A mysterious box impossible to fathom — only at the instant it opens do you learn what's inside. Curiosity drives you forward; go on, open it and see! [While carrying this item, reputation gained increases by 2%.]",
-            "ru_RU": "Загадочная коробка, которую невозможно разгадать — лишь в миг открытия узнаёшь, что внутри. Любопытство толкает тебя вперёд; давай, открой и посмотри! [С этим предметом получаемая репутация увеличивается на 2%.]",
-            "be_BY": "Загадкавая скрыня, якую немагчыма разгадаць — толькі ў імгненне адкрыцця даведаешся, што ўнутры. Цікаўнасць штурхае цябе наперад; давай, адкрый і паглядзі! [З гэтым прадметам атрыманая рэпутацыя павялічваецца на 2%.]"
+            "en_US": "A mysterious box impossible to fathom — only at the instant it opens do you learn what's inside. Curiosity drives you forward; go on, open it and see! [While carrying this item, reputation gained increases by 2%].",
+            "ru_RU": "Загадочная коробка, которую невозможно разгадать — лишь в миг открытия узнаёшь, что внутри. Любопытство толкает тебя вперёд; давай, открой и посмотри! [С этим предметом получаемая репутация увеличивается на 2%].",
+            "be_BY": "Загадкавая скрыня, якую немагчыма разгадаць — толькі ў імгненне адкрыцця даведаешся, што ўнутры. Цікаўнасць штурхае цябе наперад; давай, адкрый і паглядзі! [З гэтым прадметам атрыманая рэпутацыя павялічваецца на 2%]."
         },
         "amount": 6,
         "unit": "month",
@@ -2014,9 +2014,9 @@
         },
         "desc": {
             "zh_CN": "可爱的墨鱼仔甘做你的小跟班，千万不能把它吃掉哇！[携带此道具，所获声望增加3%]。",
-            "en_US": "The cute little cuttlefish is happy to be your sidekick — just don't eat it, whatever you do! [While carrying this item, reputation gained increases by 3%.]",
-            "ru_RU": "Маленькая каракатица рада быть твоим спутником — только не вздумай её съесть! [С этим предметом получаемая репутация увеличивается на 3%.]",
-            "be_BY": "Маленькая каракаціца рада быць тваім спадарожнікам — толькі не ўздумай яе з'есці! [З гэтым прадметам атрыманая рэпутацыя павялічваецца на 3%.]"
+            "en_US": "The cute little cuttlefish is happy to be your sidekick — just don't eat it, whatever you do! [While carrying this item, reputation gained increases by 3%].",
+            "ru_RU": "Маленькая каракатица рада быть твоим спутником — только не вздумай её съесть! [С этим предметом получаемая репутация увеличивается на 3%].",
+            "be_BY": "Маленькая каракаціца рада быць тваім спадарожнікам — толькі не ўздумай яе з'есці! [З гэтым прадметам атрыманая рэпутацыя павялічваецца на 3%]."
         },
         "amount": 6,
         "unit": "month",
@@ -2176,9 +2176,9 @@
         },
         "desc": {
             "zh_CN": "长年居住在地底下，喜欢在泥土中寻找食物，是挖掘健将之一[携带此道具，所获声望增加3%]。",
-            "en_US": "Living underground year-round, fond of searching for food in the soil, it is one of the champion diggers. [While carrying this item, reputation gained increases by 3%.]",
-            "ru_RU": "Живя круглый год под землёй и любя искать еду в почве, он один из лучших землекопов. [С этим предметом получаемая репутация увеличивается на 3%.]",
-            "be_BY": "Жывучы круглы год пад зямлёй і любячы шукаць ежу ў глебе, ён адзін з лепшых землякопаў. [З гэтым прадметам атрыманая рэпутацыя павялічваецца на 3%.]"
+            "en_US": "Living underground year-round, fond of searching for food in the soil, it is one of the champion diggers. [While carrying this item, reputation gained increases by 3%].",
+            "ru_RU": "Живя круглый год под землёй и любя искать еду в почве, он один из лучших землекопов. [С этим предметом получаемая репутация увеличивается на 3%].",
+            "be_BY": "Жывучы круглы год пад зямлёй і любячы шукаць ежу ў глебе, ён адзін з лепшых землякопаў. [З гэтым прадметам атрыманая рэпутацыя павялічваецца на 3%]."
         },
         "amount": 6,
         "unit": "month",
@@ -2212,9 +2212,9 @@
         },
         "desc": {
             "zh_CN": "传说中居住在河流中的神仙，可以保佑风调雨顺。[携带此道具，所获声望增加3%]。",
-            "en_US": "A deity said to dwell in the rivers, able to bless you with favorable weather. [While carrying this item, reputation gained increases by 3%.]",
-            "ru_RU": "Божество, что, по преданию, обитает в реках и может даровать благоприятную погоду. [С этим предметом получаемая репутация увеличивается на 3%.]",
-            "be_BY": "Бажаство, якое, па паданні, жыве ў рэках і можа дараваць спрыяльнае надвор'е. [З гэтым прадметам атрыманая рэпутацыя павялічваецца на 3%.]"
+            "en_US": "A deity said to dwell in the rivers, able to bless you with favorable weather. [While carrying this item, reputation gained increases by 3%].",
+            "ru_RU": "Божество, что, по преданию, обитает в реках и может даровать благоприятную погоду. [С этим предметом получаемая репутация увеличивается на 3%].",
+            "be_BY": "Бажаство, якое, па паданні, жыве ў рэках і можа дараваць спрыяльнае надвор'е. [З гэтым прадметам атрыманая рэпутацыя павялічваецца на 3%]."
         },
         "amount": 6,
         "unit": "month",
@@ -2230,9 +2230,9 @@
         },
         "desc": {
             "zh_CN": "用骷髅为原材料制成的恐怖QQ糖，是惊吓道具之一。[携带此道具，所获声望增加3%]。",
-            "en_US": "A terrifying QQ Candy made from skulls as raw material, one of the scare props. [While carrying this item, reputation gained increases by 3%.]",
-            "ru_RU": "Ужасающая конфета QQ, изготовленная из черепов как сырья, — один из пугающих предметов. [С этим предметом получаемая репутация увеличивается на 3%.]",
-            "be_BY": "Жудасная цукерка QQ, зробленая з чэрапаў як сыравіны, — адзін з палохаючых прадметаў. [З гэтым прадметам атрыманая рэпутацыя павялічваецца на 3%.]"
+            "en_US": "A terrifying QQ Candy made from skulls as raw material, one of the scare props. [While carrying this item, reputation gained increases by 3%].",
+            "ru_RU": "Ужасающая конфета QQ, изготовленная из черепов как сырья, — один из пугающих предметов. [С этим предметом получаемая репутация увеличивается на 3%].",
+            "be_BY": "Жудасная цукерка QQ, зробленая з чэрапаў як сыравіны, — адзін з палохаючых прадметаў. [З гэтым прадметам атрыманая рэпутацыя павялічваецца на 3%]."
         },
         "amount": 6,
         "unit": "month",
@@ -2338,9 +2338,9 @@
         },
         "desc": {
             "zh_CN": "一闪一闪小星星，点点星光耀天明[携带此道具，所获声望增加2%]。",
-            "en_US": "Twinkle, twinkle, little star — bits of starlight brighten the sky. [While carrying this item, reputation gained increases by 2%.]",
-            "ru_RU": "Свети, свети, звёздочка — искорки звёздного света озаряют небо. [С этим предметом получаемая репутация увеличивается на 2%.]",
-            "be_BY": "Свяці, свяці, зорачка — іскрынкі зорнага святла азараюць неба. [З гэтым прадметам атрыманая рэпутацыя павялічваецца на 2%.]"
+            "en_US": "Twinkle, twinkle, little star — bits of starlight brighten the sky. [While carrying this item, reputation gained increases by 2%].",
+            "ru_RU": "Свети, свети, звёздочка — искорки звёздного света озаряют небо. [С этим предметом получаемая репутация увеличивается на 2%].",
+            "be_BY": "Свяці, свяці, зорачка — іскрынкі зорнага святла азараюць неба. [З гэтым прадметам атрыманая рэпутацыя павялічваецца на 2%]."
         },
         "amount": 6,
         "unit": "month",
@@ -2374,9 +2374,9 @@
         },
         "desc": {
             "zh_CN": "每个生命体在熄灭的那一刻都有一股灵魂结晶，把所谓的灵魂包裹，形成灵体结晶，厉害非凡。[携带此道具，所获声望增加2%]。",
-            "en_US": "At the moment every living being is extinguished, a wisp of soul crystallizes, wrapping up the so-called soul to form a spirit crystal — extraordinarily powerful. [While carrying this item, reputation gained increases by 2%.]",
-            "ru_RU": "В миг угасания каждого живого существа кристаллизуется частица души, обволакивая так называемую душу и образуя кристалл духа — необычайно мощный. [С этим предметом получаемая репутация увеличивается на 2%.]",
-            "be_BY": "У імгненне згасання кожнай жывой істоты крышталізуецца часціца душы, ахінаючы так званую душу і ўтвараючы крышталь духу — надзвычай магутны. [З гэтым прадметам атрыманая рэпутацыя павялічваецца на 2%.]"
+            "en_US": "At the moment every living being is extinguished, a wisp of soul crystallizes, wrapping up the so-called soul to form a spirit crystal — extraordinarily powerful. [While carrying this item, reputation gained increases by 2%].",
+            "ru_RU": "В миг угасания каждого живого существа кристаллизуется частица души, обволакивая так называемую душу и образуя кристалл духа — необычайно мощный. [С этим предметом получаемая репутация увеличивается на 2%].",
+            "be_BY": "У імгненне згасання кожнай жывой істоты крышталізуецца часціца душы, ахінаючы так званую душу і ўтвараючы крышталь духу — надзвычай магутны. [З гэтым прадметам атрыманая рэпутацыя павялічваецца на 2%]."
         },
         "amount": 6,
         "unit": "month",
@@ -2446,9 +2446,9 @@
         },
         "desc": {
             "zh_CN": "甜美的爱情遭遇天使的祝福，那种一箭穿心的滋味也就懂爱的人才能享受。[携带此道具，所获声望增加3%]。",
-            "en_US": "Sweet love meets an angel's blessing — the taste of an arrow piercing the heart is a pleasure only those who understand love can savor. [While carrying this item, reputation gained increases by 3%.]",
-            "ru_RU": "Сладкая любовь встречает благословение ангела — вкус стрелы, пронзающей сердце, дано испытать лишь тем, кто понимает любовь. [С этим предметом получаемая репутация увеличивается на 3%.]",
-            "be_BY": "Салодкае каханне сустракае бласлаўленне анёла — смак стралы, што прабівае сэрца, дадзена спазнаць толькі тым, хто разумее каханне. [З гэтым прадметам атрыманая рэпутацыя павялічваецца на 3%.]"
+            "en_US": "Sweet love meets an angel's blessing — the taste of an arrow piercing the heart is a pleasure only those who understand love can savor. [While carrying this item, reputation gained increases by 3%].",
+            "ru_RU": "Сладкая любовь встречает благословение ангела — вкус стрелы, пронзающей сердце, дано испытать лишь тем, кто понимает любовь. [С этим предметом получаемая репутация увеличивается на 3%].",
+            "be_BY": "Салодкае каханне сустракае бласлаўленне анёла — смак стралы, што прабівае сэрца, дадзена спазнаць толькі тым, хто разумее каханне. [З гэтым прадметам атрыманая рэпутацыя павялічваецца на 3%]."
         },
         "amount": 6,
         "unit": "month",
@@ -2482,9 +2482,9 @@
         },
         "desc": {
             "zh_CN": "点点烛光，点点温暖，保存着希望的种子。[携带此道具，所获声望增加3%]。",
-            "en_US": "Bits of candlelight, bits of warmth, preserving the seed of hope. [While carrying this item, reputation gained increases by 3%.]",
-            "ru_RU": "Искорки свечного света, искорки тепла, хранящие семя надежды. [С этим предметом получаемая репутация увеличивается на 3%.]",
-            "be_BY": "Іскрынкі свечнага святла, іскрынкі цяпла, што захоўваюць насенне надзеі. [З гэтым прадметам атрыманая рэпутацыя павялічваецца на 3%.]"
+            "en_US": "Bits of candlelight, bits of warmth, preserving the seed of hope. [While carrying this item, reputation gained increases by 3%].",
+            "ru_RU": "Искорки свечного света, искорки тепла, хранящие семя надежды. [С этим предметом получаемая репутация увеличивается на 3%].",
+            "be_BY": "Іскрынкі свечнага святла, іскрынкі цяпла, што захоўваюць насенне надзеі. [З гэтым прадметам атрыманая рэпутацыя павялічваецца на 3%]."
         },
         "amount": 6,
         "unit": "month",
@@ -2554,9 +2554,9 @@
         },
         "desc": {
             "zh_CN": "喂！是谁这么不文明，光屁股啊？罚款！原来是糖泡......[携带此道具，所获声望增加2%]。",
-            "en_US": "Hey! Who's so uncivilized as to bare their butt? Fine them! Oh, it turns out to be a sugar bubble... [While carrying this item, reputation gained increases by 2%.]",
-            "ru_RU": "Эй! Кто это так некультурно — с голой попой? Штраф! Оказывается, это сахарный пузырь... [С этим предметом получаемая репутация увеличивается на 2%.]",
-            "be_BY": "Гэй! Хто гэта так некультурна — з голай попкай? Штраф! Аказваецца, гэта цукровы пузыр... [З гэтым прадметам атрыманая рэпутацыя павялічваецца на 2%.]"
+            "en_US": "Hey! Who's so uncivilized as to bare their butt? Fine them! Oh, it turns out to be a sugar bubble... [While carrying this item, reputation gained increases by 2%].",
+            "ru_RU": "Эй! Кто это так некультурно — с голой попой? Штраф! Оказывается, это сахарный пузырь... [С этим предметом получаемая репутация увеличивается на 2%].",
+            "be_BY": "Гэй! Хто гэта так некультурна — з голай попкай? Штраф! Аказваецца, гэта цукровы пузыр... [З гэтым прадметам атрыманая рэпутацыя павялічваецца на 2%]."
         },
         "amount": 6,
         "unit": "month",
@@ -2572,9 +2572,9 @@
         },
         "desc": {
             "zh_CN": "用一个鄙视的Q糖砸给对手，能给对方造成心理压力，更能让你稳操胜券。[携带此道具，所获声望增加2%]。",
-            "en_US": "Smash a contemptuous QQ Candy at your opponent to put psychological pressure on them and secure your victory. [While carrying this item, reputation gained increases by 2%.]",
-            "ru_RU": "Швырни в противника презрительную конфету QQ, чтобы оказать на него психологическое давление и обеспечить себе победу. [С этим предметом получаемая репутация увеличивается на 2%.]",
-            "be_BY": "Кінь у праціўніка пагардлівую цукерку QQ, каб аказаць на яго псіхалагічны ціск і забяспечыць сабе перамогу. [З гэтым прадметам атрыманая рэпутацыя павялічваецца на 2%.]"
+            "en_US": "Smash a contemptuous QQ Candy at your opponent to put psychological pressure on them and secure your victory. [While carrying this item, reputation gained increases by 2%].",
+            "ru_RU": "Швырни в противника презрительную конфету QQ, чтобы оказать на него психологическое давление и обеспечить себе победу. [С этим предметом получаемая репутация увеличивается на 2%].",
+            "be_BY": "Кінь у праціўніка пагардлівую цукерку QQ, каб аказаць на яго псіхалагічны ціск і забяспечыць сабе перамогу. [З гэтым прадметам атрыманая рэпутацыя павялічваецца на 2%]."
         },
         "amount": 6,
         "unit": "month",
@@ -3773,8 +3773,8 @@
         "name": {
             "zh_CN": "hip-hop糖泡",
             "en_US": "Hip-Hop Sugar Bubble",
-            "ru_RU": "Пузырь хип-хопа",
-            "be_BY": "Пузыр хіп-хопу"
+            "ru_RU": "Пузырь Hip-Hop",
+            "be_BY": "Пузыр Hip-Hop"
         },
         "desc": {
             "zh_CN": "超级独特有个性的QQ糖，头带着听筒嘴上还哼着歌，史上最嚣张的QQ糖，yo~~跟住节奏跳动！",
@@ -4525,9 +4525,9 @@
         },
         "desc": {
             "zh_CN": "洁白的雪花在空中盛开，破碎的美丽无与伦比。[携带此道具，所获积分增加2%]。",
-            "en_US": "Pure white snowflakes bloom in the air, a shattered beauty beyond compare. [While carrying this item, points gained increase by 2%.]",
-            "ru_RU": "Белоснежные снежинки расцветают в воздухе — разбитая красота, которой нет равных. [С этим предметом получаемые очки увеличиваются на 2%.]",
-            "be_BY": "Беласнежныя сняжынкі расквітаюць у паветры — разбітая прыгажосць, якой няма роўных. [З гэтым прадметам атрыманыя ачкі павялічваюцца на 2%.]"
+            "en_US": "Pure white snowflakes bloom in the air, a shattered beauty beyond compare. [While carrying this item, points gained increase by 2%].",
+            "ru_RU": "Белоснежные снежинки расцветают в воздухе — разбитая красота, которой нет равных. [С этим предметом получаемые очки увеличиваются на 2%].",
+            "be_BY": "Беласнежныя сняжынкі расквітаюць у паветры — разбітая прыгажосць, якой няма роўных. [З гэтым прадметам атрыманыя ачкі павялічваюцца на 2%]."
         },
         "amount": 6,
         "unit": "month",
@@ -4957,9 +4957,9 @@
         },
         "desc": {
             "zh_CN": "童年的回忆或许荡涤，记忆的青涩未曾抹去，总有那么多鲜活的笑容在蒲公英的约定中等待。[携带此道具，所获积分增加2%]。",
-            "en_US": "Childhood memories may wash away, but the green freshness of memory is never erased — so many vivid smiles still wait in the promise of the dandelion. [While carrying this item, points gained increase by 2%.]",
-            "ru_RU": "Воспоминания детства, быть может, смоются, но юная свежесть памяти не сотрётся — столько живых улыбок всё ещё ждут в обещании одуванчика. [С этим предметом получаемые очки увеличиваются на 2%.]",
-            "be_BY": "Успаміны дзяцінства, магчыма, змыюцца, але юная свежасць памяці не сатрэцца — столькі жывых усмешак усё яшчэ чакаюць у абяцанні дзьмухаўца. [З гэтым прадметам атрыманыя ачкі павялічваюцца на 2%.]"
+            "en_US": "Childhood memories may wash away, but the green freshness of memory is never erased — so many vivid smiles still wait in the promise of the dandelion. [While carrying this item, points gained increase by 2%].",
+            "ru_RU": "Воспоминания детства, быть может, смоются, но юная свежесть памяти не сотрётся — столько живых улыбок всё ещё ждут в обещании одуванчика. [С этим предметом получаемые очки увеличиваются на 2%].",
+            "be_BY": "Успаміны дзяцінства, магчыма, змыюцца, але юная свежасць памяці не сатрэцца — столькі жывых усмешак усё яшчэ чакаюць у абяцанні дзьмухаўца. [З гэтым прадметам атрыманыя ачкі павялічваюцца на 2%]."
         },
         "amount": 6,
         "unit": "month",
@@ -4975,9 +4975,9 @@
         },
         "desc": {
             "zh_CN": "宝石打造的心，总那般牢固，跟随你的身后，让你把爱情稳稳抓住。[携带此道具，所获积分增加2%]。",
-            "en_US": "A heart forged from gemstone is always so solid; it follows behind you, letting you hold on to love securely. [While carrying this item, points gained increase by 2%.]",
-            "ru_RU": "Сердце, выкованное из самоцвета, всегда так прочно; оно следует за тобой, позволяя крепко удержать любовь. [С этим предметом получаемые очки увеличиваются на 2%.]",
-            "be_BY": "Сэрца, выкаванае з самацвету, заўсёды такое трывалае; яно ідзе за табой, дазваляючы трывала ўтрымаць каханне. [З гэтым прадметам атрыманыя ачкі павялічваюцца на 2%.]"
+            "en_US": "A heart forged from gemstone is always so solid; it follows behind you, letting you hold on to love securely. [While carrying this item, points gained increase by 2%].",
+            "ru_RU": "Сердце, выкованное из самоцвета, всегда так прочно; оно следует за тобой, позволяя крепко удержать любовь. [С этим предметом получаемые очки увеличиваются на 2%].",
+            "be_BY": "Сэрца, выкаванае з самацвету, заўсёды такое трывалае; яно ідзе за табой, дазваляючы трывала ўтрымаць каханне. [З гэтым прадметам атрыманыя ачкі павялічваюцца на 2%]."
         },
         "amount": 6,
         "unit": "month",
@@ -5029,9 +5029,9 @@
         },
         "desc": {
             "zh_CN": "柔软的羽毛，带你进入梦幻的境界。[携带此道具，所获积分增加2%]。",
-            "en_US": "Soft feathers carry you into a dreamlike realm. [While carrying this item, points gained increase by 2%.]",
-            "ru_RU": "Мягкие перья уносят тебя в мир грёз. [С этим предметом получаемые очки увеличиваются на 2%.]",
-            "be_BY": "Мяккія пёры нясуць цябе ў свет мрояў. [З гэтым прадметам атрыманыя ачкі павялічваюцца на 2%.]"
+            "en_US": "Soft feathers carry you into a dreamlike realm. [While carrying this item, points gained increase by 2%].",
+            "ru_RU": "Мягкие перья уносят тебя в мир грёз. [С этим предметом получаемые очки увеличиваются на 2%].",
+            "be_BY": "Мяккія пёры нясуць цябе ў свет мрояў. [З гэтым прадметам атрыманыя ачкі павялічваюцца на 2%]."
         },
         "amount": 6,
         "unit": "month",
@@ -5047,9 +5047,9 @@
         },
         "desc": {
             "zh_CN": "春之女神降临大地，带来万物苏醒的生机。[携带此道具，所获积分增加2%]。",
-            "en_US": "The Goddess of Spring descends upon the earth, bringing the vitality of all things awakening. [While carrying this item, points gained increase by 2%.]",
-            "ru_RU": "Богиня весны нисходит на землю, принося жизненную силу пробуждения всего сущего. [С этим предметом получаемые очки увеличиваются на 2%.]",
-            "be_BY": "Багіня вясны сыходзіць на зямлю, прыносячы жыццёвую сілу абуджэння ўсяго сутнага. [З гэтым прадметам атрыманыя ачкі павялічваюцца на 2%.]"
+            "en_US": "The Goddess of Spring descends upon the earth, bringing the vitality of all things awakening. [While carrying this item, points gained increase by 2%].",
+            "ru_RU": "Богиня весны нисходит на землю, принося жизненную силу пробуждения всего сущего. [С этим предметом получаемые очки увеличиваются на 2%].",
+            "be_BY": "Багіня вясны сыходзіць на зямлю, прыносячы жыццёвую сілу абуджэння ўсяго сутнага. [З гэтым прадметам атрыманыя ачкі павялічваюцца на 2%]."
         },
         "amount": 6,
         "unit": "month",
@@ -5083,9 +5083,9 @@
         },
         "desc": {
             "zh_CN": "只要对手很色，只要对手是沙滩美女，一定会被你迷惑。用这样的绝招，是不是很爽呢?[携带此道具，所获积分增加2%]。",
-            "en_US": "As long as your opponent is lustful, as long as your opponent is a beach beauty, they will surely be bewitched by you. Using such a move — does not it feel great? [While carrying this item, points gained increase by 2%.]",
-            "ru_RU": "Пока соперник похотлив, пока соперница — пляжная красотка, тебя непременно очаруют. Применять такой приём — разве не приятно? [С этим предметом получаемые очки увеличиваются на 2%.]",
-            "be_BY": "Пакуль супернік пажадлівы, пакуль суперніца — пляжная прыгажуня, цябе абавязкова зачаруюць. Ужываць такі прыём — хіба не прыемна? [З гэтым прадметам атрыманыя ачкі павялічваюцца на 2%.]"
+            "en_US": "As long as your opponent is lustful, as long as your opponent is a beach beauty, they will surely be bewitched by you. Using such a move — does not it feel great? [While carrying this item, points gained increase by 2%].",
+            "ru_RU": "Пока соперник похотлив, пока соперница — пляжная красотка, тебя непременно очаруют. Применять такой приём — разве не приятно? [С этим предметом получаемые очки увеличиваются на 2%].",
+            "be_BY": "Пакуль супернік пажадлівы, пакуль суперніца — пляжная прыгажуня, цябе абавязкова зачаруюць. Ужываць такі прыём — хіба не прыемна? [З гэтым прадметам атрыманыя ачкі павялічваюцца на 2%]."
         },
         "amount": 6,
         "unit": "month",
@@ -5155,9 +5155,9 @@
         },
         "desc": {
             "zh_CN": "这是一种民间艺术，这是一种文化传承，那些贴窗花过年的习俗又在风靡，你愿意落伍吗?[携带此道具，所获积分增加2%]。",
-            "en_US": "This is a folk art, a cultural heritage; the custom of pasting window paper-cuts for the New Year is popular again — are you willing to fall behind? [While carrying this item, points gained increase by 2%.]",
-            "ru_RU": "Это народное искусство, это культурное наследие; обычай наклеивать бумажные узоры на окна к Новому году снова в моде — хочешь отстать? [С этим предметом получаемые очки увеличиваются на 2%.]",
-            "be_BY": "Гэта народнае мастацтва, гэта культурная спадчына; звычай наклейваць папяровыя ўзоры на вокны да Новага года зноў у модзе — хочаш адстаць? [З гэтым прадметам атрыманыя ачкі павялічваюцца на 2%.]"
+            "en_US": "This is a folk art, a cultural heritage; the custom of pasting window paper-cuts for the New Year is popular again — are you willing to fall behind? [While carrying this item, points gained increase by 2%].",
+            "ru_RU": "Это народное искусство, это культурное наследие; обычай наклеивать бумажные узоры на окна к Новому году снова в моде — хочешь отстать? [С этим предметом получаемые очки увеличиваются на 2%].",
+            "be_BY": "Гэта народнае мастацтва, гэта культурная спадчына; звычай наклейваць папяровыя ўзоры на вокны да Новага года зноў у модзе — хочаш адстаць? [З гэтым прадметам атрыманыя ачкі павялічваюцца на 2%]."
         },
         "amount": 6,
         "unit": "month",
@@ -5209,9 +5209,9 @@
         },
         "desc": {
             "zh_CN": "四叶草的真挚伴随你远行，Q堂的幸运为你囊括，祝福你![携带此道具，所获积分增加2%]。",
-            "en_US": "The sincerity of the four-leaf clover accompanies you on your journey; the luck of QQ Tang is gathered for you — blessings to you! [While carrying this item, points gained increase by 2%.]",
-            "ru_RU": "Искренность четырёхлистного клевера сопровождает тебя в пути; удача QQ Тан собрана для тебя — благословляю тебя! [С этим предметом получаемые очки увеличиваются на 2%.]",
-            "be_BY": "Шчырасць чатырохлістай канюшыны суправаджае цябе ў дарозе; удача QQ Тан сабрана для цябе — благаслаўляю цябе! [З гэтым прадметам атрыманыя ачкі павялічваюцца на 2%.]"
+            "en_US": "The sincerity of the four-leaf clover accompanies you on your journey; the luck of QQ Tang is gathered for you — blessings to you! [While carrying this item, points gained increase by 2%].",
+            "ru_RU": "Искренность четырёхлистного клевера сопровождает тебя в пути; удача QQ Тан собрана для тебя — благословляю тебя! [С этим предметом получаемые очки увеличиваются на 2%].",
+            "be_BY": "Шчырасць чатырохлістай канюшыны суправаджае цябе ў дарозе; удача QQ Тан сабрана для цябе — благаслаўляю цябе! [З гэтым прадметам атрыманыя ачкі павялічваюцца на 2%]."
         },
         "amount": 6,
         "unit": "month",
@@ -5227,9 +5227,9 @@
         },
         "desc": {
             "zh_CN": "一种恐怖的气氛被渲染，一个惊悚的夜晚被打开，蝙蝠的压抑给对手恐惧。[携带此道具，所获积分增加2%]。",
-            "en_US": "A terrifying atmosphere is conjured, a chilling night unfolds, and the oppression of the bats strikes fear into your opponents. [While carrying this item, points gained increase by 2%.]",
-            "ru_RU": "Создаётся жуткая атмосфера, открывается леденящая ночь, и гнёт летучих мышей вселяет страх в противников. [С этим предметом получаемые очки увеличиваются на 2%.]",
-            "be_BY": "Ствараецца жудасная атмасфера, адкрываецца ледзяная ноч, і ўціск лятучых мышэй уселяе страх у супернікаў. [З гэтым прадметам атрыманыя ачкі павялічваюцца на 2%.]"
+            "en_US": "A terrifying atmosphere is conjured, a chilling night unfolds, and the oppression of the bats strikes fear into your opponents. [While carrying this item, points gained increase by 2%].",
+            "ru_RU": "Создаётся жуткая атмосфера, открывается леденящая ночь, и гнёт летучих мышей вселяет страх в противников. [С этим предметом получаемые очки увеличиваются на 2%].",
+            "be_BY": "Ствараецца жудасная атмасфера, адкрываецца ледзяная ноч, і ўціск лятучых мышэй уселяе страх у супернікаў. [З гэтым прадметам атрыманыя ачкі павялічваюцца на 2%]."
         },
         "amount": 6,
         "unit": "month",
@@ -5821,9 +5821,9 @@
         },
         "desc": {
             "zh_CN": "全是紫色的钻石环绕，你这个富翁让人瞠目结舌，想炫上一回吗?快来加入这特权一族吧![携带此道具，所获积分增加2%]。",
-            "en_US": "Surrounded entirely by purple diamonds, you rich man leave everyone dumbstruck — want to show off for once? Come join this privileged crowd! [While carrying this item, points gained increase by 2%.]",
-            "ru_RU": "Окружённый одними фиолетовыми алмазами, ты, богач, поражаешь всех — хочешь блеснуть разок? Скорее присоединяйся к этой привилегированной касте! [С этим предметом получаемые очки увеличиваются на 2%.]",
-            "be_BY": "Аточаны аднымі фіялетавымі алмазамі, ты, багач, уражаеш усіх — хочаш бліснуць разок? Хутчэй далучайся да гэтай прывілеяванай касты! [З гэтым прадметам атрыманыя ачкі павялічваюцца на 2%.]"
+            "en_US": "Surrounded entirely by purple diamonds, you rich man leave everyone dumbstruck — want to show off for once? Come join this privileged crowd! [While carrying this item, points gained increase by 2%].",
+            "ru_RU": "Окружённый одними фиолетовыми алмазами, ты, богач, поражаешь всех — хочешь блеснуть разок? Скорее присоединяйся к этой привилегированной касте! [С этим предметом получаемые очки увеличиваются на 2%].",
+            "be_BY": "Аточаны аднымі фіялетавымі алмазамі, ты, багач, уражаеш усіх — хочаш бліснуць разок? Хутчэй далучайся да гэтай прывілеяванай касты! [З гэтым прадметам атрыманыя ачкі павялічваюцца на 2%]."
         },
         "amount": 6,
         "unit": "month",
@@ -6388,9 +6388,9 @@
         },
         "desc": {
             "zh_CN": "一群可爱的小兔子，紧紧追随你身后，形影不离。[携带此道具，所获勇气增加2%]。",
-            "en_US": "A group of cute little rabbits follows closely behind you, inseparable. [While carrying this item, courage gained increases by 2%.]",
-            "ru_RU": "Стайка милых крольчат неотступно следует за тобой по пятам. [С этим предметом получаемое мужество увеличивается на 2%.]",
-            "be_BY": "Зграйка мілых трусянят неадступна ідзе за табой следам. [З гэтым прадметам атрыманае мужнасць павялічваецца на 2%.]"
+            "en_US": "A group of cute little rabbits follows closely behind you, inseparable. [While carrying this item, courage gained increases by 2%].",
+            "ru_RU": "Стайка милых крольчат неотступно следует за тобой по пятам. [С этим предметом получаемое мужество увеличивается на 2%].",
+            "be_BY": "Зграйка мілых трусянят неадступна ідзе за табой следам. [З гэтым прадметам атрыманае мужнасць павялічваецца на 2%]."
         },
         "amount": 6,
         "unit": "month",
@@ -6838,9 +6838,9 @@
         },
         "desc": {
             "zh_CN": "我要送你日不落的爱恋，心牵着心把世界走遍。[携带此道具，所获勇气增加3%]。",
-            "en_US": "I want to give you a love like the sun that never sets — heart in hand, we travel the whole world. [While carrying this item, courage gained increases by 3%.]",
-            "ru_RU": "Я хочу подарить тебе любовь, как незаходящее солнце: сердце к сердцу — и мы обойдём весь мир. [С этим предметом получаемое мужество увеличивается на 3%.]",
-            "be_BY": "Я хачу падарыць табе каханне, як незаходняе сонца: сэрца да сэрца — і мы абыдзем увесь свет. [З гэтым прадметам атрыманае мужнасць павялічваецца на 3%.]"
+            "en_US": "I want to give you a love like the sun that never sets — heart in hand, we travel the whole world. [While carrying this item, courage gained increases by 3%].",
+            "ru_RU": "Я хочу подарить тебе любовь, как незаходящее солнце: сердце к сердцу — и мы обойдём весь мир. [С этим предметом получаемое мужество увеличивается на 3%].",
+            "be_BY": "Я хачу падарыць табе каханне, як незаходняе сонца: сэрца да сэрца — і мы абыдзем увесь свет. [З гэтым прадметам атрыманае мужнасць павялічваецца на 3%]."
         },
         "amount": 6,
         "unit": "month",
@@ -6910,9 +6910,9 @@
         },
         "desc": {
             "zh_CN": "来自宝石的流光，是梦想的流淌，在故事里徜徉，是梦的彼乡。[携带此道具，所获勇气增加2%]。",
-            "en_US": "The flowing light from a gem is the flow of dreams; wandering through the story, it is the far shore of dreams. [While carrying this item, courage gained increases by 2%.]",
-            "ru_RU": "Струящийся свет от самоцвета — это течение мечты; блуждая по сюжету, он словно дальний берег грёз. [С этим предметом получаемое мужество увеличивается на 2%.]",
-            "be_BY": "Плыўнае святло ад самацвету — гэта цячэнне мары; блукаючы па сюжэце, яно нібы далёкі бераг мрояў. [З гэтым прадметам атрыманае мужнасць павялічваецца на 2%.]"
+            "en_US": "The flowing light from a gem is the flow of dreams; wandering through the story, it is the far shore of dreams. [While carrying this item, courage gained increases by 2%].",
+            "ru_RU": "Струящийся свет от самоцвета — это течение мечты; блуждая по сюжету, он словно дальний берег грёз. [С этим предметом получаемое мужество увеличивается на 2%].",
+            "be_BY": "Плыўнае святло ад самацвету — гэта цячэнне мары; блукаючы па сюжэце, яно нібы далёкі бераг мрояў. [З гэтым прадметам атрыманае мужнасць павялічваецца на 2%]."
         },
         "amount": 6,
         "unit": "month",
@@ -6982,9 +6982,9 @@
         },
         "desc": {
             "zh_CN": "如星伴月，如影随形，是不老爱情传说的象征。[携带此道具，所获勇气增加2%]。",
-            "en_US": "Like stars beside the moon, like a shadow following its form, it is a symbol of the legend of undying love. [While carrying this item, courage gained increases by 2%.]",
-            "ru_RU": "Как звёзды при луне, как тень за телом, — символ легенды о неувядающей любви. [С этим предметом получаемое мужество увеличивается на 2%.]",
-            "be_BY": "Як зоркі пры месяцы, як цень за целам, — сімвал легенды пра няўвядальнае каханне. [З гэтым прадметам атрыманае мужнасць павялічваецца на 2%.]"
+            "en_US": "Like stars beside the moon, like a shadow following its form, it is a symbol of the legend of undying love. [While carrying this item, courage gained increases by 2%].",
+            "ru_RU": "Как звёзды при луне, как тень за телом, — символ легенды о неувядающей любви. [С этим предметом получаемое мужество увеличивается на 2%].",
+            "be_BY": "Як зоркі пры месяцы, як цень за целам, — сімвал легенды пра няўвядальнае каханне. [З гэтым прадметам атрыманае мужнасць павялічваецца на 2%]."
         },
         "amount": 6,
         "unit": "month",
@@ -7054,9 +7054,9 @@
         },
         "desc": {
             "zh_CN": "冰雪消融的春，我们将与那洁白暂别一年，舍不得的话就留下它，添作你的脚印很不错哦![携带此道具，所获勇气增加2%]。",
-            "en_US": "In the spring when ice and snow melt, we part with that pure white for a year; if you can't bear to let it go, keep it — it makes a lovely footprint for you! [While carrying this item, courage gained increases by 2%.]",
-            "ru_RU": "Весной, когда тают лёд и снег, мы расстаёмся с этой белоснежной чистотой на год; если жаль расставаться — оставь её себе, из неё выйдет прекрасный след! [С этим предметом получаемое мужество увеличивается на 2%.]",
-            "be_BY": "Увесну, калі растаюць лёд і снег, мы развітваемся з гэтай беласнежнай чысцінёй на год; калі шкада развітвацца — пакінь яе сабе, з яе выйдзе цудоўны след! [З гэтым прадметам атрыманае мужнасць павялічваецца на 2%.]"
+            "en_US": "In the spring when ice and snow melt, we part with that pure white for a year; if you can't bear to let it go, keep it — it makes a lovely footprint for you! [While carrying this item, courage gained increases by 2%].",
+            "ru_RU": "Весной, когда тают лёд и снег, мы расстаёмся с этой белоснежной чистотой на год; если жаль расставаться — оставь её себе, из неё выйдет прекрасный след! [С этим предметом получаемое мужество увеличивается на 2%].",
+            "be_BY": "Увесну, калі растаюць лёд і снег, мы развітваемся з гэтай беласнежнай чысцінёй на год; калі шкада развітвацца — пакінь яе сабе, з яе выйдзе цудоўны след! [З гэтым прадметам атрыманае мужнасць павялічваецца на 2%]."
         },
         "amount": 6,
         "unit": "month",
@@ -7090,9 +7090,9 @@
         },
         "desc": {
             "zh_CN": "另类艺术家的又一力作，展示元素的魅力。[携带此道具，所获勇气增加2%]。",
-            "en_US": "Another masterpiece from an alternative artist, showing the charm of the elements. [While carrying this item, courage gained increases by 2%.]",
-            "ru_RU": "Ещё один шедевр неординарного художника, показывающий очарование стихий. [С этим предметом получаемое мужество увеличивается на 2%.]",
-            "be_BY": "Яшчэ адзін шэдэўр неардынарнага мастака, што паказвае чароўнасць стыхій. [З гэтым прадметам атрыманае мужнасць павялічваецца на 2%.]"
+            "en_US": "Another masterpiece from an alternative artist, showing the charm of the elements. [While carrying this item, courage gained increases by 2%].",
+            "ru_RU": "Ещё один шедевр неординарного художника, показывающий очарование стихий. [С этим предметом получаемое мужество увеличивается на 2%].",
+            "be_BY": "Яшчэ адзін шэдэўр неардынарнага мастака, што паказвае чароўнасць стыхій. [З гэтым прадметам атрыманае мужнасць павялічваецца на 2%]."
         },
         "amount": 6,
         "unit": "month",
@@ -7126,9 +7126,9 @@
         },
         "desc": {
             "zh_CN": "酸酸甜甜的草莓，让人忍不住流下口水......[携带此道具，所获勇气增加2%]。",
-            "en_US": "Sweet-and-sour strawberries make your mouth water... [While carrying this item, courage gained increases by 2%.]",
-            "ru_RU": "Кисло-сладкая земляника так и заставляет слюнки течь... [С этим предметом получаемое мужество увеличивается на 2%.]",
-            "be_BY": "Кісла-салодкая суніца так і прымушае слінкі цячы... [З гэтым прадметам атрыманае мужнасць павялічваецца на 2%.]"
+            "en_US": "Sweet-and-sour strawberries make your mouth water... [While carrying this item, courage gained increases by 2%].",
+            "ru_RU": "Кисло-сладкая земляника так и заставляет слюнки течь... [С этим предметом получаемое мужество увеличивается на 2%].",
+            "be_BY": "Кісла-салодкая суніца так і прымушае слінкі цячы... [З гэтым прадметам атрыманае мужнасць павялічваецца на 2%]."
         },
         "amount": 6,
         "unit": "month",
@@ -7144,9 +7144,9 @@
         },
         "desc": {
             "zh_CN": "“别误会，咱不说雪糕，这是一个彩色的脚印，象征着对探求的渴望...，哎！别流口水呀你！”[携带此道具，所获勇气增加2%]。",
-            "en_US": "\"Don't get me wrong — we're not talking about ice cream. This is a colorful footprint, a symbol of the thirst for discovery... Hey! Stop drooling, you!\" [While carrying this item, courage gained increases by 2%.]",
-            "ru_RU": "«Не поймите неправильно — речь не о мороженом. Это разноцветный след, символ жажды познания... Эй! Не пускай слюни!» [С этим предметом получаемое мужество увеличивается на 2%.]",
-            "be_BY": "«Не зразумеце няправільна — гаворка не пра марожанае. Гэта рознакаляровы след, сімвал смагі пазнання... Гэй! Не пускай слінкі!» [З гэтым прадметам атрыманае мужнасць павялічваецца на 2%.]"
+            "en_US": "\"Don't get me wrong — we're not talking about ice cream. This is a colorful footprint, a symbol of the thirst for discovery... Hey! Stop drooling, you!\" [While carrying this item, courage gained increases by 2%].",
+            "ru_RU": "«Не поймите неправильно — речь не о мороженом. Это разноцветный след, символ жажды познания... Эй! Не пускай слюни!» [С этим предметом получаемое мужество увеличивается на 2%].",
+            "be_BY": "«Не зразумеце няправільна — гаворка не пра марожанае. Гэта рознакаляровы след, сімвал смагі пазнання... Гэй! Не пускай слінкі!» [З гэтым прадметам атрыманае мужнасць павялічваецца на 2%]."
         },
         "amount": 6,
         "unit": "month",
@@ -7162,9 +7162,9 @@
         },
         "desc": {
             "zh_CN": "海盗猖獗的年代，并非正义的沉寂，希望人民的力量，叫这骷髅旗永远消失吧![携带此道具，所获勇气增加2%]。",
-            "en_US": "In an age when pirates run rampant, it is not the silence of justice — may the power of the people make this skull-and-crossbones flag vanish forever! [While carrying this item, courage gained increases by 2%.]",
-            "ru_RU": "В век разгула пиратов это не молчание справедливости — пусть сила народа заставит этот пиратский флаг исчезнуть навсегда! [С этим предметом получаемое мужество увеличивается на 2%.]",
-            "be_BY": "У век разгулу піратаў гэта не маўчанне справядлівасці — хай сіла народу прымусіць гэты пірацкі сцяг знікнуць назаўсёды! [З гэтым прадметам атрыманае мужнасць павялічваецца на 2%.]"
+            "en_US": "In an age when pirates run rampant, it is not the silence of justice — may the power of the people make this skull-and-crossbones flag vanish forever! [While carrying this item, courage gained increases by 2%].",
+            "ru_RU": "В век разгула пиратов это не молчание справедливости — пусть сила народа заставит этот пиратский флаг исчезнуть навсегда! [С этим предметом получаемое мужество увеличивается на 2%].",
+            "be_BY": "У век разгулу піратаў гэта не маўчанне справядлівасці — хай сіла народу прымусіць гэты пірацкі сцяг знікнуць назаўсёды! [З гэтым прадметам атрыманае мужнасць павялічваецца на 2%]."
         },
         "amount": 6,
         "unit": "month",
@@ -7180,9 +7180,9 @@
         },
         "desc": {
             "zh_CN": "一个龙族的图腾在糖果王国传开，有时多见于脚印，有种预感在大家心里蔓延，不祥不详。[携带此道具，所获勇气增加2%]。",
-            "en_US": "A totem of the dragon clan spreads through the Candy Kingdom, often seen in footprints; a premonition creeps through everyone's hearts — an ill omen, most ominous. [While carrying this item, courage gained increases by 2%.]",
-            "ru_RU": "Тотем драконьего клана разошёлся по Конфетному Королевству и часто виден в следах; в сердцах всех расползается предчувствие — дурное знамение, очень зловещее. [С этим предметом получаемое мужество увеличивается на 2%.]",
-            "be_BY": "Тотем цмокавага клана разышоўся па Цукеркавым Каралеўстве і часта бачны ў слядах; у сэрцах усіх распаўзаецца прадчуванне — дрэннае знаменне, вельмі злавеснае. [З гэтым прадметам атрыманае мужнасць павялічваецца на 2%.]"
+            "en_US": "A totem of the dragon clan spreads through the Candy Kingdom, often seen in footprints; a premonition creeps through everyone's hearts — an ill omen, most ominous. [While carrying this item, courage gained increases by 2%].",
+            "ru_RU": "Тотем драконьего клана разошёлся по Конфетному Королевству и часто виден в следах; в сердцах всех расползается предчувствие — дурное знамение, очень зловещее. [С этим предметом получаемое мужество увеличивается на 2%].",
+            "be_BY": "Тотем цмокавага клана разышоўся па Цукеркавым Каралеўстве і часта бачны ў слядах; у сэрцах усіх распаўзаецца прадчуванне — дрэннае знаменне, вельмі злавеснае. [З гэтым прадметам атрыманае мужнасць павялічваецца на 2%]."
         },
         "amount": 6,
         "unit": "month",
@@ -7197,10 +7197,10 @@
             "be_BY": "Сляды ўнутранага дэмана [Мужнасць]"
         },
         "desc": {
-            "zh_CN": "神秘符号代表一种必杀的精神，坚决干掉对手，我做我所想的![携带此道具，所获勇气增加2%。]",
-            "en_US": "A mysterious symbol stands for a deadly spirit — take down your opponent without hesitation, I do what I think! [While carrying this item, courage gained increases by 2%.]",
-            "ru_RU": "Таинственный символ олицетворяет дух смертельного удара — без колебаний одолей противника, я делаю то, что думаю! [С этим предметом получаемое мужество увеличивается на 2%.]",
-            "be_BY": "Таямнічы сімвал увасабляе дух смяротнага ўдару — без ваганняў адолей суперніка, я раблю тое, што думаю! [З гэтым прадметам атрыманае мужнасць павялічваецца на 2%.]"
+            "zh_CN": "神秘符号代表一种必杀的精神，坚决干掉对手，我做我所想的![携带此道具，所获勇气增加2%]。",
+            "en_US": "A mysterious symbol stands for a deadly spirit — take down your opponent without hesitation, I do what I think! [While carrying this item, courage gained increases by 2%].",
+            "ru_RU": "Таинственный символ олицетворяет дух смертельного удара — без колебаний одолей противника, я делаю то, что думаю! [С этим предметом получаемое мужество увеличивается на 2%].",
+            "be_BY": "Таямнічы сімвал увасабляе дух смяротнага ўдару — без ваганняў адолей суперніка, я раблю тое, што думаю! [З гэтым прадметам атрыманае мужнасць павялічваецца на 2%]."
         },
         "amount": 6,
         "unit": "month",
@@ -8017,9 +8017,9 @@
         },
         "desc": {
             "zh_CN": "卡哇伊的涂鸦团子GG版，湛蓝星空，畅想感知彼此的梦，我懂你的，你懂我的。",
-            "en_US": "The kawaii graffiti dumpling, GG edition — under the deep-blue starry sky, freely imagine and sense each other's dreams; I understand yours, you understand mine.",
-            "ru_RU": "Кавайный граффити-шарик, версия GG — под лазурным звёздным небом свободно мечтай и чувствуй мечты друг друга; я понимаю твою, ты понимаешь мою.",
-            "be_BY": "Кавайны графіці-шарык, версія GG — пад блакітным зорным небам свабодна мары і адчувай мары адно аднаго; я разумею тваю, ты разумееш маю."
+            "en_US": "The kawaii graffiti dumpling, male edition — under the deep-blue starry sky, freely imagine and sense each other's dreams; I understand yours, you understand mine.",
+            "ru_RU": "Кавайный граффити-шарик, мужская версия — под лазурным звёздным небом свободно мечтай и чувствуй мечты друг друга; я понимаю твою, ты понимаешь мою.",
+            "be_BY": "Кавайны графіці-шарык, мужчынская версія — пад блакітным зорным небам свабодна мары і адчувай мары адно аднаго; я разумею тваю, ты разумееш маю."
         },
         "amount": 6,
         "unit": "month",
@@ -8035,9 +8035,9 @@
         },
         "desc": {
             "zh_CN": "卡哇伊的涂鸦团子MM版，星空物语与卡通装扮，表达你爱粉的小情节。",
-            "en_US": "The kawaii graffiti dumpling, MM edition — a starry-sky tale and cartoon attire, expressing your little love for pink.",
-            "ru_RU": "Кавайный граффити-шарик, версия MM — звёздная сказка и мультяшный наряд, выражающие твою любовь к розовому.",
-            "be_BY": "Кавайны графіці-шарык, версія MM — зорная казка і мульцяшны ўбор, што выяўляюць тваю любоў да ружовага."
+            "en_US": "The kawaii graffiti dumpling, female edition — a starry-sky tale and cartoon attire, expressing your little love for pink.",
+            "ru_RU": "Кавайный граффити-шарик, женская версия — звёздная сказка и мультяшный наряд, выражающие твою любовь к розовому.",
+            "be_BY": "Кавайны графіці-шарык, жаночая версія — зорная казка і мульцяшны ўбор, што выяўляюць тваю любоў да ружовага."
         },
         "amount": 6,
         "unit": "month",
@@ -9151,9 +9151,9 @@
         },
         "desc": {
             "zh_CN": "我就是小酷比GG，活力炫出来，一人见，一人赞。",
-            "en_US": "I'm little Kubi GG — bursting with vitality, seen by everyone, praised by everyone.",
-            "ru_RU": "Я маленький Куби GG — полный энергии, увиденный всеми, восхваляемый всеми.",
-            "be_BY": "Я маленькі Кубі GG — поўны энергіі, убачаны ўсімі, усхваляваны ўсімі."
+            "en_US": "I'm little Kubi guy — bursting with vitality, seen by everyone, praised by everyone.",
+            "ru_RU": "Я маленький Куби-парень — полный энергии, увиденный всеми, восхваляемый всеми.",
+            "be_BY": "Я маленькі Кубі-хлопец — поўны энергіі, убачаны ўсімі, усхваляваны ўсімі."
         },
         "amount": 6,
         "unit": "month",
