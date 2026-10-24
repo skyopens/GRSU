@@ -25,7 +25,7 @@ export class ApiInterceptor implements HttpInterceptor {
                     const body = ev.body;
                     const respStat = body && body.status;
 
-                    if ((httpStatus !== 200 && httpStatus !== 201) || (respStat !== 200 && respStat !== 201)) {
+                    if ((httpStatus !== 200 && httpStatus !== 201) || respStat !== 'OKAY') {
                         throw new HttpErrorResponse({
                             error: body,
                             headers: ev.headers,

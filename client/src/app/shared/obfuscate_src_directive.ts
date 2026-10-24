@@ -25,36 +25,33 @@ export class ObfuscateSrcDirective implements OnChanges, OnDestroy {
 
     ngOnChanges(): void {
         const rel_path = this.rel_path;
-        if (!rel_path) {
-            return;
-        }
 
-        // 先放掉上一个 URL（已经是 null 就是空操作，重复 revoke 也不会报错）
-        this.revokeUrl();
+        if (rel_path) {
+            // 先放掉上一个 URL（已经是 null 就是空操作，重复 revoke 也不会报错）
+            this.revokeUrl();
 
-        if (!obfuscate_src_blob) {
-            this.el.nativeElement.src = picture_prefix + rel_path;
-            return;
-        }
-
-        const seq = ++this.seq;
-        this.store.loadPicture(rel_path).then((blob) => {
-            // 期间又绑了新路径，这次结果作废
-            if (seq !== this.seq) {
-                return;
+            if (obfuscate_src_blob) {
+                const seq = ++this.seq;
+                this.store.loadPicture(rel_path).then((blob) => {
+                    // 期间又绑了新路径，这次结果作废
+                    if (seq === this.seq) {
+                        const url = URL.createObjectURL(blob);
+                        this.object_url = url;
+                        const img: HTMLImageElement = this.el.nativeElement;
+                        // 先挂监听再赋 src：Blob 已在内存里时 load 可能来得非常快
+                        img.addEventListener('load', () => {
+                            // 只 revoke 自己这一份，别误伤后来者的 URL
+                            if (this.object_url === url) {
+                                this.revokeUrl();
+                            }
+                        }, { once: true });
+                        img.src = url;
+                    }
+                });
+            } else {
+                this.el.nativeElement.src = picture_prefix + rel_path;
             }
-            const url = URL.createObjectURL(blob);
-            this.object_url = url;
-            const img: HTMLImageElement = this.el.nativeElement;
-            // 先挂监听再赋 src：Blob 已在内存里时 load 可能来得非常快
-            img.addEventListener('load', () => {
-                // 只 revoke 自己这一份，别误伤后来者的 URL
-                if (this.object_url === url) {
-                    this.revokeUrl();
-                }
-            }, { once: true });
-            img.src = url;
-        });
+        }
     }
 
     ngOnDestroy(): void {

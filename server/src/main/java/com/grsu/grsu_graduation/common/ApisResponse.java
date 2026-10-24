@@ -1,22 +1,22 @@
 package com.grsu.grsu_graduation.common;
 
 public class ApisResponse<T> {
-    private int status;
+    private StatusCode status;
     private T data;
 
     public ApisResponse() {
     }
 
-    public ApisResponse(int status, T data) {
+    public ApisResponse(StatusCode status, T data) {
         this.status = status;
         this.data = data;
     }
 
-    public int getStatus() {
+    public StatusCode getStatus() {
         return status;
     }
 
-    public void setStatus(int status) {
+    public void setStatus(StatusCode status) {
         this.status = status;
     }
 

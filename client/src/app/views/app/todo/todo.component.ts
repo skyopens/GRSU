@@ -129,7 +129,7 @@ export class TodoComponent implements AfterViewInit, OnDestroy {
 
     handleDelete(): void {
         const data = this.selected.map(item => item.id);
-        this.apiService.todo.requestDelete(data).subscribe(() => {
+        this.apiService.todo.requestDelete({ ids: data }).subscribe(() => {
             this.notifications.create(
                 this.translate.instant('alert.success'),
                 this.translate.instant('alert.notification-success'),

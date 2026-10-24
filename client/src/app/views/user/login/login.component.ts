@@ -21,18 +21,17 @@ export class LoginComponent {
 
 
     onSubmit(): void {
-        if (!this.loginForm.valid || this.buttonDisabled) {
-            return;
+        if (this.loginForm.valid && !this.buttonDisabled) {
+            this.buttonDisabled = true;
+            this.buttonState = 'show-spinner';
+            this.authService.signIn(this.loginForm.value).then(user => {
+                this.router.navigate([environment.adminRoot]);
+            }).catch((error) => {
+                this.buttonDisabled = false;
+                this.buttonState = '';
+                this.notifications.create('Error', error.message,
+                    NotificationType.Bare, { theClass: 'outline primary', timeOut: 6000, showProgressBar: false });
+            });
         }
-        this.buttonDisabled = true;
-        this.buttonState = 'show-spinner';
-        this.authService.signIn(this.loginForm.value).then(user => {
-            this.router.navigate([environment.adminRoot]);
-        }).catch((error) => {
-            this.buttonDisabled = false;
-            this.buttonState = '';
-            this.notifications.create('Error', error.message,
-                NotificationType.Bare, { theClass: 'outline primary', timeOut: 6000, showProgressBar: false });
-        });
     }
 }

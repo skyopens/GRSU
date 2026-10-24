@@ -1,6 +1,9 @@
 import { Injectable } from '@angular/core';
+import { Observable, from, of } from 'rxjs';
+import { catchError, map, switchMap } from 'rxjs/operators';
 import { environment } from '../../environments/environment';
-import { IStoreSub } from '../apis/store';
+import { ApiService, IPage } from './api_service';
+import { IStoreSub, StoreItem } from '../apis/store';
 
 // 运行时解密：AES-256-GCM，密钥由 environment.storeKey 经 SHA-256 派生。
 // 密文由 tool/protect.cjs 生成，放在 src/resources/data_store/，不提交仓库。
@@ -56,22 +59,70 @@ async function decryptPicture(buffer: ArrayBuffer): Promise<Uint8Array> {
     return new Uint8Array(plain);
 }
 
-// 取数入口：按一级分类拉密文、解密、缓存。
-// 将来接后端时，只需在这里按 environment.hasBackend 分叉，组件不用动。
+// 取数入口：按 environment.hasBackend 分叉。
+// false → 前端拉密文、解密、内存切片；true → 走 ApiService 请求后端。
+// 两条分支返回同构的 Observable，组件只认 getSubs / getData 两个方法。
 @Injectable({
     providedIn: 'root'
 })
 export class StoreService {
-    private cache: { [menu_key: string]: Promise<IStoreSub[]> } = {};
+    private cache: { [tab_key: string]: Promise<IStoreSub[]> } = {};
     private picture_cache: { [rel_path: string]: Promise<Blob> } = {};
 
-    getSubs(menu_key: string): Promise<IStoreSub[]> {
-        if (!this.cache[menu_key]) {
-            this.cache[menu_key] = fetch(`/resources/data_store/${menu_key}.json`).then((res) =>
-                res.json().then((payload) => decryptStore<IStoreSub[]>(payload))
+    constructor(private api: ApiService) { }
+
+    getSubs(queries: { tab: string; }): Observable<IStoreSub[]> {
+        let result: Observable<IStoreSub[]>;
+
+        if (environment.hasBackend) {
+            // 后端返回的是密文信封，解密方式与本地密文文件完全一样
+            result = this.api.store.getSubs(queries).pipe(
+                switchMap((res) => from(decryptStore<IStoreSub[]>(res.data))),
+                catchError((err) => {
+                    console.error('商城分类加载失败', err);
+                    return of<IStoreSub[]>([]);
+                })
             );
+        } else {
+            if (!this.cache[queries.tab]) {
+                this.cache[queries.tab] = fetch(`/resources/data_store/${queries.tab}.json`).then((res) =>
+                    res.json().then((payload) => decryptStore<IStoreSub[]>(payload))
+                );
+            }
+            result = from(this.cache[queries.tab]);
         }
-        return this.cache[menu_key];
+
+        return result;
+    }
+
+    // 取某个二级分类的第 currentPage 页。pageSize 由前端传入，两种模式共用同一个值。
+    getData(queries: {
+        tab: string;
+        sub: string;
+        pageSize: number;
+        currentPage: number;
+    }): Observable<IPage<StoreItem>> {
+        let result: Observable<IPage<StoreItem>>;
+
+        if (environment.hasBackend) {
+            // 页码越界时后端回的也是密文包（items 为空、total 是真实总数），这里不用特殊处理
+            result = this.api.store.getData(queries).pipe(
+                switchMap((res) => from(decryptStore<IPage<StoreItem>>(res.data))),
+                catchError((err) => {
+                    console.error('商城道具加载失败', err);
+                    return of<IPage<StoreItem>>({ items: [], total: 0 });
+                })
+            );
+        } else {
+            result = this.getSubs({ tab: queries.tab }).pipe(map((subs) => {
+                const sub = subs.filter((s) => s.key === queries.sub)[0];
+                const all = sub && sub.data ? sub.data : [];
+                const start = (queries.currentPage - 1) * queries.pageSize;
+                return { items: all.slice(start, start + queries.pageSize), total: all.length };
+            }));
+        }
+
+        return result;
     }
 
     // 拉图片密文 → 解密 → Blob。同一张图只解密一次，返回的是同一个 Blob 对象。

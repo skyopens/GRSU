@@ -1,5 +1,6 @@
-import { HttpClient, HttpParams } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { ApisResponse } from '../data/api_service';
 
 export interface ITodo {
     id?: number;
@@ -9,11 +10,6 @@ export interface ITodo {
     status: number;
     label: string;
     date?: string;
-}
-
-export interface ApisResponse<T> {
-    status: number;
-    data: T;
 }
 
 export const LEVEL_DICT = [{
@@ -28,27 +24,32 @@ export const LEVEL_DICT = [{
 
 export function loadTodoApi(http: HttpClient, baseURL: string) {
     return {
-        getList(search: string = '', pageSize?: number, currentPage?: number, orderBy: string = ''): Observable<ApisResponse<ITodo[]>> {
-            let data = new HttpParams();
+        // 传参统一收成一个对象；没传的字段不进 query，等价于后端「缺省即不筛选」
+        getList(queries: {
+            search?: string;
+            pageSize?: number;
+            currentPage?: number;
+            orderBy?: string;
+        } = {}): Observable<ApisResponse<ITodo[]>> {
+            const queriesFMT: { [key: string]: string } = {};
+            if (queries.search) {
+                queriesFMT.search = queries.search;
+            }
+            if (queries.pageSize !== undefined) {
+                queriesFMT.pageSize = queries.pageSize.toString();
+            }
+            if (queries.currentPage !== undefined) {
+                queriesFMT.currentPage = queries.currentPage.toString();
+            }
+            if (queries.orderBy) {
+                queriesFMT.orderBy = queries.orderBy;
+            }
 
-            if (search) {
-                data = data.set('search', search);
-            }
-            if (pageSize !== undefined) {
-                data = data.set('pageSize', pageSize.toString());
-            }
-            if (currentPage !== undefined) {
-                data = data.set('currentPage', currentPage.toString());
-            }
-            if (orderBy) {
-                data = data.set('orderBy', orderBy);
-            }
-
-            return http.get<ApisResponse<ITodo[]>>(`${baseURL}/apis/todos`, { params: data });
+            return http.get<ApisResponse<ITodo[]>>(`${baseURL}/apis/todos`, { params: queriesFMT });
         },
 
-        getById(id: number): Observable<ApisResponse<ITodo>> {
-            return http.get<ApisResponse<ITodo>>(`${baseURL}/apis/todos/${id}`);
+        getById(queries: { id: number; }): Observable<ApisResponse<ITodo>> {
+            return http.get<ApisResponse<ITodo>>(`${baseURL}/apis/todos/${queries.id}`);
         },
 
         postCreate(data: ITodo): Observable<ApisResponse<ITodo>> {
@@ -59,9 +60,9 @@ export function loadTodoApi(http: HttpClient, baseURL: string) {
             return http.put<ApisResponse<ITodo>>(`${baseURL}/apis/todos`, data);
         },
 
-        requestDelete(ids: number[]): Observable<ApisResponse<string>> {
-            console.log(34, ids);
-            return http.request<ApisResponse<string>>('DELETE', `${baseURL}/apis/todos`, { body: ids, responseType: 'json' });
+        requestDelete(queries: { ids: number[]; }): Observable<ApisResponse<string>> {
+            console.log(34, queries.ids);
+            return http.request<ApisResponse<string>>('DELETE', `${baseURL}/apis/todos`, { body: queries.ids, responseType: 'json' });
         }
     };
 }

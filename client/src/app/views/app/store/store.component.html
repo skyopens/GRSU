@@ -53,28 +53,49 @@
                         </div>
                     </div>
                 </div>
-                <ng-template #titleTpl>{{ detail.name[lang] }}</ng-template>
-                <ng-template #detailTpl>
-                    <div class="detail_box">
-                        <alert type="light">
-                            <div class="introduce">
-                                <span class="dis_ib content">{{ detail.text_unit }}: {{ detail.amount }} {{ 'qt.branch.unit.' + detail.unit | translate }}</span><br />
-                                <span class="dis_ib content">{{ 'qt.branch.store.desc' | translate }}: {{ detail.desc[lang] }}</span>
-                            </div>
-                            <div class="text-center pic_box">
-                                <img class="pic radius" [obfuscate_src]="detail.picture" />
-                            </div>
-                        </alert>
-                        <alert [type]="item.type" *ngFor="let item of detail.price_list">
-                            <div class="d-flex justify-content-between price_box">
-                                <span>{{ 'pages.price' | translate }}</span>
-                                <span class="text-center">{{ item.price }}</span>
-                                <span class="text-right">{{ item.currency }}</span>
-                            </div>
-                        </alert>
-                    </div>
-                </ng-template>
+                <div class="pagination_box">
+                    <pagination
+                        class="justify-content-center"
+                        [customPreviousTemplate]="prevTpl"
+                        [customNextTemplate]="nextTpl"
+                        [totalItems]="pager.total"
+                        [itemsPerPage]="pager.size"
+                        [(ngModel)]="pager.page"
+                        [rotate]="true"
+                        [maxSize]="5"
+                        (pageChanged)="handlePageChange($event)"
+                    ></pagination>
+                </div>
             </div>
         </tab>
     </tabset>
+
+    <ng-template #prevTpl let-disabled="disabled" let-currentPage="currentPage">
+        <i class='simple-icon-arrow-left'></i>
+    </ng-template>
+    <ng-template #nextTpl let-disabled="disabled" let-currentPage="currentPage">
+        <i class='simple-icon-arrow-right'></i>
+    </ng-template>
+
+    <ng-template #titleTpl>{{ detail.name[lang] }}</ng-template>
+    <ng-template #detailTpl>
+        <div class="detail_box">
+            <alert type="light">
+                <div class="introduce">
+                    <span class="dis_ib content">{{ detail.text_unit }}: {{ detail.amount }} {{ 'qt.branch.unit.' + detail.unit | translate }}</span><br />
+                    <span class="dis_ib content">{{ 'qt.branch.store.desc' | translate }}: {{ detail.desc[lang] }}</span>
+                </div>
+                <div class="text-center pic_box">
+                    <img class="pic radius" [obfuscate_src]="detail.picture" />
+                </div>
+            </alert>
+            <alert [type]="item.type" *ngFor="let item of detail.price_list">
+                <div class="d-flex justify-content-between price_box">
+                    <span>{{ 'pages.price' | translate }}</span>
+                    <span class="text-center">{{ item.price }}</span>
+                    <span class="text-right">{{ item.currency }}</span>
+                </div>
+            </alert>
+        </div>
+    </ng-template>
 </div>

@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Optional;
 import jakarta.validation.Valid;
 import com.grsu.grsu_graduation.common.ApisResponse;
+import com.grsu.grsu_graduation.common.StatusCode;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -25,13 +26,13 @@ public class TodoController {
     @GetMapping
     public ResponseEntity<ApisResponse<List<Todo>>> getAllTodos() {
         List<Todo> todos = todoRepository.findAll();
-        return ResponseEntity.ok(new ApisResponse<>(200, todos));
+        return ResponseEntity.ok(new ApisResponse<>(StatusCode.OKAY, todos));
     }
 
     @GetMapping("/{id}")
     public ResponseEntity<ApisResponse<Todo>> getTodoById(@PathVariable Long id) {
         Todo todo = todoRepository.findById(id).orElseThrow();
-        return ResponseEntity.ok(new ApisResponse<>(200, todo));
+        return ResponseEntity.ok(new ApisResponse<>(StatusCode.OKAY, todo));
     }
 
     @PostMapping
@@ -39,7 +40,7 @@ public class TodoController {
         todo.setId(null);
         todo.setDate(null);
         Todo savedTodo = todoRepository.save(todo);
-        return ResponseEntity.status(HttpStatus.CREATED).body(new ApisResponse<>(201, savedTodo));
+        return ResponseEntity.status(HttpStatus.CREATED).body(new ApisResponse<>(StatusCode.OKAY, savedTodo));
     }
 
     @PutMapping
@@ -53,12 +54,12 @@ public class TodoController {
         todo.setLabel(updatedTodo.getLabel());
 
         Todo savedTodo = todoRepository.save(todo);
-        return ResponseEntity.ok(new ApisResponse<>(200, savedTodo));
+        return ResponseEntity.ok(new ApisResponse<>(StatusCode.OKAY, savedTodo));
     }
 
     @DeleteMapping
     public ResponseEntity<ApisResponse<String>> deleteTodo(@RequestBody List<Long> ids) {
         todoRepository.deleteAllById(ids);
-        return ResponseEntity.ok(new ApisResponse<>(200, "deleted successfully"));
+        return ResponseEntity.ok(new ApisResponse<>(StatusCode.OKAY, "deleted successfully"));
     }
 }
