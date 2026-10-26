@@ -10,7 +10,6 @@ import { ColorSwitcherComponent } from './color-switcher/color-switcher.componen
 import { FooterComponent } from './footer/footer.component';
 import { HeadingComponent } from './heading/heading.component';
 import { ApplicationMenuComponent } from './application-menu/application-menu.component';
-import { FormsModule } from '@angular/forms';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
@@ -31,7 +30,6 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
         TranslateModule,
         RouterModule,
         CollapseModule,
-        FormsModule,
         BsDropdownModule.forRoot(),
         TooltipModule.forRoot(),
     ],

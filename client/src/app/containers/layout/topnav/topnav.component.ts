@@ -12,7 +12,6 @@ import { getThemeColor, setThemeColor } from 'src/app/utils/util';
     templateUrl: './topnav.component.html',
 })
 export class TopnavComponent implements OnInit, OnDestroy {
-    buyUrl = environment.buyUrl;
     adminRoot = environment.adminRoot;
     sidebar: ISidebar;
     subscription: Subscription;
@@ -22,7 +21,6 @@ export class TopnavComponent implements OnInit, OnDestroy {
     isSingleLang;
     isFullScreen = false;
     isDarkModeActive = false;
-    searchKey = '';
 
     constructor(
         private sidebarService: SidebarService,
@@ -127,63 +125,5 @@ export class TopnavComponent implements OnInit, OnDestroy {
         this.authService.signOut().subscribe(() => {
             this.router.navigate([this.adminRoot]);
         });
-    }
-
-    searchKeyUp(event: KeyboardEvent): void {
-        if (event.key === 'Enter') {
-            this.search();
-        } else if (event.key === 'Escape') {
-            const input = document.querySelector('.mobile-view');
-            if (input && input.classList) {
-                input.classList.remove('mobile-view');
-            }
-            this.searchKey = '';
-        }
-    }
-
-    searchAreaClick(event): void {
-        event.stopPropagation();
-    }
-    searchClick(event): void {
-        if (window.innerWidth < environment.menuHiddenBreakpoint) {
-            let elem = event.target;
-            if (!event.target.classList.contains('search')) {
-                if (event.target.parentElement.classList.contains('search')) {
-                    elem = event.target.parentElement;
-                } else if (
-                    event.target.parentElement.parentElement.classList.contains('search')
-                ) {
-                    elem = event.target.parentElement.parentElement;
-                }
-            }
-
-            if (elem.classList.contains('mobile-view')) {
-                this.search();
-                elem.classList.remove('mobile-view');
-            } else {
-                elem.classList.add('mobile-view');
-            }
-        } else {
-            this.search();
-        }
-        event.stopPropagation();
-    }
-
-    search(): void {
-        if (this.searchKey && this.searchKey.length > 1) {
-            this.router.navigate([this.adminRoot + '/#'], {
-                queryParams: { key: this.searchKey.toLowerCase().trim() },
-            });
-            this.searchKey = '';
-        }
-    }
-
-    @HostListener('document:click', ['$event'])
-    handleDocumentClick(event): void {
-        const input = document.querySelector('.mobile-view');
-        if (input && input.classList) {
-            input.classList.remove('mobile-view');
-        }
-        this.searchKey = '';
     }
 }
