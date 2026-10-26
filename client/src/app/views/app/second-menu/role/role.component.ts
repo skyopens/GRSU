@@ -22,7 +22,7 @@ export class RoleComponent implements AfterViewInit {
     detail: { title: string; content: string; banner: string[]; } = { title: '', content: '', banner: [] };
     dataObj: Role = { name: '', introduce: '' };
 
-    getData() {
+    getData(): void {
         const result = this.translate.instant(`qt.branch.role`);
         for (const key in result) {
             const path = '/resources/pictures/role/';
@@ -33,7 +33,7 @@ export class RoleComponent implements AfterViewInit {
         this.dataObj = result;
     }
 
-    openModal(item: { key: string; value: Role }) {
+    openModal(item: { key: string; value: Role }): void {
         Object.assign(this.detail, {
             title: this.loadText(item.key, 'name'),
             content: this.loadText(item.key, 'introduce'),
@@ -41,15 +41,15 @@ export class RoleComponent implements AfterViewInit {
         });
     }
 
-    hidePicture(ev: Event) {
+    hidePicture(ev: Event): void {
         (ev.target as HTMLImageElement).style.display = 'none';
     }
 
-    loadText(key: string, type: string) {
-        return `qt.branch.role.${key}.${type}`
+    loadText(key: string, type: string): string {
+        return `qt.branch.role.${key}.${type}`;
     }
 
-    ngAfterViewInit() {
+    ngAfterViewInit(): void {
         this.getData();
         this.cdr.detectChanges();
     }

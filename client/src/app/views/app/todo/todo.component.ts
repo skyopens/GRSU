@@ -101,7 +101,7 @@ export class TodoComponent implements AfterViewInit, OnDestroy {
 
     getStatusClass(status: string): string {
         let color = '';
-        let result = 'badge badge-pill ';
+        const result = 'badge badge-pill ';
         switch (status) {
             case 'COMPLETED': color = 'badge-success'; break;
             case 'PROGRESSING': color = 'badge-info'; break;
@@ -114,7 +114,7 @@ export class TodoComponent implements AfterViewInit, OnDestroy {
         return this.translate.instant(label);
     }
 
-    handleSaveData(data) {
+    handleSaveData(data): void {
         const saveAPI = data.id ? this.apiService.todo.putUpdate(data) : this.apiService.todo.postCreate(data);
         saveAPI.subscribe(() => {
             this.addNewModalRef.hide();
@@ -139,7 +139,7 @@ export class TodoComponent implements AfterViewInit, OnDestroy {
         });
     }
 
-    ngAfterViewInit() {
+    ngAfterViewInit(): void {
         this.getData();
     }
 

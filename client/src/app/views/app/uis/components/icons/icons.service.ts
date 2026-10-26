@@ -250,7 +250,7 @@ export class IconsService {
             'iconsminds-arrow-around',
             'iconsminds-arrow-barrier',
             'iconsminds-arrow-circle',
-            'iconsminds-arrow-cross',]
+            'iconsminds-arrow-cross', ]
     }, {
         title: 'Arrows',
         icons: ['iconsminds-arrow-back-2',

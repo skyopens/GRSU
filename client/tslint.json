@@ -29,7 +29,8 @@
             "app",
             "kebab-case"
         ],
-        "eofline": true,
+        "eofline": false,
+        "forin": false,
         "import-blacklist": [
             true,
             "rxjs/Rx"
@@ -41,21 +42,8 @@
             ]
         },
         "max-classes-per-file": false,
-        "max-line-length": [
-            true,
-            140
-        ],
-        "member-ordering": [
-            true,
-            {
-                "order": [
-                    "static-field",
-                    "instance-field",
-                    "static-method",
-                    "instance-method"
-                ]
-            }
-        ],
+        "max-line-length": false,
+        "member-ordering": false,
         "no-console": [
             true,
             "debug",
@@ -77,10 +65,7 @@
             true,
             "as-needed"
         ],
-        "quotemark": [
-            true,
-            "single"
-        ],
+        "quotemark": false,
         "semicolon": {
             "options": [
                 "always"
@@ -114,13 +99,7 @@
                 "variable-declaration": "onespace"
             }]
         },
-        "variable-name": {
-            "options": [
-                "ban-keywords",
-                "check-format",
-                "allow-pascal-case"
-            ]
-        },
+        "variable-name": false,
         "whitespace": {
             "options": [
                 "check-branch",

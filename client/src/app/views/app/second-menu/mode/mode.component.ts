@@ -16,7 +16,7 @@ export class ModeComponent implements AfterViewInit {
     constructor(private cdr: ChangeDetectorRef, private translate: TranslateService, private apiService: ApiService) { }
 
     dataList: Mode[] = [];
-    getData() {
+    getData(): void {
         const result = this.translate.instant(`qt.branch.mode`);
         for (const mode of result) {
             const path = '/resources/pictures/mode/';
@@ -27,17 +27,17 @@ export class ModeComponent implements AfterViewInit {
         this.dataList = result;
     }
 
-    hidePicture(ev: Event) {
+    hidePicture(ev: Event): void {
         (ev.target as HTMLImageElement).style.display = 'none';
     }
 
-    loadText(idx: number, key: number | string, type?: string) {
+    loadText(idx: number, key: number | string, type?: string): string {
         const result = this.translate.instant(`qt.branch.mode`);
         console.log(result, idx, key, type);
         return !type ? result[idx][key] : result[idx].list[key][type];
     }
 
-    ngAfterViewInit() {
+    ngAfterViewInit(): void {
         this.apiService.todo.getList().subscribe(res => {
             console.log(4433, res);
         });

@@ -13,7 +13,7 @@ export class ViewsComponent implements OnInit {
         this.router.navigateByUrl(environment.adminRoot);
     }
 
-    ngOnInit() {
+    ngOnInit(): void {
 
     }
 
