@@ -44,7 +44,7 @@ const data: IMenuItem[] = [{
         icon: 'simple-icon-support',
         label: 'menu.store.decoration',
         to: `${adminRoot}/store/decoration`,
-    },{
+    }, {
         icon: 'simple-icon-handbag',
         label: 'menu.store.gear',
         to: `${adminRoot}/store/gear`,

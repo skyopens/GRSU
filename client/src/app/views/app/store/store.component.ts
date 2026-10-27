@@ -11,6 +11,7 @@ import { IStoreSub, StoreItem } from 'src/app/apis/store';
     selector: 'app-store-menu',
     templateUrl: './store.component.html',
     styles: [`
+        .btn_search > i { display: inline-block; transform: scale(1.3); }
         .content_box {
             margin: 0 -15px;
             padding-top: 15px;
@@ -50,22 +51,41 @@ import { IStoreSub, StoreItem } from 'src/app/apis/store';
 })
 export class StoreComponent implements OnDestroy {
     @ViewChild('storeTab', { static: false }) storeTab!: TabsetComponent;
+    itemOrder: { label: string; value: string; } = { label: '', value: 'default' }; // 排序文案走 i18n（qt.branch.sorts），value 是后端 orderBy 的白名单键
+    itemOptionsOrders: { label: string; value: string; }[] = [];
     dataList: StoreItem[] = [];
     tabList: IStoreSub[] = [];
     activeIdx = 0;
     lang = 'zh_CN';
     routeKey: string;
     pager = { page: 1, size: 12, total: 0 };
+    searchKey = '';
+    detail: StoreItem = {} as StoreItem;
     private langSub: Subscription;
 
     constructor(private route: ActivatedRoute, private translate: TranslateService, private store: StoreService) {
         this.lang = this.translate.currentLang;
-        this.langSub = this.translate.onLangChange.subscribe((ev) => { this.lang = ev.lang; });
-        this.routeKey = this.route.snapshot.data['tab'];
+        this.refreshSorts();
+        this.langSub = this.translate.onLangChange.subscribe((ev) => {
+            this.lang = ev.lang;
+            this.refreshSorts();
+        });
+        this.routeKey = this.route.snapshot.data.tab;
         this.store.getSubs({ tab: this.routeKey }).subscribe((subs) => {
             this.tabList = subs;
             this.handleChangeTab(0);
         });
+    }
+
+    // 切语言时换文案、保住当前选中的 value；词条缺失就保持原样，不让整页崩掉
+    private refreshSorts(): void {
+        const options: { label: string; value: string; }[] = this.translate.instant('qt.branch.sorts');
+
+        if (Array.isArray(options)) {
+            const current = options.filter((item) => item.value === this.itemOrder.value)[0];
+            this.itemOptionsOrders = options;
+            this.itemOrder = current ? current : options[0];
+        }
     }
 
     handleChangeTab(idx: number): void {
@@ -73,6 +93,7 @@ export class StoreComponent implements OnDestroy {
         this.pager.page = 1;
         this.dataList = [];
         this.pager.total = 0;
+        this.searchKey = '';
         this.requestData();
     }
 
@@ -83,7 +104,10 @@ export class StoreComponent implements OnDestroy {
                 tab: this.routeKey,
                 sub: sub.key,
                 pageSize: this.pager.size,
-                currentPage: this.pager.page
+                currentPage: this.pager.page,
+                search: this.searchKey.trim(),
+                orderBy: this.itemOrder.value,
+                lang: this.lang
             };
             this.store.getData(queries).subscribe((res) => {
                 this.dataList = res.items;
@@ -100,7 +124,15 @@ export class StoreComponent implements OnDestroy {
         }
     }
 
-    detail: StoreItem = {} as StoreItem;
+    handleSearch(): void {
+        this.pager.page = 1;
+        this.requestData();
+    }
+
+    onChangeOrderBy(item: { label: string; value: string; }): void {
+        this.itemOrder = item;
+    }
+
     openModal(item: StoreItem): void {
         const price = item.price_normal;
         item.price_list = [{
@@ -120,7 +152,7 @@ export class StoreComponent implements OnDestroy {
         this.detail = item;
     }
 
-    ngOnDestroy() {
+    ngOnDestroy(): void {
         this.langSub.unsubscribe();
     }
 }

@@ -912,6 +912,16 @@
                     "desc": "Adventure mode differs from Competitive modes—it's players vs. monsters and bosses. Players don't attack each other; instead, cooperate to defeat monsters. Before the game, equip items to help defeat monsters. Defeating monsters or destroying bricks may yield materials to craft items. Place Sugar Bubbles to attack monsters. When a monster's HP reaches 0, it's knocked out. Players also have HP and die when it reaches 0. As adventure levels increase, your HP increases too. Keep going and defeat the monsters!"
                 }]
             }],
+            "sort_title": "Sort",
+            "sorts": [{
+                "label": "Default", "value": "default"
+            }, {
+                "label": "Item name", "value": "name"
+            }, {
+                "label": "Price: low to high", "value": "price_asc"
+            }, {
+                "label": "Price: high to low", "value": "price_desc"
+            }],
             "store": {
                 "price_normal": "Regular price",
                 "price_member": "Member",

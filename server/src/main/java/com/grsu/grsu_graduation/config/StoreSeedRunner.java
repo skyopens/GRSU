@@ -68,8 +68,7 @@ public class StoreSeedRunner implements CommandLineRunner {
                     int subOrder = 0;
 
                     for (JsonNode sub : subs) {
-                        StoreSub row = subRepository.save(
-                            new StoreSub(tab, sub.get("key").asString(), subOrder++, subPayload(sub)));
+                        StoreSub row = subRepository.save(new StoreSub(tab, sub.get("key").asString(), subOrder++, subPayload(sub)));
 
                         List<StoreItem> items = new ArrayList<>();
                         int itemOrder = 0;

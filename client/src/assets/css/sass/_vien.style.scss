@@ -6061,6 +6061,8 @@ aw-wizard-navigation-bar.vertical.small ul.steps-indicator li:not(:last-child):a
         cursor: pointer;
         top: 2px;
     }
+
+    &.no-icon:after { content: ''; }
 }
 
 div.dataTables_wrapper div.dataTables_filter input {

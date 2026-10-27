@@ -8,11 +8,14 @@
 //         path: 'accordion', component: AccordionComponent
 //     }];
 //
-// 四条规则（来源：用户手改的 components.routing.ts，即本项目的标准答案）：
+// 排版规则（来源：用户手改的 components.routing.ts，即本项目的标准答案）：
 //   1. `[` 与首元素的 `{` 同行；元素之间 `}, {` 同行；末元素的 `}` 与 `]` 同行。
 //   2. 每个元素的**内容**独占行，缩进 = 该元素在原来源码里的行首缩进。
 //   3. 元素的 `}` 缩进 = 原来源码里 `]` 的行首缩进（与第 2 条不是同一个值）。
 //   4. 对象内部原本写在同一行的多个属性保持同行，不拆成一属性一行。
+//   5. 例外：数组本身（`[` 到 `]`，不含所在行的其它代码）不超过 80 个字符时，
+//      允许整段写在一行，例如 `selectedPeople = [{ name: 'Karyn Wright' }];`。
+//      超长仍必须展开；已经是多行排版的短数组不会被强行收回一行。
 //
 // 自动跳过、不算违规的情况：
 //   * 空数组；元素不是对象字面量的数组；元素是空对象 `{}` 的数组。
@@ -33,6 +36,9 @@ const Lint = require('tslint');
 const ts = require('typescript');
 
 const IND = 4;
+
+// 短数组允许整段写在一行：数组文本（`[` 到 `]`）不超过这个长度就放过
+const ONE_LINE_MAX = 110;
 
 function SP(n) { return n > 0 ? ' '.repeat(n) : ''; }
 
@@ -210,8 +216,18 @@ function renderArray(text, sf, node) {
     return '[' + parts.join(', ') + ']';
 }
 
+// 数组本身（`[` 到 `]`）没跨行、且不超过 ONE_LINE_MAX —— 这种允许整段写在一行。
+// 只看数组自己的文本，不看所在行的其它代码：`lightbox.open([{ src, thumb: '' }], 0, ...)`
+// 这种数组很短、但整行很长的调用，也算合规。
+function fitsOneLine(text, sf, n) {
+    const arrText = text.slice(n.getStart(sf), n.getEnd());
+    return arrText.indexOf('\n') < 0 && arrText.length <= ONE_LINE_MAX;
+}
+
 // 已经是目标排版了吗？（廉价的结构检查，用来判断还要不要动它）
 function looksFormatted(text, sf, n) {
+    if (fitsOneLine(text, sf, n)) { return true; }           // 短数组单行：放过
+
     const els = n.elements;
     const s = n.getStart(sf), e = n.getEnd();
     if (text.charAt(s + 1) !== '{') { return false; }        // `[{`

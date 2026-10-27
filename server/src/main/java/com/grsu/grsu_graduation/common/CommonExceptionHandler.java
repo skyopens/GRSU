@@ -34,8 +34,9 @@ public class CommonExceptionHandler {
         if (code != null && code.is4xxClientError()) {
             return ResponseEntity.status(code).body(new ApisResponse<>(StatusCode.BAD_REQUEST, "The request cannot be processed!"));
         } else {
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
-                .body(new ApisResponse<>(StatusCode.INTERNAL_ERROR, "Internal Server Error!"));
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(
+                new ApisResponse<>(StatusCode.INTERNAL_ERROR, "Internal Server Error!")
+            );
         }
     }
 }

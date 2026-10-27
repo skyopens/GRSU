@@ -1,7 +1,6 @@
 import { AfterViewInit, ChangeDetectorRef, Component } from '@angular/core';
 import { Mode } from '../types';
 import { TranslateService } from '@ngx-translate/core';
-import { ApiService } from 'src/app/data/api_service';
 
 @Component({
     selector: 'app-mode',
@@ -13,7 +12,7 @@ import { ApiService } from 'src/app/data/api_service';
 	`]
 })
 export class ModeComponent implements AfterViewInit {
-    constructor(private cdr: ChangeDetectorRef, private translate: TranslateService, private apiService: ApiService) { }
+    constructor(private cdr: ChangeDetectorRef, private translate: TranslateService) { }
 
     dataList: Mode[] = [];
     getData(): void {
@@ -33,14 +32,10 @@ export class ModeComponent implements AfterViewInit {
 
     loadText(idx: number, key: number | string, type?: string): string {
         const result = this.translate.instant(`qt.branch.mode`);
-        console.log(result, idx, key, type);
         return !type ? result[idx][key] : result[idx].list[key][type];
     }
 
     ngAfterViewInit(): void {
-        this.apiService.todo.getList().subscribe(res => {
-            console.log(4433, res);
-        });
         this.getData();
         this.cdr.detectChanges();
     }

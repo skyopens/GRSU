@@ -45,6 +45,9 @@ export function loadStoreApi(http: HttpClient, baseURL: string) {
             sub: string;
             pageSize: number;
             currentPage: number;
+            search: string;
+            orderBy: string;
+            lang: string;
         }): Observable<StoreDataResponse> {
             const queriesFMT = Object.assign(queries, {
                 pageSize: queries.pageSize.toString(),

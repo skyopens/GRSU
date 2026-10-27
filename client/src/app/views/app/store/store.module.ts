@@ -4,6 +4,7 @@ import { LayoutContainersModule } from 'src/app/containers/layout/layout.contain
 import { UiModalsContainersModule } from 'src/app/containers/ui/modals/ui.modals.containers.module';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { AlertModule } from 'ngx-bootstrap/alert';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { FormsModule } from '@angular/forms';
 import { PaginationModule } from 'ngx-bootstrap/pagination';
 import { StoreComponent } from './store.component';
@@ -17,6 +18,7 @@ import { StoreRoutingModule } from './store.routing';
         UiModalsContainersModule,
         TabsModule.forRoot(),
         AlertModule.forRoot(),
+        BsDropdownModule.forRoot(),
         FormsModule,
         PaginationModule.forRoot(),
         StoreRoutingModule

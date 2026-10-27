@@ -2,8 +2,39 @@
     <div class="col-12">
         <app-heading></app-heading>
         <app-breadcrumb></app-breadcrumb>
-        <div class="separator mb-5"></div>
+        <div class="separator mb-3"></div>
     </div>
+</div>
+<div class="d-inline-block mb-4">
+    <div class="float-md-left position-relative mr-2 mb-1" dropdown>
+        <button
+            class="btn btn-outline-dark btn-xs dropdown-toggle"
+            dropdownToggle
+            type="button"
+            aria-controls="dropdown-basic"
+        >
+            {{ 'qt.branch.sort_title' | translate }}: {{ itemOrder.label }} <span class="caret"></span>
+        </button>
+        <ul
+            *dropdownMenu
+            class="dropdown-menu" role="menu"
+            id="dropdown-basic"
+            aria-labelledby="button-basic"
+        >
+            <li role="menuitem" id="displayOptions" *ngFor="let item of itemOptionsOrders">
+                <a
+                    [ngClass]="item.value === itemOrder.value ? 'dropdown-item active' : 'dropdown-item'"
+                    (click)="onChangeOrderBy(item)"
+                >{{item.label}}</a>
+            </li>
+        </ul>
+    </div>
+    <div class="search-sm no-icon d-inline-block float-md-left mr-2 mb-1 align-top">
+        <input class="form-control" [placeholder]="'form-components.search' | translate" [(ngModel)]="searchKey" (keyup.enter)="handleSearch()">
+    </div>
+    <button type="button" class="btn btn-xs btn-outline-primary btn_search" (click)="handleSearch()">
+        <i class="iconsminds-magnifi-glass"></i>
+    </button>
 </div>
 <div class="card" style="background: none;box-shadow: none;">
     <tabset #storeTab>
@@ -19,9 +50,9 @@
                         <div class="d-flex flex-grow-1 min-width-zero">
                             <div class="card-body pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
                                 <div class="min-width-zero w_100">
-                                    <a routerLink="./">
+                                    <div>
                                         <p class="list-item-heading mb-3 truncate">{{ item.name[lang] }}</p>
-                                    </a>
+                                    </div>
                                     <div class="price_box">
                                         <div>
                                             <p class="mb-1 text-muted desc">

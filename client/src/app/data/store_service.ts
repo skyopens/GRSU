@@ -95,17 +95,19 @@ export class StoreService {
         return result;
     }
 
-    // 取某个二级分类的第 currentPage 页。pageSize 由前端传入，两种模式共用同一个值。
+    // 取某个二级分类的第 currentPage 页。pageSize 由前端决定，两种模式共用同一个值。
     getData(queries: {
         tab: string;
         sub: string;
         pageSize: number;
         currentPage: number;
+        search: string;
+        orderBy: string;
+        lang: string;
     }): Observable<IPage<StoreItem>> {
         let result: Observable<IPage<StoreItem>>;
 
         if (environment.hasBackend) {
-            // 页码越界时后端回的也是密文包（items 为空、total 是真实总数），这里不用特殊处理
             result = this.api.store.getData(queries).pipe(
                 switchMap((res) => from(decryptStore<IPage<StoreItem>>(res.data))),
                 catchError((err) => {
@@ -117,11 +119,58 @@ export class StoreService {
             result = this.getSubs({ tab: queries.tab }).pipe(map((subs) => {
                 const sub = subs.filter((s) => s.key === queries.sub)[0];
                 const all = sub && sub.data ? sub.data : [];
+                const hits = all.filter((item) => this.matchName(item, queries.lang, queries.search));
+                const sorted = this.sortItems(hits, queries.orderBy, queries.lang);
                 const start = (queries.currentPage - 1) * queries.pageSize;
-                return { items: all.slice(start, start + queries.pageSize), total: all.length };
+                return { items: sorted.slice(start, start + queries.pageSize), total: sorted.length };
             }));
         }
 
+        return result;
+    }
+
+    // 和后端 SQLite 的 LIKE 对齐：ASCII 大小写不敏感、其它字符（西里尔）大小写敏感，所以两边都 toLowerCase 一次。
+    private matchName(item: StoreItem, lang: string, search: string): boolean {
+        const name = (item.name[lang] || '').toLowerCase();
+        const keyword = search.trim().toLowerCase();
+        return keyword === '' || name.indexOf(keyword) >= 0;
+    }
+
+    // 名称用码点序比较，和后端 SQLite 的 BINARY 排序一致；不用 localeCompare，
+    // 那个对中文是拼音序，会让两个模式的第一页装不同的东西。
+    private sortItems(items: StoreItem[], orderBy: string, lang: string): StoreItem[] {
+        const result = items.slice(); // copy data
+        switch (orderBy) {
+            case 'name':
+                result.sort((a, b) => {
+                    return this.compareText(a.name[lang], b.name[lang]);
+                });
+                break;
+            case 'price_asc':
+                result.sort((a, b) => {
+                    return a.price_normal - b.price_normal;
+                });
+                break;
+            case 'price_desc':
+                result.sort((a, b) => {
+                    return b.price_normal - a.price_normal;
+                });
+                break;
+        }
+
+        return result;
+    }
+
+    private compareText(left: string, right: string): number {
+        left = left || '';
+        right = right || '';
+        let result = 0;
+
+        if (left < right) {
+            result = -1;
+        } else if (left > right) {
+            result = 1;
+        }
         return result;
     }
 
