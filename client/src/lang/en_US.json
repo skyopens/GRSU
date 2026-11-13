@@ -770,11 +770,83 @@
         "vertical": "Vertical"
     },
     "qt": {
-        "header": "Preface//",
+        "header": "Preface",
         "title": "Some Words to Say",
         "perface": "QQ Tang and Bubble Tang took up a big part of our childhood. There, we gained a great deal of joy and laughter, and of course anger and helplessness as well. We watched them grow step by step, mature, and reach their peak, and then watched them become overrun by cheats and slowly decline. Even now, most people who still play these two games are no longer simply playing the games themselves, but the nostalgia behind them. Bubble Tang is still manageable, but QQ Tang has now even reached the point where you may need to install a virtual machine just to play it. While playing, besides reliving the fun of those years, we can also faintly feel the possibility that the servers may shut down at any time. Therefore, I am collecting some QT materials here, so that if the game ever closes, you can still come here and remember that there was once such a beautiful part of our past........",
         "copyright": "For the record, the materials on this website are all collected from the internet. If anything involves infringement or is not allowed to be reposted, please contact the author for removal.",
         "branch": {
+            "guide": {
+                "toc": "Contents",
+                "what": {
+                    "title": "What this game is",
+                    "text": "QQ Tang (QQ堂) is a casual competitive game Tencent released in late 2004, built on the classic Bomberman formula. Players place bubble bombs on a tiled map, blow up bricks, grab items, and trap each other in syrup.\n\nIt is one of Tencent's early self-developed titles, and for many people it was where they topped up a game card for the first time and added a stranger as a friend. In December 2021 the team announced the end of service; at 11:00 on 20 April 2022 the mainland China servers shut down for good."
+                },
+                "stats": [{
+                    "label": "Online", "value": "2004"
+                }, {
+                    "label": "Game modes", "value": "10"
+                }, {
+                    "label": "Characters", "value": "22"
+                }, {
+                    "label": "Items catalogued", "value": "1767"
+                }],
+                "why": {
+                    "title": "Why this site exists",
+                    "text": "This was the first online game many people of my generation ever played, and it stayed with us through a whole childhood. So when the shutdown was formally announced, our generation could hardly help feeling a sense of loss and a reluctance to say goodbye — it was not just a game, but time spent with friends.\n\nThat is one of the reasons I decided to turn it into this project. I want to present that memory again in the form of a website. The project is not only a presentation of what I have learned in software engineering, but also a small digital archive I built for a childhood memory."
+                },
+                "timeline": [{
+                    "date": "2004", "text": "QQ Tang launches as one of Tencent's early self-developed titles."
+                }, {
+                    "date": "2021.12.16", "text": "The team announces the end of service."
+                }, {
+                    "date": "2022.04.20 11:00", "text": "The mainland China servers shut down for good."
+                }, {
+                    "date": "Since then", "text": "Material is scattered across forums, blogs and videos. This site gathers it."
+                }],
+                "loop": {
+                    "title": "Core loop",
+                    "text": "A match comes down to four steps. Once these four are clear, everything else is detail and practice.",
+                    "steps": [{
+                        "name": "Place a bubble", "desc": "Stand on a tile and press Space. The bubble bursts into a cross of syrup 5 seconds later."
+                    }, {
+                        "name": "Break bricks", "desc": "Syrup destroys soft bricks, and items are hidden underneath them."
+                    }, {
+                        "name": "Pick up items", "desc": "Walk over one to pick it up. It changes your bubble count, blast range or movement speed."
+                    }, {
+                        "name": "Trap opponents", "desc": "Anyone hit by syrup is wrapped up. With no rescue within 5 seconds, they are out."
+                    }]
+                },
+                "modes": {
+                    "title": "Modes and win conditions",
+                    "text": "QQ Tang has 10 modes in total: 9 competitive and 1 adventure. Each competitive mode has its own win condition; adventure mode is a small team run against monsters and bosses. Full rules for every mode are under \"Intel Center · Game Modes\"; this page only indexes them."
+                },
+                "controls": {
+                    "title": "Controls",
+                    "text": "Three controls are enough to start. Key bindings can be changed in game; the defaults are below.",
+                    "list": [{
+                        "key": "↑ ↓ ← →", "name": "Move", "desc": "The arrow keys move your character tile by tile; hold one down to keep walking."
+                    }, {
+                        "key": "Space", "name": "Place a bubble", "desc": "Drops a bubble at your feet; it bursts into syrup after 5 seconds."
+                    }, {
+                        "key": "1 – 0", "name": "Use items", "desc": "The 1234567890 row above the letters. Press a number to use the item in that slot."
+                    }]
+                },
+                "advanced": {
+                    "title": "Advanced techniques",
+                    "text": "These four are the techniques most often mentioned in QQ Tang. None of them can be learned by watching alone; each takes practice.",
+                    "list": [{
+                        "name": "Chained bubbles", "desc": "Place bubbles one after another in the same spot so one blast sets off a chain — used to cut off routes and hold a block longer."
+                    }, {
+                        "name": "Sandwich", "desc": "Trap an opponent between two bubbles and set both off, cutting off escape on both sides."
+                    }, {
+                        "name": "Body blocking", "desc": "Hold a key tile with your body or a bubble to shrink your opponent's space. Often better than chasing them with blasts."
+                    }, {
+                        "name": "Bubble pass-through", "desc": "Stand on the second bubble's tile and pass through the first — using the timing gap to walk over a tile you could not normally cross."
+                    }]
+                },
+                "credit_title": "Credits and disclaimer",
+                "credit_audio": "The two clips below are the original Chinese-language videos, kept for Chinese-speaking visitors (Chinese audio)."
+            },
             "role": {
                 "tt": {
                     "name": "Titan",

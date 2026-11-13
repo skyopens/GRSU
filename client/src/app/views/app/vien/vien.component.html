@@ -2,21 +2,127 @@
     <div class="col-12">
         <app-heading></app-heading>
         <app-breadcrumb></app-breadcrumb>
-        <div class="separator mb-5"></div>
+        <div class="separator mb-3"></div>
     </div>
 </div>
 <div class="row">
-    <div class="col-12">
-        <div class="card mb-4">
+    <div class="col-lg-3 order-lg-2">
+        <div class="card guide_toc">
             <div class="card-body">
-                <div class="jumbotron">
-                    <p class="lead">{{'qt.title' | translate}}</p>
-                    <hr class="my-4">
-                    <p class="content">{{'qt.perface' | translate}}</p>
-                    <hr class="my-4">
-                    <h4>{{'qt.copyright' | translate}}</h4>
-                </div>
+                <p class="guide_toc_title text-muted">{{ 'qt.branch.guide.toc' | translate }}</p>
+                <ul class="guide_toc_list">
+                    <li *ngFor="let item of guideSections" [class.active]="item.id === activeId">
+                        <a class="text-muted" [href]="'#' + item.id" (click)="scrollTo($event, item.id)">{{ item.label | translate }}</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
+    <div class="col-lg-9 order-lg-1">
+        <section id="what" #sectionEl class="card mb-4 guide_section">
+            <div class="card-body">
+                <h3 class="guide_title">{{ 'qt.branch.guide.what.title' | translate }}</h3>
+                <p class="guide_text">{{ 'qt.branch.guide.what.text' | translate }}</p>
+                <div class="guide_stats">
+                    <div class="guide_stat" *ngFor="let item of stats">
+                        <p class="guide_stat_label text-muted">{{ item.label }}</p>
+                        <p class="guide_stat_value">{{ item.value }}</p>
+                    </div>
+                </div>
+                <ng-container *ngTemplateOutlet="videoBlock; context: { $implicit: videos.what }"></ng-container>
+            </div>
+        </section>
+        <section id="why" #sectionEl class="card mb-4 guide_section">
+            <div class="card-body">
+                <h3 class="guide_title">{{ 'qt.branch.guide.why.title' | translate }}</h3>
+                <p class="guide_text">{{ 'qt.branch.guide.why.text' | translate }}</p>
+                <ul class="guide_timeline">
+                    <li class="guide_time_item" *ngFor="let item of timeline">
+                        <p class="guide_time_date">{{ item.date }}</p>
+                        <p class="guide_time_text">{{ item.text }}</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="loop" #sectionEl class="card mb-4 guide_section">
+            <div class="card-body">
+                <h3 class="guide_title">{{ 'qt.branch.guide.loop.title' | translate }}</h3>
+                <p class="guide_text">{{ 'qt.branch.guide.loop.text' | translate }}</p>
+                <div class="guide_steps">
+                    <div class="guide_step" *ngFor="let item of loopSteps; let i = index">
+                        <p class="guide_step_no">{{ i + 1 }}</p>
+                        <p class="guide_step_name">{{ item.name }}</p>
+                        <p class="guide_step_desc text-muted">{{ item.desc }}</p>
+                    </div>
+                </div>
+                <ng-container *ngTemplateOutlet="videoBlock; context: { $implicit: videos.loop }"></ng-container>
+            </div>
+        </section>
+        <section id="modes" #sectionEl class="card mb-4 guide_section">
+            <div class="card-body">
+                <h3 class="guide_title">{{ 'qt.branch.guide.modes.title' | translate }}</h3>
+                <p class="guide_text">{{ 'qt.branch.guide.modes.text' | translate }}</p>
+                <div class="guide_chips">
+                    <div *ngFor="let group of modeGroups">
+                        <p class="guide_chip_group text-muted">{{ group.title }}</p>
+                        <a class="guide_chip" *ngFor="let item of group.list" [routerLink]="modeLink">{{ item.name }}</a>
+                    </div>
+                </div>
+                <ng-container *ngTemplateOutlet="videoBlock; context: { $implicit: videos.modes }"></ng-container>
+            </div>
+        </section>
+        <section id="controls" #sectionEl class="card mb-4 guide_section">
+            <div class="card-body">
+                <h3 class="guide_title">{{ 'qt.branch.guide.controls.title' | translate }}</h3>
+                <p class="guide_text">{{ 'qt.branch.guide.controls.text' | translate }}</p>
+                <div class="guide_keys">
+                    <div class="guide_key_row" *ngFor="let item of controls">
+                        <span class="guide_key">{{ item.key }}</span>
+                        <div>
+                            <p class="guide_key_name">{{ item.name }}</p>
+                            <p class="guide_key_desc text-muted">{{ item.desc }}</p>
+                        </div>
+                    </div>
+                </div>
+                <ng-container *ngTemplateOutlet="videoBlock; context: { $implicit: videos.controls }"></ng-container>
+            </div>
+        </section>
+        <section id="advanced" #sectionEl class="card mb-4 guide_section">
+            <div class="card-body">
+                <h3 class="guide_title">{{ 'qt.branch.guide.advanced.title' | translate }}</h3>
+                <p class="guide_text">{{ 'qt.branch.guide.advanced.text' | translate }}</p>
+                <div class="guide_keys">
+                    <div class="guide_key_row" *ngFor="let item of advanced">
+                        <div>
+                            <p class="guide_key_name">{{ item.name }}</p>
+                            <p class="guide_key_desc text-muted">{{ item.desc }}</p>
+                        </div>
+                    </div>
+                </div>
+                <ng-container *ngTemplateOutlet="videoBlock; context: { $implicit: videos.advanced }"></ng-container>
+            </div>
+        </section>
+        <section id="credit" #sectionEl class="card mb-4 guide_section">
+            <div class="card-body">
+                <h3 class="guide_title">{{ 'qt.branch.guide.credit_title' | translate }}</h3>
+                <p class="guide_text">{{ 'qt.copyright' | translate }}</p>
+                <p class="guide_audio_note text-muted">{{ 'qt.branch.guide.credit_audio' | translate }}</p>
+                <ng-container *ngTemplateOutlet="videoBlock; context: { $implicit: zhVideos }"></ng-container>
+            </div>
+        </section>
+    </div>
 </div>
+<ng-template #videoBlock let-list>
+    <div class="guide_video" *ngFor="let v of list">
+        <div class="video_frame">
+            <iframe
+                loading="lazy"
+                frameborder="0"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allow="autoplay; encrypted-media; fullscreen; picture-in-picture" allowfullscreen
+                [src]="buildEmbedSrc(v)"
+            ></iframe>
+        </div>
+        <p class="guide_video_title">{{ v.title }}</p>
+    </div>
+</ng-template>
