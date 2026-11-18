@@ -30,14 +30,15 @@ public class StoreQueryService {
     }
 
     /**
-     * List of second-level categories. The payload already holds key + title, so an empty data array
-     * is appended here to match the frontend IStoreSub shape.
+     * List of second-level categories. The payload holds only the title, so the key is taken from the
+     * sub_key column and an empty data array is appended to match the frontend IStoreSub shape.
      */
     public EncryptedPayload encryptSubs(List<StoreSub> subs) {
         ArrayNode array = JsonNodeFactory.instance.arrayNode();
 
         for (StoreSub sub : subs) {
             ObjectNode node = (ObjectNode) mapper.readTree(sub.getPayload());
+            node.put("key", sub.getSubKey());
             node.set("data", JsonNodeFactory.instance.arrayNode());
             array.add(node);
         }

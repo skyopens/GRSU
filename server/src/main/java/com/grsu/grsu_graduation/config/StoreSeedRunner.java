@@ -89,10 +89,9 @@ public class StoreSeedRunner implements CommandLineRunner {
         }
     }
 
-    // Keep only key + title; the API layer appends an empty data array.
+    // Keep only title; the key lives in the sub_key column and the API layer appends an empty data array.
     private String subPayload(JsonNode sub) {
         ObjectNode node = JsonNodeFactory.instance.objectNode();
-        node.set("key", sub.get("key"));
         node.set("title", sub.get("title"));
         return mapper.writeValueAsString(node);
     }

@@ -8,8 +8,9 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 /**
- * A second-level store category. payload holds the raw JSON of that category ({"key":...,"title":{four languages}}),
- * stored as plaintext; an empty data array is appended when it is read back.
+ * A second-level store category. payload holds the raw JSON of that category ({"title":{four languages}}),
+ * stored as plaintext; the key comes from the sub_key column and an empty data array is appended
+ * when it is read back.
  */
 @Entity
 @Table(name = "store_sub")
