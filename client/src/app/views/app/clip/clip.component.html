@@ -1,0 +1,68 @@
+<div class="row">
+    <div class="col-12">
+        <app-heading></app-heading>
+        <app-breadcrumb></app-breadcrumb>
+        <div class="separator mb-3"></div>
+    </div>
+</div>
+<div class="mb-4">
+    <div class="search-sm no-icon d-inline-block mr-2 mb-1 align-top">
+        <input class="form-control" [placeholder]="'qt.branch.clip.search_placeholder' | translate" [(ngModel)]="searchKey" (keyup.enter)="handleSearch()">
+    </div>
+    <button type="button" class="btn btn-xs btn-outline-primary btn_search mb-1 mr-4" (click)="handleSearch()">
+        <i class="iconsminds-magnifi-glass"></i>
+    </button>
+    <button type="button" class="btn btn-xs mr-2 mb-1" [ngClass]="activeClass('')" (click)="handleChangeCategory('')">
+        {{ 'qt.branch.clip.all' | translate }}
+    </button>
+    <button type="button" class="btn btn-xs mr-2 mb-1" [ngClass]="activeClass(item)" *ngFor="let item of categories" (click)="handleChangeCategory(item)">
+        {{ 'qt.branch.clip.' + item | translate }}
+    </button>
+</div>
+<div class="row">
+    <div class="col-md-6 col-lg-4" *ngFor="let item of clips; trackBy: trackById">
+        <div class="card mb-4">
+            <img
+                class="card-img-top clip_pic c-pointer"
+                referrerpolicy="no-referrer"
+                [alt]="item.title[lang]"
+                [src]="item.poster"
+                (click)="openModal(item)"
+            />
+            <div class="card-body introduce_box">
+                <p class="list-item-heading mb-2 overflow_1">
+                    <i class="simple-icon-control-play mr-2"></i>{{ item.title[lang] || item.title['en_US'] }}
+                </p>
+                <p class="text-muted text-small mb-0">
+                    {{ item.desc[lang] || item.desc['en_US'] }}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<p class="text-muted text-center my-5" *ngIf="clips.length === 0">{{ 'qt.branch.clip.empty' | translate }}</p>
+<ng-template #videoTpl>
+    <div class="modal-header">
+        <h4 class="modal-title">
+            {{ current.title[lang] || current.title['en_US'] }}
+            <small class="text-muted ml-2">{{ current.duration }}</small>
+        </h4>
+        <button type="button" class="close" (click)="closeModal()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body p-0 video_box" *ngIf="current.platform === 'mp4'">
+        <app-player class="video-js" [options]="playerOptions"></app-player>
+    </div>
+    <div class="modal-body p-0" *ngIf="current.platform !== 'mp4'">
+        <div class="clip_embed">
+            <iframe
+                frameborder="0"
+                scrolling="no"
+                allow="autoplay;encrypted-media;fullscreen"
+                allowfullscreen
+                [src]="embedSrc"
+            ></iframe>
+        </div>
+    </div>
+</ng-template>

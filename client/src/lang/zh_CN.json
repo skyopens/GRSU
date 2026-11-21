@@ -39,6 +39,7 @@
             "gear": "装备",
             "pet": "宠物"
         },
+        "clip": "视频专区",
         "dashboards": "仪表板",
         "default": "默认",
         "analytics": "分析",
@@ -999,6 +1000,15 @@
                 "amount": "道具数量",
                 "duration": "使用时间",
                 "desc": "商品描述"
+            },
+            "clip": {
+                "all": "全部",
+                "beginner": "新手",
+                "intermediate": "进阶",
+                "advanced": "高级",
+                "other": "其他",
+                "search_placeholder": "搜索视频标题",
+                "empty": "没有匹配的视频"
             },
             "unit": {
                 "count": "个",

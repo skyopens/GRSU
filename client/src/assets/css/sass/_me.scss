@@ -18,6 +18,12 @@
     border-radius: 4px;
 }
 
+.overflow_1 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 @mixin line-clamp($lines) {
     display: -webkit-box;
     -webkit-box-orient: vertical;

@@ -39,6 +39,7 @@
             "gear": "Equipment",
             "pet": "Pets"
         },
+        "clip": "Video Zone",
         "dashboards": "Dashboards",
         "default": "Default",
         "analytics": "Analytics",
@@ -1003,6 +1004,15 @@
                 "amount": "Quantity",
                 "duration": "Duration",
                 "desc": "Description"
+            },
+            "clip": {
+                "all": "All",
+                "beginner": "Beginner",
+                "intermediate": "Intermediate",
+                "advanced": "Advanced",
+                "other": "Other",
+                "search_placeholder": "Search video titles",
+                "empty": "No matching videos"
             },
             "unit": {
                 "count": "pc(s)",

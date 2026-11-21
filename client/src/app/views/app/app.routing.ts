@@ -16,6 +16,8 @@ const routes: Routes = [{
     }, {
         path: 'store', loadChildren: () => import('./store/store.module').then(m => m.StoreMenuModule)
     }, {
+        path: 'clip', loadChildren: () => import('./clip/clip.module').then(m => m.ClipMenuModule)
+    }, {
         path: 'blank-page', component: BlankPageComponent
     }, {
         path: 'todo', component: TodoComponent

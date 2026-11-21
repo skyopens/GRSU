@@ -54,6 +54,10 @@ const data: IMenuItem[] = [{
         to: `${adminRoot}/store/pet`,
     }],
 }, {
+    icon: 'iconsminds-video-tripod',
+    label: 'menu.clip',
+    to: `${adminRoot}/clip`,
+}, {
     icon: 'iconsminds-library',
     label: 'menu.todo',
     to: `${adminRoot}/todo`,

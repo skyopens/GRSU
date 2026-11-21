@@ -1,13 +1,15 @@
 /*
  * protect.cjs —— 构建前跑的加密 / 改名脚本
  *
- * 干两件事：
+ * 干三件事：
  *   1. 图片：读 data_raw/pictures/** → 写 src/resources/pictures/**
  *        store/ 下的图片改名成 sha256(storeSalt + 原相对路径) 的前 16 位十六进制，后缀不变，
  *        内容按下面的开关决定是加密还是原样拷贝
  *        mode/ role/ 原样拷贝
  *   2. 数据：读 data_raw/data_store/*.json（明文）→ AES-256-GCM 加密 → 写 src/resources/data_store/*.json（密文）
  *        加密前把每条道具的 picture 换成上一步算出来的哈希路径
+ *   3. 视频列表：读 data_raw/data_clip/clip.json（明文）→ 原样拷贝 → 写 src/resources/data_clip/clip.json
+ *        视频列表刻意不加密，浏览器本地模式（hasBackend=false）直接 fetch 这份
  *
  * 明文 JSON 里的 picture 永远写原始文件名（如 function/function/1.png），不要手填哈希。
  *
@@ -36,6 +38,9 @@ const SRC_DIR = path.join(ROOT, 'data_raw', 'data_store');
 const OUT_DIR = path.join(ROOT, 'src', 'resources', 'data_store');
 const PICS_SRC = path.join(ROOT, 'data_raw', 'pictures');
 const PICS_OUT = path.join(ROOT, 'src', 'resources', 'pictures');
+const CLIP_SRC = path.join(ROOT, 'data_raw', 'data_clip', 'clip.json');
+const CLIP_OUT_DIR = path.join(ROOT, 'src', 'resources', 'data_clip');
+const CLIP_OUT = path.join(CLIP_OUT_DIR, 'clip.json');
 
 // 需要改名成哈希的一级分类，其余原样拷贝
 const HASH_DIRS = ['store'];
@@ -229,6 +234,18 @@ if (missing.length) {
     if (missing.length > 20) {
         console.error('           ...还有 ' + (missing.length - 20) + ' 条');
     }
+}
+
+/* ---------- 3. 视频列表 ---------- */
+
+// 视频列表不加密，源文件原样拷贝；先解析一次，源文件语法坏了就立刻停，别把坏文件拷进去
+if (!fs.existsSync(CLIP_SRC)) {
+    console.error('[protect] 找不到 ' + path.relative(ROOT, CLIP_SRC) + '，视频列表跳过');
+} else {
+    const clips = JSON.parse(fs.readFileSync(CLIP_SRC, 'utf8'));
+    fs.mkdirSync(CLIP_OUT_DIR, { recursive: true });
+    fs.copyFileSync(CLIP_SRC, CLIP_OUT);
+    console.log('[protect] 视频列表 ' + clips.length + ' 条 -> ' + path.relative(ROOT, CLIP_OUT));
 }
 
 console.log('[protect] 完成：' + files.length + ' 份密文，' + item_total + ' 条道具');
