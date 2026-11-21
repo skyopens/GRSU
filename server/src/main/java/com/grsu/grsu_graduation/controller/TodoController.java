@@ -15,7 +15,6 @@ import org.springframework.http.ResponseEntity;
 
 @RestController
 @RequestMapping("/apis/todos")
-@CrossOrigin(origins = "*")
 public class TodoController {
     private final TodoRepository todoRepository;
 

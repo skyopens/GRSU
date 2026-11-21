@@ -30,13 +30,16 @@ public class CommonExceptionHandler {
     @ExceptionHandler(Exception.class)
     public ResponseEntity<ApisResponse<String>> handleException(Exception ex) {
         HttpStatusCode code = ex instanceof ErrorResponse ? ((ErrorResponse) ex).getStatusCode() : null;
+        ResponseEntity<ApisResponse<String>> result;
 
         if (code != null && code.is4xxClientError()) {
-            return ResponseEntity.status(code).body(new ApisResponse<>(StatusCode.BAD_REQUEST, "The request cannot be processed!"));
+            result = ResponseEntity.status(code).body(new ApisResponse<>(StatusCode.BAD_REQUEST, "The request cannot be processed!"));
         } else {
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(
+            result = ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(
                 new ApisResponse<>(StatusCode.INTERNAL_ERROR, "Internal Server Error!")
             );
         }
+
+        return result;
     }
 }

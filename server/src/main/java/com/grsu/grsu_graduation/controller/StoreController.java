@@ -1,6 +1,7 @@
 package com.grsu.grsu_graduation.controller;
 
 import com.grsu.grsu_graduation.common.ApisResponse;
+import com.grsu.grsu_graduation.common.QuerySupport;
 import com.grsu.grsu_graduation.common.StatusCode;
 import com.grsu.grsu_graduation.dto.StoreItemsQuery;
 import com.grsu.grsu_graduation.entity.StoreItem;
@@ -10,7 +11,6 @@ import com.grsu.grsu_graduation.repository.StoreSubRepository;
 import com.grsu.grsu_graduation.service.StoreQueryService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -18,16 +18,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Collections;
 import java.util.List;
-import java.util.Set;
 
 // On success data is a ciphertext message; on failure data is a plaintext error message, and the frontend decides by status.
 @RestController
 @RequestMapping("/apis/store")
-@CrossOrigin(origins = "*")
 public class StoreController {
     private static final int MAX_PAGE_SIZE = 200;
-    private static final String DEFAULT_LANG = "zh_CN";
-    private static final Set<String> SUPPORTED_LANGS = Set.of("zh_CN", "en_US", "ru_RU", "be_BY");
 
     private final StoreSubRepository subRepository;
     private final StoreItemRepository itemRepository;
@@ -81,8 +77,8 @@ public class StoreController {
                     new ApisResponse<>(StatusCode.DATA_NOT_FOUND, "二级分类不存在：" + queries.getTab() + "/" + queries.getSub())
                 );
             } else {
-                String namePath = "$.name." + resolveLang(queries.getLang());
-                String kw = likeKeyword(queries.getSearch());
+                String namePath = "$.name." + QuerySupport.resolveLang(queries.getLang());
+                String kw = QuerySupport.likeKeyword(queries.getSearch());
                 long total = itemRepository.countPage(subRow.getId(), namePath, kw);
                 long maxPage = total == 0 ? 1 : Math.ceilDiv(total, queries.getPageSize());
 
@@ -102,34 +98,6 @@ public class StoreController {
                 }
             }
         }
-        return result;
-    }
-
-    // An unknown language falls back to Chinese.
-    private static String resolveLang(String lang) {
-        String result = DEFAULT_LANG;
-
-        if (SUPPORTED_LANGS.contains(lang)) {
-            result = lang;
-        }
-
-        return result;
-    }
-
-    /*
-        An empty search term becomes '%%', which matches everything
-        and keeps the statements free of an extra "with or without search".
-        Backslash, percent and underscore are escaped first
-        so the user can literally search for those characters.
-    */
-    private static String likeKeyword(String search) {
-        String keyword = search == null ? "" : search.trim();
-        String result = "%%";
-
-        if (!keyword.isEmpty()) {
-            result = "%" + keyword.replace("\\", "\\\\").replace("%", "\\%").replace("_", "\\_") + "%";
-        }
-
         return result;
     }
 
