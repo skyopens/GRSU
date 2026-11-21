@@ -8,7 +8,9 @@ import { ColumnMode, DatatableComponent, SelectionType } from '@swimlane/ngx-dat
 })
 export class FullpageComponent {
     @ViewChild(DatatableComponent) table: DatatableComponent;
-    rows = productItems.slice(0, 20).map(({ title, sales, stock, category, id }) => ({ title, sales, stock, category, id }));
+    rows = productItems.slice(0, 20).map(({ title, sales, stock, category, id }) => {
+        return { title, sales, stock, category, id };
+    });
 
     columns = [{
         prop: 'title', name: 'Title'
@@ -20,7 +22,7 @@ export class FullpageComponent {
         prop: 'id', name: 'Id'
     }];
     ColumnMode = ColumnMode;
-    temp = [...this.rows];
+    temp = this.rows.concat();
     itemsPerPage = 10;
     itemOptionsPerPage = [5, 10, 20];
     selected = [];
@@ -48,7 +50,7 @@ export class FullpageComponent {
 
     onSelect({ selected }): void {
         this.selected.splice(0, this.selected.length);
-        this.selected.push(...selected);
+        Array.prototype.push.apply(this.selected, selected);
         this.setSelectAllState();
     }
 
@@ -64,7 +66,7 @@ export class FullpageComponent {
 
     selectAllChange($event): void {
         if ($event.target.checked) {
-            this.selected = [...this.rows];
+            this.selected = this.rows.concat();
         } else {
             this.selected = [];
         }

@@ -68,12 +68,16 @@ export class TodoComponent implements AfterViewInit, OnDestroy {
     }
 
     isSelected(p: ITodo): boolean {
-        return this.selected.findIndex(x => x.id === p.id) > -1;
+        return this.selected.findIndex((x) => {
+            return x.id === p.id;
+        }) > -1;
     }
 
     onSelect(item: ITodo): void {
         if (this.isSelected(item)) {
-            this.selected = this.selected.filter(x => x.id !== item.id);
+            this.selected = this.selected.filter((x) => {
+                return x.id !== item.id;
+            });
         } else {
             this.selected.push(item);
         }
@@ -92,7 +96,7 @@ export class TodoComponent implements AfterViewInit, OnDestroy {
 
     selectAll($event): void {
         if ($event.target.checked) {
-            this.selected = [...this.todoItems];
+            this.selected = this.todoItems.concat();
         } else {
             this.selected = [];
         }
@@ -110,7 +114,9 @@ export class TodoComponent implements AfterViewInit, OnDestroy {
     }
 
     getStatusText(status: number): string {
-        const label = LEVEL_DICT.find(item => item.value === status)?.label;
+        const label = LEVEL_DICT.find((item) => {
+            return item.value === status;
+        })?.label;
         return this.translate.instant(label);
     }
 
@@ -128,7 +134,9 @@ export class TodoComponent implements AfterViewInit, OnDestroy {
     }
 
     handleDelete(): void {
-        const data = this.selected.map(item => item.id);
+        const data = this.selected.map((item) => {
+            return item.id;
+        });
         this.apiService.todo.requestDelete({ ids: data }).subscribe(() => {
             this.notifications.create(
                 this.translate.instant('alert.success'),

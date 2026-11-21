@@ -20,7 +20,9 @@ export class ModeComponent implements AfterViewInit {
         for (const mode of result) {
             const path = '/resources/pictures/mode/';
             for (const item of mode.list) {
-                item.pictures = Array.from({ length: 4 }, (_, index) => path + item.key + (index + 1) + '.webp');
+                item.pictures = Array.from({ length: 4 }, (_, index) => {
+                    return path + item.key + (index + 1) + '.webp';
+                });
             }
         }
         this.dataList = result;

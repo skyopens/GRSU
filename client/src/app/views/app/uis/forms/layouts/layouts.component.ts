@@ -9,6 +9,8 @@ export class LayoutsComponent {
     constructor() { }
 
 
-    addTagFn = addedName => ({ name: addedName, tag: true });
+    addTagFn = (addedName) => {
+        return { name: addedName, tag: true };
+    };
 
 }

@@ -33,7 +33,9 @@ function getStoreKey(): Promise<CryptoKey> {
         // TS 3.9 的 lib.dom 把 digest / importKey 声明成 PromiseLike 而不是 Promise，
         // 包一层 Promise.resolve 才能得到真正的 Promise
         store_key = Promise.resolve(crypto.subtle.digest('SHA-256', encoder.encode(environment.storeKey)))
-            .then((digest) => crypto.subtle.importKey('raw', digest, 'AES-GCM', false, ['decrypt']));
+            .then((digest) => {
+                return crypto.subtle.importKey('raw', digest, 'AES-GCM', false, ['decrypt']);
+            });
     }
     return store_key;
 }
@@ -77,7 +79,9 @@ export class StoreService {
         if (environment.hasBackend) {
             // 后端返回的是密文信封，解密方式与本地密文文件完全一样
             result = this.api.store.getSubs(queries).pipe(
-                switchMap((res) => from(decryptStore<IStoreSub[]>(res.data))),
+                switchMap((res) => {
+                    return from(decryptStore<IStoreSub[]>(res.data));
+                }),
                 catchError((err) => {
                     console.error('商城分类加载失败', err);
                     return of<IStoreSub[]>([]);
@@ -85,9 +89,11 @@ export class StoreService {
             );
         } else {
             if (!this.cache[queries.tab]) {
-                this.cache[queries.tab] = fetch(`/resources/data_store/${queries.tab}.json`).then((res) =>
-                    res.json().then((payload) => decryptStore<IStoreSub[]>(payload))
-                );
+                this.cache[queries.tab] = fetch(`/resources/data_store/${queries.tab}.json`).then((res) => {
+                    return res.json().then((payload) => {
+                        return decryptStore<IStoreSub[]>(payload);
+                    });
+                });
             }
             result = from(this.cache[queries.tab]);
         }
@@ -109,7 +115,9 @@ export class StoreService {
 
         if (environment.hasBackend) {
             result = this.api.store.getData(queries).pipe(
-                switchMap((res) => from(decryptStore<IPage<StoreItem>>(res.data))),
+                switchMap((res) => {
+                    return from(decryptStore<IPage<StoreItem>>(res.data));
+                }),
                 catchError((err) => {
                     console.error('商城道具加载失败', err);
                     return of<IPage<StoreItem>>({ items: [], total: 0 });
@@ -117,9 +125,13 @@ export class StoreService {
             );
         } else {
             result = this.getSubs({ tab: queries.tab }).pipe(map((subs) => {
-                const sub = subs.filter((s) => s.key === queries.sub)[0];
+                const sub = subs.filter((s) => {
+                    return s.key === queries.sub;
+                })[0];
                 const all = sub && sub.data ? sub.data : [];
-                const hits = all.filter((item) => this.matchName(item, queries.lang, queries.search));
+                const hits = all.filter((item) => {
+                    return this.matchName(item, queries.lang, queries.search);
+                });
                 const sorted = this.sortItems(hits, queries.orderBy, queries.lang);
                 const start = (queries.currentPage - 1) * queries.pageSize;
                 return { items: sorted.slice(start, start + queries.pageSize), total: sorted.length };
@@ -180,11 +192,13 @@ export class StoreService {
     // dataList 被整体替换 → *ngFor 重建 <img> → 指令会重新绑定，届时需要一个新的 URL。
     loadPicture(rel_path: string): Promise<Blob> {
         if (!this.picture_cache[rel_path]) {
-            this.picture_cache[rel_path] = fetch(PICTURE_PREFIX + rel_path).then((res) =>
-                res.arrayBuffer().then((buffer) =>
-                    decryptPicture(buffer).then((bytes) => new Blob([bytes], { type: 'image/png' }))
-                )
-            );
+            this.picture_cache[rel_path] = fetch(PICTURE_PREFIX + rel_path).then((res) => {
+                return res.arrayBuffer().then((buffer) => {
+                    return decryptPicture(buffer).then((bytes) => {
+                        return new Blob([bytes], { type: 'image/png' });
+                    });
+                });
+            });
         }
         return this.picture_cache[rel_path];
     }

@@ -26,7 +26,9 @@ export class RoleComponent implements AfterViewInit {
         const result = this.translate.instant(`qt.branch.role`);
         for (const key in result) {
             const path = '/resources/pictures/role/';
-            result[key].pic_detail = Array.from({ length: 3 }, (_, index) => path + key + (index + 1) + '.gif');
+            result[key].pic_detail = Array.from({ length: 3 }, (_, index) => {
+                return path + key + (index + 1) + '.gif';
+            });
             result[key].pic_detail.push(path + key + '.gif');
             result[key].pic_intro = [path + key + '.webp'];
         }

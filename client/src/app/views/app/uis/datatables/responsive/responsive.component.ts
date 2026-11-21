@@ -25,7 +25,7 @@ export class ResponsiveComponent {
     }, {
         prop: 'date', name: 'Date'
     }];
-    temp = [...this.rows];
+    temp = this.rows.concat();
     constructor() {
 
     }

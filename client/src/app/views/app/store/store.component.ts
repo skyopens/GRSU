@@ -82,7 +82,9 @@ export class StoreComponent implements OnDestroy {
         const options: { label: string; value: string; }[] = this.translate.instant('qt.branch.sorts');
 
         if (Array.isArray(options)) {
-            const current = options.filter((item) => item.value === this.itemOrder.value)[0];
+            const current = options.filter((item) => {
+                return item.value === this.itemOrder.value;
+            })[0];
             this.itemOptionsOrders = options;
             this.itemOrder = current ? current : options[0];
         }

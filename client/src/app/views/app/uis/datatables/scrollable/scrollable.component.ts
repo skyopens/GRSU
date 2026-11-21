@@ -64,9 +64,9 @@ export class ScrollableComponent implements OnInit, AfterContentInit {
         //     data => {
         //         if (data.status) {
         //             this.isLoading = false;
-        //             const rows = [...this.rows, ...data.data];
+        //             const rows = this.rows.concat(data.data);
         //             this.rows = rows;
-        //             this.temp = [...this.rows, ...data.data];
+        //             this.temp = this.rows.concat(data.data);
         //             this.setSelectAllState();
         //         } else {
         //             this.endOfTheList = true;
@@ -95,7 +95,7 @@ export class ScrollableComponent implements OnInit, AfterContentInit {
 
     onSelect({ selected }): void {
         this.selected.splice(0, this.selected.length);
-        this.selected.push(...selected);
+        Array.prototype.push.apply(this.selected, selected);
         this.setSelectAllState();
     }
 
@@ -111,7 +111,7 @@ export class ScrollableComponent implements OnInit, AfterContentInit {
 
     selectAllChange($event): void {
         if ($event.target.checked) {
-            this.selected = [...this.rows];
+            this.selected = this.rows.concat();
         } else {
             this.selected = [];
         }
